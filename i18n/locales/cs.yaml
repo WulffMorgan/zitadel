@@ -1373,7 +1373,6 @@ common:
         code:
           added: Kód telefonního čísla vygenerován
           sent: Kód telefonního čísla odeslán
-        removed__EXTRA: Telefonní číslo odstraněno
         verification:
           failed: Ověření telefonního čísla selhalo
         verified: Telefonní číslo ověřeno
@@ -2849,7 +2848,6 @@ console:
       ALLOWDOMAINDISCOVERY_DESC: Pokud je možnost vybrána, přípona (@domain.com) neznámého uživatelského jména zadávaného na přihlašovací obrazovce bude porovnána s doménami organizace a při úspěchu dojde k přesměrování na registraci dané organizace.
       ALLOWEXTERNALIDP_DESC: Přihlášení je povoleno pro níže uvedené poskytovatele identity.
       ALLOWREGISTER_DESC: Pokud je možnost vybrána, objeví se při přihlášení další krok pro registraci uživatele.
-      ALLOWREGISTER__EXTRA: Registrace povolena
       ALLOWUSERNAMEPASSWORD_DESC: Je povoleno klasické přihlášení s uživatelským jménem a heslem.
       DEFAULTREDIRECTURI: Výchozí URI přesměrování
       DEFAULTREDIRECTURI_DESC: Definuje, kam bude uživatel přesměrován, pokud bylo přihlášení zahájeno bez kontextu aplikace (např. z e-mailu)

@@ -3521,8 +3521,6 @@ console:
       TYPE: Тип
     STEPS:
       SENDGRID: {}
-  STEPS__EXTRA:
-    SENDGRID: {}
   TABLE:
     NOROWS: Немає даних
   USER:

@@ -216,7 +216,6 @@ common:
         NotExisting: Политика блокировки пароля по умолчанию не существует
         NotFound: Политика блокировки пароля по умолчанию не найдена
     Intent:
-      Epired__EXTRA: Намерение истекло
       Expired__MISSING: Intent has expired
       FailureURLMissing: В запросе отсутствует URL-адрес ошибки
       IDPInvalid__MISSING: IDP invalid for the request
@@ -638,7 +637,6 @@ common:
         Empty: Профиль пуст
         FirstNameEmpty: Имя в профиле пусто
         IDMissing: Идентификатор профиля отсутствует
-        Invalid__EXTRA: Данные профиля недействительны
         LastNameEmpty: Фамилия в профиле пуста
         NotChanged: Профиль не изменён
         NotFound: Профиль не найден
@@ -1225,9 +1223,6 @@ common:
             succeeded__MISSING: Invitation check succeeded
           code:
             added: Сгенерирован код приглашения
-            check__EXTRA:
-              failed: Проверка приглашения завершилась неудачно
-              succeeded: Проверка приглашения успешно завершена
             sent: Код приглашения отправлен
         mfa:
           init:
@@ -1378,7 +1373,6 @@ common:
         code:
           added: Код номера телефона сгенерирован
           sent: Код номера телефона отправлен
-        removed__EXTRA: Номер телефона удалён
         verification:
           failed: Номер телефона не удалось подтвердить
         verified: Номер телефона подтверждён
@@ -1805,13 +1799,10 @@ console:
       METADATAOPT1__MISSING: Option 1. Specify the url where metadata file is located
       METADATAOPT2__MISSING: Option 2. Upload a file containing your metadata XML
       METADATAOPT3__MISSING: Option 3. Create a minimal metadata file on the fly providing ENTITYID and ACS URL
-      OR__EXTRA: или
       SELECTION:
         DESCRIPTION: SAML-приложения
         TITLE: SAML
       UPLOAD__MISSING: Upload XML file
-      URL__EXTRA: URL, в котором находится файл метаданных
-      XML__EXTRA: Загрузить метаданные XML
     TITLEFIRST: Название приложения
     TOAST:
       APIUPDATED: Приложение обновлено
@@ -2122,15 +2113,12 @@ console:
     USERNAME: Имя пользователя
   FLOWS:
     ACTIONS: Действия
-    ACTIONSDESCRIPTION__EXTRA: Это ваши скрипты, которые вы можете запускать в процессах.
     ACTIONSMAX: В зависимости от вашего уровня вам доступно ограниченное количество действий ({{value}}). Обязательно деактивируйте те, которые вам не нужны, или рассмотрите возможность повышения уровня.
-    ACTIONSTITLE__EXTRA: Действия
     ADDTRIGGER: Добавить триггер
     ALLOWEDTOFAIL: Разрешён сбой
     ALLOWEDTOFAILWARN:
       DESCRIPTION: Если вы отключите этот параметр, пользователи в вашей организации не смогут войти в систему. Кроме того, вы больше не сможете получить доступ к консоли управления, чтобы отключить это действие. Мы рекомендуем создать пользователя-администратора в отдельной организации или сначала тестировать сценарии в среде разработки или организации разработки.
       TITLE: Предупреждение
-    DESCRIPTION__EXTRA: Определите сценарии, которые будут выполняться при определённом событии.
     DIALOG:
       ABOUTNAME: Имя действия и имя функции в javascript должны быть одинаковыми.
       ADD:
@@ -2149,8 +2137,6 @@ console:
         TITLE: Обновить действие
     FLOWCHANGED: Процесс был успешно изменён
     FLOWCLEARED: Процесс был успешно сброшен
-    FLOWSDESCRIPTION__EXTRA: Процессы определённого типа выполняют действия в момент срабатывания триггера.
-    FLOWSTITLE__EXTRA: Процессы
     FLOWTYPE: Тип процесса
     ID: Идентификатор
     NAME: Название
@@ -2162,7 +2148,6 @@ console:
       "2": Активен
     TIMEOUT: Пауза
     TIMEOUTINSEC: Время ожидания в секундах
-    TITLE__EXTRA: Действия и процессы
     TOAST:
       ACTIONDEACTIVATED: Действия успешно деактивированы
       ACTIONREACTIVATED: Действия успешно восстановлены
@@ -2217,14 +2202,11 @@ console:
     DISCLAIMERLINK: Дальнейшая информация
     DOCUMENTATION:
       DESCRIPTION: Начните работу с Zitadel.
-      TITLE__EXTRA: Документация
     GETSTARTED:
       DESCRIPTION: Начните работу с Zitadel.
-      TITLE__EXTRA: Начать работу с Zitadel
     QUICKSTARTS:
       DESCRIPTION: Начните работу с Zitadel.
       LABEL: Первые шаги
-      TITLE__EXTRA: Быстрый старт
     SHORTCUTS:
       ADD: Удерживайте и перетяните плитку, чтобы добавить
       PROJECTS: Проекты
@@ -2233,13 +2215,11 @@ console:
       SHORTCUTS: Ярлыки
     WELCOME: Начать работу с Zitadel
   IAM:
-    DESCRIPTION__EXTRA: Управляйте настройками и организациями вашего экземпляра
     EVENTS:
       AGGREGATE: Агрегат
       AGGREGATEID: ID Агрегата
       AGGREGATETYPE: Тип агрегата
       CREATIONDATE: Создан
-      DESCRIPTION__EXTRA: В данном разделе отображаются все произошедшие события.
       DIALOG:
         TITLE: Детали события
       EDITOR: Редактор
@@ -2252,10 +2232,8 @@ console:
         ASC__MISSING: Ascending
         BTN: Фильтр
         CREATIONDATE:
-          CHECKBOX__EXTRA: Фильтровать по дате создания
           LABEL_SINCE: С
           LABEL_UNTIL: ДО
-          LABEL__EXTRA: Дата создания
           RADIO_FROM: От
           RADIO_RANGE: Диапазон
         DESC__MISSING: Descending
@@ -2265,11 +2243,8 @@ console:
           CHECKBOX: Фильтровать по владельцу ресурса
           LABEL: Идентификатор
         SEQUENCE:
-          ASC__EXTRA: По возрастанию
           CHECKBOX: Фильтровать по последовательности
-          DESC__EXTRA: По убыванию
           LABEL: Последовательность
-          SORT__EXTRA: Сортировка
         SORT__MISSING: Sort
         TYPE:
           CHECKBOX: Фильтровать по типу
@@ -2280,7 +2255,6 @@ console:
       PAYLOAD: Нагрузка
       RESOURCEOWNER: Владелец ресурса
       SEQUENCE: Последовательность
-      TITLE__EXTRA: События
       TYPE: Тип
     EVENTSTORE:
       DESCRIPTION: Управляйте просмотрами Zitadel и ошибками.
@@ -2290,12 +2264,10 @@ console:
       DATABASE: База данных
       DELETE: Удалить
       DELETESUCCESS: Ошибочные события удалены.
-      DESCRIPTION__EXTRA: В данном разделе отображаются ошибки.
       ERRORMESSAGE: Сообщение об ошибке
       FAILEDSEQUENCE: Ошибочная последовательность
       FAILURECOUNT: Количество ошибок
       LASTFAILED: Последняя ошибка
-      TITLE__EXTRA: Ошибки
       VIEWNAME: Название
     MEMBER:
       DESCRIPTION: Данные администраторы могут вносить изменения в ваш экземпляр.
@@ -2312,7 +2284,6 @@ console:
       "2": Запущен
       "3": Останавливается
       "4": Остановлен
-    TITLE__EXTRA: Экземпляр
     TOAST:
       DEACTIVATED: Деактивировано
       MEMBERADDED: Администратор добавлен.
@@ -2327,14 +2298,12 @@ console:
       CLEAR: Очистить
       CLEARED: Просмотр был успешно удалён!
       DATABASE: База данных
-      DESCRIPTION__EXTRA: В данном разделе отображаются ваши просмотры Zitadel.
       DIALOG:
         VIEW_CLEAR_DESCRIPTION: Вы собираетесь удалить просмотр. Удаление просмотра создаёт процесс, во время которого данные могут быть недоступны для конечных пользователей. Вы уверены?
         VIEW_CLEAR_TITLE: Удалить просмотр
       EVENTTIMESTAMP: Отметка времени
       LASTSPOOL: Успешная буферизация
       SEQUENCE: Последовательность
-      TITLE__EXTRA: Просмотры
       VIEWNAME: Название
   IDP:
     ACTIVATE: Активировать
@@ -2347,8 +2316,6 @@ console:
       UPDATEPRIVATEKEY: Обновить приватный ключ
       UPLOADPRIVATEKEY: Загрузить приватный ключ
     AUTHORIZATIONENDPOINT: Конечная точка авторизации
-    AUTOREGISTER_DESC__EXTRA: В случае, если данная функция выбрана, а учётной записи ещё нет, она будет создана.
-    AUTOREGISTER__EXTRA: Автоматическая регистрация
     AVAILABILITY: Доступность
     AVAILABLE: Доступен
     AVAILABLEBUTINACTIVE: Доступен, но не активен
@@ -2453,11 +2420,6 @@ console:
     LDAPUSERBINDING: Привязка пользователя
     LIST:
       ACTIVETITLE: Активные поставщики идентификационных данных
-      DESCRIPTION__EXTRA: Управляйте настройками поставщика идентификационных данных, которые затем можно активировать в настройках входа.
-      TITLE__EXTRA: Поставщики идентификационных данных
-    MAPPINGFIELD__EXTRA:
-      "1": Предпочтительное имя пользователя
-      "2": Электронная почта
     NAME: Название
     NAMEHINT: Если указано, оно будет показано в интерфейсе входа в систему.
     NICKNAMEATTRIBUTE: Атрибут псевдонима
@@ -2513,10 +2475,6 @@ console:
     STATES:
       "1": Активен
       "2": Неактивен
-    STYLEFIELD__EXTRA:
-      "0": Нет стиля
-      "1": Google
-    STYLE__EXTRA: Стиль
     TIMEOUT: Тайм-аут в секундах
     TOAST:
       ADDED: Добавлено успешно.
@@ -2530,10 +2488,6 @@ console:
       SELECTEDREACTIVATED: Выбранные поставщики идентификационных данных восстановлены.
     TOKENENDPOINT: Конечная точка токена
     TYPE: Тип
-    TYPES__EXTRA:
-      "0": Неизвестен
-      "1": OIDC
-      "3": JWT
     UPDATEBINDPASSWORD: обновить пароль привязки
     UPDATECLIENTSECRET: обновить секрет клиента
     USEPKCE: Используйте ПКСЕ
@@ -2641,7 +2595,6 @@ console:
     CUSTOMERPORTAL: Клиентский портал
     DASHBOARD: Главная
     DOCUMENTATION: Документация
-    DOMAINS__EXTRA: Домены
     EVENTS: События
     FAILEDEVENTS: Ошибки
     GRANTEDPROJECT: Допуски проектов
@@ -2669,7 +2622,6 @@ console:
     VIEWS: Просмотры
   METADATA:
     ADD: Новая запись
-    DESCRIPTION__EXTRA: ""
     EMPTY: Метаданные отсутствуют
     KEY: Ключ
     REMOVESUCCESS: Элемент успешно удалён
@@ -2796,12 +2748,8 @@ console:
       ORGDETAIL_TITLE: Введите имя и домен вашей новой организации.
       ORGDETAIL_TITLE_WITHOUT_DOMAIN: Введите название вашей новой организации.
       ORGDOMAIN:
-        REQUESTNEWTOKEN__EXTRA: Запросить новый токен
         RESETMETHOD: Сбросить метод проверки
         TITLE: Подтверждение права собственности на домен организации
-        TYPES__EXTRA:
-          "1": HTTP
-          "2": DNS
         VERIFICATION: Чтобы подтвердить право собственности на свой домен, вам необходимо загрузить файл подтверждения и отправить его по указанному ниже URL-адресу или разместить запись DNS TXT для предоставленного URL-адреса. Для завершения нажмите кнопку подтверждения.
         VERIFICATION_DNS: '- ДНС. Создайте DNS-запись TXT Record.'
         VERIFICATION_DNS_CHALLENGE_LABEL: 'Используйте этот код для значения записи TXT:'
@@ -2811,13 +2759,11 @@ console:
         VERIFICATION_HTTP_DESC: Если у вас есть доступ к хостингу вашего веб-сайта, просто скачайте файл подтверждения и загрузите его по указанному URL-адресу.
         VERIFICATION_HTTP_FILE_LABEL: 'Файл проверки:'
         VERIFICATION_HTTP_URL_LABEL: 'Ожидаемый URL:'
-        VERIFICATION_NEWTOKEN_DESC__EXTRA: Если вы хотите запросить новый токен, выберите предпочтительный способ. Если вы хотите проверить сохраняющийся токен, нажмите кнопку выше.
         VERIFICATION_NEWTOKEN_TITLE: Запросить новый токен
         VERIFICATION_SKIP: Вы можете пропустить проверку и продолжить создание своей организации, но для того, чтобы использовать вашу организацию, данный шаг должен быть выполнен!
         VERIFICATION_SUCCESSFUL: Домен успешно подтверждён!
         VERIFICATION_VALIDATION_DESC: Токены регулярно проверяются, чтобы убедиться, что вы по-прежнему являетесь владельцем домена.
         VERIFICATION_VALIDATION_ONGOING: Токен подтверждения уже запрошен. Нажмите на кнопку, чтобы запустить проверку подтверждения.
-        VERIFICATION_VALIDATION_ONGOING_TYPE__EXTRA: 'Тип токена:'
       PRIMARYDOMAIN: Домен организации
       REACTIVATE: Восстановить организацию
       RENAME:
@@ -2835,7 +2781,6 @@ console:
       "0": Не определён
       "1": Активен
       "2": Деактивирован
-      3__EXTRA: Удалён
     TOAST:
       DEACTIVATED: Организация деактивирована.
       DEFAULTORGNOTFOUND: Организация по умолчанию не найдена
@@ -2901,24 +2846,19 @@ console:
     CREATECUSTOM: Создать пользовательскую политику
     DATA:
       ALLOWDOMAINDISCOVERY_DESC: Если данный параметр выбран, суффикс (@domain.com) неизвестного имени пользователя, введённого на экране входа в систему, будет сопоставлен с доменами организации и перенаправлен на регистрацию данной организации.
-      ALLOWDOMAINDISCOVERY__EXTRA: Обнаружение домена разрешено
       ALLOWEXTERNALIDP_DESC: Вход разрешён для основных поставщиков идентификационных данных.
       ALLOWREGISTER_DESC: Если данный параметр выбран, при входе в систему появляется дополнительный шаг для регистрации пользователя.
       ALLOWUSERNAMEPASSWORD_DESC: Допускается стандартный вход с именем пользователя и паролем.
       DEFAULTREDIRECTURI: Перенаправление URI по умолчанию
       DEFAULTREDIRECTURI_DESC: Определяет, куда будет перенаправлен пользователь, если вход в систему осуществлён не в окружении приложения (например, из электронной почты).
       DESCRIPTION: Описание
-      DISABLELOGINWITHEMAIL__EXTRA: Отключить вход по адресу электронной почты
-      DISABLELOGINWITHPHONE__EXTRA: Отключить вход по номеру телефона
       DISABLEWATERMARK: Скрыть водяной знак
       DISABLEWATERMARK_DESC: Скрыть водяной знак Powered by Zitadel в интерфейсе входа
       ERRORMSGPOPUP: Показать ошибку в диалоговом окне
       EXPIREWARNDAYS: Предупреждение об истечении срока действия через несколько дней
-      EXTERNALLOGINCHECKLIFETIME__EXTRA: Проверка срока действия внешнего входа
       FORCEMFA: Принудительная многофакторная аутентификация для всех пользователей
       FORCEMFALOCALONLY: Принудительная многофакторная аутентификация только для локально аутентифицированных пользователей
       FORCEMFALOCALONLY_DESC__MISSING: If the option is selected, local authenticated users have to configure a second factor for login.
-      FORCEMFA_DESC__EXTRA: Если данный параметр выбран, пользователи должны настроить двухфакторную аутентификацию для входа в систему.
       HASLOWERCASE: Содержит нижний регистр
       HASNUMBER: Содержит цифру
       HASSYMBOL: Содержит символ
@@ -2926,33 +2866,21 @@ console:
       HIDELOGINNAMESUFFIX: Скрыть суффикс имени пользователя
       HIDELOGINNAMESUFFIX_DESC: Скрывает суффикс имени пользователя в интерфейсе входа
       HIDEPASSWORDRESET_DESC: Если данный параметр выбран, пользователь не может сбросить свой пароль в процессе входа в систему.
-      HIDEPASSWORDRESET__EXTRA: Скрыть сброс пароля
       IGNOREUNKNOWNUSERNAMES_DESC: Если данный параметр выбран, экран пароля будет отображаться в процессе входа в систему, даже если пользователь не был найден. Ошибка при проверке пароля не покажет, были ли имя пользователя или пароль неправильными.
-      IGNOREUNKNOWNUSERNAMES__EXTRA: Игнорировать неизвестные имена пользователей
-      INHOURS__EXTRA: Часы
       MAXAGEDAYS: Максимальная продолжительность действия (дни)
       MAXOTPATTEMPTS: Максимальное количество попыток OTP
       MAXPASSWORDATTEMPTS: Максимальное количество попыток пароля
-      MFAINITSKIPLIFETIME__EXTRA: Срок действия MFA
       MINLENGTH: Минимальная длина
-      MULTIFACTORCHECKLIFETIME__EXTRA: Проверка срока действия мультифактора
-      PASSWORDCHECKLIFETIME__EXTRA: Проверка срока действия пароля.
-      SECONDFACTORCHECKLIFETIME__EXTRA: Проверка срока действия двухфакторной аутентификации
       SHOWLOCKOUTFAILURES: Показать ошибки блокировки
       SMTPSENDERADDRESSMATCHESINSTANCEDOMAIN: Адрес отправителя SMTP соответствует домену экземпляра
       USERLOGINMUSTBEDOMAIN: Добавить домен организации в качестве суффикса к именам логина
       USERLOGINMUSTBEDOMAIN_DESCRIPTION: Если вы включите данный параметр, все имена входа будут иметь суффикс домена организации. Если данный параметр отключен, вы должны убедиться, что имена пользователей уникальны для всех организаций.
       VALIDATEORGDOMAINS: Проверка доменов организации
     DEFAULTLABEL: Текущие настройки соответствуют стандарту вашего экземпляра.
-    DESCRIPTION__EXTRA: Готовые настройки для повышения вашей безопасности.
-    DOMAIN_POLICY__EXTRA:
-      TITLE: Настройки домена
     LOGIN_POLICY:
-      ADVANCED__EXTRA: Расширенный
       DESCRIPTION: Определите, как пользователи могут быть аутентифицированы, и настройте поставщиков идентификационных данных.
       DESCRIPTIONCREATEADMIN: Пользователи могут выбирать из доступных поставщиков идентификационных данных ниже.
       DESCRIPTIONCREATEMGMT: 'Пользователи могут выбирать из доступных поставщиков идентификационных данных ниже. Примечание: Вы можете использовать системных поставщиков, а также поставщиков, установленных только для вашей организации.'
-      LIFETIMEDURATIONS__EXTRA: Срок действия логина
       LIFETIME_INVALID: Форма содержит недопустимые значения.
       PROVIDER_ADDED: Поставщик идентификации активирован.
       SAVED: Успешно сохранено!
@@ -3024,15 +2952,6 @@ console:
         uk: Українська
         zh: 简体中文
       LANGUAGES_NOT_ALLOWED: 'Не разрешено:'
-      LOCALES__EXTRA:
-        de: Немецкий
-        en: Английский
-        fr: Французский
-        it: Итальянский
-        pl: Польский
-        ru: Русский
-        zh: 简体中文
-      LOCALE__EXTRA: Код языка
       NEWERVERSIONEXISTS: Существует обновлённая версия
       RESET_DESCRIPTION: Вы собираетесь восстановить все значения по умолчанию. Все внесённые вами изменения будут безвозвратно удалены. Вы действительно хотите продолжить?
       RESET_TITLE: Восстановить значения по умолчанию
@@ -3060,8 +2979,6 @@ console:
         verifiedEmail: Подтверждённый адрес электронной почты
         verifiedPhone: Подтверждённый номер телефона
         verifyUrl: Проверка URL-адреса с OTP
-      DESCRIPTION__EXTRA: Определите тексты для уведомлений.
-      TITLE__EXTRA: Тексты сообщений
       TOAST:
         UPDATED: Тексты сохранены.
       TYPE: Уведомление
@@ -3091,7 +3008,6 @@ console:
       RESET_TITLE: Восстановить значения по умолчанию
       SAVED: Успешно сохранено!
       SUPPORTEMAIL: Электронная почта поддержки
-      TITLE__EXTRA: Политика конфиденциальности и Пользовательское соглашение
       TOSLINK: Ссылка на Пользовательское соглашение
     PRIVATELABELING:
       ACTIVATED: Изменения уже актуальны
@@ -3128,7 +3044,6 @@ console:
         THEME_MODE_AUTO__MISSING: Auto Mode
         THEME_MODE_DARK__MISSING: Dark Mode only
         THEME_MODE_LIGHT__MISSING: Light Mode only
-      TITLE__EXTRA: Брендинг
       USEOFLOGO: Ваш логотип будет использоваться при входе в систему, а также в электронных письмах, а иконка используется для небольших элементов пользовательского интерфейса, например, в переключателе организации в консоли управления.
       VIEWS:
         CURRENT: Текущая конфигурация
@@ -3153,7 +3068,6 @@ console:
       DESCRIPTION: Установите максимальное количество попыток ввода пароля, после которого учётные записи будут заблокированы.
       TITLE: Политика блокировки
     RESET: Сбросить значение по умолчанию для экземпляра
-    TITLE__EXTRA: Изучите настройки
     TOAST:
       DELETESUCCESS: Удалено успешно!
       RESETSUCCESS: Сброс политики выполнен успешно!
@@ -3172,9 +3086,7 @@ console:
         FOR_ORG: 'Разрешение проекта будет создано для:'
         ORG_DESCRIPTION: Вы собираетесь предоставить допуск пользователю для организации {{name}}.
         ORG_DESCRIPTION_DESC: Переключите окружение в заголовке выше, чтобы предоставить допуск пользователю для другой организации.
-        ORG_TITLE__EXTRA: Организация
         SEL_ORG: Установить домен
-        SEL_ORG_BUTTON__EXTRA: Поиск организации
         SEL_ORG_DESC: Введите домен, чтобы определить организацию для предоставления допуска.
         SEL_ORG_FORMFIELD: Домен
         SEL_PROJECT: Поиск проекта
@@ -3264,8 +3176,6 @@ console:
           TITLE: Восстановить проект
       ID: ID проекта
       LASTMODIFIED: 'Последнее изменение:'
-      LISTDESCRIPTION__EXTRA: Если вы не можете найти проект, обратитесь к владельцу проекта или другому лицу с соответствующими правами, чтобы получить доступ к проекту.
-      LIST__EXTRA: Проекты
       NOITEMS: Нет проектов
       PINNED: Закреплено
       PRIVATELABEL:
@@ -3371,7 +3281,6 @@ console:
       CHANGE:
         DESCRIPTION__MISSING: Choose one of the available frameworks for quick setup of your application.
         TITLE: Рамки изменений
-        ОПИСАНИЕ__EXTRA: Выберите один из доступных фреймворков для быстрой настройки вашего приложения
     DUPLICATEAPPRENAME: Приложение с таким названием уже существует. Пожалуйста, выберите другое имя.
     FRAMEWORK: Рамка
     FRAMEWORK_OTHER: Другое (OIDC, SAML, API)
@@ -3381,7 +3290,6 @@ console:
     REVIEWCONFIGURATION_DESCRIPTION: Мы создали базовую конфигурацию для {{value}} приложений. После создания вы можете адаптировать эту конфигурацию под свои нужды.
     SELECT_FRAMEWORK: Выбрать фреймворк
     TITLE: Интегрируйте Zitadel в свое приложение
-    ОПИСАНИЕ__EXTRA: Интегрируйте Zitadel в свое приложение или воспользуйтесь одним из наших образцов, чтобы начать работу за считанные минуты
   RESOURCEID: ID Ресурса
   ROLES:
     DIALOG:
@@ -3455,14 +3363,6 @@ console:
         uk: Українська
         zh: 简体中文
       SETASDEFAULT: Установить как язык по умолчанию
-    OIDC__EXTRA:
-      ACCESSTOKENLIFETIME: Срок действия токена доступа
-      IDTOKENLIFETIME: Срок действия ID Токена
-      INDAYS: Дни
-      INHOURS: часы
-      REFRESHTOKENEXPIRATION: Обновить срок действия токена
-      REFRESHTOKENIDLEEXPIRATION: Обновить срок действия Idle токена
-      TITLE: Настройки протокола аутентификации (OIDC)
     SECRETS:
       EXPIRY: Срок действия (в минутах)
       INCLUDEDIGITS: Содержит цифры
@@ -3470,7 +3370,6 @@ console:
       INCLUDESYMBOLS: Содержит символы
       INCLUDEUPPERLETTERS: Содержит заглавные буквы
       LENGTH: Длина
-      TITLE__EXTRA: Отображение ключа
       TYPE:
         "1": Инициализация адреса электронной почты
         "2": Подтверждение адреса электронной почты
@@ -3485,7 +3384,6 @@ console:
       UPDATED: Настройки обновлены.
     SECURITY:
       ALLOWEDORIGINS: Разрешённые URL-адреса
-      DESCRIPTION__EXTRA: Данный параметр согласно политике защиты содержимого (CSP) позволяет осуществлять кадрирование из набора разрешённых доменов. Обратите внимание, что, включив использование iFrames, вы рискуете разрешить атаки типа кликджекинг.
       IFRAMEDESCRIPTION__MISSING: This setting sets the CSP to allow framing from a set of allowed domains. Note that by enabling the use of iFrames, you run the risk of allowing clickjacking.
       IFRAMEENABLED: Разрешить iFrame
       IFRAMETITLE__MISSING: iFrame
@@ -3505,7 +3403,6 @@ console:
         "0": Не определён
         "1": Активен
         "2": Неактивен
-      TITLE__EXTRA: Настройки СМС
       TWILIO:
         ADDED: Twilio успешно добавлен.
         CHANGETOKEN: Изменить токен
@@ -3573,9 +3470,6 @@ console:
       VERIFIED_DOMAINS: Домен организации
       VIEWS: Отображение
       WEB_KEYS: OIDC Web Keys
-    ORG__EXTRA:
-      DESCRIPTION: Данные настройки расширяют и перезаписывают настройки вашего экземпляра.
-      TITLE: Настройки организации
   SMTP:
     CREATE:
       DESCRIPTION: Выберите одного или нескольких из следующих поставщиков.
@@ -3820,13 +3714,9 @@ console:
       DELETEACCOUNT_BTN: Удалить учётную запись
       DELETEACCOUNT_DESC: Если вы выполните данное действие, вы выйдете из системы и больше не будете иметь доступа к своей учетной записи. Данное действие не может быть отменено!
       DELETEACCOUNT_SUCCESS: Учётная запись успешно удалена!
-      DESCRIPTIONMACHINE__EXTRA: Создание и управление служебными пользователями вашей организации
-      DESCRIPTION__EXTRA: Создавайте новых пользователей в своей организации и управляйте существующими.
       DETAIL: Детали
       FILTER: Фильтр
       GENERATESECRET: Создать клиентский ключ
-      LISTMACHINE__EXTRA: Служебные пользователи
-      LIST__EXTRA: Пользователи
       LOCKEDDESCRIPTION: Данный пользователь был заблокирован из-за превышения максимального количества попыток входа в систему и должен быть разблокирован, чтобы использовать его снова.
       LOGINMETHODS: Способы логина
       LOGINNAMES: Логин
@@ -3847,7 +3737,6 @@ console:
       MINLENGTHERROR: Должно быть не менее {{value}} символов.
       NEW: Новый пароль
       NEWINITIAL: Пароль
-      NOTEQUAL__EXTRA: Указанные пароли не совпадают.
       OLD: Текущий пароль
       REQUIRED: Отсутствуют некоторые обязательные поля.
       RESENDNOTIFICATION: Отправить ссылку для сброса пароля
@@ -3993,9 +3882,6 @@ console:
         "3": Фильтр по имени пользователя
         "4": Фильтр по электронной почте
         "5": Фильтр по отображаемому имени
-      TYPES__EXTRA:
-        HUMAN: Пользователи
-        MACHINE: Служебные пользователи
     TARGET:
       CLICKHERE: Нажмите сюда
       EXTERNAL: Чтобы предоставить пользователю вашей организации
@@ -4030,16 +3916,6 @@ console:
       U2FREMOVED: Фактор удалён.
       UNLOCKED: Пользователь успешно разблокирован!
       USERNAMECHANGED: Имя пользователя изменено.
-    VALIDATION__EXTRA:
-      INVALIDPATTERN: Пароль не соответствует установленным требованиям.
-      LOWERCASEMISSING: Должен содержать символ нижнего регистра.
-      MINLENGTH: Пароль должен содержать не менее {{requiredLength}} символов.
-      NOEMAIL: Имя пользователя не может быть адресом электронной почты.
-      NOTANEMAIL: Введённое значение не является адресом электронной почты
-      NUMBERERROR: Должен содержать цифру.
-      REQUIRED: Поле ввода пустое.
-      SYMBOLERROR: Должен содержать символ или знак препинания.
-      UPPERCASEMISSING: Должен содержать символ верхнего регистра.
   VERSION: Версия
 login_v1:
   DeviceAuth:
@@ -4166,32 +4042,12 @@ login_v1:
         NotChanged: Телефон не менялся
         NotFound: Телефон не найден
       Profile:
-        Address__EXTRA:
-          NotChanged: Адрес не изменился
-          NotFound: Адрес не найден
-        Email__EXTRA:
-          AlreadyVerified: Электронная почта уже подтверждена
-          Empty: Электронная почта не указана
-          IDMissing: Отсутствует идентификатор электронной почты
-          Invalid: Некорректный адрес электронной почты
-          NotChanged: Адрес электронной почты не изменился
-          NotFound: Электронная почта не найдена
         Empty: Профиль пуст
         FirstNameEmpty: Имя в профиле пустое
         IDMissing: Отсутствует идентификатор профиля
         LastNameEmpty: Фамилия в профиле пустая
         NotChanged: Профиль не изменен
         NotFound: Профиль не найден
-        Phone__EXTRA:
-          AlreadyVerified: Номер телефона уже подтвержден
-          Empty: Номер телефона не указан
-          Invalid: Неверный номер телефона
-          NotChanged: Номер телефона не изменился
-          NotFound: Номер телефона не найден
-        Username__EXTRA:
-          AlreadyExists: Логин уже занят
-          Empty: Логин не указан
-          Reserved: Логин уже занят
       ProjectRequired: Вход невозможен. Организация пользователя должна иметь доступ к проекту. Обратитесь к администратору.
       SomethingWentWrong: Что-то пошло не так
       UserIDMissing: Не указан UserID

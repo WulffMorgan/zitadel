@@ -1358,8 +1358,6 @@ common:
           removed: OTP de autenticação multifator removido
           verified: OTP de autenticação multifator verificado
       password:
-        change__EXTRA:
-          sent: Alteração de senha enviada
         changed: Senha alterada
         check:
           failed: Verificação de senha falhou
@@ -1367,8 +1365,6 @@ common:
         code:
           added: Código de senha gerado
           sent: Código de senha enviado
-        hash__EXTRA:
-          updated: Hash da senha atualizado
       pat:
         added: Token de Acesso Pessoal adicionado
         removed: Token de Acesso Pessoal removido
@@ -1377,7 +1373,6 @@ common:
         code:
           added: Código de verificação do número de telefone gerado
           sent: Código de verificação do número de telefone enviado
-        removed__EXTRA: Número de telefone removido
         verification:
           failed: Falha na verificação do número de telefone
         verified: Número de telefone verificado
@@ -2786,7 +2781,6 @@ console:
       "0": Não definido
       "1": Ativa
       "2": Desativada
-      3__EXTRA: Removida
     TOAST:
       DEACTIVATED: Organização desativada.
       DEFAULTORGNOTFOUND: A organização padrão não foi encontrada
@@ -3092,9 +3086,7 @@ console:
         FOR_ORG: 'A concessão do projeto será criada para:'
         ORG_DESCRIPTION: Você está prestes a conceder um usuário para a organização {{name}}.
         ORG_DESCRIPTION_DESC: Altere o contexto no cabeçalho acima para conceder um usuário para outra organização.
-        ORG_TITLE__EXTRA: Organização
         SEL_ORG: Definir o domínio
-        SEL_ORG_BUTTON__EXTRA: Buscar Organização
         SEL_ORG_DESC: Insira o domínio completo para especificar a organização a ser concedida.
         SEL_ORG_FORMFIELD: Domínio Completo
         SEL_PROJECT: Buscar um projeto
@@ -3284,12 +3276,10 @@ console:
     BTN_START: Criar aplicação
     CREATEPROJECTFORAPP: Criar projeto {{value}}
     DESCRIPTION__MISSING: Integrate Zitadel into your application or use one of our samples to get started in minutes.
-    DESCRIÇÃO__EXTRA: Integre a Zitadel na sua aplicação ou utilize uma das nossas amostras para começar em minutos.
     DEVMODEWARN: O modo Dev está habilitado por padrão. Você pode atualizar os valores para produção posteriormente.
     DIALOG:
       CHANGE:
         DESCRIPTION__MISSING: Choose one of the available frameworks for quick setup of your application.
-        DESCRIÇÃO__EXTRA: Escolha uma das estruturas disponíveis para uma configuração rápida da sua aplicação.
         TITLE: Alterar Quadro
     DUPLICATEAPPRENAME: Já existe um aplicativo com o mesmo neme. Escolha um nome diferente.
     FRAMEWORK: Estrutura
@@ -3340,7 +3330,6 @@ console:
         ENABLED: Habilitado
         INHERITED: Herdade
       USERSCHEMA: Esquema de Usuário
-      USERSCHEMAS_DESCRIPTION__EXTRA: Esquemas de Usuário permitem gerenciar esquemas de dados do usuário. Se o sinalizador estiver ativado, você poderá usar a nova API e seus recursos.
       USERSCHEMA_DESCRIPTION__MISSING: User Schemas allow to manage data schemas of user. If the flag is enabled, you'll be able to use the new API and its features.
     LANGUAGES:
       ALLOWED: Idiomas Permitidos
@@ -3837,7 +3826,6 @@ console:
       PREFERRED_LANGUAGE: Idioma
       SEND_EMAIL: Enviar E-mail
       SEND_SMS: Enviar SMS de verificação
-      SENHA__EXTRA: Senha
       TITLE: Perfil
       USERNAME: Nome de Usuário
     RESENDEMAILNOTIFICATION: Reenviar notificação por e-mail

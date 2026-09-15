@@ -1320,8 +1320,6 @@ common:
           released: Nome utente rilasciato
           reserved: Nome utente riservato
       impersonated: Utente impersonificato
-      init__EXTRA:
-        skipped: Inizializzazione saltata
       initialization:
         check:
           failed: Controllo dell'inizializzazione fallito
@@ -1375,7 +1373,6 @@ common:
         code:
           added: Codice del numero di telefono generato
           sent: Codice del numero di telefono inviato
-        removed__EXTRA: Codice del numero di telefono rimosso
         verification:
           failed: Verifica del numero di telefono non riuscita
         verified: Numero di telefono verificato
@@ -2289,7 +2286,6 @@ console:
       "4": Arrestata
     TOAST:
       DEACTIVATED: Disattivato
-      DELETED__EXTRA: Organizzazione cancellata con successo
       MEMBERADDED: L'amministratore è stato aggiunto con successo.
       MEMBERCHANGED: Amministratore cambiato.
       MEMBERREMOVED: Amministratore rimosso.
@@ -2370,9 +2366,6 @@ console:
       OAUTH__MISSING:
         DESCRIPTION__MISSING: Enter the required data for your OAuth provider.
         TITLE__MISSING: OAuth Provider
-      OAuth__EXTRA:
-        DESCRIPTION: Inserisci i dati necessari per il tuo provider OAuth.
-        TITLE: OAuth Provider
       OIDC:
         DESCRIPTION: Inserisci i dati necessari per il tuo provider OIDC.
         TITLE: OIDC Provider
@@ -2495,10 +2488,6 @@ console:
       SELECTEDREACTIVATED: IDP selezionati riattivati.
     TOKENENDPOINT: Token Endpoint
     TYPE: Tipo
-    TYPES__EXTRA:
-      "0": sconosciuto
-      "1": OIDC
-      "3": JWT
     UPDATEBINDPASSWORD: aggiorna Bind Password
     UPDATECLIENTSECRET: Aggiorna secret
     USEPKCE: Usa PKCE

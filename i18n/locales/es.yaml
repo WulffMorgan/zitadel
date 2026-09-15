@@ -1373,7 +1373,6 @@ common:
         code:
           added: Código de número de teléfono generado
           sent: Código de número de teléfono enviado
-        removed__EXTRA: Código de número de teléfono eliminado
         verification:
           failed: Verificación fallida del número de teléfono
         verified: Número de teléfono verificado
@@ -2760,7 +2759,6 @@ console:
         VERIFICATION_HTTP_DESC: Si tienes acceso al alojamiento de su sitio web, simplemente descarga el archivo de verificación y cárgalo en la URL proporcionada.
         VERIFICATION_HTTP_FILE_LABEL: 'Fichero de verificación:'
         VERIFICATION_HTTP_URL_LABEL: 'URL esperada:'
-        VERIFICATION_NEWTOKEN_DESC__EXTRA: Si deseas solicitar un nuevo token, selecciona tu método preferido. Si desea validar un token persistente, haga clic en el botón de arriba.
         VERIFICATION_NEWTOKEN_TITLE: Solicitar nuevo token
         VERIFICATION_SKIP: Puedes omitir la verificación por ahora y continuar creando tu organización, pero para poder usar este dominio debes completar este paso.
         VERIFICATION_SUCCESSFUL: ¡Dominio verificado con éxito!
@@ -3280,9 +3278,6 @@ console:
     DESCRIPTION: Integra Zitadel en tu aplicación o utiliza uno de nuestros ejemplos para empezar en cuestión de minutos
     DEVMODEWARN: El modo de desarrollo está habilitado de forma predeterminada. Puede actualizar los valores para la producción más adelante.
     DIALOG:
-      CAMBIAR__EXTRA:
-        DESCRIPTION: Elige uno de los frameworks disponibles para configurar rápidamente tu aplicación.
-        TITLE: Cambio framework
       CHANGE__MISSING:
         DESCRIPTION__MISSING: Choose one of the available frameworks for quick setup of your application.
         TITLE__MISSING: Change Framework

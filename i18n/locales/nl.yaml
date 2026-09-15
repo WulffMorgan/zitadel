@@ -1373,7 +1373,6 @@ common:
         code:
           added: Telefoonnummercode gegenereerd
           sent: Telefoonnummercode verzonden
-        removed__EXTRA: Telefoonnummer verwijderd
         verification:
           failed: Telefoonnummer verificatie mislukt
         verified: Telefoonnummer geverifieerd
@@ -2401,7 +2400,6 @@ console:
     FIRSTNAMEATTRIBUTE: Voornaam attribuut
     ID: ID van identiteitsprovider
     IDATTRIBUTE: ID Attribuut
-    IDPDISPLAYNAMEMAPPING__EXTRA: IDP Weergavenaam Mapping
     IDPDISPLAYNAMMAPPING__MISSING: IdP Display Name Mapping
     INSTANCEROLESINFO: Toewijzing van instantierollen
     INSTANCEROLESINFO_DESC: Gebruikers die zich via deze provider authenticeren, krijgen de instantielidrollen (IAM_-prefix) die ze hebben in de vermelde organisaties van de externe ZITADEL-instantie. Het organisatie-ID en het primaire domein moeten beide overeenkomen.
@@ -4113,7 +4111,6 @@ login_v1:
     LanguageLabel: Taal
     LastnameLabel: Achternaam
     Macedonian: Македонски
-    Nederlands__EXTRA: Nederlands
     NextButtonText: Opslaan
     NicknameLabel: Bijnaam
     PhoneLabel: Telefoonnummer

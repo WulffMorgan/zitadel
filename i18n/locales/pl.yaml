@@ -449,7 +449,6 @@ common:
       Invalid:
         Amount: Wysokość limitu jest mniejsza niż 1
         CallURL: Adres URL połączenia z limitem jest nieprawidłowy
-        Interval__EXTRA: Interwał limitu jest krótszy niż minuta
         Noop: Nieograniczony limit bez powiadomień nie ma żadnego wpływu
         Percent: Wartość procentowa limitu jest niższa niż 1
         ResetInterval__MISSING: Quota reset interval is shorter than a minute
@@ -1374,7 +1373,6 @@ common:
         code:
           added: Wygenerowano kod numeru telefonu
           sent: Wysłano kod numeru telefonu
-        removed__EXTRA: Usunięto numer telefonu
         verification:
           failed: Weryfikacja numeru telefonu nie powiodła się
         verified: Numer telefonu zweryfikowany
@@ -2490,10 +2488,6 @@ console:
       SELECTEDREACTIVATED: Wybrani dostawcy tożsamości odnowieni.
     TOKENENDPOINT: Token Endpoint
     TYPE: Typ
-    TYPES__EXTRA:
-      "0": nieznany
-      "1": OIDC
-      "3": JWT
     UPDATEBINDPASSWORD: aktualizacja bind password
     UPDATECLIENTSECRET: aktualizacja tajemnicy klienta
     USEPKCE: Skorzystaj z PKCE

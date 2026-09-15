@@ -418,8 +418,7 @@ common:
         AlreadyExists: Le membre du projet existe déjà
         Invalid: Le membre du projet n'est pas valide
         NotExisting: Le membre du projet n'existe pas
-        NotFound__MISSING: null
-        Notfound__EXTRA: Membre du projet non trouvé
+        NotFound: Membre du projet non trouvé
       MinimumOneRoleNeeded: Au moins un rôle doit être ajouté
       NotActive: Le projet n'est pas actif
       NotFound: Projet non trouvé
@@ -633,7 +632,6 @@ common:
         Invalid: Le téléphone n'est pas valide
         NotChanged: Téléphone n'a pas changé
         NotFound__MISSING: Phone not found
-        Notfound__EXTRA: Téléphone non trouvé
         VerifyingRemovalIsNotSupported: La vérification de la suppression n'est pas prise en charge
       Profile:
         Empty: Profil est vide
@@ -733,9 +731,6 @@ common:
           config:
             added: Ajout de la configuration SAML IDP
             changed: La configuration SAML IDP a été modifiée
-      lockout__EXTRA:
-        iam:
-          set: set du projet Zitadel
       member:
         added: Zitadel membre ajouté
         cascade:
@@ -1127,9 +1122,6 @@ common:
             check__MISSING:
               failed__MISSING: OIDC Client Secret check failed
               succeeded__MISSING: OIDC Client Secret check succeeded
-            verified__EXTRA:
-              check: Vérification du secret du client OIDC réussie
-              failed: La vérification du secret du client OIDC a échoué
         reactivated: Application réactivée
         removed: Application supprimée
       changed: Projet modifié
@@ -1215,8 +1207,6 @@ common:
           id__MISSING:
             migrated__MISSING: External UserID of IDP was migrated
           removed: Externer IDP supprimé
-          îd__EXTRA:
-            migrated: L'ID utilisateur externe de l'IDP a été migré
         externallogin:
           check:
             succeeded: Connexion externe réussie
@@ -1707,7 +1697,6 @@ console:
       IOSAPPLINKINCOMPLETE: L'ID d'équipe iOS et le Bundle ID doivent tous deux être renseignés, ou tous deux laissés vides.
       IOSDESC: Servi dans apple-app-site-association comme entrée webcredentials TEAMID.BUNDLEID.
       IOSTITLE: iOS
-      NAMEANDTYPESECTION__EXTRA: Nom et type
       NOTRECOMMENDED: non recommandé
       OVERVIEWSECTION: Vue d'ensemble
       OVERVIEWTITLE: Vous avez maintenant terminé. Revoyez vos paramètres.
@@ -1716,7 +1705,6 @@ console:
       PACKAGENAMEPLACEHOLDER: com.example.app
       POSTLOGOUTREDIRECT: URIs de post-déconnexion
       POSTREDIRECTTITLE: Il s'agit de l'URI de redirection après la déconnexion.
-      PROSWITCH__EXTRA: Je suis un pro. Sautez cet assistant.
       RECOMMENDED: recommandé
       REDIRECT: Rediriger les URIs
       REDIRECTDESCRIPTIONNATIVE: Les URIs de redirection doivent commencer par votre propre protocole, http://127.0.0.1, http://[::1] ou http://localhost.
@@ -1751,13 +1739,11 @@ console:
       TEAMIDLENGTH: L'ID d'équipe doit comporter exactement 10 caractères alphanumériques.
       TEAMIDPLACEHOLDER: ABCDE12345
       TITLE: Paramètres OIDC
-      TITLEFIRST__EXTRA: Commencez par insérer un nom.
       TOKENSECTIONTITLE: Options AuthToken
       TOKENTYPE: Auth Token Type
       TOKENTYPE0: Bearer Token
       TOKENTYPE1: JWT
       TYPEREQUIRED: Le type est obligatoire.
-      TYPETITLE__EXTRA: Quel type d'application voulez-vous créer ?
       UNSECUREREDIRECT: J'espère que vous savez ce que vous faites.
       WELLKNOWN: Pour plus d'informations, consultez le <a href='{{url}}' title='Discovery endpoint' target='_blank'>discovery endpoint</a>.
     ORIGINS: Origines
@@ -2380,9 +2366,6 @@ console:
       OAUTH__MISSING:
         DESCRIPTION__MISSING: Enter the required data for your OAuth provider.
         TITLE__MISSING: OAuth Provider
-      OAuth__EXTRA:
-        DESCRIPTION: Entrez les données requises pour votre fournisseur OAuth.
-        TITLE: Fournisseur OAuth
       OIDC:
         DESCRIPTION: Entrez les données requises pour votre fournisseur OIDC.
         TITLE: Fournisseur OIDC
@@ -2505,10 +2488,6 @@ console:
       SELECTEDREACTIVATED: Idps sélectionnés réactivés.
     TOKENENDPOINT: Token Endpoint
     TYPE: Type
-    TYPES__EXTRA:
-      "0": inconnu
-      "1": OIDC
-      "3": JWT
     UPDATEBINDPASSWORD: mettre à jour le mot de passe Bind
     UPDATECLIENTSECRET: mettre à jour le secret client
     USEPKCE: Utiliser PKCE
@@ -4061,8 +4040,7 @@ login_v1:
         Empty: Téléphone est vide
         Invalid: Le téléphone n'est pas valide
         NotChanged: Téléphone n'a pas changé
-        NotFound__MISSING: Phone not found
-        Notfound__EXTRA: Téléphone non trouvé
+        NotFound: Téléphone non trouvé
       Profile:
         Empty: Profil est vide
         FirstNameEmpty: Le prénom dans le profil est vide

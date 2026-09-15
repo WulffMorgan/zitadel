@@ -1372,7 +1372,6 @@ common:
         changed: 更改手机号码
         code:
           added: 生成的手机号码验证码
-          removed__EXTRA: 电话号码已删除
           sent: 发送手机号码验证码
         verification:
           failed: 手机号码验证失败
@@ -1698,7 +1697,6 @@ console:
       IOSAPPLINKINCOMPLETE: iOS Team ID 与 Bundle ID 必须同时填写，或同时留空。
       IOSDESC: 在 apple-app-site-association 中作为 webcredentials 条目 TEAMID.BUNDLEID 提供。
       IOSTITLE: iOS
-      NAMEANDTYPESECTION__EXTRA: 名称和类型
       NOTRECOMMENDED: 不推荐的
       OVERVIEWSECTION: 概览
       OVERVIEWTITLE: 你现在完成了。检查您的配置。
@@ -1707,7 +1705,6 @@ console:
       PACKAGENAMEPLACEHOLDER: com.example.app
       POSTLOGOUTREDIRECT: 退出登录重定向 URLs
       POSTREDIRECTTITLE: 这是退出登录后的重定向 URL。
-      PROSWITCH__EXTRA: 我是专业人士。跳过此向导。
       RECOMMENDED: 推荐的
       REDIRECT: 重定向 URLs
       REDIRECTDESCRIPTIONNATIVE: 重定向 URI 必须以您自己的协议、http://127.0.0.1、http://[::1] 或 http://localhost 开头。
@@ -1742,13 +1739,11 @@ console:
       TEAMIDLENGTH: Team ID 必须恰好为 10 个字母或数字。
       TEAMIDPLACEHOLDER: ABCDE12345
       TITLE: OIDC 配置
-      TITLEFIRST__EXTRA: 先录入一个名字。
       TOKENSECTIONTITLE: AuthToken 选项
       TOKENTYPE: 身份验证令牌类型
       TOKENTYPE0: Bearer Token
       TOKENTYPE1: JWT
       TYPEREQUIRED: 类型是必填的。
-      TYPETITLE__EXTRA: 您要创建什么类型的应用程序？
       UNSECUREREDIRECT: 我当然希望你知道你在做什么。
       WELLKNOWN: 欲了解更多信息，请看<a href='{url}}' title='发现端点' target='_blank'>发现端点</a>。
     ORIGINS: 其他来源
@@ -2493,10 +2488,6 @@ console:
       SELECTEDREACTIVATED: 选定的 IDPs 已重新启用。
     TOKENENDPOINT: 令牌端点
     TYPE: 类型
-    TYPES__EXTRA:
-      "0": 未知
-      "1": OIDC
-      "3": JWT
     UPDATEBINDPASSWORD: 更新绑定密码
     UPDATECLIENTSECRET: 更新客户秘密
     USEPKCE: 使用PKCE
@@ -4090,7 +4081,6 @@ login_v1:
     PrivacyLinkText: 隐私政策
     Romanian: Română
     Russian: Русский
-    SaveButtonText__EXTRA: 创建组织
     Spanish: Español
     Swedish: Svenska
     Title: 未找到外部用户

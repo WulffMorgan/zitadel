@@ -637,7 +637,6 @@ common:
         Empty: プロファイルが空です
         FirstNameEmpty: 名前が空です
         IDMissing: プロファイルIDが不足しています
-        Invalid__EXTRA: プロファイルデータが無効です
         LastNameEmpty: 姓が空です
         NotChanged: プロファイルが変更されていません
         NotFound: プロファイルが見つかりません

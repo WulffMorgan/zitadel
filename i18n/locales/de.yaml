@@ -1373,7 +1373,6 @@ common:
         code:
           added: Telefon Code hinzugefügt
           sent: Telefon Code versendet
-        removed__EXTRA: Telefonnummer gelöscht
         verification:
           failed: Verifikation der Telefonnummer fehlgeschlagen
         verified: Telefonnummer verifiziert
@@ -2424,9 +2423,6 @@ console:
     NAME: Name
     NAMEHINT: Wenn angegeben, wir er im Login interface angezeigt.
     NICKNAMEATTRIBUTE: Nickname attribute
-    OAUTH__EXTRA:
-      DESCRIPTION: Geben Sie die Daten OAuth Identity Providers ein.
-      TITLE: OAuth Konfiguration
     OIDC:
       DESCRIPTION: Geben Sie die Daten OIDC Identitätsanbieter ein.
       GENERAL__MISSING: null
@@ -2492,10 +2488,6 @@ console:
       SELECTEDREACTIVATED: Selektierte IDPs reaktiviert.
     TOKENENDPOINT: Token Endpoint
     TYPE: Typ
-    TYPES__EXTRA:
-      "0": unknown
-      "1": OIDC
-      "3": JWT
     UPDATEBINDPASSWORD: Bind Password updaten
     UPDATECLIENTSECRET: Client Secret updaten
     USEPKCE: Verwenden Sie PKCE
@@ -3297,7 +3289,6 @@ console:
     REVIEWCONFIGURATION: Konfiguration überprüfen
     REVIEWCONFIGURATION_DESCRIPTION: Wir haben eine Grundkonfiguration für {{wert}}-Anwendungen erstellt. Du kannst diese Konfiguration nach der Erstellung an deine Bedürfnisse anpassen.
     SELECT_FRAMEWORK: Framework auswählen
-    TITEL__EXTRA: Integriere Zitadel in deine Anwendung
     TITLE__MISSING: Integrate Zitadel into your application
   RESOURCEID: Ressourcen-ID
   ROLES:

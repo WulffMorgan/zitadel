@@ -3442,9 +3442,6 @@ console:
       OTHER: Övrigt
       STORAGE: Lagring
       TEXTS: Texter och språk
-    INSTANCE__EXTRA:
-      DESCRIPTION: Dessa inställningar kommer att gälla för alla dina organisationer om de inte har åsidosatts.
-      TITLE: Instansinställningar
     LIST:
       ACTIONS__MISSING: Actions
       AGE: Lösenordets utgång
@@ -3974,10 +3971,6 @@ login_v1:
         NotChanged: Adress oförändrad
         NotFound: Adress saknas
       AlreadyExists: Användaren finns redan
-      Användarnamn__EXTRA:
-        AlreadyExists: Användarnamnet finns redan
-        Empty: Användarnamnet är tomt
-        Reserved: Användarnamnet är upptaget
       Code:
         CryptoCodeNil: Cryptokoden är tom
         Empty: Koden är tom
@@ -3986,13 +3979,6 @@ login_v1:
         Invalid: Koden är felaktig
         NotFound: Koden hittades inte
       DomainNotAllowedAsUsername: Domänen är reserverad och kan inte användas
-      E-Post__EXTRA:
-        AlreadyVerified: E-Posten är redan bekräftad
-        Empty: E-Post tomt
-        IDMissing: E-Post ID saknas
-        Invalid: E-Post är felaktig
-        NotChanged: E-Posten oförändrad
-        NotFound: E-Post finns inte
       Email:
         AlreadyVerified: E-post är redan verifierad
         Empty: E-post är tom
@@ -4022,12 +4008,6 @@ login_v1:
       Inactive: Användaren är inaktiverad
       Invalid: Felaktiga userdata
       Locked: Användaren är spärrad
-      Lösenord__EXTRA:
-        ConfirmationWrong: Lösenorden stämmer inte överens
-        Empty: Lösenordet är tomt
-        Invalid: Lösenordet är ogiltigt
-        InvalidAndLocked: Lösenordet är ogiltigt och användaren är spärrad. Ta kontakt med systemansvarig.
-        NotChanged: Ditt nya lösenord kan inte vara samma som ditt gamla lösenord
       MFA:
         NoProviders: Det finns inga MFA-leverantörer tillgängliga
         OTP:
@@ -4101,7 +4081,6 @@ login_v1:
     PrivacyLinkText: personuppgiftspolicyn
     Romanian: Română
     Russian: Русский
-    SaveButtonText__EXTRA: Skapa organisation
     Spanish: Español
     Swedish: Svenska
     Title: Det finns inget konto
