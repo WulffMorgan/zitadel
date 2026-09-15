@@ -2529,13 +2529,13 @@ console:
     fr: Français
     hu: Magyar
     id: Bahasa Indonesia
-    it: Италиано
+    it: Italiano
     ja: 日本語
     ko: 한국어
     mk: Македонски
     nl: Nederlands
-    pl: Полски
-    pt: португалски
+    pl: Polski
+    pt: Português
     ro: Română
     ru: Русский
     sv: Svenska
@@ -2936,20 +2936,20 @@ console:
       LANGUAGES:
         ar: العربية
         bg: Български
-        cs: Чеština
+        cs: Čeština
         de: Deutsch
         en: English
         es: Español
         fr: Français
         hu: Magyar
         id: Bahasa Indonesia
-        it: Италиано
+        it: Italiano
         ja: 日本語
         ko: 한국어
         mk: Македонски
         nl: Nederlands
-        pl: Полски
-        pt: Portuguese
+        pl: Polski
+        pt: Português
         ro: Română
         ru: Русский
         sv: Svenska
@@ -3357,13 +3357,13 @@ console:
         fr: Français
         hu: Magyar
         id: Bahasa Indonesia
-        it: Италиано
+        it: Italiano
         ja: 日本語
         ko: 한국어
         mk: Македонски
         nl: Nederlands
-        pl: Полски
-        pt: Portuguese
+        pl: Polski
+        pt: Português
         ro: Română
         ru: Русский
         sv: Svenska

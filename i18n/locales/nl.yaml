@@ -2532,7 +2532,7 @@ console:
     mk: Македонски
     nl: Nederlands
     pl: Polski
-    pt: Portuguese
+    pt: Português
     ro: Română
     ru: Русский
     sv: Svenska
@@ -2946,7 +2946,7 @@ console:
         mk: Македонски
         nl: Nederlands
         pl: Polski
-        pt: Portuguese
+        pt: Português
         ro: Română
         ru: Русский
         sv: Svenska
@@ -3346,7 +3346,7 @@ console:
         bg: Български
         cs: Čeština
         de: Deutsch
-        en: Engels
+        en: English
         es: Español
         fr: Français
         hu: Magyar
@@ -3357,7 +3357,7 @@ console:
         mk: Македонски
         nl: Nederlands
         pl: Polski
-        pt: Portugees
+        pt: Português
         ro: Română
         ru: Русский
         sv: Svenska

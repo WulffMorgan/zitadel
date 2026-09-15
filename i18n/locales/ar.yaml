@@ -2533,12 +2533,12 @@ console:
     mk: Македонски
     nl: Nederlands
     pl: Polski
-    pt: Portuguese
+    pt: Português
     ro: Română
     ru: Русский
     sv: Svenska
     tr: Türkçe
-    uk__MISSING: Українська
+    uk: Українська
     zh: 简体中文
   LOGINPOLICY:
     ADDIDP:
@@ -2947,12 +2947,12 @@ console:
         mk: Македонски
         nl: Nederlands
         pl: Polski
-        pt: Portuguese
+        pt: Português
         ro: Română
         ru: Русский
         sv: Svenska
         tr: Türkçe
-        uk__MISSING: null
+        uk: Українська
         zh: 简体中文
       LANGUAGES_NOT_ALLOWED: 'غير مسموح:'
       NEWERVERSIONEXISTS: يوجد إصدار أحدث
@@ -3358,12 +3358,12 @@ console:
         mk: Македонски
         nl: Nederlands
         pl: Polski
-        pt: Portuguese
+        pt: Português
         ro: Română
         ru: Русский
         sv: Svenska
         tr: Türkçe
-        uk__MISSING: null
+        uk: Українська
         zh: 简体中文
       SETASDEFAULT: تعيين كلغة افتراضية
     SECRETS:
@@ -4088,7 +4088,7 @@ login_v1:
     TosConfirm: أنا أقبل
     TosLinkText: شروط الخدمة
     Turkish: Türkçe
-    Ukrainian__MISSING: Українська
+    Ukrainian: Українська
   ExternalRegistrationUserOverview:
     Arabic: العربية
     BackButtonText: رجوع
@@ -4127,7 +4127,7 @@ login_v1:
     TosConfirm: أنا أقبل
     TosLinkText: شروط الخدمة
     Turkish: Türkçe
-    Ukrainian__MISSING: Українська
+    Ukrainian: Українська
     UsernameLabel: اسم المستخدم
   Footer:
     Help: مساعدة
@@ -4376,7 +4376,7 @@ login_v1:
     TosConfirm: أنا أقبل
     TosLinkText: شروط الخدمة
     Turkish: Türkçe
-    Ukrainian__MISSING: Українська
+    Ukrainian: Українська
     UsernameLabel: اسم المستخدم
   SelectAccount:
     Description: استخدم حسابك
