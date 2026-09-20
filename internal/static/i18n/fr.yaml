@@ -416,7 +416,7 @@ Errors:
       AlreadyExists: Le membre du projet existe déjà
       Invalid: Le membre du projet n'est pas valide
       NotExisting: Le membre du projet n'existe pas
-      Notfound: Membre du projet non trouvé
+      NotFound: Membre du projet non trouvé
     MinimumOneRoleNeeded: Au moins un rôle doit être ajouté
     NotActive: Le projet n'est pas actif
     NotFound: Projet non trouvé
@@ -625,7 +625,6 @@ Errors:
       Empty: Téléphone est vide
       Invalid: Le téléphone n'est pas valide
       NotChanged: Téléphone n'a pas changé
-      Notfound: Téléphone non trouvé
       VerifyingRemovalIsNotSupported: La vérification de la suppression n'est pas prise en charge
     Profile:
       Empty: Profil est vide
@@ -725,9 +724,6 @@ EventTypes:
         config:
           added: Ajout de la configuration SAML IDP
           changed: La configuration SAML IDP a été modifiée
-    lockout:
-      iam:
-        set: set du projet Zitadel
     member:
       added: Zitadel membre ajouté
       cascade:
@@ -1115,10 +1111,7 @@ EventTypes:
         key:
           added: Clé d'application de l'OIDC ajoutée
           removed: Clé d'application de l'OIDC supprimée
-        secret:
-          verified:
-            check: Vérification du secret du client OIDC réussie
-            failed: La vérification du secret du client OIDC a échoué
+        secret: {}
       reactivated: Application réactivée
       removed: Application supprimée
     changed: Projet modifié
@@ -1202,8 +1195,6 @@ EventTypes:
         cascade:
           removed: Externer IDP cascade supprimé
         removed: Externer IDP supprimé
-        îd:
-          migrated: L'ID utilisateur externe de l'IDP a été migré
       externallogin:
         check:
           succeeded: Connexion externe réussie

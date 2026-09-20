@@ -120,7 +120,7 @@ Errors:
       Empty: Téléphone est vide
       Invalid: Le téléphone n'est pas valide
       NotChanged: Téléphone n'a pas changé
-      Notfound: Téléphone non trouvé
+      NotFound: Téléphone non trouvé
     Profile:
       Empty: Profil est vide
       FirstNameEmpty: Le prénom dans le profil est vide

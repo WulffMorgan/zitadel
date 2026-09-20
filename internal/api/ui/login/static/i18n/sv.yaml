@@ -51,10 +51,6 @@ Errors:
       NotChanged: Adress oförändrad
       NotFound: Adress saknas
     AlreadyExists: Användaren finns redan
-    Användarnamn:
-      AlreadyExists: Användarnamnet finns redan
-      Empty: Användarnamnet är tomt
-      Reserved: Användarnamnet är upptaget
     Code:
       CryptoCodeNil: Cryptokoden är tom
       Empty: Koden är tom
@@ -63,13 +59,6 @@ Errors:
       Invalid: Koden är felaktig
       NotFound: Koden hittades inte
     DomainNotAllowedAsUsername: Domänen är reserverad och kan inte användas
-    E-Post:
-      AlreadyVerified: E-Posten är redan bekräftad
-      Empty: E-Post tomt
-      IDMissing: E-Post ID saknas
-      Invalid: E-Post är felaktig
-      NotChanged: E-Posten oförändrad
-      NotFound: E-Post finns inte
     Email:
       AlreadyVerified: E-post är redan verifierad
       Empty: E-post är tom
@@ -99,12 +88,6 @@ Errors:
     Inactive: Användaren är inaktiverad
     Invalid: Felaktiga userdata
     Locked: Användaren är spärrad
-    Lösenord:
-      ConfirmationWrong: Lösenorden stämmer inte överens
-      Empty: Lösenordet är tomt
-      Invalid: Lösenordet är ogiltigt
-      InvalidAndLocked: Lösenordet är ogiltigt och användaren är spärrad. Ta kontakt med systemansvarig.
-      NotChanged: Ditt nya lösenord kan inte vara samma som ditt gamla lösenord
     MFA:
       NoProviders: Det finns inga MFA-leverantörer tillgängliga
       OTP:
@@ -174,7 +157,6 @@ ExternalNotFound:
   PrivacyLinkText: personuppgiftspolicyn
   Romanian: Română
   Russian: Русский
-  SaveButtonText: Skapa organisation
   Spanish: Español
   Swedish: Svenska
   Title: Det finns inget konto

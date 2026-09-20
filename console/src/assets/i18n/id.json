@@ -1763,7 +1763,6 @@
         "initializeDoneText": "Inisialisasi pengguna selesai",
         "initializeUserText": "Inisialisasi pengguna",
         "linkingUserDoneText": "Menautkan pengguna selesai",
-        "linkingUserPromptText": "Menautkan perintah pengguna",
         "loginText": "Login",
         "logoutText": "Keluar",
         "mfaProvidersText": "Penyedia MFA",

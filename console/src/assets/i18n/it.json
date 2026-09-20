@@ -1050,7 +1050,6 @@
     },
     "TOAST": {
       "DEACTIVATED": "Disattivato",
-      "DELETED": "Organizzazione cancellata con successo",
       "MEMBERADDED": "L'amministratore è stato aggiunto con successo.",
       "MEMBERCHANGED": "Amministratore cambiato.",
       "MEMBERREMOVED": "Amministratore rimosso.",
@@ -1137,10 +1136,6 @@
       "LDAP": {
         "DESCRIPTION": "Inserisci i dati necessari per il tuo provider LDAP.",
         "TITLE": "Active Directory / LDAP"
-      },
-      "OAuth": {
-        "DESCRIPTION": "Inserisci i dati necessari per il tuo provider OAuth.",
-        "TITLE": "OAuth Provider"
       },
       "OIDC": {
         "DESCRIPTION": "Inserisci i dati necessari per il tuo provider OIDC.",
@@ -1264,11 +1259,6 @@
     },
     "TOKENENDPOINT": "Token Endpoint",
     "TYPE": "Tipo",
-    "TYPES": {
-      "0": "sconosciuto",
-      "1": "OIDC",
-      "3": "JWT"
-    },
     "UPDATEBINDPASSWORD": "aggiorna Bind Password",
     "UPDATECLIENTSECRET": "Aggiorna secret",
     "USEPKCE": "Usa PKCE",

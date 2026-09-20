@@ -1367,7 +1367,6 @@ EventTypes:
       code:
         added: Telefon Code hinzugefügt
         sent: Telefon Code versendet
-      removed: Telefonnummer gelöscht
       verification:
         failed: Verifikation der Telefonnummer fehlgeschlagen
       verified: Telefonnummer verifiziert

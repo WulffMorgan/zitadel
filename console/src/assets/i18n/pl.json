@@ -1263,11 +1263,6 @@
     },
     "TOKENENDPOINT": "Token Endpoint",
     "TYPE": "Typ",
-    "TYPES": {
-      "0": "nieznany",
-      "1": "OIDC",
-      "3": "JWT"
-    },
     "UPDATEBINDPASSWORD": "aktualizacja bind password",
     "UPDATECLIENTSECRET": "aktualizacja tajemnicy klienta",
     "USEPKCE": "Skorzystaj z PKCE",

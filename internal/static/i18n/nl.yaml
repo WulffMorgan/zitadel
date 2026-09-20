@@ -1365,7 +1365,6 @@ EventTypes:
       code:
         added: Telefoonnummercode gegenereerd
         sent: Telefoonnummercode verzonden
-      removed: Telefoonnummer verwijderd
       verification:
         failed: Telefoonnummer verificatie mislukt
       verified: Telefoonnummer geverifieerd

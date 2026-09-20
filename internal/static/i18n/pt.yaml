@@ -1344,8 +1344,6 @@ EventTypes:
         removed: OTP de autenticação multifator removido
         verified: OTP de autenticação multifator verificado
     password:
-      change:
-        sent: Alteração de senha enviada
       changed: Senha alterada
       check:
         failed: Verificação de senha falhou
@@ -1353,8 +1351,6 @@ EventTypes:
       code:
         added: Código de senha gerado
         sent: Código de senha enviado
-      hash:
-        updated: Hash da senha atualizado
     pat:
       added: Token de Acesso Pessoal adicionado
       removed: Token de Acesso Pessoal removido
@@ -1363,7 +1359,6 @@ EventTypes:
       code:
         added: Código de verificação do número de telefone gerado
         sent: Código de verificação do número de telefone enviado
-      removed: Número de telefone removido
       verification:
         failed: Falha na verificação do número de telefone
       verified: Número de telefone verificado

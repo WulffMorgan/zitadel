@@ -1575,7 +1575,6 @@
         "VERIFICATION_HTTP_DESC": "Si tienes acceso al alojamiento de su sitio web, simplemente descarga el archivo de verificación y cárgalo en la URL proporcionada.",
         "VERIFICATION_HTTP_FILE_LABEL": "Fichero de verificación:",
         "VERIFICATION_HTTP_URL_LABEL": "URL esperada:",
-        "VERIFICATION_NEWTOKEN_DESC": "Si deseas solicitar un nuevo token, selecciona tu método preferido. Si desea validar un token persistente, haga clic en el botón de arriba.",
         "VERIFICATION_NEWTOKEN_TITLE": "Solicitar nuevo token",
         "VERIFICATION_SKIP": "Puedes omitir la verificación por ahora y continuar creando tu organización, pero para poder usar este dominio debes completar este paso.",
         "VERIFICATION_SUCCESSFUL": "¡Dominio verificado con éxito!",
@@ -2162,12 +2161,7 @@
     "CREATEPROJECTFORAPP": "Crear proyecto {{value}}",
     "DESCRIPTION": "Integra Zitadel en tu aplicación o utiliza uno de nuestros ejemplos para empezar en cuestión de minutos",
     "DEVMODEWARN": "El modo de desarrollo está habilitado de forma predeterminada. Puede actualizar los valores para la producción más adelante.",
-    "DIALOG": {
-      "CAMBIAR": {
-        "DESCRIPTION": "Elige uno de los frameworks disponibles para configurar rápidamente tu aplicación.",
-        "TITLE": "Cambio framework"
-      }
-    },
+    "DIALOG": {},
     "DUPLICATEAPPRENAME": "Ya existe una aplicación con el mismo nombre. Por favor, elige un nombre diferente.",
     "FRAMEWORK": "Framework",
     "FRAMEWORK_OTHER": "Otro (OIDC, SAML, API)",

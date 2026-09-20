@@ -1597,8 +1597,7 @@
     "STATE": {
       "0": "Não definido",
       "1": "Ativa",
-      "2": "Desativada",
-      "3": "Removida"
+      "2": "Desativada"
     },
     "TOAST": {
       "DEACTIVATED": "Organização desativada.",
@@ -1941,9 +1940,7 @@
         "FOR_ORG": "A concessão do projeto será criada para:",
         "ORG_DESCRIPTION": "Você está prestes a conceder um usuário para a organização {{name}}.",
         "ORG_DESCRIPTION_DESC": "Altere o contexto no cabeçalho acima para conceder um usuário para outra organização.",
-        "ORG_TITLE": "Organização",
         "SEL_ORG": "Definir o domínio",
-        "SEL_ORG_BUTTON": "Buscar Organização",
         "SEL_ORG_DESC": "Insira o domínio completo para especificar a organização a ser concedida.",
         "SEL_ORG_FORMFIELD": "Domínio Completo",
         "SEL_PROJECT": "Buscar um projeto",
@@ -2159,11 +2156,9 @@
     "BTN_LEARNMORE": "Saiba mais",
     "BTN_START": "Criar aplicação",
     "CREATEPROJECTFORAPP": "Criar projeto {{value}}",
-    "DESCRIÇÃO": "Integre a Zitadel na sua aplicação ou utilize uma das nossas amostras para começar em minutos.",
     "DEVMODEWARN": "O modo Dev está habilitado por padrão. Você pode atualizar os valores para produção posteriormente.",
     "DIALOG": {
       "CHANGE": {
-        "DESCRIÇÃO": "Escolha uma das estruturas disponíveis para uma configuração rápida da sua aplicação.",
         "TITLE": "Alterar Quadro"
       }
     },
@@ -2222,8 +2217,7 @@
         "ENABLED": "Habilitado",
         "INHERITED": "Herdade"
       },
-      "USERSCHEMA": "Esquema de Usuário",
-      "USERSCHEMAS_DESCRIPTION": "Esquemas de Usuário permitem gerenciar esquemas de dados do usuário. Se o sinalizador estiver ativado, você poderá usar a nova API e seus recursos."
+      "USERSCHEMA": "Esquema de Usuário"
     },
     "LANGUAGES": {
       "ALLOWED": "Idiomas Permitidos",
@@ -2774,7 +2768,6 @@
       "PREFERRED_LANGUAGE": "Idioma",
       "SEND_EMAIL": "Enviar E-mail",
       "SEND_SMS": "Enviar SMS de verificação",
-      "SENHA": "Senha",
       "TITLE": "Perfil",
       "USERNAME": "Nome de Usuário"
     },

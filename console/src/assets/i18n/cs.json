@@ -1687,7 +1687,6 @@
     "DATA": {
       "ALLOWDOMAINDISCOVERY_DESC": "Pokud je možnost vybrána, přípona (@domain.com) neznámého uživatelského jména zadávaného na přihlašovací obrazovce bude porovnána s doménami organizace a při úspěchu dojde k přesměrování na registraci dané organizace.",
       "ALLOWEXTERNALIDP_DESC": "Přihlášení je povoleno pro níže uvedené poskytovatele identity.",
-      "ALLOWREGISTER": "Registrace povolena",
       "ALLOWREGISTER_DESC": "Pokud je možnost vybrána, objeví se při přihlášení další krok pro registraci uživatele.",
       "ALLOWUSERNAMEPASSWORD_DESC": "Je povoleno klasické přihlášení s uživatelským jménem a heslem.",
       "DEFAULTREDIRECTURI": "Výchozí URI přesměrování",

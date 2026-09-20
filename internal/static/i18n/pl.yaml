@@ -447,7 +447,6 @@ Errors:
     Invalid:
       Amount: Wysokość limitu jest mniejsza niż 1
       CallURL: Adres URL połączenia z limitem jest nieprawidłowy
-      Interval: Interwał limitu jest krótszy niż minuta
       Noop: Nieograniczony limit bez powiadomień nie ma żadnego wpływu
       Percent: Wartość procentowa limitu jest niższa niż 1
       Unimplemented: Limit nie jest zaimplementowany dla tej jednostki
@@ -1367,7 +1366,6 @@ EventTypes:
       code:
         added: Wygenerowano kod numeru telefonu
         sent: Wysłano kod numeru telefonu
-      removed: Usunięto numer telefonu
       verification:
         failed: Weryfikacja numeru telefonu nie powiodła się
       verified: Numer telefonu zweryfikowany

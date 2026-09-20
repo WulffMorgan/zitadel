@@ -1311,8 +1311,6 @@ EventTypes:
         released: Nome utente rilasciato
         reserved: Nome utente riservato
     impersonated: Utente impersonificato
-    init:
-      skipped: Inizializzazione saltata
     initialization:
       check:
         failed: Controllo dell'inizializzazione fallito
@@ -1364,7 +1362,6 @@ EventTypes:
       code:
         added: Codice del numero di telefono generato
         sent: Codice del numero di telefono inviato
-      removed: Codice del numero di telefono rimosso
       verification:
         failed: Verifica del numero di telefono non riuscita
       verified: Numero di telefono verificato

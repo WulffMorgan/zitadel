@@ -2364,10 +2364,6 @@
       "STORAGE": "Lagring",
       "TEXTS": "Texter och språk"
     },
-    "INSTANCE": {
-      "DESCRIPTION": "Dessa inställningar kommer att gälla för alla dina organisationer om de inte har åsidosatts.",
-      "TITLE": "Instansinställningar"
-    },
     "LIST": {
       "AGE": "Lösenordets utgång",
       "BRANDING": "Varumärke",

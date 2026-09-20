@@ -1186,7 +1186,6 @@
     "FIRSTNAMEATTRIBUTE": "Voornaam attribuut",
     "ID": "ID van identiteitsprovider",
     "IDATTRIBUTE": "ID Attribuut",
-    "IDPDISPLAYNAMEMAPPING": "IDP Weergavenaam Mapping",
     "INSTANCEROLESINFO": "Toewijzing van instantierollen",
     "INSTANCEROLESINFO_DESC": "Gebruikers die zich via deze provider authenticeren, krijgen de instantielidrollen (IAM_-prefix) die ze hebben in de vermelde organisaties van de externe ZITADEL-instantie. Het organisatie-ID en het primaire domein moeten beide overeenkomen.",
     "ISIDTOKENMAPPING": "Kaart van de ID token",

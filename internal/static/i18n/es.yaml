@@ -1367,7 +1367,6 @@ EventTypes:
       code:
         added: Código de número de teléfono generado
         sent: Código de número de teléfono enviado
-      removed: Código de número de teléfono eliminado
       verification:
         failed: Verificación fallida del número de teléfono
       verified: Número de teléfono verificado

@@ -1365,7 +1365,6 @@ EventTypes:
       code:
         added: Kód telefonního čísla vygenerován
         sent: Kód telefonního čísla odeslán
-      removed: Telefonní číslo odstraněno
       verification:
         failed: Ověření telefonního čísla selhalo
       verified: Telefonní číslo ověřeno

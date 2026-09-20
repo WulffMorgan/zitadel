@@ -313,7 +313,6 @@
       "IOSAPPLINKINCOMPLETE": "L'ID d'équipe iOS et le Bundle ID doivent tous deux être renseignés, ou tous deux laissés vides.",
       "IOSDESC": "Servi dans apple-app-site-association comme entrée webcredentials TEAMID.BUNDLEID.",
       "IOSTITLE": "iOS",
-      "NAMEANDTYPESECTION": "Nom et type",
       "NOTRECOMMENDED": "non recommandé",
       "OVERVIEWSECTION": "Vue d'ensemble",
       "OVERVIEWTITLE": "Vous avez maintenant terminé. Revoyez vos paramètres.",
@@ -322,7 +321,6 @@
       "PACKAGENAMEPLACEHOLDER": "com.example.app",
       "POSTLOGOUTREDIRECT": "URIs de post-déconnexion",
       "POSTREDIRECTTITLE": "Il s'agit de l'URI de redirection après la déconnexion.",
-      "PROSWITCH": "Je suis un pro. Sautez cet assistant.",
       "RECOMMENDED": "recommandé",
       "REDIRECT": "Rediriger les URIs",
       "REDIRECTDESCRIPTIONNATIVE": "Les URIs de redirection doivent commencer par votre propre protocole, http://127.0.0.1, http://[::1] ou http://localhost.",
@@ -363,13 +361,11 @@
       "TEAMIDLENGTH": "L'ID d'équipe doit comporter exactement 10 caractères alphanumériques.",
       "TEAMIDPLACEHOLDER": "ABCDE12345",
       "TITLE": "Paramètres OIDC",
-      "TITLEFIRST": "Commencez par insérer un nom.",
       "TOKENSECTIONTITLE": "Options AuthToken",
       "TOKENTYPE": "Auth Token Type",
       "TOKENTYPE0": "Bearer Token",
       "TOKENTYPE1": "JWT",
       "TYPEREQUIRED": "Le type est obligatoire.",
-      "TYPETITLE": "Quel type d'application voulez-vous créer ?",
       "UNSECUREREDIRECT": "J'espère que vous savez ce que vous faites.",
       "WELLKNOWN": "Pour plus d'informations, consultez le <a href='{{url}}' title='Discovery endpoint' target='_blank'>discovery endpoint</a>."
     },
@@ -1140,10 +1136,6 @@
         "DESCRIPTION": "Saisissez les informations d'identification de votre fournisseur d'identité LDAP",
         "TITLE": "Active Directory / LDAP"
       },
-      "OAuth": {
-        "DESCRIPTION": "Entrez les données requises pour votre fournisseur OAuth.",
-        "TITLE": "Fournisseur OAuth"
-      },
       "OIDC": {
         "DESCRIPTION": "Entrez les données requises pour votre fournisseur OIDC.",
         "TITLE": "Fournisseur OIDC"
@@ -1266,11 +1258,6 @@
     },
     "TOKENENDPOINT": "Token Endpoint",
     "TYPE": "Type",
-    "TYPES": {
-      "0": "inconnu",
-      "1": "OIDC",
-      "3": "JWT"
-    },
     "UPDATEBINDPASSWORD": "mettre à jour le mot de passe Bind",
     "UPDATECLIENTSECRET": "mettre à jour le secret client",
     "USEPKCE": "Utiliser PKCE",

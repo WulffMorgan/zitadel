@@ -1198,10 +1198,6 @@
     "NAME": "Name",
     "NAMEHINT": "Wenn angegeben, wir er im Login interface angezeigt.",
     "NICKNAMEATTRIBUTE": "Nickname attribute",
-    "OAUTH": {
-      "DESCRIPTION": "Geben Sie die Daten OAuth Identity Providers ein.",
-      "TITLE": "OAuth Konfiguration"
-    },
     "OIDC": {
       "DESCRIPTION": "Geben Sie die Daten OIDC Identitätsanbieter ein.",
       "TITLE": "OIDC Einstellungen"
@@ -1263,11 +1259,6 @@
     },
     "TOKENENDPOINT": "Token Endpoint",
     "TYPE": "Typ",
-    "TYPES": {
-      "0": "unknown",
-      "1": "OIDC",
-      "3": "JWT"
-    },
     "UPDATEBINDPASSWORD": "Bind Password updaten",
     "UPDATECLIENTSECRET": "Client Secret updaten",
     "USEPKCE": "Verwenden Sie PKCE",
@@ -2178,8 +2169,7 @@
     "REDIRECTS": "Redirects konfigurieren",
     "REVIEWCONFIGURATION": "Konfiguration überprüfen",
     "REVIEWCONFIGURATION_DESCRIPTION": "Wir haben eine Grundkonfiguration für {{wert}}-Anwendungen erstellt. Du kannst diese Konfiguration nach der Erstellung an deine Bedürfnisse anpassen.",
-    "SELECT_FRAMEWORK": "Framework auswählen",
-    "TITEL": "Integriere Zitadel in deine Anwendung"
+    "SELECT_FRAMEWORK": "Framework auswählen"
   },
   "RESOURCEID": "Ressourcen-ID",
   "ROLES": {

@@ -2456,9 +2456,6 @@
       "SENDGRID": {}
     }
   },
-  "STEPS": {
-    "SENDGRID": {}
-  },
   "TABLE": {
     "NOROWS": "Немає даних"
   },

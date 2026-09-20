@@ -1367,7 +1367,6 @@ EventTypes:
       changed: 更改手机号码
       code:
         added: 生成的手机号码验证码
-        removed: 电话号码已删除
         sent: 发送手机号码验证码
       verification:
         failed: 手机号码验证失败
