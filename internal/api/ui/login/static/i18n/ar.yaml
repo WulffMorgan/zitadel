@@ -165,6 +165,7 @@ ExternalNotFound:
   TosConfirm: أنا أقبل
   TosLinkText: شروط الخدمة
   Turkish: Türkçe
+  Ukrainian: Українська
 ExternalRegistrationUserOverview:
   Arabic: العربية
   BackButtonText: رجوع
@@ -203,6 +204,7 @@ ExternalRegistrationUserOverview:
   TosConfirm: أنا أقبل
   TosLinkText: شروط الخدمة
   Turkish: Türkçe
+  Ukrainian: Українська
   UsernameLabel: اسم المستخدم
 Footer:
   Help: مساعدة
@@ -451,6 +453,7 @@ RegistrationUser:
   TosConfirm: أنا أقبل
   TosLinkText: شروط الخدمة
   Turkish: Türkçe
+  Ukrainian: Українська
   UsernameLabel: اسم المستخدم
 SelectAccount:
   Description: استخدم حسابك

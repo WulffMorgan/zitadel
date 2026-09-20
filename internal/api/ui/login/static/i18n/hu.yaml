@@ -140,29 +140,29 @@ Errors:
 ExternalNotFound:
   Arabic: العربية
   AutoRegisterButtonText: Regisztráció
-  Bulgarian: Bolgár
-  Chinese: Egyszerűsített kínai
-  Czech: Cseh
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
   Description: Külső felhasználó nem található. Szeretnéd összekapcsolni a felhasználódat vagy automatikusan regisztrálni egy újat?
-  Dutch: Holland
-  English: Angol
-  French: Francia
-  German: Német
+  Dutch: Nederlands
+  English: English
+  French: Français
+  German: Deutsch
   Hungarian: Magyar
-  Indonesian: Indonéz
-  Italian: Olasz
-  Japanese: Japán
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
   Korean: 한국어
   LinkButtonText: Összekapcsolás
-  Macedonian: Macedón
-  Polish: Lengyel
-  Portuguese: Portugál
+  Macedonian: Македонски
+  Polish: Polski
+  Portuguese: Português
   PrivacyConfirm: Elfogadom a
   PrivacyLinkText: adatvédelmi szabályzatot
   Romanian: Română
-  Russian: Orosz
-  Spanish: Spanyol
-  Swedish: Svéd
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
   Title: Külső felhasználó nem található
   TosAndPrivacyLabel: Felhasználási feltételek
   TosConfirm: Elfogadom a
@@ -172,36 +172,36 @@ ExternalNotFound:
 ExternalRegistrationUserOverview:
   Arabic: العربية
   BackButtonText: Elutasít
-  Bulgarian: Bolgár
-  Chinese: Egyszerűsített kínai
-  Czech: Cseh
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
   Description: Átvettük a felhasználói adataidat a kiválasztott szolgáltatótól. Most megváltoztathatod vagy kiegészítheted őket.
-  Dutch: Holland
+  Dutch: Nederlands
   EmailLabel: E-mail
-  English: Angol
+  English: English
   ExternalLogin: vagy regisztrálj külső felhasználóval
   FirstnameLabel: Keresztnév
-  French: Francia
-  German: Német
+  French: Français
+  German: Deutsch
   Hungarian: Magyar
-  Indonesian: Indonéz
-  Italian: Olasz
-  Japanese: Japán
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
   Korean: 한국어
   LanguageLabel: Nyelv
   LastnameLabel: Vezetéknév
-  Macedonian: Macedón
+  Macedonian: Македонски
   NextButtonText: Mentés
   NicknameLabel: Becenév
   PhoneLabel: Telefonszám
-  Polish: Lengyel
-  Portuguese: Portugál
+  Polish: Polski
+  Portuguese: Português
   PrivacyConfirm: Elfogadom a
   PrivacyLinkText: adatvédelmi nyilatkozatot
   Romanian: Română
-  Russian: Orosz
-  Spanish: Spanyol
-  Swedish: Svéd
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
   Title: Külső felhasználói regisztráció
   TosAndPrivacyLabel: Felhasználási feltételek
   TosConfirm: Elfogadom a
@@ -416,41 +416,41 @@ RegistrationOrg:
 RegistrationUser:
   Arabic: العربية
   BackButtonText: Bejelentkezés
-  Bulgarian: Bolgár
-  Chinese: Egyszerűsített Kínai
-  Czech: Cseh
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
   Description: Add meg az adataidat. Az email címed lesz a bejelentkezési neved.
   DescriptionOrgRegister: Add meg az adataidat.
   Diverse: diverz / X
-  Dutch: Holland
+  Dutch: Nederlands
   EmailLabel: E-mail
-  English: Angol
+  English: English
   ExternalLogin: vagy regisztrálj külső felhasználóként
   Female: Nő
   FirstnameLabel: Keresztnév
-  French: Francia
+  French: Français
   GenderLabel: Nem
-  German: Német
+  German: Deutsch
   Hungarian: Magyar
-  Indonesian: Indonéz
-  Italian: Olasz
-  Japanese: Japán
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
   Korean: 한국어
   LanguageLabel: Nyelv
   LastnameLabel: Vezetéknév
-  Macedonian: Macedón
+  Macedonian: Македонски
   Male: Férfi
   NextButtonText: Következő
   PasswordConfirmLabel: Jelszó megerősítése
   PasswordLabel: Jelszó
-  Polish: Lengyel
-  Portuguese: Portugál
+  Polish: Polski
+  Portuguese: Português
   PrivacyConfirm: Elfogadom a
   PrivacyLinkText: adatvédelmi szabályzatot
   Romanian: Română
-  Russian: Orosz
-  Spanish: Spanyol
-  Swedish: Svéd
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
   Title: Regisztráció
   TosAndPrivacyLabel: Felhasználási feltételek
   TosConfirm: Elfogadom a
