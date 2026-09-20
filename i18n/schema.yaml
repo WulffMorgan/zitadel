@@ -1,0 +1,5255 @@
+common:
+  Action:
+    Flow:
+      Type:
+        CustomiseToken: null
+        CustomizeSAMLResponse: null
+        ExternalAuthentication: null
+        InternalAuthentication: null
+        Unspecified: null
+    TriggerType:
+      PostAuthentication: null
+      PostCreation: null
+      PreAccessTokenCreation: null
+      PreCreation: null
+      PreSAMLResponseCreation: null
+      PreUserinfoCreation: null
+      Unspecified: null
+  AggregateTypes:
+    action: null
+    auth_request: null
+    device_auth: null
+    execution: null
+    feature: null
+    idpintent: null
+    instance: null
+    key_pair: null
+    limits: null
+    milestone: null
+    oidc_session: null
+    org: null
+    project: null
+    quota: null
+    restrictions: null
+    saml_request: null
+    saml_session: null
+    session: null
+    system: null
+    target: null
+    user: null
+    user_schema: null
+    usergrant: null
+    web_key: null
+  Application:
+    OIDC:
+      UnsupportedVersion: null
+      V1:
+        Code:
+          RedirectUris:
+            CustomOnlyForNative: null
+            HttpOnlyForWeb: null
+        GrantType:
+          Refresh:
+            NoAuthCode: null
+        Implicit:
+          RedirectUris:
+            CustomNotAllowed: null
+            HttpLocalhostOnlyForNative: null
+            HttpNotAllowed: null
+        Native:
+          AuthMethodType:
+            NotNone: null
+          RedirectUris:
+            MustBeHttpLocalhost: null
+        NoRedirectUris: null
+        NotAllCombinationsAreAllowed: null
+        NotCompliant: null
+        UserAgent:
+          AuthMethodType:
+            NotNone: null
+  Errors:
+    Action:
+      Invalid: null
+      MaxAllowed: null
+      NotActive: null
+      NotEnabled: null
+      NotFound: null
+      NotInactive: null
+    Assets:
+      Bucket:
+        AlreadyExists: null
+        CreateFailed: null
+        Internal: null
+        ListFailed: null
+        RemoveFailed: null
+        SetPublicFailed: null
+      EmptyKey: null
+      Object:
+        GetFailed: null
+        ListFailed: null
+        NotFound: null
+        PresignedTokenFailed: null
+        PutFailed: null
+        RemoveFailed: null
+      Store:
+        NotConfigured: null
+        NotInitialized: null
+    AuthRequest:
+      AlreadyExists: null
+      AlreadyHandled: null
+      NotExisting: null
+      WrongLoginClient: null
+    Changes:
+      AuditRetention: null
+      NotFound: null
+    CustomText:
+      AlreadyExists: null
+      Invalid: null
+      NotFound: null
+    DeviceAuth:
+      AlreadyHandled: null
+      NotFound: null
+    Execution:
+      ConditionInvalid: null
+      Failed: null
+      IncludeNotFound: null
+      Invalid: null
+      MissingEncryptionKey: null
+      NoTargets: null
+      NotFound: null
+      ResponseIsNotValidJSON: null
+    Feature:
+      InvalidValue: null
+      NotExisting: null
+      TypeNotSupported: null
+    Flow:
+      ActionIDsNotExist: null
+      Empty: null
+      FlowTypeMissing: null
+      NoChanges: null
+      WrongTriggerType: null
+    IDMissing: null
+    IDP:
+      ClientIDMissing: null
+      InvalidPrivateKey: null
+      InvalidSearchQuery: null
+      KeyIDMissing: null
+      PrivateKeyMissing: null
+      TeamIDMissing: null
+    IDPConfig:
+      AlreadyExists: null
+      NotExisting: null
+    Instance:
+      AlreadyExists: null
+      CustomMessageText:
+        AlreadyExists: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+      DomainPolicy:
+        AlreadyExists: null
+        Empty: null
+        NotChanged: null
+        NotExisting: null
+        NotFound: null
+      IDMissing: null
+      IdpInvalid: null
+      IdpIsNotOIDC: null
+      IdpNotExisting: null
+      IdpProviderInvalid: null
+      LabelPolicy:
+        NotChanged: null
+        NotFound: null
+      LoginPolicy:
+        AlreadyExists: null
+        IDP:
+          AlreadyExists: null
+          Invalid: null
+          NotExisting: null
+        IDPConfig:
+          AlreadyExists: null
+          NotActive: null
+          NotInactive: null
+        MFA:
+          AlreadyExists: null
+          NotExisting: null
+          Unspecified: null
+        NotChanged: null
+        NotExisting: null
+        NotFound: null
+        RedirectURIInvalid: null
+      LoginPolicyInvalid: null
+      LoginPolicyNotExisting: null
+      MailTemplate:
+        AlreadyExists: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+      Member:
+        RolesNotChanged: null
+      MemberAlreadyExisting: null
+      MemberInvalid: null
+      MemberNotExisting: null
+      NotChanged: null
+      NotFound: null
+      NotificationPolicy:
+        AlreadyExists: null
+        NotChanged: null
+        NotFound: null
+      OIDCConfigInvalid: null
+      PasswordAgePolicy:
+        AlreadyExists: null
+        Empty: null
+        NotChanged: null
+        NotExisting: null
+        NotFound: null
+      PasswordComplexityPolicy:
+        AlreadyExists: null
+        Empty: null
+        NotChanged: null
+        NotExisting: null
+        NotFound: null
+      PasswordLockoutPolicy:
+        AlreadyExists: null
+        Empty: null
+        NotChanged: null
+        NotExisting: null
+        NotFound: null
+    Intent:
+      Expired: null
+      FailureURLMissing: null
+      IDPInvalid: null
+      IDPMissing: null
+      InvalidToken: null
+      MissingSingleMappingAttribute: null
+      NotStarted: null
+      NotSucceeded: null
+      OtherUser: null
+      ResponseInvalid: null
+      StateMissing: null
+      SuccessURLMissing: null
+      TokenCreationFailed: null
+    Internal: null
+    Key:
+      ExpireBeforeNow: null
+      NotFound: null
+    Language:
+      Duplicate: null
+      NotAllowed: null
+      NotParsed: null
+      NotSupported: null
+      Undefined: null
+    Limit:
+      ExceedsDefault: null
+    Limits:
+      Instance:
+        Blocked: null
+      NoneSpecified: null
+      NotFound: null
+    LogStore:
+      Access:
+        ScanFailed: null
+        StorageFailed: null
+      Execution:
+        ScanFailed: null
+        StorageFailed: null
+    Login:
+      LoginPolicy:
+        MFA:
+          ForceAndNotConfigured: null
+    Member:
+      AlreadyExists: null
+    Metadata:
+      Invalid: null
+      KeyNotExisting: null
+      NoData: null
+      NotFound: null
+    NoChangesFound: null
+    Notification:
+      NoDomain: null
+    OIDCSession:
+      InvalidClient: null
+      RefreshTokenInvalid: null
+      Token:
+        Expired: null
+        Invalid: null
+    OIDCSettings:
+      AlreadyExists: null
+      NotFound: null
+    Org:
+      AlreadyActive: null
+      AlreadyDeactivated: null
+      AlreadyExists: null
+      CustomMessageText:
+        AlreadyExists: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+      DefaultOrgNotDeletable: null
+      Domain:
+        AlreadyExists: null
+        EmptyString: null
+        InvalidCharacter: null
+      DomainAlreadyVerified: null
+      DomainMissing: null
+      DomainNotFound: null
+      DomainNotOnOrg: null
+      DomainNotVerified: null
+      DomainVerificationFailed: null
+      DomainVerificationHTTPNoMatch: null
+      DomainVerificationHTTPNotFound: null
+      DomainVerificationMissing: null
+      DomainVerificationTXTNoMatch: null
+      DomainVerificationTXTNotFound: null
+      DomainVerificationTimeout: null
+      DomainVerificationTypeInvalid: null
+      Empty: null
+      IDPConfig:
+        NotExisting: null
+      IdpInvalid: null
+      IdpIsNotOIDC: null
+      IdpNotExisting: null
+      Invalid: null
+      InvalidDomain: null
+      InvalidMember: null
+      LabelPolicy:
+        NotChanged: null
+        NotFound: null
+      LoginPolicy:
+        AlreadyExists: null
+        IdpProviderAlreadyExisting: null
+        IdpProviderNotExisting: null
+        Invalid: null
+        MFA:
+          AlreadyExists: null
+          NotExisting: null
+          Unspecified: null
+        NotExisting: null
+        NotFound: null
+        RedirectURIInvalid: null
+        RegistrationNotAllowed: null
+        UsernamePasswordNotAllowed: null
+      MailTemplate:
+        AlreadyExists: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+      MemberIDMissing: null
+      MemberNotFound: null
+      NotActive: null
+      NotChanged: null
+      NotFound: null
+      NotificationPolicy:
+        AlreadyExists: null
+        NotChanged: null
+        NotFound: null
+      OIDCConfigInvalid: null
+      PasswordAgePolicy:
+        AlreadyExists: null
+        Empty: null
+        NotExisting: null
+        NotFound: null
+      PasswordComplexityPolicy:
+        AlreadyExists: null
+        Empty: null
+        NotExisting: null
+        NotFound: null
+      PasswordLockoutPolicy:
+        AlreadyExists: null
+        Empty: null
+        NotExisting: null
+        NotFound: null
+      PolicyAlreadyExists: null
+      PolicyNotExisting: null
+      PrimaryDomainNotDeletable: null
+      UserIDMissing: null
+      ZitadelOrgNotDeletable: null
+    OriginNotAllowed: null
+    PermissionDenied: null
+    Policy:
+      AlreadyExists: null
+      Label:
+        Invalid:
+          BackgroundColor: null
+          BackgroundColorDark: null
+          FontColor: null
+          FontColorDark: null
+          PrimaryColor: null
+          PrimaryColorDark: null
+          WarnColor: null
+          WarnColorDark: null
+    Project:
+      AlreadyExists: null
+      App:
+        APIAuthMethodNoSecret: null
+        APIConfigInvalid: null
+        AlreadyExists: null
+        AuthMethodNoPrivateKeyJWT: null
+        ClientSecretInvalid: null
+        Invalid: null
+        IsNotAPI: null
+        IsNotOIDC: null
+        IsNotSAML: null
+        Key:
+          AlreadyExisting: null
+          NotFound: null
+        NotActive: null
+        NotExisting: null
+        NotFound: null
+        NotInactive: null
+        OIDCAuthMethodNoSecret: null
+        OIDCConfigInvalid: null
+        SAMLConfigInvalid: null
+        SAMLEntityIDAlreadyExisting: null
+        SAMLMetadataFormat: null
+        SAMLMetadataMissing: null
+      CouldNotGenerateClientSecret: null
+      Grant:
+        AlreadyExists: null
+        HasNotExistingRole: null
+        Invalid: null
+        NotActive: null
+        NotExisting: null
+        NotFound: null
+        NotInactive: null
+      IDMissing: null
+      Invalid: null
+      Member:
+        AlreadyExists: null
+        Invalid: null
+        NotExisting: null
+        NotFound: null
+      MinimumOneRoleNeeded: null
+      NotActive: null
+      NotFound: null
+      NotInactive: null
+      OrgNotExisting: null
+      ProjectIDMissing: null
+      RequiredFieldsMissing: null
+      Role:
+        AlreadyExists: null
+        Invalid: null
+        NotExisting: null
+      UserIDMissing: null
+      UserNotExisting: null
+    ProjectionName:
+      Invalid: null
+    Query:
+      CloseRows: null
+      InvalidRequest: null
+      LimitExceeded: null
+      SQLStatement: null
+      TooManyNestingLevels: null
+    Quota:
+      Access:
+        Exhausted: null
+      AlreadyExists: null
+      Execution:
+        Exhausted: null
+      Invalid:
+        Amount: null
+        CallURL: null
+        Noop: null
+        Percent: null
+        ResetInterval: null
+        Unimplemented: null
+      NotFound: null
+    RemoveFailed: null
+    ResourceOwnerMissing: null
+    Restrictions:
+      DefaultLanguageMustBeAllowed: null
+      NoneSpecified: null
+    SAMLRequest:
+      AlreadyExists: null
+      AlreadyHandled: null
+      NotExisting: null
+      WrongLoginClient: null
+    SAMLSession:
+      InvalidClient: null
+    SMSConfig:
+      AlreadyActive: null
+      AlreadyDeactivated: null
+      NotExternalVerification: null
+      NotFound: null
+    SMTP:
+      CouldNotAuth: null
+      CouldNotCreateClient: null
+      CouldNotDial: null
+      CouldNotDialTLS: null
+      CouldNotSetRecipient: null
+      CouldNotSetSender: null
+      CouldNotSplit: null
+      CouldNotStartTLS: null
+      NotEmailMessage: null
+      RequiredAttributes: null
+    SMTPConfig:
+      AlreadyDeactivated: null
+      AlreadyExists: null
+      NotFound: null
+      SenderAdressNotCustomDomain: null
+      TestEmailNotFound: null
+      TestPassword: null
+    SecretGenerator:
+      AlreadyExists: null
+      NotFound: null
+      TypeMissing: null
+    Session:
+      Expired: null
+      IDMissing: null
+      NotExisting: null
+      NotFound: null
+      PositiveLifetime: null
+      Terminated: null
+      Token:
+        Invalid: null
+      WebAuthN:
+        NoChallenge: null
+    Step:
+      Done:
+        AlreadyExists: null
+      Started:
+        AlreadyExists: null
+    Target:
+      Invalid: null
+      InvalidExpirationDate: null
+      InvalidPublicKey: null
+      InvalidURL: null
+      NoTimeout: null
+      NotFound: null
+      PublicKeyActive: null
+      PublicKeyExpired: null
+    Token:
+      Invalid: null
+      NotFound: null
+    TokenExchange:
+      Impersonation:
+        PolicyDisabled: null
+      Token:
+        Invalid: null
+        Missing: null
+        NotForAPI: null
+        TypeMissing: null
+        TypeNotAllowed: null
+        TypeNotSupported: null
+    TranslationFile:
+      MergeError: null
+      NotFound: null
+      ReadError: null
+    User:
+      Address:
+        NotChanged: null
+        NotFound: null
+      AlreadyExists: null
+      AlreadyInactive: null
+      AlreadyInitialised: null
+      CantDeactivateInitial: null
+      Code:
+        Empty: null
+        Expired: null
+        GeneratorAlgNotSupported: null
+        Invalid: null
+        NotFound: null
+      DomainNotAllowedAsUsername: null
+      DomainPolicyNil: null
+      Email:
+        AlreadyVerified: null
+        Empty: null
+        IDMissing: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+      EmailAsUsernameNotAllowed: null
+      ExternalIDP:
+        AlreadyExists: null
+        IDPConfigNotExisting: null
+        Invalid: null
+        LoginFailed: null
+        MinimumExternalIDPNeeded: null
+        NotAllowed: null
+        NotFound: null
+      InitCodeNotFound: null
+      Invalid: null
+      InvalidURLTemplate: null
+      Locked: null
+      MFA:
+        OTP:
+          AlreadyReady: null
+          InvalidCode: null
+          NotExisting: null
+          NotReady: null
+          Reused: null
+        Passwordless:
+          NotExisting: null
+        RecoveryCodes:
+          ConfigInvalid: null
+          Empty: null
+          InvalidCode: null
+          MaxCountExceeded: null
+          NotReady: null
+        U2F:
+          NotExisting: null
+      Machine:
+        Key:
+          AlreadyExisting: null
+          Invalid: null
+          NotFound: null
+        Secret:
+          CouldNotGenerate: null
+          Invalid: null
+          NotExisting: null
+      Metadata:
+        Conflicting: null
+      NoChanges: null
+      NotAllowedOrg: null
+      NotAllowedToLink: null
+      NotFound: null
+      NotFoundOnOrg: null
+      NotHuman: null
+      NotInactive: null
+      NotInitialised: null
+      NotLocked: null
+      NotMachine: null
+      PAT:
+        NotFound: null
+      Password:
+        Empty: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+        NotSet: null
+        NotSupported: null
+      PasswordComplexityPolicy:
+        HasLower: null
+        HasNumber: null
+        HasSymbol: null
+        HasUpper: null
+        MinLength: null
+        MinLengthNotAllowed: null
+        NotFound: null
+      Phone:
+        AlreadyVerified: null
+        Empty: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+        VerifyingRemovalIsNotSupported: null
+      Profile:
+        Empty: null
+        FirstNameEmpty: null
+        IDMissing: null
+        LastNameEmpty: null
+        NotChanged: null
+        NotFound: null
+      RefreshToken:
+        Invalid: null
+        NotFound: null
+      ShouldBeActiveOrInitial: null
+      UserIDMissing: null
+      UserIDWrong: null
+      Username:
+        AlreadyExists: null
+        Empty: null
+        Reserved: null
+      UsernameNotChanged: null
+      WebAuthN:
+        BeginLoginFailed: null
+        BeginRegisterFailed: null
+        CloneWarning: null
+        CreateCredentialFailed: null
+        ErrorOnParseCredential: null
+        MarshalError: null
+        NotFound: null
+        ValidateLoginFailed: null
+      WrongType: null
+    UserGrant:
+      AlreadyExists: null
+      IDMissing: null
+      Invalid: null
+      NoPermissionForProject: null
+      NotChanged: null
+      NotFound: null
+      RoleKeyNotFound: null
+    UserSchema:
+      Authenticator:
+        Invalid: null
+      Data:
+        Invalid: null
+      ID:
+        Missing: null
+      Invalid: null
+      NotActive: null
+      NotEnabled: null
+      NotExists: null
+      NotInactive: null
+      Type:
+        AlreadyExists: null
+        Missing: null
+    UserSession:
+      NotFound: null
+    WebKey:
+      ActiveDelete: null
+      Config: null
+      Duplicate: null
+      NoActive: null
+      NotFound: null
+  EventTypes:
+    action:
+      added: null
+      changed: null
+      deactivated: null
+      reactivated: null
+      removed: null
+    execution:
+      removed: null
+      set: null
+    iam:
+      customtext:
+        removed: null
+        set: null
+      default:
+        language:
+          set: null
+      global:
+        org:
+          set: null
+      idp:
+        config:
+          added: null
+          changed: null
+          deactivated: null
+          reactivated: null
+          removed: null
+        jwt:
+          config:
+            added: null
+            changed: null
+        oidc:
+          config:
+            added: null
+            changed: null
+        saml:
+          config:
+            added: null
+            changed: null
+      member:
+        added: null
+        cascade:
+          removed: null
+        changed: null
+        removed: null
+      oidc:
+        settings:
+          added: null
+          changed: null
+          removed: null
+      policy:
+        label:
+          activated: null
+          added: null
+          assets:
+            removed: null
+          changed: null
+          font:
+            added: null
+            removed: null
+          icon:
+            added: null
+            dark:
+              added: null
+              removed: null
+            removed: null
+          logo:
+            added: null
+            dark:
+              added: null
+              removed: null
+            removed: null
+        login:
+          added: null
+          changed: null
+          idpprovider:
+            added: null
+            removed: null
+      project:
+        iam:
+          set: null
+      secret:
+        generator:
+          added: null
+          changed: null
+          removed: null
+      setup:
+        done: null
+        started: null
+      sms:
+        config:
+          twilio:
+            activated: null
+            added: null
+            changed: null
+            deactivated: null
+            removed: null
+            token:
+              changed: null
+      smtp:
+        config:
+          activated: null
+          added: null
+          changed: null
+          deactivated: null
+          password:
+            changed: null
+          removed: null
+    instance:
+      added: null
+      changed: null
+      customtext:
+        removed: null
+        set: null
+        template:
+          removed: null
+      default:
+        language:
+          set: null
+        org:
+          set: null
+      domain:
+        added: null
+        primary:
+          set: null
+        removed: null
+      iam:
+        console:
+          set: null
+        project:
+          set: null
+      mail:
+        template:
+          added: null
+          changed: null
+        text:
+          added: null
+          changed: null
+      member:
+        added: null
+        cascade:
+          removed: null
+        changed: null
+        removed: null
+      notification:
+        provider:
+          debug:
+            fileadded: null
+            filechanged: null
+            fileremoved: null
+            logadded: null
+            logchanged: null
+            logremoved: null
+      oidc:
+        settings:
+          added: null
+          changed: null
+      policy:
+        domain:
+          added: null
+          changed: null
+        label:
+          activated: null
+          added: null
+          assets:
+            removed: null
+          changed: null
+          font:
+            added: null
+            removed: null
+          icon:
+            added: null
+            dark:
+              added: null
+              removed: null
+            removed: null
+          logo:
+            added: null
+            dark:
+              added: null
+              removed: null
+            removed: null
+        lockout:
+          added: null
+          changed: null
+        login:
+          added: null
+          changed: null
+          idpprovider:
+            added: null
+            cascade:
+              removed: null
+            removed: null
+          multifactor:
+            added: null
+            removed: null
+          secondfactor:
+            added: null
+            removed: null
+        password:
+          age:
+            added: null
+            changed: null
+          complexity:
+            added: null
+            changed: null
+        privacy:
+          added: null
+          changed: null
+        security:
+          set: null
+      removed: null
+      secret:
+        generator:
+          added: null
+          changed: null
+          removed: null
+      sms:
+        configtwilio:
+          activated: null
+          added: null
+          changed: null
+          deactivated: null
+          removed: null
+          token:
+            changed: null
+      smtp:
+        config:
+          activated: null
+          added: null
+          changed: null
+          deactivated: null
+          password:
+            changed: null
+          removed: null
+    key_pair:
+      added: null
+      certificate:
+        added: null
+    org:
+      added: null
+      changed: null
+      customtext:
+        removed: null
+        set: null
+        template:
+          removed: null
+      deactivated: null
+      domain:
+        added: null
+        primary:
+          set: null
+        released: null
+        removed: null
+        reserved: null
+        verification:
+          added: null
+          failed: null
+        verified: null
+      flow:
+        cleared: null
+        trigger_actions:
+          cascade:
+            removed: null
+          removed: null
+          set: null
+      iam:
+        policy:
+          added: null
+          changed: null
+          removed: null
+      idp:
+        config:
+          added: null
+          changed: null
+          deactivated: null
+          reactivated: null
+          removed: null
+        jwt:
+          config:
+            added: null
+            changed: null
+        oidc:
+          config:
+            added: null
+            changed: null
+        saml:
+          config:
+            added: null
+            changed: null
+      mail:
+        template:
+          added: null
+          changed: null
+          removed: null
+        text:
+          added: null
+          changed: null
+          removed: null
+      member:
+        added: null
+        cascade:
+          removed: null
+        changed: null
+        removed: null
+      metadata:
+        removed: null
+        removed.all: null
+        set: null
+      name:
+        released: null
+        reserved: null
+      policy:
+        domain:
+          added: null
+          changed: null
+          removed: null
+        label:
+          activated: null
+          added: null
+          assets:
+            removed: null
+          changed: null
+          font:
+            added: null
+            removed: null
+          icon:
+            added: null
+            dark:
+              added: null
+              removed: null
+            removed: null
+          logo:
+            added: null
+            dark:
+              added: null
+              removed: null
+            removed: null
+          removed: null
+        lockout:
+          added: null
+          changed: null
+          removed: null
+        login:
+          added: null
+          changed: null
+          idpprovider:
+            added: null
+            cascade:
+              removed: null
+            removed: null
+          multifactor:
+            added: null
+            removed: null
+          removed: null
+          secondfactor:
+            added: null
+            removed: null
+        notification:
+          added: null
+          changed: null
+          removed: null
+        password:
+          age:
+            added: null
+            changed: null
+            removed: null
+          complexity:
+            added: null
+            changed: null
+            removed: null
+          lockout:
+            added: null
+            changed: null
+            removed: null
+        privacy:
+          added: null
+          changed: null
+          removed: null
+      reactivated: null
+      removed: null
+    policy:
+      password:
+        age:
+          added: null
+          changed: null
+        complexity:
+          added: null
+          changed: null
+        lockout:
+          added: null
+          changed: null
+    project:
+      added: null
+      application:
+        added: null
+        api:
+          key:
+            added: null
+            removed: null
+          secret:
+            check:
+              failed: null
+              succeeded: null
+        changed: null
+        config:
+          api:
+            added: null
+            changed: null
+            secret:
+              changed: null
+              updated: null
+          oidc:
+            added: null
+            changed: null
+            secret:
+              changed: null
+              updated: null
+          saml:
+            added: null
+            changed: null
+        deactivated: null
+        oidc:
+          key:
+            added: null
+            removed: null
+          secret:
+            check:
+              failed: null
+              succeeded: null
+        reactivated: null
+        removed: null
+      changed: null
+      deactivated: null
+      grant:
+        added: null
+        cascade:
+          changed: null
+        changed: null
+        deactivated: null
+        member:
+          added: null
+          cascade:
+            removed: null
+          changed: null
+          removed: null
+        reactivated: null
+        removed: null
+      member:
+        added: null
+        cascade:
+          removed: null
+        changed: null
+        removed: null
+      reactivated: null
+      removed: null
+      role:
+        added: null
+        changed: null
+        removed: null
+    target:
+      added: null
+      changed: null
+      removed: null
+    user:
+      added: null
+      address:
+        changed: null
+      deactivated: null
+      domain:
+        claimed: null
+        claimed.sent: null
+      email:
+        changed: null
+        code:
+          added: null
+          sent: null
+        released: null
+        reserved: null
+        verification:
+          failed: null
+        verified: null
+      grant:
+        added: null
+        cascade:
+          changed: null
+          removed: null
+        changed: null
+        deactivated: null
+        reactivated: null
+        released: null
+        removed: null
+        reserved: null
+      human:
+        added: null
+        address:
+          changed: null
+        avatar:
+          added: null
+          removed: null
+        email:
+          changed: null
+          code:
+            added: null
+            sent: null
+          verification:
+            failed: null
+          verified: null
+        externalidp:
+          added: null
+          cascade:
+            removed: null
+          id:
+            migrated: null
+          removed: null
+        externallogin:
+          check:
+            succeeded: null
+        initialization:
+          check:
+            failed: null
+            succeeded: null
+          code:
+            added: null
+            sent: null
+        invite:
+          check:
+            failed: null
+            succeeded: null
+          code:
+            added: null
+            sent: null
+        mfa:
+          init:
+            skipped: null
+          otp:
+            added: null
+            check:
+              failed: null
+              reused: null
+              succeeded: null
+            email:
+              added: null
+              check:
+                failed: null
+                succeeded: null
+              code:
+                added: null
+                sent: null
+              removed: null
+            removed: null
+            sms:
+              added: null
+              check:
+                failed: null
+                succeeded: null
+              code:
+                added: null
+                sent: null
+              removed: null
+            verified: null
+          u2f:
+            token:
+              added: null
+              begin:
+                login: null
+              check:
+                failed: null
+                succeeded: null
+              removed: null
+              signcount:
+                changed: null
+              verified: null
+        password:
+          change:
+            sent: null
+          changed: null
+          check:
+            failed: null
+            succeeded: null
+          code:
+            added: null
+            sent: null
+          hash:
+            updated: null
+        passwordless:
+          initialization:
+            code:
+              added: null
+              check:
+                failed: null
+                succeeded: null
+              requested: null
+              sent: null
+          token:
+            added: null
+            begin:
+              login: null
+            check:
+              failed: null
+              succeeded: null
+            removed: null
+            signcount:
+              changed: null
+            verified: null
+        phone:
+          changed: null
+          code:
+            added: null
+            sent: null
+          removed: null
+          verification:
+            failed: null
+          verified: null
+        profile:
+          changed: null
+        refresh:
+          token:
+            added: null
+            removed: null
+            renewed: null
+        selfregistered: null
+        signed:
+          out: null
+        username:
+          released: null
+          reserved: null
+      impersonated: null
+      initialization:
+        check:
+          failed: null
+          succeeded: null
+        code:
+          added: null
+          sent: null
+      locked: null
+      machine:
+        added: null
+        changed: null
+        key:
+          added: null
+          removed: null
+        secret:
+          check:
+            failed: null
+            succeeded: null
+          removed: null
+          set: null
+          updated: null
+      metadata:
+        removed: null
+        removed.all: null
+        set: null
+      mfa:
+        init:
+          skipped: null
+        otp:
+          added: null
+          check:
+            failed: null
+            succeeded: null
+          init:
+            skipped: null
+          removed: null
+          verified: null
+      password:
+        changed: null
+        check:
+          failed: null
+          succeeded: null
+        code:
+          added: null
+          sent: null
+      pat:
+        added: null
+        removed: null
+      phone:
+        changed: null
+        code:
+          added: null
+          sent: null
+        verification:
+          failed: null
+        verified: null
+      profile:
+        changed: null
+      reactivated: null
+      removed: null
+      selfregistered: null
+      signed:
+        out: null
+      token:
+        added: null
+        removed: null
+        v2.added: null
+      unlocked: null
+      username:
+        changed: null
+        released: null
+        reserved: null
+    user_schema:
+      created: null
+      deactivated: null
+      deleted: null
+      reactivated: null
+      updated: null
+      user:
+        created: null
+        deleted: null
+        email:
+          code:
+            added: null
+            sent: null
+          updated: null
+          verification:
+            failed: null
+          verified: null
+        phone:
+          code:
+            added: null
+            sent: null
+          updated: null
+          verification:
+            failed: null
+          verified: null
+        updated: null
+    web_key:
+      activated: null
+      added: null
+      deactivated: null
+      removed: null
+console:
+  ACTIONS:
+    ACTIONS: null
+    ACTIVATE: null
+    ADD: null
+    APPLY: null
+    BACK: null
+    CANCEL: null
+    CHANGE: null
+    CLEAR: null
+    CLOSE: null
+    CONFIGURE: null
+    CONTINUE: null
+    CONTINUEWITH: null
+    CONTINUEWITHOUTSAVE: null
+    COPIED: null
+    COPY: null
+    CREATE: null
+    DEACTIVATE: null
+    DELETE: null
+    DOWNLOAD: null
+    EDIT: null
+    FILTER: null
+    FINISH: null
+    FINISHED: null
+    HIDE: null
+    INFO: null
+    LOGIN: null
+    MORE: null
+    NEW: null
+    NEWVALUE: null
+    NEXT: null
+    OF: null
+    OK: null
+    PIN: null
+    PREVIOUS: null
+    REACTIVATE: null
+    REFRESH: null
+    REMOVE: null
+    RENAME: null
+    RESET: null
+    RESETCURRENT: null
+    RESETDEFAULT: null
+    RESETTO: null
+    RESTORE: null
+    SAVE: null
+    SAVENOW: null
+    SELECT: null
+    SELECTIONDELETE: null
+    SEND: null
+    SET: null
+    SETUP: null
+    SHOW: null
+    STEP: null
+    TABLE:
+      SHOWUSER: null
+    TEST: null
+    UNSAVED:
+      DIALOG:
+        CANCEL: null
+        DESCRIPTION: null
+        DISCARD: null
+    UNSAVEDCHANGES: null
+    VERIFY: null
+    VIEW: null
+  ACTIONSTWO:
+    BETA_NOTE: null
+    EXECUTION:
+      DESCRIPTION: null
+      DIALOG:
+        CONDITION:
+          ALL:
+            DESCRIPTION: null
+            TITLE: null
+          ALL_EVENTS: null
+          FUNCTIONNAME:
+            DESCRIPTION: null
+            TITLE: null
+          REQ_RESP_DESCRIPTION: null
+          SELECT_EVENT:
+            DESCRIPTION: null
+            TITLE: null
+          SELECT_GROUP:
+            DESCRIPTION: null
+            TITLE: null
+          SELECT_METHOD:
+            DESCRIPTION: null
+            NOTE: null
+            TITLE: null
+          SELECT_SERVICE:
+            DESCRIPTION: null
+            TITLE: null
+        CREATE_TITLE: null
+        TARGET:
+          CONDITIONS:
+            DESCRIPTION: null
+          DESCRIPTION: null
+          TARGET:
+            DESCRIPTION: null
+        TYPE:
+          DESCRIPTION: null
+          EVENTS:
+            DESCRIPTION: null
+            TITLE: null
+          FUNCTIONS:
+            DESCRIPTION: null
+            TITLE: null
+          REQUEST:
+            DESCRIPTION: null
+            TITLE: null
+          RESPONSE:
+            DESCRIPTION: null
+            TITLE: null
+        UPDATE_TITLE: null
+      TABLE:
+        CONDITION: null
+        CREATIONDATE: null
+        TARGET: null
+        TYPE: null
+      TITLE: null
+      TYPES:
+        event: null
+        function: null
+        request: null
+        response: null
+    TARGET:
+      CREATE:
+        AWAIT_RESPONSE: null
+        AWAIT_RESPONSE_DESCRIPTION: null
+        DESCRIPTION: null
+        ENDPOINT: null
+        ENDPOINT_DESCRIPTION: null
+        INTERRUPT_ON_ERROR: null
+        INTERRUPT_ON_ERROR_DESCRIPTION: null
+        INTERRUPT_ON_ERROR_WARNING: null
+        NAME: null
+        NAME_DESCRIPTION: null
+        PAYLOAD_TYPE: null
+        PAYLOAD_TYPES:
+          JSON: null
+          JWE: null
+          JWT: null
+          UNSPECIFIED: null
+        PAYLOAD_TYPE_DESCRIPTION: null
+        TIMEOUT: null
+        TIMEOUT_DESCRIPTION: null
+        TITLE: null
+        TYPE: null
+        TYPES:
+          restAsync: null
+          restCall: null
+          restWebhook: null
+        TYPES_DESCRIPTION: null
+      DESCRIPTION: null
+      TABLE:
+        CREATIONDATE: null
+        ENDPOINT: null
+        NAME: null
+        REORDER: null
+      TITLE: null
+  APP:
+    ADDITIONALORIGINS: null
+    ADDITIONALORIGINSDESC: null
+    API:
+      AUTHMETHOD:
+        "0": null
+        "1": null
+      INFO:
+        CLIENTID: null
+      REGENERATESECRET: null
+      SELECTION:
+        DESCRIPTION: null
+        TITLE: null
+    AUTHMETHOD: null
+    AUTHMETHODS:
+      BASIC:
+        DESCRIPTION: null
+        TITLE: null
+      CODE:
+        DESCRIPTION: null
+        TITLE: null
+      CUSTOM:
+        DESCRIPTION: null
+        TITLE: null
+      DEVICECODE:
+        DESCRIPTION: null
+        TITLE: null
+      IMPLICIT:
+        DESCRIPTION: null
+        TITLE: null
+      PKCE:
+        DESCRIPTION: null
+        TITLE: null
+      PK_JWT:
+        DESCRIPTION: null
+        TITLE: null
+      POST:
+        DESCRIPTION: null
+        TITLE: null
+    AUTHMETHODSECTION: null
+    COMPLIANCE: null
+    CONFIGURATION: null
+    GRANT: null
+    LIST: null
+    LOGINV2:
+      BASEURL: null
+      USEV2: null
+    NAME: null
+    NAMEANDTYPESECTION: null
+    NAMEDIALOG:
+      DESCRIPTION: null
+      NAME: null
+      TITLE: null
+    NOTANORIGIN: null
+    OIDC:
+      ACCESSTOKENROLEASSERTION: null
+      ACCESSTOKENROLEASSERTION_DESCRIPTION: null
+      ANDROIDDESC: null
+      ANDROIDPACKAGEREQUIRED: null
+      ANDROIDTITLE: null
+      APPLINKSDESC: null
+      APPLINKSSECTION: null
+      APPTYPE:
+        "0": null
+        "1": null
+        "2": null
+      AUTHMETHOD:
+        "0": null
+        "1": null
+        "2": null
+        "3": null
+      BACKCHANNELLOOGOUTURI: null
+      BUNDLEID: null
+      BUNDLEIDDESC: null
+      BUNDLEIDPLACEHOLDER: null
+      CLIENTDETAILS: null
+      CLIENTID: null
+      CLIENTSECRET_DESCRIPTION: null
+      CLIENTSECRET_NOSECRET: null
+      CLOCKSKEW: null
+      COMMAORENTERSEPERATION: null
+      CURRENT: null
+      DEVMODE: null
+      DEVMODEDESC: null
+      DEVMODE_DISABLED: null
+      DEVMODE_ENABLED: null
+      FINGERPRINTS: null
+      FINGERPRINTSDESC: null
+      FINGERPRINTSPLACEHOLDER: null
+      GRANT:
+        "0": null
+        "1": null
+        "2": null
+        "3": null
+        "4": null
+      GRANTSECTION: null
+      GRANTTITLE: null
+      GRANTTYPE: null
+      IDTOKENROLEASSERTION: null
+      IDTOKENROLEASSERTION_DESCRIPTION: null
+      IDTOKENUSERINFOASSERTION: null
+      IDTOKENUSERINFOASSERTION_DESCRIPTION: null
+      INFO:
+        CLIENTID: null
+        ISSUER: null
+      IOSAPPLINKINCOMPLETE: null
+      IOSDESC: null
+      IOSTITLE: null
+      NOTRECOMMENDED: null
+      OVERVIEWSECTION: null
+      OVERVIEWTITLE: null
+      PACKAGENAME: null
+      PACKAGENAMEDESC: null
+      PACKAGENAMEPLACEHOLDER: null
+      POSTLOGOUTREDIRECT: null
+      POSTREDIRECTTITLE: null
+      RECOMMENDED: null
+      REDIRECT: null
+      REDIRECTDESCRIPTIONNATIVE: null
+      REDIRECTDESCRIPTIONWEB: null
+      REDIRECTNOTVALID: null
+      REDIRECTSECTION: null
+      REDIRECTSECTIONTITLE: null
+      REDIRECTTITLE: null
+      REFRESHTOKEN: null
+      REGENERATESECRET: null
+      RESPONSE:
+        "0": null
+        "1": null
+        "2": null
+      RESPONSESECTION: null
+      RESPONSETYPE: null
+      SELECTION:
+        APPTYPE:
+          NATIVE:
+            DESCRIPTION: null
+            TITLE: null
+          USERAGENT:
+            DESCRIPTION: null
+            TITLE: null
+          WEB:
+            DESCRIPTION: null
+            TITLE: null
+      SKIPNATIVEAPPSUCCESSPAGE: null
+      SKIPNATIVEAPPSUCCESSPAGE_DESCRIPTION: null
+      TEAMID: null
+      TEAMIDDESC: null
+      TEAMIDLENGTH: null
+      TEAMIDPLACEHOLDER: null
+      TITLE: null
+      TOKENSECTIONTITLE: null
+      TOKENTYPE: null
+      TOKENTYPE0: null
+      TOKENTYPE1: null
+      TYPEREQUIRED: null
+      UNSECUREREDIRECT: null
+      WELLKNOWN: null
+    ORIGINS: null
+    PAGES:
+      CREATE: null
+      CREATE_DESC_SUB: null
+      CREATE_DESC_TITLE: null
+      CREATE_NEW_PROJECT: null
+      CREATE_SELECT_PROJECT: null
+      DATECHANGED: null
+      DATECREATED: null
+      DELETE: null
+      DESCRIPTION: null
+      DETAIL:
+        STATE:
+          "0": null
+          "1": null
+          "2": null
+        TITLE: null
+      DIALOG:
+        CONFIG:
+          TITLE: null
+        DELETE:
+          DESCRIPTION: null
+          TITLE: null
+      ID: null
+      JUMPTOPROJECT: null
+      NEXTSTEPS:
+        "0":
+          DESC: null
+          TITLE: null
+        "1":
+          DESC: null
+          TITLE: null
+        "2":
+          DESC: null
+          TITLE: null
+        TITLE: null
+      STATE: null
+      TITLE: null
+      URLS: null
+    PROSWITCH: null
+    SAML:
+      ACSURL: null
+      CERTIFICATE: null
+      CHOOSEMETADATASOURCE: null
+      CONFIGSECTION: null
+      CREATEMETADATA: null
+      DOWNLOADCERT: null
+      ENTITYID: null
+      METADATA: null
+      METADATAFROMFILE: null
+      METADATAOPT1: null
+      METADATAOPT2: null
+      METADATAOPT3: null
+      SELECTION:
+        DESCRIPTION: null
+        TITLE: null
+      UPLOAD: null
+    TITLEFIRST: null
+    TOAST:
+      APIUPDATED: null
+      CLIENTSECRETREGENERATED: null
+      CONFIGCHANGED: null
+      CREATED: null
+      DEACTIVATED: null
+      DELETED: null
+      OIDCUPDATED: null
+      REACTIVATED: null
+      UPDATED: null
+    TOKEN: null
+    TYPE: null
+    TYPETITLE: null
+    URLS: null
+  APP_NAME: null
+  CHANGES:
+    BOTTOM: null
+    LISTTITLE: null
+    LOADMORE: null
+    ORG:
+      DESCRIPTION: null
+      TITLE: null
+    PROJECT:
+      DESCRIPTION: null
+      TITLE: null
+    USER:
+      DESCRIPTION: null
+      TITLE: null
+  DESCRIPTIONS:
+    ACTIONS:
+      ACTIONSTWO_NOTE: null
+      DESCRIPTION: null
+      FLOWS:
+        DESCRIPTION: null
+        TITLE: null
+      SCRIPTS:
+        DESCRIPTION: null
+        TITLE: null
+      TITLE: null
+    HOME:
+      MORE_SHORTCUTS:
+        DOCS:
+          DESCRIPTION: null
+          TITLE: null
+        EXAMPLES:
+          DESCRIPTION: null
+          TITLE: null
+        GET_STARTED:
+          DESCRIPTION: null
+          TITLE: null
+      NEXT:
+        CREATE_PROJECT:
+          DESCRIPTION: null
+          TITLE: null
+        DESCRIPTION: null
+        TITLE: null
+      TITLE: null
+    METADATA_TITLE: null
+    ORG:
+      DESCRIPTION: null
+      METADATA: null
+      TITLE: null
+    PROJECTS:
+      DESCRIPTION: null
+      GRANTED:
+        DESCRIPTION: null
+        TITLE: null
+      OWNED:
+        DESCRIPTION: null
+        TITLE: null
+      TITLE: null
+    ROLE_ASSIGNMENTS:
+      DESCRIPTION: null
+      TITLE: null
+    SETTINGS:
+      BRANDING:
+        DESCRIPTION: null
+        TITLE: null
+      DOMAINS:
+        DESCRIPTION: null
+        DOMAIN_VERIFICATION:
+          DESCRIPTION: null
+          TITLE: null
+        LOGIN_NAME_PATTERN:
+          DESCRIPTION: null
+          TITLE: null
+        REQUIRE_VERIFICATION:
+          DESCRIPTION: null
+          TITLE: null
+        SMTP_SENDER_ADDRESS:
+          DESCRIPTION: null
+          TITLE: null
+        TITLE: null
+      FEATURES:
+        DESCRIPTION: null
+        TITLE: null
+      IAM_EVENTS:
+        DESCRIPTION: null
+        TITLE: null
+      IAM_FAILED_EVENTS:
+        DESCRIPTION: null
+        TITLE: null
+      IAM_VIEWS:
+        DESCRIPTION: null
+        TITLE: null
+      IDPS:
+        ACTIVATE:
+          DESCRIPTION: null
+          TITLE: null
+        AUTOFILL:
+          DESCRIPTION: null
+          TITLE: null
+        CALLBACK:
+          DESCRIPTION: null
+          TITLE: null
+        DESCRIPTION: null
+        JWT:
+          DESCRIPTION: null
+          TITLE: null
+        LDAP:
+          DESCRIPTION: null
+          TITLE: null
+        NEXT: null
+        SAML:
+          DESCRIPTION: null
+          TITLE: null
+        TITLE: null
+      INSTANCE:
+        DESCRIPTION: null
+        TITLE: null
+      LANGUAGES:
+        DESCRIPTION: null
+        TITLE: null
+      LOGIN:
+        FORM:
+          DESCRIPTION: null
+          DISABLE_EMAIL_LOGIN:
+            DESCRIPTION: null
+            TITLE: null
+          DISABLE_PHONE_LOGIN:
+            DESCRIPTION: null
+            TITLE: null
+          DOMAIN_DISCOVERY_ALLOWED:
+            DESCRIPTION: null
+            TITLE: null
+          EXTERNAL_LOGIN_ALLOWED:
+            DESCRIPTION: null
+            TITLE: null
+          HIDE_PASSWORD_RESET:
+            DESCRIPTION: null
+            TITLE: null
+          IGNORE_UNKNOWN_USERNAMES:
+            DESCRIPTION: null
+            TITLE: null
+          LOCAL_AUTHENTICATION_ALLOWED:
+            DESCRIPTION: null
+            TITLE: null
+          ORG_REGISTRATION_ALLOWED:
+            DESCRIPTION: null
+            TITLE: null
+          TITLE: null
+          USER_REGISTRATION_ALLOWED:
+            DESCRIPTION: null
+            TITLE: null
+        LIFETIMES:
+          DESCRIPTION: null
+          EXT_LOGIN_CHECK:
+            DESCRIPTION: null
+            TITLE: null
+          LABEL: null
+          MULTI_FACTOR_CHECK:
+            DESCRIPTION: null
+            TITLE: null
+          MULTI_FACTOR_INIT:
+            DESCRIPTION: null
+            TITLE: null
+          PW_CHECK:
+            DESCRIPTION: null
+            TITLE: null
+          SECOND_FACTOR_CHECK:
+            DESCRIPTION: null
+            TITLE: null
+          TITLE: null
+      LOGIN_TEXTS:
+        DESCRIPTION: null
+        TITLE: null
+      MESSAGE_TEXTS:
+        DESCRIPTION: null
+        TITLE: null
+        TYPE_DESCRIPTIONS:
+          DC: null
+          INIT: null
+          IU: null
+          PC: null
+          PL: null
+          PR: null
+          VE: null
+          VEO: null
+          VP: null
+          VSO: null
+      OIDC:
+        ACCESS_TOKEN:
+          DESCRIPTION: null
+          TITLE: null
+        DESCRIPTION: null
+        ID_TOKEN:
+          DESCRIPTION: null
+          TITLE: null
+        LABEL_DAYS: null
+        LABEL_HOURS: null
+        REFRESH_TOKEN:
+          DESCRIPTION: null
+          TITLE: null
+        REFRESH_TOKEN_IDLE:
+          DESCRIPTION: null
+          TITLE: null
+        TITLE: null
+      ORG:
+        DESCRIPTION: null
+        TITLE: null
+      PRIVACY_POLICY:
+        DESCRIPTION: null
+        TITLE: null
+      PW_COMPLEXITY:
+        DESCRIPTION: null
+        TITLE: null
+      SECRET_GENERATORS:
+        DESCRIPTION: null
+        TITLE: null
+      SECURITY:
+        DESCRIPTION: null
+        TITLE: null
+      SMS_PROVIDER:
+        DESCRIPTION: null
+        TITLE: null
+      SMTP_PROVIDER:
+        DESCRIPTION: null
+        TITLE: null
+      WEB_KEYS:
+        CREATE:
+          BITS: null
+          CURVE: null
+          DESCRIPTION: null
+          HASHER: null
+          KEY_TYPE: null
+          TITLE: null
+        DESCRIPTION: null
+        PREVIOUS_TABLE:
+          DEACTIVATED_ON: null
+          DESCRIPTION: null
+          TITLE: null
+        TABLE:
+          ACTIVATE: null
+          ACTIVE: null
+          DESCRIPTION: null
+          FUTURE: null
+          NEXT: null
+          NOTE: null
+          TITLE: null
+          WARNING: null
+    USERS:
+      DESCRIPTION: null
+      HUMANS:
+        DESCRIPTION: null
+        METADATA: null
+        TITLE: null
+      MACHINES:
+        DESCRIPTION: null
+        METADATA: null
+        TITLE: null
+      SELF:
+        METADATA: null
+      TITLE: null
+  ERRORS:
+    ATLEASTONE: null
+    EXHAUSTED:
+      DESCRIPTION: null
+      TITLE: null
+    INVALID_FORMAT: null
+    LOWERCASEMISSING: null
+    MAXLENGTH: null
+    MINLENGTH: null
+    NOTANEMAIL: null
+    NUMBERERROR: null
+    PHONE: null
+    PWNOTEQUAL: null
+    REQUIRED: null
+    SYMBOLERROR: null
+    TOKENINVALID:
+      DESCRIPTION: null
+      TITLE: null
+    UPPERCASEMISSING: null
+  FILTER:
+    DISPLAYNAME: null
+    EMAIL: null
+    METHODS:
+      "1": null
+      "5": null
+      "7": null
+    ORGID: null
+    ORGNAME: null
+    PRIMARYDOMAIN: null
+    PROJECTNAME: null
+    RESOURCEOWNER: null
+    STATE: null
+    TITLE: null
+    USERNAME: null
+  FLOWS:
+    ACTIONS: null
+    ACTIONSMAX: null
+    ADDTRIGGER: null
+    ALLOWEDTOFAIL: null
+    ALLOWEDTOFAILWARN:
+      DESCRIPTION: null
+      TITLE: null
+    DIALOG:
+      ABOUTNAME: null
+      ADD:
+        TITLE: null
+      CLEAR:
+        DESCRIPTION: null
+        TITLE: null
+      DELETEACTION:
+        DELETE_SUCCESS: null
+        DESCRIPTION: null
+        TITLE: null
+      REMOVEACTIONSLIST:
+        DESCRIPTION: null
+        TITLE: null
+      UPDATE:
+        TITLE: null
+    FLOWCHANGED: null
+    FLOWCLEARED: null
+    FLOWTYPE: null
+    ID: null
+    NAME: null
+    SCRIPT: null
+    STATE: null
+    STATES:
+      "0": null
+      "1": null
+      "2": null
+    TIMEOUT: null
+    TIMEOUTINSEC: null
+    TOAST:
+      ACTIONDEACTIVATED: null
+      ACTIONREACTIVATED: null
+      ACTIONSSET: null
+    TRIGGERTYPE: null
+  FOOTER:
+    LINKS:
+      CONTACT: null
+      PP: null
+      TOS: null
+    THEME:
+      DARK: null
+      LIGHT: null
+  GENDERS:
+    "0": null
+    "1": null
+    "2": null
+    "3": null
+  GRANTS:
+    ADD: null
+    ADD_BTN: null
+    CREATE:
+      DESCRIPTION: null
+      TITLE: null
+    DELETE: null
+    DESC: null
+    DETAIL:
+      DESCRIPTION: null
+      TITLE: null
+    DIALOG:
+      BULK_DELETE_DESCRIPTION: null
+      BULK_DELETE_TITLE: null
+      DELETE_DESCRIPTION: null
+      DELETE_TITLE: null
+    EDIT:
+      TITLE: null
+    EMPTY: null
+    PROJECT:
+      DESCRIPTION: null
+      TITLE: null
+    TITLE: null
+    TOAST:
+      BULKREMOVED: null
+      CANTSHOWINFO: null
+      REMOVED: null
+      UPDATED: null
+    USER:
+      DESCRIPTION: null
+      TITLE: null
+  HOME:
+    DISCLAIMER: null
+    DISCLAIMERLINK: null
+    DOCUMENTATION:
+      DESCRIPTION: null
+    GETSTARTED:
+      DESCRIPTION: null
+    QUICKSTARTS:
+      DESCRIPTION: null
+      LABEL: null
+    SHORTCUTS:
+      ADD: null
+      PROJECTS: null
+      REORDER: null
+      SETTINGS: null
+      SHORTCUTS: null
+    WELCOME: null
+  IAM:
+    EVENTS:
+      AGGREGATE: null
+      AGGREGATEID: null
+      AGGREGATETYPE: null
+      CREATIONDATE: null
+      DIALOG:
+        TITLE: null
+      EDITOR: null
+      EDITORID: null
+      FILTERS:
+        AGGREGATE:
+          CHECKBOX: null
+          IDLABEL: null
+          TYPELABEL: null
+        ASC: null
+        BTN: null
+        CREATIONDATE:
+          LABEL_SINCE: null
+          LABEL_UNTIL: null
+          RADIO_FROM: null
+          RADIO_RANGE: null
+        DESC: null
+        OTHER: null
+        OTHERS: null
+        RESOURCEOWNER:
+          CHECKBOX: null
+          LABEL: null
+        SEQUENCE:
+          CHECKBOX: null
+          LABEL: null
+        SORT: null
+        TYPE:
+          CHECKBOX: null
+          TYPELABEL: null
+        USER:
+          CHECKBOX: null
+          IDLABEL: null
+      PAYLOAD: null
+      RESOURCEOWNER: null
+      SEQUENCE: null
+      TYPE: null
+    EVENTSTORE:
+      DESCRIPTION: null
+      TITLE: null
+    FAILEDEVENTS:
+      ACTIONS: null
+      DATABASE: null
+      DELETE: null
+      DELETESUCCESS: null
+      ERRORMESSAGE: null
+      FAILEDSEQUENCE: null
+      FAILURECOUNT: null
+      LASTFAILED: null
+      VIEWNAME: null
+    MEMBER:
+      DESCRIPTION: null
+      TITLE: null
+    PAGES:
+      DOMAINLIST: null
+      STATE: null
+    POLICIES:
+      DESCRIPTION: null
+      TITLE: null
+    STATE:
+      "0": null
+      "1": null
+      "2": null
+      "3": null
+      "4": null
+    TOAST:
+      DEACTIVATED: null
+      MEMBERADDED: null
+      MEMBERCHANGED: null
+      MEMBERREMOVED: null
+      MEMBERSADDED: null
+      REACTIVATED: null
+      ROLECHANGED: null
+      ROLEREMOVED: null
+    VIEWS:
+      ACTIONS: null
+      CLEAR: null
+      CLEARED: null
+      DATABASE: null
+      DIALOG:
+        VIEW_CLEAR_DESCRIPTION: null
+        VIEW_CLEAR_TITLE: null
+      EVENTTIMESTAMP: null
+      LASTSPOOL: null
+      SEQUENCE: null
+      VIEWNAME: null
+  IDP:
+    ACTIVATE: null
+    ADD: null
+    APPLE:
+      KEYID: null
+      KEYMAXSIZEEXCEEDED: null
+      PRIVATEKEY: null
+      TEAMID: null
+      UPDATEPRIVATEKEY: null
+      UPLOADPRIVATEKEY: null
+    AUTHORIZATIONENDPOINT: null
+    AVAILABILITY: null
+    AVAILABLE: null
+    AVAILABLEBUTINACTIVE: null
+    AVATARURLATTRIBUTE: null
+    AZUREADTENANTID: null
+    AZUREADTENANTTYPE: null
+    AZUREADTENANTTYPES:
+      "0": null
+      "1": null
+      "2": null
+      "3": null
+    BASEDN: null
+    BINDDN: null
+    BINDPASSWORD: null
+    CHANGEDATE: null
+    CLIENTID: null
+    CLIENTSECRET: null
+    CONFIG: null
+    CREATE:
+      APPLE:
+        DESCRIPTION: null
+        TITLE: null
+      AZUREAD:
+        DESCRIPTION: null
+        TITLE: null
+      DESCRIPTION: null
+      GITHUB:
+        DESCRIPTION: null
+        TITLE: null
+      GITHUBES:
+        DESCRIPTION: null
+        TITLE: null
+      GITLAB:
+        DESCRIPTION: null
+        TITLE: null
+      GITLABSELFHOSTED:
+        DESCRIPTION: null
+        TITLE: null
+      GOOGLE:
+        DESCRIPTION: null
+        TITLE: null
+      JWT:
+        DESCRIPTION: null
+        TITLE: null
+      LDAP:
+        DESCRIPTION: null
+        TITLE: null
+      OAUTH:
+        DESCRIPTION: null
+        TITLE: null
+      OIDC:
+        DESCRIPTION: null
+        TITLE: null
+      SAML:
+        DESCRIPTION: null
+        TITLE: null
+      STEPPERTITLE: null
+      TITLE: null
+      ZITADEL:
+        DESCRIPTION: null
+        TITLE: null
+    CREATIONDATE: null
+    DATES: null
+    DEACTIVATE: null
+    DELETE: null
+    DELETE_DESCRIPTION: null
+    DELETE_SELECTION_DESCRIPTION: null
+    DELETE_SELECTION_TITLE: null
+    DELETE_TITLE: null
+    DETAIL:
+      DATECHANGED: null
+      DATECREATED: null
+      DESCRIPTION: null
+      TITLE: null
+    DISPLAYNAMEATTRIBUTE: null
+    EMAILATTRIBUTEATTRIBUTE: null
+    EMAILVERIFIED: null
+    EMAILVERIFIEDATTRIBUTE: null
+    EMPTY: null
+    FEDERATEDLOGOUTENABLED: null
+    FEDERATEDLOGOUTENABLED_DESC: null
+    FIRSTNAMEATTRIBUTE: null
+    ID: null
+    IDATTRIBUTE: null
+    IDPDISPLAYNAMMAPPING: null
+    INSTANCEROLESINFO: null
+    INSTANCEROLESINFO_DESC: null
+    ISIDTOKENMAPPING: null
+    ISIDTOKENMAPPING_DESC: null
+    ISSUER: null
+    JWT:
+      AUDIENCE: null
+      DESCRIPTION: null
+      HEADERNAME: null
+      JWTENDPOINT: null
+      JWTKEYSENDPOINT: null
+      TITLE: null
+    LASTNAMEATTRIBUTE: null
+    LDAPATTRIBUTES: null
+    LDAPCONNECTION: null
+    LDAPIDATTRIBUTE: null
+    LDAPUSERBINDING: null
+    LIST:
+      ACTIVETITLE: null
+    NAME: null
+    NAMEHINT: null
+    NICKNAMEATTRIBUTE: null
+    OIDC:
+      DESCRIPTION: null
+      GENERAL: null
+      TITLE: null
+    OPTIONAL: null
+    OPTIONS:
+      AUTOLINKINGTYPE:
+        "0": null
+        "1": null
+        "2": null
+      AUTOLINKING_DESC: null
+      ISAUTOCREATION: null
+      ISAUTOCREATION_DESC: null
+      ISAUTOUPDATE: null
+      ISAUTOUPDATE_DESC: null
+      ISCREATIONALLOWED: null
+      ISCREATIONALLOWED_DESC: null
+      ISLINKINGALLOWED: null
+      ISLINKINGALLOWED_DESC: null
+    ORGANIZATIONDOMAIN: null
+    ORGANIZATIONID: null
+    OWNER: null
+    OWNERTYPES:
+      "0": null
+      "1": null
+      "2": null
+    PHONEATTRIBUTE: null
+    PHONEVERIFIEDATTRIBUTE: null
+    PREFERREDLANGUAGEATTRIBUTE: null
+    PREFERREDUSERNAMEATTRIBUTE: null
+    PROFILEATTRIBUTE: null
+    REMOVE_WARN_DESCRIPTION: null
+    REMOVE_WARN_TITLE: null
+    REQUIRED: null
+    SAML:
+      BINDING: null
+      METADATAURL: null
+      METADATAXML: null
+      NAMEIDFORMAT: null
+      SIGNATUREALGORITHM: null
+      SIGNEDREQUEST: null
+      TRANSIENTMAPPINGATTRIBUTENAME: null
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC: null
+    SCOPESLIST: null
+    SERVERS: null
+    SETAVAILABLE: null
+    SETUNAVAILABLE: null
+    STARTTLS: null
+    STATE: null
+    STATES:
+      "1": null
+      "2": null
+    TIMEOUT: null
+    TOAST:
+      ADDED: null
+      DEACTIVATED: null
+      DELETED: null
+      REACTIVATED: null
+      REMOVED: null
+      SAVED: null
+      SELECTEDDEACTIVATED: null
+      SELECTEDKEYSDELETED: null
+      SELECTEDREACTIVATED: null
+    TOKENENDPOINT: null
+    TYPE: null
+    UPDATEBINDPASSWORD: null
+    UPDATECLIENTSECRET: null
+    USEPKCE: null
+    USEPKCE_DESC: null
+    USERBASE: null
+    USERENDPOINT: null
+    USERFILTERS: null
+    USERNAMEMAPPING: null
+    USEROBJECTCLASSES: null
+  INSTANCEID: null
+  KEYBOARDSHORTCUTS:
+    SHORTCUTS:
+      ACTIONS: null
+      DOMAINS: null
+      HOME: null
+      INSTANCE: null
+      ME: null
+      ORG: null
+      ORGSETTINGS: null
+      ORGSWITCHER: null
+      PROJECTS: null
+      ROLEASSIGNMENTS: null
+      USERS: null
+    SIDEWIDE: null
+    TITLE: null
+    UNDERORGCONTEXT: null
+  LANGUAGES:
+    ar: null
+    bg: null
+    cs: null
+    de: null
+    en: null
+    es: null
+    fr: null
+    hu: null
+    id: null
+    it: null
+    ja: null
+    ko: null
+    mk: null
+    nl: null
+    pl: null
+    pt: null
+    ro: null
+    ru: null
+    sv: null
+    tr: null
+    uk: null
+    zh: null
+  LOGINPOLICY:
+    ADDIDP:
+      DESCRIPTION: null
+      SELECTIDPS: null
+      TITLE: null
+    CREATE:
+      DESCRIPTION: null
+      TITLE: null
+    IDPS: null
+    PASSWORDLESS: null
+    PASSWORDLESSTYPE:
+      "0": null
+      "1": null
+  MEMBER:
+    ADD: null
+    CREATIONTYPE: null
+    CREATIONTYPES:
+      "0": null
+      "1": null
+      "2": null
+      "3": null
+      "4": null
+    DIALOG:
+      DELETE_DESCRIPTION: null
+      DELETE_TITLE: null
+    EDITFOR: null
+    EDITROLE: null
+    SHOWDETAILS: null
+  MEMBERROLES:
+    IAM_ADMIN_IMPERSONATOR: null
+    IAM_END_USER_IMPERSONATOR: null
+    IAM_LOGIN_CLIENT: null
+    IAM_ORG_MANAGER: null
+    IAM_OWNER: null
+    IAM_OWNER_VIEWER: null
+    IAM_USER_MANAGER: null
+    ORG_ADMIN_IMPERSONATOR: null
+    ORG_DYNAMIC_CLIENT_REGISTRAR: null
+    ORG_END_USER_IMPERSONATOR: null
+    ORG_OWNER: null
+    ORG_OWNER_VIEWER: null
+    ORG_PROJECT_CREATOR: null
+    ORG_PROJECT_PERMISSION_EDITOR: null
+    ORG_SETTINGS_MANAGER: null
+    ORG_USER_MANAGER: null
+    ORG_USER_PERMISSION_EDITOR: null
+    ORG_USER_SELF_MANAGER: null
+    PROJECT_GRANT_OWNER: null
+    PROJECT_GRANT_OWNER_VIEWER: null
+    PROJECT_OWNER: null
+    PROJECT_OWNER_GLOBAL: null
+    PROJECT_OWNER_VIEWER: null
+    PROJECT_OWNER_VIEWER_GLOBAL: null
+  MENU:
+    ACTIONS: null
+    CUSTOMERPORTAL: null
+    DASHBOARD: null
+    DOCUMENTATION: null
+    EVENTS: null
+    FAILEDEVENTS: null
+    GRANTEDPROJECT: null
+    GRANTS: null
+    HUMANUSERS: null
+    IAMADMIN: null
+    INSTANCE: null
+    INSTANCEOVERVIEW: null
+    LOGOUT: null
+    MACHINEUSERS: null
+    NEWORG: null
+    OPENSHORTCUTSTOOLTIP: null
+    ORGANIZATION: null
+    ORGS: null
+    PERSONAL_INFO: null
+    PRIVACY: null
+    PROJECT: null
+    PROJECTGRANTS: null
+    PROJECTOVERVIEW: null
+    ROLES: null
+    SETTINGS: null
+    SHOWORGS: null
+    TARGETS: null
+    TOS: null
+    VIEWS: null
+  METADATA:
+    ADD: null
+    EMPTY: null
+    KEY: null
+    REMOVESUCCESS: null
+    SAVE: null
+    SETSUCCESS: null
+    TITLE: null
+    VALUE: null
+  MFA:
+    CREATE:
+      DESCRIPTION: null
+      TITLE: null
+    DELETE:
+      DESCRIPTION: null
+      TITLE: null
+    LIST:
+      MULTIFACTORDESCRIPTION: null
+      MULTIFACTORTITLE: null
+      SECONDFACTORDESCRIPTION: null
+      SECONDFACTORTITLE: null
+    MULTIFACTORTYPES:
+      "0": null
+      "1": null
+    SECONDFACTORTYPES:
+      "0": null
+      "1": null
+      "2": null
+      "3": null
+      "4": null
+      "5": null
+    TOAST:
+      ADDED: null
+      DELETED: null
+      SAVED: null
+    TYPE: null
+  NAME: null
+  NEXTSTEPS:
+    TITLE: null
+  ONBOARDING:
+    CARD:
+      DESCRIPTION: null
+      TITLE: null
+    COMPLETED: null
+    DESCRIPTION: null
+    DISMISS: null
+    MILESTONES:
+      APPLICATION_CREATED:
+        action: null
+        description: null
+        title: null
+      AUTHENTICATION_SUCCEEDED_ON_APPLICATION:
+        action: null
+        description: null
+        title: null
+      PROJECT_CREATED:
+        action: null
+        description: null
+        title: null
+      instance.policy.label.added:
+        action: null
+        description: null
+        title: null
+      instance.smtp.config.added:
+        action: null
+        description: null
+        title: null
+      user.grant.added:
+        action: null
+        description: null
+        title: null
+      user.human.added:
+        action: null
+        description: null
+        title: null
+    MOREDESCRIPTION: null
+  ORG:
+    DIALOG:
+      DEACTIVATE:
+        DESCRIPTION: null
+        TITLE: null
+      DELETE:
+        BTN: null
+        DESCRIPTION: null
+        ORGNAME: null
+        TITLE: null
+        TYPENAME: null
+      REACTIVATE:
+        DESCRIPTION: null
+        TITLE: null
+    DOMAINS:
+      ADD:
+        DESCRIPTION: null
+        TITLE: null
+      DELETE:
+        DESCRIPTION: null
+        TITLE: null
+      DESCRIPTION: null
+      NEW: null
+      SETPRIMARY: null
+      TITLE: null
+    LIST:
+      DESCRIPTION: null
+      TITLE: null
+    MEMBER:
+      DESCRIPTION: null
+      TITLE: null
+    PAGES:
+      ACTIVE: null
+      CREATE: null
+      CREATIONDATE: null
+      DATECHANGED: null
+      DEACTIVATE: null
+      DEFAULTLABEL: null
+      DEFAULTORGSET: null
+      DELETE: null
+      DOWNLOAD_FILE: null
+      FILTER: null
+      FILTERPLACEHOLDER: null
+      ID: null
+      LIST: null
+      LISTDESCRIPTION: null
+      NAME: null
+      NOPERMISSION: null
+      ORGDETAILUSER_TITLE: null
+      ORGDETAIL_TITLE: null
+      ORGDETAIL_TITLE_WITHOUT_DOMAIN: null
+      ORGDOMAIN:
+        RESETMETHOD: null
+        TITLE: null
+        VERIFICATION: null
+        VERIFICATION_DNS: null
+        VERIFICATION_DNS_CHALLENGE_LABEL: null
+        VERIFICATION_DNS_DESC: null
+        VERIFICATION_DNS_HOST_LABEL: null
+        VERIFICATION_HTML: null
+        VERIFICATION_HTTP_DESC: null
+        VERIFICATION_HTTP_FILE_LABEL: null
+        VERIFICATION_HTTP_URL_LABEL: null
+        VERIFICATION_NEWTOKEN_TITLE: null
+        VERIFICATION_SKIP: null
+        VERIFICATION_SUCCESSFUL: null
+        VERIFICATION_VALIDATION_DESC: null
+        VERIFICATION_VALIDATION_ONGOING: null
+      PRIMARYDOMAIN: null
+      REACTIVATE: null
+      RENAME:
+        ACTION: null
+        BTN: null
+        DESCRIPTION: null
+        TITLE: null
+      SELECTORGTOOLTIP: null
+      SETASDEFAULT: null
+      STATE: null
+      USEPASSWORD: null
+      USEPASSWORDDESC: null
+      USERSELFACCOUNT: null
+    STATE:
+      "0": null
+      "1": null
+      "2": null
+    TOAST:
+      DEACTIVATED: null
+      DEFAULTORGNOTFOUND: null
+      DELETED: null
+      DOMAINADDED: null
+      DOMAINREMOVED: null
+      MEMBERADDED: null
+      MEMBERCHANGED: null
+      MEMBERREMOVED: null
+      ORG_WAS_DELETED: null
+      REACTIVATED: null
+      SETPRIMARY: null
+      UPDATED: null
+  ORG_DETAIL:
+    DESCRIPTION: null
+    DETAIL:
+      DOMAIN: null
+      NAME: null
+      STATE:
+        "0": null
+        "1": null
+        "2": null
+      TITLE: null
+    MEMBER:
+      ADD: null
+      ADDDESCRIPTION: null
+      DISPLAYNAME: null
+      EMAIL: null
+      LOGINNAME: null
+      ROLES: null
+      TITLE: null
+      USERNAME: null
+    TABLE:
+      ACTIVATE: null
+      CLEAR: null
+      DEACTIVATE: null
+      DELETE: null
+      SELECTION: null
+      TOTAL: null
+    TITLE: null
+  OVERLAYS:
+    CONTEXTCHANGED:
+      TEXT: null
+    INSTANCE:
+      TEXT: null
+    NAV:
+      TEXT: null
+    ORGSWITCHER:
+      TEXT: null
+    PROFILE:
+      TEXT: null
+    SWITCHEDTOINSTANCE:
+      TEXT: null
+  PAGINATOR:
+    COUNT: null
+    MORE: null
+    NEXT: null
+    PREVIOUS: null
+  POLICY:
+    APPLIEDTO: null
+    BTN_EDIT: null
+    BTN_INSTALL: null
+    CREATECUSTOM: null
+    DATA:
+      ALLOWDOMAINDISCOVERY_DESC: null
+      ALLOWEXTERNALIDP_DESC: null
+      ALLOWREGISTER_DESC: null
+      ALLOWUSERNAMEPASSWORD_DESC: null
+      DEFAULTREDIRECTURI: null
+      DEFAULTREDIRECTURI_DESC: null
+      DESCRIPTION: null
+      DISABLEWATERMARK: null
+      DISABLEWATERMARK_DESC: null
+      ERRORMSGPOPUP: null
+      EXPIREWARNDAYS: null
+      FORCEMFA: null
+      FORCEMFALOCALONLY: null
+      FORCEMFALOCALONLY_DESC: null
+      HASLOWERCASE: null
+      HASNUMBER: null
+      HASSYMBOL: null
+      HASUPPERCASE: null
+      HIDELOGINNAMESUFFIX: null
+      HIDELOGINNAMESUFFIX_DESC: null
+      HIDEPASSWORDRESET_DESC: null
+      IGNOREUNKNOWNUSERNAMES_DESC: null
+      MAXAGEDAYS: null
+      MAXOTPATTEMPTS: null
+      MAXPASSWORDATTEMPTS: null
+      MINLENGTH: null
+      SHOWLOCKOUTFAILURES: null
+      SMTPSENDERADDRESSMATCHESINSTANCEDOMAIN: null
+      USERLOGINMUSTBEDOMAIN: null
+      USERLOGINMUSTBEDOMAIN_DESCRIPTION: null
+      VALIDATEORGDOMAINS: null
+    DEFAULTLABEL: null
+    LOGIN_POLICY:
+      DESCRIPTION: null
+      DESCRIPTIONCREATEADMIN: null
+      DESCRIPTIONCREATEMGMT: null
+      LIFETIME_INVALID: null
+      PROVIDER_ADDED: null
+      SAVED: null
+      TITLE: null
+    LOGIN_TEXTS:
+      ACTIVE_LANGUAGE_NOT_ALLOWED: null
+      CHANGEDATE: null
+      CURRENTDATE: null
+      DESCRIPTION: null
+      DESCRIPTION_SHORT: null
+      KEYNAME: null
+      KEYS:
+        emailVerificationDoneText: null
+        emailVerificationText: null
+        externalRegistrationUserOverviewText: null
+        externalUserNotFoundText: null
+        footerText: null
+        initMfaDoneText: null
+        initMfaOtpText: null
+        initMfaPromptText: null
+        initMfaU2fText: null
+        initPasswordDoneText: null
+        initPasswordText: null
+        initializeDoneText: null
+        initializeUserText: null
+        linkingUserDoneText: null
+        loginText: null
+        logoutText: null
+        mfaProvidersText: null
+        passwordChangeDoneText: null
+        passwordChangeText: null
+        passwordResetDoneText: null
+        passwordText: null
+        passwordlessPromptText: null
+        passwordlessRegistrationDoneText: null
+        passwordlessRegistrationText: null
+        passwordlessText: null
+        registrationOptionText: null
+        registrationOrgText: null
+        registrationUserText: null
+        selectAccountText: null
+        successLoginText: null
+        usernameChangeDoneText: null
+        usernameChangeText: null
+        verifyMfaOtpText: null
+        verifyMfaU2fText: null
+      LANGUAGE: null
+      LANGUAGES:
+        ar: null
+        bg: null
+        cs: null
+        de: null
+        en: null
+        es: null
+        fr: null
+        hu: null
+        id: null
+        it: null
+        ja: null
+        ko: null
+        mk: null
+        nl: null
+        pl: null
+        pt: null
+        ro: null
+        ru: null
+        sv: null
+        tr: null
+        uk: null
+        zh: null
+      LANGUAGES_NOT_ALLOWED: null
+      NEWERVERSIONEXISTS: null
+      RESET_DESCRIPTION: null
+      RESET_TITLE: null
+      TITLE: null
+      UNSAVED_DESCRIPTION: null
+      UNSAVED_TITLE: null
+    MESSAGE_TEXTS:
+      CHIPS:
+        applicationName: null
+        changedate: null
+        code: null
+        displayName: null
+        domain: null
+        expiry: null
+        firstname: null
+        lastEmail: null
+        lastPhone: null
+        lastname: null
+        loginnames: null
+        nickName: null
+        otp: null
+        preferredLoginName: null
+        tempUsername: null
+        username: null
+        verifiedEmail: null
+        verifiedPhone: null
+        verifyUrl: null
+      TOAST:
+        UPDATED: null
+      TYPE: null
+      TYPES:
+        DC: null
+        INIT: null
+        IU: null
+        PC: null
+        PL: null
+        PR: null
+        VE: null
+        VEO: null
+        VP: null
+        VSO: null
+    NOTIFICATION:
+      DESCRIPTION: null
+      PASSWORDCHANGE: null
+      TITLE: null
+    PRIVACY_POLICY:
+      CUSTOMLINK: null
+      CUSTOMLINKTEXT: null
+      DESCRIPTION: null
+      DOCSLINK: null
+      HELPLINK: null
+      POLICYLINK: null
+      RESET_DESCRIPTION: null
+      RESET_TITLE: null
+      SAVED: null
+      SUPPORTEMAIL: null
+      TOSLINK: null
+    PRIVATELABELING:
+      ACTIVATED: null
+      ACTIVATEPREVIEW: null
+      ADVANCEDBEHAVIOR: null
+      BACKGROUNDCOLOR: null
+      BTN: null
+      CHANGEVIEW: null
+      COLORS: null
+      DARK: null
+      DESCRIPTION: null
+      DROP: null
+      DROPFONT: null
+      EMAILNOSVG: null
+      FONT: null
+      FONTCOLOR: null
+      FONTINLOGINONLY: null
+      LIGHT: null
+      MAXSIZE: null
+      MAXSIZEEXCEEDED: null
+      NOSVGSUPPORTED: null
+      PREVIEW:
+        ERROR: null
+        PRIMARYBUTTON: null
+        SECOND: null
+        SECONDARYBUTTON: null
+        TITLE: null
+      PREVIEW_DESCRIPTION: null
+      PRIMARYCOLOR: null
+      RELEASE: null
+      RELEASEFONT: null
+      THEME: null
+      THEMEMODE:
+        THEME_MODE_AUTO: null
+        THEME_MODE_DARK: null
+        THEME_MODE_LIGHT: null
+      USEOFLOGO: null
+      VIEWS:
+        CURRENT: null
+        PREVIEW: null
+      WARNCOLOR: null
+    PRIVATELABELING_POLICY:
+      ACTIVATEPREVIEW: null
+      BTN: null
+      DESCRIPTION: null
+      TITLE: null
+    PWD_AGE:
+      DESCRIPTION: null
+      TITLE: null
+    PWD_COMPLEXITY:
+      DESCRIPTION: null
+      NUMBERERROR: null
+      PATTERNERROR: null
+      SYMBOLANDNUMBERERROR: null
+      SYMBOLERROR: null
+      TITLE: null
+    PWD_LOCKOUT:
+      DESCRIPTION: null
+      TITLE: null
+    RESET: null
+    TOAST:
+      DELETESUCCESS: null
+      RESETSUCCESS: null
+      SET: null
+      UPLOADFAILED: null
+      UPLOADSUCCESS: null
+  PROJECT:
+    APP:
+      NAME: null
+      NAMEREQUIRED: null
+      TITLE: null
+    GRANT:
+      ALL: null
+      CHANGEDATE: null
+      CREATE:
+        FOR_ORG: null
+        ORG_DESCRIPTION: null
+        ORG_DESCRIPTION_DESC: null
+        SEL_ORG: null
+        SEL_ORG_DESC: null
+        SEL_ORG_FORMFIELD: null
+        SEL_PROJECT: null
+        SEL_ROLES: null
+        SEL_USER: null
+        SEL_USERS: null
+        TITLE: null
+      CREATIONDATE: null
+      DATES: null
+      DESCRIPTION: null
+      DETAIL:
+        DESC: null
+        GRANTEDORG: null
+        MEMBERDESC: null
+        MEMBERTITLE: null
+        PROJECTNAME: null
+        RESOURCEOWNER: null
+        TITLE: null
+      DIALOG:
+        DELETE_DESCRIPTION: null
+        DELETE_TITLE: null
+      EDITTITLE: null
+      EMPTY: null
+      GRANTEDORG: null
+      GRANTEDORGDOMAIN: null
+      GRANTEDORGNAME: null
+      GRANTID: null
+      MEMBERS: null
+      NOROLES: null
+      ORG: null
+      PROJECTNAME: null
+      RESOURCEOWNER: null
+      ROLENAMESLIST: null
+      ROLES: null
+      SHOWDETAIL: null
+      STATE: null
+      STATES:
+        "1": null
+        "2": null
+      TITLE: null
+      TOAST:
+        PROJECTGRANTADDED: null
+        PROJECTGRANTCHANGED: null
+        PROJECTGRANTMEMBERADDED: null
+        PROJECTGRANTMEMBERCHANGED: null
+        PROJECTGRANTMEMBERREMOVED: null
+        PROJECTGRANTUPDATED: null
+        PROJECTGRANTUSERGRANTADDED: null
+      TYPE: null
+      USER: null
+    HAS_PROJECT: null
+    HAS_PROJECT_DESCRIPTION: null
+    MEMBER:
+      DESCRIPTION: null
+      DISPLAYNAME: null
+      EMAIL: null
+      LOGINNAME: null
+      ROLES: null
+      TITLE: null
+      TITLEDESC: null
+      USERID: null
+      USERNAME: null
+    NAME: null
+    NAMEDIALOG:
+      DESCRIPTION: null
+      NAME: null
+      TITLE: null
+    PAGES:
+      ADDNEW: null
+      ALL: null
+      CREATE: null
+      CREATEDON: null
+      CREATE_DESC: null
+      DELETE: null
+      DESCRIPTION: null
+      DETAIL: null
+      DIALOG:
+        DEACTIVATE:
+          DESCRIPTION: null
+          TITLE: null
+        DELETE:
+          DESCRIPTION: null
+          TITLE: null
+          TYPENAME: null
+        REACTIVATE:
+          DESCRIPTION: null
+          TITLE: null
+      ID: null
+      LASTMODIFIED: null
+      NOITEMS: null
+      PINNED: null
+      PRIVATELABEL:
+        "0":
+          DESC: null
+          TITLE: null
+        "1":
+          DESC: null
+          TITLE: null
+        "2":
+          DESC: null
+          TITLE: null
+        DIALOG:
+          DESCRIPTION: null
+          TITLE: null
+        TITLE: null
+      ROLE: null
+      TITLE: null
+      TYPE:
+        GRANTED_SINGULAR: null
+        OWNED: null
+        OWNED_SINGULAR: null
+      ZITADELPROJECT: null
+    ROLE:
+      ACTIONS: null
+      ADDDESCRIPTION: null
+      ADDNEWLINE: null
+      ADDTITLE: null
+      ASSERTION: null
+      ASSERTION_DESCRIPTION: null
+      CHANGEDATE: null
+      CHECK: null
+      CHECK_DESCRIPTION: null
+      CREATIONDATE: null
+      DELETE: null
+      DESCRIPTION: null
+      DIALOG:
+        DELETE_DESCRIPTION: null
+        DELETE_TITLE: null
+      DISPLAY_NAME: null
+      EDITDESCRIPTION: null
+      EDITTITLE: null
+      EMPTY: null
+      GROUP: null
+      KEY: null
+      NAME: null
+      OPTIONS: null
+      SELECTGROUPTOOLTIP: null
+      TITLE: null
+    SETTINGS:
+      DESCRIPTION: null
+      TITLE: null
+    STATE:
+      "0": null
+      "1": null
+      "2": null
+      TITLE: null
+    TABLE:
+      ACTIVATE: null
+      CHANGEDATE: null
+      CREATIONDATE: null
+      DEACTIVATE: null
+      DELETE: null
+      EMPTY: null
+      ORGDOMAIN: null
+      ORGID: null
+      ORGNAME: null
+      RESOURCEOWNER: null
+      SELECTION: null
+      SHOWGRID: null
+      SHOWTABLE: null
+      STATE: null
+      TOTAL: null
+      TYPE: null
+    TOAST:
+      CREATED: null
+      DEACTIVATED: null
+      DELETED: null
+      GRANTUPDATED: null
+      MEMBERADDED: null
+      MEMBERCHANGED: null
+      MEMBERREMOVED: null
+      MEMBERSADDED: null
+      REACTIVATED: null
+      ROLECHANGED: null
+      ROLEREMOVED: null
+      ROLESCREATED: null
+      UPDATED: null
+    TYPE:
+      "0": null
+      "1": null
+      "2": null
+      TITLE: null
+  QUICKSTART:
+    ALMOSTDONE: null
+    BROWSEEXAMPLES: null
+    BTN_LEARNMORE: null
+    BTN_START: null
+    CREATEPROJECTFORAPP: null
+    DESCRIPTION: null
+    DEVMODEWARN: null
+    DIALOG:
+      CHANGE:
+        DESCRIPTION: null
+        TITLE: null
+    DUPLICATEAPPRENAME: null
+    FRAMEWORK: null
+    FRAMEWORK_OTHER: null
+    GUIDE: null
+    REDIRECTS: null
+    REVIEWCONFIGURATION: null
+    REVIEWCONFIGURATION_DESCRIPTION: null
+    SELECT_FRAMEWORK: null
+    TITLE: null
+  RESOURCEID: null
+  ROLES:
+    DIALOG:
+      DELETE_DESCRIPTION: null
+      DELETE_TITLE: null
+  ROLESLABEL: null
+  SETTING:
+    DIALOG:
+      RESET:
+        DEFAULTDESCRIPTION: null
+        DEFAULTTITLE: null
+        LOGINPOLICY_DESCRIPTION: null
+    FEATURES:
+      ACTIONS: null
+      ACTIONS_DESCRIPTION: null
+      CONSOLEUSEV2USERAPI: null
+      CONSOLEUSEV2USERAPI_DESCRIPTION: null
+      DEBUGOIDCPARENTERROR: null
+      DEBUGOIDCPARENTERROR_DESCRIPTION: null
+      ENABLERELATIONALTABLES: null
+      ENABLERELATIONALTABLES_DESCRIPTION: null
+      INHERITEDINDICATOR_DESCRIPTION:
+        DISABLED: null
+        ENABLED: null
+      INHERITED_DESCRIPTION: null
+      LOGINDEFAULTORG: null
+      LOGINDEFAULTORG_DESCRIPTION: null
+      LOGINV2: null
+      LOGINV2_BASEURI: null
+      LOGINV2_DESCRIPTION: null
+      OIDCSINGLEV1SESSIONTERMINATION: null
+      OIDCSINGLEV1SESSIONTERMINATION_DESCRIPTION: null
+      PERMISSIONCHECKV2: null
+      PERMISSIONCHECKV2_DESCRIPTION: null
+      RESET: null
+      STATES:
+        DISABLED: null
+        ENABLED: null
+        INHERITED: null
+      USERSCHEMA: null
+      USERSCHEMA_DESCRIPTION: null
+    LANGUAGES:
+      ALLOWED: null
+      ALLOWED_SAVED: null
+      ALLOW_ALL: null
+      DEFAULT: null
+      DEFAULT_SAVED: null
+      DISALLOW_ALL: null
+      NOT_ALLOWED: null
+      OPTIONS:
+        ar: null
+        bg: null
+        cs: null
+        de: null
+        en: null
+        es: null
+        fr: null
+        hu: null
+        id: null
+        it: null
+        ja: null
+        ko: null
+        mk: null
+        nl: null
+        pl: null
+        pt: null
+        ro: null
+        ru: null
+        sv: null
+        tr: null
+        uk: null
+        zh: null
+      SETASDEFAULT: null
+    SECRETS:
+      EXPIRY: null
+      INCLUDEDIGITS: null
+      INCLUDELOWERLETTERS: null
+      INCLUDESYMBOLS: null
+      INCLUDEUPPERLETTERS: null
+      LENGTH: null
+      TYPE:
+        "1": null
+        "2": null
+        "3": null
+        "4": null
+        "5": null
+        "6": null
+        "7": null
+        "8": null
+        "9": null
+      TYPES: null
+      UPDATED: null
+    SECURITY:
+      ALLOWEDORIGINS: null
+      IFRAMEDESCRIPTION: null
+      IFRAMEENABLED: null
+      IFRAMETITLE: null
+      IMPERSONATIONDESCRIPTION: null
+      IMPERSONATIONENABLED: null
+      IMPERSONATIONTITLE: null
+    SMS:
+      ACTIVATED: null
+      ADDPROVIDER: null
+      ADDPROVIDERDESCRIPTION: null
+      DEACTIVATED: null
+      PROVIDER: null
+      PROVIDERS: null
+      REMOVEPROVIDER: null
+      REMOVEPROVIDER_DESC: null
+      SMSPROVIDERSTATE:
+        "0": null
+        "1": null
+        "2": null
+      TWILIO:
+        ADDED: null
+        CHANGETOKEN: null
+        REMOVED: null
+        SENDERNUMBER: null
+        SETTOKEN: null
+        SID: null
+        TOKEN: null
+        TOKENSET: null
+        UPDATED: null
+        VERIFYSERVICESID: null
+        VERIFYSERVICESID_DESCRIPTION: null
+    SMTP:
+      DESCRIPTION: null
+      HOSTANDPORT: null
+      NOCHANGES: null
+      PASSWORD: null
+      PASSWORDSET: null
+      REPLYTOADDRESS: null
+      REQUIREDWARN: null
+      SAVED: null
+      SENDERADDRESS: null
+      SENDERNAME: null
+      SETPASSWORD: null
+      TITLE: null
+      TLS: null
+      USER: null
+  SETTINGS:
+    BETA: null
+    GROUPS:
+      ACTIONS: null
+      APPEARANCE: null
+      DOMAIN: null
+      GENERAL: null
+      LOGIN: null
+      NOTIFICATIONS: null
+      OTHER: null
+      STORAGE: null
+      TEXTS: null
+    LIST:
+      ACTIONS: null
+      AGE: null
+      BRANDING: null
+      COMPLEXITY: null
+      DOMAIN: null
+      EVENTS: null
+      FAILEDEVENTS: null
+      FEATURESETTINGS: null
+      IDP: null
+      LANGUAGES: null
+      LOCKOUT: null
+      LOGIN: null
+      LOGINTEXTS: null
+      MESSAGETEXTS: null
+      NOTIFICATIONS: null
+      NOTIFICATIONS_DESC: null
+      OIDC: null
+      ORGS: null
+      PRIVACYPOLICY: null
+      SECRETS: null
+      SECURITY: null
+      SMS_PROVIDER: null
+      SMTP_PROVIDER: null
+      TARGETS: null
+      VERIFIED_DOMAINS: null
+      VIEWS: null
+      WEB_KEYS: null
+  SMTP:
+    CREATE:
+      DESCRIPTION: null
+      STEPS:
+        ACTIVATE:
+          DESCRIPTION: null
+          TITLE: null
+        CREATE_DESC_TITLE: null
+        CURRENT_DESC_TITLE: null
+        DEACTIVATE:
+          DESCRIPTION: null
+          TITLE: null
+        NEXT_STEPS: null
+        PROVIDER_SETTINGS: null
+        SAVE_SETTINGS: null
+        SENDER_SETTINGS: null
+        TEST:
+          DESCRIPTION: null
+          RESULT: null
+          TITLE: null
+        TITLE: null
+      TITLE: null
+    DETAIL:
+      TITLE: null
+    EMPTY: null
+    LIST:
+      ACTIVATE: null
+      ACTIVATED: null
+      DEACTIVATE: null
+      DESCRIPTION: null
+      DIALOG:
+        ACTIVATED: null
+        ACTIVATE_WARN_DESCRIPTION: null
+        ACTIVATE_WARN_TITLE: null
+        DEACTIVATED: null
+        DEACTIVATE_WARN_DESCRIPTION: null
+        DEACTIVATE_WARN_TITLE: null
+        DELETED: null
+        DELETE_DESCRIPTION: null
+        DELETE_TITLE: null
+        SENDER: null
+        TEST_DESCRIPTION: null
+        TEST_EMAIL: null
+        TEST_RESULT: null
+        TEST_TITLE: null
+      EMPTY: null
+      TEST: null
+      TITLE: null
+      TYPE: null
+    STEPS:
+      SENDGRID: {}
+  TABLE:
+    NOROWS: null
+  USER:
+    ADDACCOUNT: null
+    CODEDIALOG:
+      CODE: null
+      DESCRIPTION: null
+      TITLE: null
+    CREATE:
+      ADDRESSANDPHONESECTION: null
+      DESCRIPTION: null
+      GENDERLANGSECTION: null
+      INITIALPASSWORD: null
+      INITMAILDESCRIPTION: null
+      INVITATION: null
+      NAMEANDEMAILSECTION: null
+      PASSWORDSECTION: null
+      PHONESECTION: null
+      SETUPAUTHENTICATIONLATER: null
+      TITLE: null
+    DATA:
+      STATE: null
+      STATE0: null
+      STATE1: null
+      STATE2: null
+      STATE3: null
+      STATE4: null
+      STATE5: null
+      STATE6: null
+    DESCRIPTION: null
+    DETAILS:
+      DATECHANGED: null
+      DATECREATED: null
+    DIALOG:
+      DELETE_AUTH_DESCRIPTION: null
+      DELETE_BTN: null
+      DELETE_DESCRIPTION: null
+      DELETE_SELF_DESCRIPTION: null
+      DELETE_SELF_TITLE: null
+      DELETE_TITLE: null
+      TYPEUSERNAME: null
+      USERNAME: null
+    EDITACCOUNT: null
+    EMAIL: null
+    EMAILVERIFIED: null
+    EXTERNALIDP:
+      DESC: null
+      DIALOG:
+        DELETE_DESCRIPTION: null
+        DELETE_TITLE: null
+      EMPTY: null
+      EXTERNALUSERID: null
+      IDPCONFIGID: null
+      IDPNAME: null
+      TITLE: null
+      USERDISPLAYNAME: null
+    GRANTS:
+      CREATE:
+        DESCRIPTION: null
+        TITLE: null
+      DESCRIPTION: null
+      FILTER:
+        "0": null
+        "1": null
+        "2": null
+        "3": null
+      PROJECT-GRANTED: null
+      PROJECT-OWNED: null
+      PROJECTNAME: null
+      TITLE: null
+    ID: null
+    ISINITIAL: null
+    LOGINMETHODS:
+      DESCRIPTION: null
+      EMAIL:
+        EDITDESC: null
+        EDITTITLE: null
+        ISVERIFIED: null
+        ISVERIFIEDDESC: null
+        RESEND: null
+        TITLE: null
+        VALID: null
+      ENTERCODE: null
+      ENTERCODE_DESC: null
+      PHONE:
+        DELETEDESC: null
+        DELETETITLE: null
+        EDITDESC: null
+        EDITTITLE: null
+        EDITVALUE: null
+        OTPSMSREMOVALWARNING: null
+        RESEND: null
+        TITLE: null
+        VALID: null
+      RESENDCODE: null
+      TITLE: null
+    MACHINE:
+      ACCESSTOKENTYPE: null
+      ACCESSTOKENTYPES:
+        "0": null
+        "1": null
+      ADD:
+        DESCRIPTION: null
+        TITLE: null
+      ADDED:
+        DESCRIPTION: null
+        TITLE: null
+      CHOOSEDATEAFTER: null
+      CHOOSEEXPIRY: null
+      CREATIONDATE: null
+      DESCRIPTION: null
+      DIALOG:
+        DELETE_KEY:
+          DESCRIPTION: null
+          TITLE: null
+      EXPIRATIONDATE: null
+      ID: null
+      KEYDETAILS: null
+      KEYSDESC: null
+      KEYSTITLE: null
+      KEYTYPES:
+        "1": null
+      NAME: null
+      TITLE: null
+      TOKENSDESC: null
+      TOKENSTITLE: null
+      TYPE: null
+      USERNAME: null
+    MEMBERSHIPS:
+      CHANGEDATE: null
+      CREATIONDATE: null
+      DESCRIPTION: null
+      DISPLAYNAME: null
+      NOPERMISSIONTOEDIT: null
+      ORGCONTEXT: null
+      ORGID: null
+      REMOVE: null
+      TITLE: null
+      TYPE: null
+      TYPES:
+        GRANTEDPROJECT: null
+        ORG: null
+        PROJECT: null
+        UNKNOWN: null
+      UPDATED: null
+      USERCONTEXT: null
+    MFA:
+      ADD: null
+      DESCRIPTION: null
+      DIALOG:
+        ADD_MFA_DESCRIPTION: null
+        ADD_MFA_TITLE: null
+        MFA_DELETE_DESCRIPTION: null
+        MFA_DELETE_TITLE: null
+      EMPTY: null
+      MANAGE_DESCRIPTION: null
+      NAME: null
+      OTP: null
+      OTPEMAIL: null
+      OTPEMAILSUCCESS: null
+      OTPSMS: null
+      OTPSMSPHONEMUSTBEVERIFIED: null
+      OTPSMSSUCCESS: null
+      OTP_DIALOG_DESCRIPTION: null
+      OTP_DIALOG_TITLE: null
+      SETUPOTPSMSDESCRIPTION: null
+      STATE:
+        "0": null
+        "1": null
+        "2": null
+        "3": null
+      TABLESTATE: null
+      TABLETYPE: null
+      TITLE: null
+      TYPE:
+        "0": null
+        "1": null
+        "2": null
+      U2F: null
+      U2F_DIALOG_DESCRIPTION: null
+      U2F_DIALOG_TITLE: null
+      U2F_ERROR: null
+      U2F_NAME: null
+      U2F_SUCCESS: null
+    NOTVERIFIED: null
+    PAGES:
+      CREATE: null
+      DEACTIVATE: null
+      DELETE: null
+      DELETEACCOUNT: null
+      DELETEACCOUNT_BTN: null
+      DELETEACCOUNT_DESC: null
+      DELETEACCOUNT_SUCCESS: null
+      DETAIL: null
+      FILTER: null
+      GENERATESECRET: null
+      LOCKEDDESCRIPTION: null
+      LOGINMETHODS: null
+      LOGINNAMES: null
+      LOGINNAMESDESC: null
+      MY: null
+      NOUSER: null
+      REACTIVATE: null
+      REMOVESECRET: null
+      STATE: null
+      TITLE: null
+      UNLOCK: null
+    PASSWORD:
+      CONFIRM: null
+      CONFIRMINITIAL: null
+      DESCRIPTION: null
+      LABEL: null
+      MAXLENGTHERROR: null
+      MINLENGTHERROR: null
+      NEW: null
+      NEWINITIAL: null
+      OLD: null
+      REQUIRED: null
+      RESENDNOTIFICATION: null
+      RESET: null
+      SET: null
+      TITLE: null
+    PASSWORDLESS:
+      DESCRIPTION: null
+      DIALOG:
+        ADD_DESCRIPTION: null
+        ADD_TITLE: null
+        DELETE_DESCRIPTION: null
+        DELETE_TITLE: null
+        NEW: null
+        NEW_DESCRIPTION: null
+        QRCODE: null
+        QRCODE_DESCRIPTION: null
+        QRCODE_SCAN: null
+        SEND: null
+        SEND_DESCRIPTION: null
+        SENT: null
+      EMPTY: null
+      MANAGE_DESCRIPTION: null
+      NAME: null
+      SEND: null
+      STATE:
+        "0": null
+        "1": null
+        "2": null
+        "3": null
+      TABLESTATE: null
+      TABLETYPE: null
+      TITLE: null
+      TYPE:
+        "0": null
+        "1": null
+        "2": null
+      U2F: null
+      U2F_DIALOG_DESCRIPTION: null
+      U2F_DIALOG_TITLE: null
+      U2F_ERROR: null
+      U2F_NAME: null
+      U2F_SUCCESS: null
+    PERSONALACCESSTOKEN:
+      ADD:
+        CHOOSEDATEAFTER: null
+        CHOOSEEXPIRY: null
+        DESCRIPTION: null
+        TITLE: null
+      ADDED:
+        DESCRIPTION: null
+        TITLE: null
+      DELETE:
+        DESCRIPTION: null
+        TITLE: null
+      DELETED: null
+      ID: null
+      TOKEN: null
+    PHONE: null
+    PHONEEMPTY: null
+    PHONEVERIFIED: null
+    PREFERRED_LOGINNAME: null
+    PROFILE:
+      AVATAR:
+        CROPPERERROR: null
+        CURRENT: null
+        DELETESUCCESS: null
+        PREVIEW: null
+        UPLOAD: null
+        UPLOADBTN: null
+        UPLOADTITLE: null
+      CHANGEUSERNAME: null
+      CHANGEUSERNAME_DESC: null
+      CHANGEUSERNAME_TITLE: null
+      COUNTRY: null
+      DISPLAYNAME: null
+      EMAIL: null
+      FIRSTNAME: null
+      GENDER: null
+      LASTNAME: null
+      NICKNAME: null
+      PASSWORD: null
+      PHONE: null
+      PHONE_HINT: null
+      PHONE_VERIFIED: null
+      PREFERREDLOGINNAME: null
+      PREFERRED_LANGUAGE: null
+      SEND_EMAIL: null
+      SEND_SMS: null
+      TITLE: null
+      USERNAME: null
+    RESENDEMAILNOTIFICATION: null
+    RESENDINITIALEMAIL: null
+    SEARCH:
+      ADDITIONAL: null
+      ADDITIONAL-EXTERNAL: null
+    SECRETDIALOG:
+      CLIENTSECRET: null
+      CLIENTSECRET_DESCRIPTION: null
+    SENDEMAILDIALOG:
+      DESCRIPTION: null
+      NEWEMAIL: null
+      TITLE: null
+    SETTINGS:
+      GENERAL: null
+      IDP: null
+      KEYS: null
+      MEMBERSHIPS: null
+      METADATA: null
+      PAT: null
+      ROLEASSIGNMENTS: null
+      SECURITY: null
+      TITLE: null
+    SIGNEDOUT: null
+    SIGNEDOUT_BTN: null
+    STATE:
+      "0": null
+      "1": null
+      "2": null
+      "3": null
+      "4": null
+      "5": null
+      "6": null
+    STATEV2:
+      "0": null
+      "1": null
+      "2": null
+      "3": null
+      "4": null
+      "5": null
+    TABLE:
+      ACTIVATE: null
+      CHANGEDATE: null
+      CREATIONDATE: null
+      DEACTIVATE: null
+      EMPTY: null
+      FILTER:
+        "0": null
+        "1": null
+        "10": null
+        "12": null
+        "2": null
+        "3": null
+        "4": null
+        "5": null
+    TARGET:
+      CLICKHERE: null
+      EXTERNAL: null
+      SELF: null
+    TITLE: null
+    TOAST:
+      CREATED: null
+      DEACTIVATED: null
+      DELETED: null
+      EMAILSAVED: null
+      EMAILVERIFICATIONSENT: null
+      INITEMAILSENT: null
+      INITIALPASSWORDSET: null
+      KEYADDED: null
+      MACHINEADDED: null
+      OTPREMOVED: null
+      PASSWORDCHANGED: null
+      PASSWORDLESSREGISTRATIONSENT: null
+      PASSWORDLESSREMOVED: null
+      PASSWORDNOTIFICATIONSENT: null
+      PHONEREMOVED: null
+      PHONESAVED: null
+      PHONEVERIFICATIONSENT: null
+      PHONEVERIFIED: null
+      REACTIVATED: null
+      SAVED: null
+      SECRETGENERATED: null
+      SECRETREMOVED: null
+      SELECTEDDEACTIVATED: null
+      SELECTEDKEYSDELETED: null
+      SELECTEDREACTIVATED: null
+      U2FREMOVED: null
+      UNLOCKED: null
+      USERNAMECHANGED: null
+  VERSION: null
+login_v1:
+  DeviceAuth:
+    Action:
+      AccessToScopes: null
+      Button:
+        Allow: null
+        Deny: null
+      Description: null
+      GrantDevice: null
+    Done:
+      Approved: null
+      Denied: null
+      Description: null
+    Title: null
+    UserCode:
+      ButtonNext: null
+      Description: null
+      Label: null
+  EmailVerification:
+    CodeLabel: null
+    Description: null
+    NextButtonText: null
+    ResendButtonText: null
+    Title: null
+  EmailVerificationDone:
+    CancelButtonText: null
+    Description: null
+    LoginButtonText: null
+    NextButtonText: null
+    Title: null
+  Errors:
+    AuthRequest:
+      MissingParameters: null
+      NotFound: null
+      RequestTypeNotSupported: null
+      TokenNotFound: null
+      UserAgentNotCorresponding: null
+      UserAgentNotFound: null
+    DeviceAuth:
+      NotExisting: null
+    IAM:
+      LockoutPolicy:
+        NotExisting: null
+    IdentityProvider:
+      InvalidConfig: null
+    Internal: null
+    Org:
+      LoginPolicy:
+        RegistrationNotAllowed: null
+    User:
+      Address:
+        NotChanged: null
+        NotFound: null
+      AlreadyExists: null
+      Code:
+        CryptoCodeNil: null
+        Empty: null
+        Expired: null
+        GeneratorAlgNotSupported: null
+        Invalid: null
+        NotFound: null
+      DomainNotAllowedAsUsername: null
+      Email:
+        AlreadyVerified: null
+        Empty: null
+        IDMissing: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+      EmailVerify:
+        UserIDEmpty: null
+      ExternalData:
+        CouldNotRead: null
+      ExternalIDP:
+        CreationNotAllowed: null
+        ExternalUserIDEmpty: null
+        IDPConfigIDEmpty: null
+        IDPTypeNotImplemented: null
+        LinkingNotAllowed: null
+        LoginFailedSwitchLocal: null
+        NoExternalUserData: null
+        NoOptionAllowed: null
+        NotAllowed: null
+        UserDisplayNameEmpty: null
+      GrantRequired: null
+      Inactive: null
+      Invalid: null
+      Locked: null
+      MFA:
+        NoProviders: null
+        OTP:
+          AlreadyReady: null
+          InvalidCode: null
+          NotExisting: null
+          NotReady: null
+          Reused: null
+      NotActive: null
+      NotAllowedOrg: null
+      NotAllowedToLink: null
+      NotFound: null
+      NotFoundOnOrg: null
+      NotMatchingUserID: null
+      Password:
+        ConfirmationWrong: null
+        Empty: null
+        Invalid: null
+        InvalidAndLocked: null
+        NotChanged: null
+      PasswordComplexityPolicy:
+        HasLower: null
+        HasNumber: null
+        HasSymbol: null
+        HasUpper: null
+        MinLength: null
+        NotFound: null
+      Phone:
+        AlreadyVerified: null
+        Empty: null
+        Invalid: null
+        NotChanged: null
+        NotFound: null
+      Profile:
+        Empty: null
+        FirstNameEmpty: null
+        IDMissing: null
+        LastNameEmpty: null
+        NotChanged: null
+        NotFound: null
+      ProjectRequired: null
+      SomethingWentWrong: null
+      UserIDMissing: null
+      Username:
+        AlreadyExists: null
+        Empty: null
+        Reserved: null
+      UsernameOrPassword:
+        Invalid: null
+  ExternalNotFound:
+    Arabic: null
+    AutoRegisterButtonText: null
+    Bulgarian: null
+    Chinese: null
+    Czech: null
+    Description: null
+    Dutch: null
+    English: null
+    French: null
+    German: null
+    Hungarian: null
+    Indonesian: null
+    Italian: null
+    Japanese: null
+    Korean: null
+    LinkButtonText: null
+    Macedonian: null
+    Polish: null
+    Portuguese: null
+    PrivacyConfirm: null
+    PrivacyLinkText: null
+    Romanian: null
+    Russian: null
+    Spanish: null
+    Swedish: null
+    Title: null
+    TosAndPrivacyLabel: null
+    TosConfirm: null
+    TosLinkText: null
+    Turkish: null
+    Ukrainian: null
+  ExternalRegistrationUserOverview:
+    Arabic: null
+    BackButtonText: null
+    Bulgarian: null
+    Chinese: null
+    Czech: null
+    Description: null
+    Dutch: null
+    EmailLabel: null
+    English: null
+    ExternalLogin: null
+    FirstnameLabel: null
+    French: null
+    German: null
+    Hungarian: null
+    Indonesian: null
+    Italian: null
+    Japanese: null
+    Korean: null
+    LanguageLabel: null
+    LastnameLabel: null
+    Macedonian: null
+    NextButtonText: null
+    NicknameLabel: null
+    PhoneLabel: null
+    Polish: null
+    Portuguese: null
+    PrivacyConfirm: null
+    PrivacyLinkText: null
+    Romanian: null
+    Russian: null
+    Spanish: null
+    Swedish: null
+    Title: null
+    TosAndPrivacyLabel: null
+    TosConfirm: null
+    TosLinkText: null
+    Turkish: null
+    Ukrainian: null
+    UsernameLabel: null
+  Footer:
+    Help: null
+    PoweredBy: null
+    PrivacyPolicy: null
+    SupportEmail: null
+    Tos: null
+  InitMFADone:
+    CancelButtonText: null
+    Description: null
+    NextButtonText: null
+    Title: null
+  InitMFAOTP:
+    CancelButtonText: null
+    CodeLabel: null
+    Description: null
+    NextButtonText: null
+    OTPDescription: null
+    SecretLabel: null
+    Title: null
+  InitMFAOTPSMS:
+    CodeLabel: null
+    CountryCodeLabel: null
+    DescriptionCode: null
+    DescriptionPhone: null
+    EditButtonText: null
+    NextButtonText: null
+    PhoneLabel: null
+    ResendButtonText: null
+    Title: null
+  InitMFAPrompt:
+    Description: null
+    NextButtonText: null
+    Provider0: null
+    Provider1: null
+    Provider3: null
+    Provider4: null
+    SkipButtonText: null
+    Title: null
+  InitMFAU2F:
+    Description: null
+    ErrorRetry: null
+    NotSupported: null
+    RegisterTokenButtonText: null
+    Title: null
+    TokenNameLabel: null
+  InitPassword:
+    CodeLabel: null
+    Description: null
+    NewPasswordConfirmLabel: null
+    NewPasswordLabel: null
+    NextButtonText: null
+    ResendButtonText: null
+    Title: null
+  InitPasswordDone:
+    CancelButtonText: null
+    Description: null
+    NextButtonText: null
+    Title: null
+  InitUser:
+    CodeLabel: null
+    Description: null
+    NewPasswordConfirm: null
+    NewPasswordLabel: null
+    NextButtonText: null
+    ResendButtonText: null
+    Title: null
+  InitUserDone:
+    CancelButtonText: null
+    Description: null
+    NextButtonText: null
+    Title: null
+  InviteUser:
+    CodeLabel: null
+    Description: null
+    NewPasswordConfirm: null
+    NewPasswordLabel: null
+    NextButtonText: null
+    ResendButtonText: null
+    Title: null
+  LDAP:
+    Description: null
+    LoginNameLabel: null
+    NextButtonText: null
+    PasswordLabel: null
+    Title: null
+  LinkingUserPrompt:
+    Description: null
+    LinkButtonText: null
+    OtherButtonText: null
+    Title: null
+  LinkingUsersDone:
+    CancelButtonText: null
+    Description: null
+    NextButtonText: null
+    Title: null
+  Login:
+    Description: null
+    DescriptionLinking: null
+    ExternalUserDescription: null
+    LoginNameLabel: null
+    LoginnamePlaceHolder: null
+    MustBeMemberOfOrg: null
+    NextButtonText: null
+    RegisterButtonText: null
+    Title: null
+    TitleLinking: null
+    UsernamePlaceHolder: null
+  LoginSuccess:
+    AutoRedirectDescription: null
+    NextButtonText: null
+    RedirectedDescription: null
+    Title: null
+  LogoutDone:
+    Description: null
+    LoginButtonText: null
+    Title: null
+  MFAProvider:
+    ChooseOther: null
+    Provider0: null
+    Provider1: null
+    Provider3: null
+    Provider4: null
+  Password:
+    BackButtonText: null
+    Confirmation: null
+    Description: null
+    HasLowercase: null
+    HasNumber: null
+    HasSymbol: null
+    HasUppercase: null
+    MaxLength: null
+    MinLength: null
+    MinLengthp2: null
+    NextButtonText: null
+    PasswordLabel: null
+    ResetLinkText: null
+    Title: null
+  PasswordChange:
+    CancelButtonText: null
+    Description: null
+    ExpiredDescription: null
+    Footer: null
+    NewPasswordConfirmLabel: null
+    NewPasswordLabel: null
+    NextButtonText: null
+    OldPasswordLabel: null
+    Title: null
+  PasswordChangeDone:
+    Description: null
+    NextButtonText: null
+    Title: null
+  PasswordResetDone:
+    Description: null
+    NextButtonText: null
+    Title: null
+  Passwordless:
+    Description: null
+    ErrorRetry: null
+    LoginWithPwButtonText: null
+    NotSupported: null
+    Title: null
+    ValidateTokenButtonText: null
+  PasswordlessPrompt:
+    Description: null
+    DescriptionInit: null
+    NextButtonText: null
+    PasswordlessButtonText: null
+    SkipButtonText: null
+    Title: null
+  PasswordlessRegistration:
+    Description: null
+    ErrorRetry: null
+    NotSupported: null
+    RegisterTokenButtonText: null
+    Title: null
+    TokenNameLabel: null
+  PasswordlessRegistrationDone:
+    CancelButtonText: null
+    Description: null
+    DescriptionClose: null
+    NextButtonText: null
+    Title: null
+  RegisterOption:
+    Description: null
+    ExternalLoginDescription: null
+    LoginButtonText: null
+    RegisterUsernamePasswordButtonText: null
+    Title: null
+  RegistrationOrg:
+    Description: null
+    EmailLabel: null
+    FirstnameLabel: null
+    LastnameLabel: null
+    OrgNameLabel: null
+    PasswordConfirmLabel: null
+    PasswordLabel: null
+    PrivacyConfirm: null
+    PrivacyLinkText: null
+    SaveButtonText: null
+    Title: null
+    TosAndPrivacyLabel: null
+    TosConfirm: null
+    TosLinkText: null
+    UsernameLabel: null
+  RegistrationUser:
+    Arabic: null
+    BackButtonText: null
+    Bulgarian: null
+    Chinese: null
+    Czech: null
+    Description: null
+    DescriptionOrgRegister: null
+    Diverse: null
+    Dutch: null
+    EmailLabel: null
+    English: null
+    ExternalLogin: null
+    Female: null
+    FirstnameLabel: null
+    French: null
+    GenderLabel: null
+    German: null
+    Hungarian: null
+    Indonesian: null
+    Italian: null
+    Japanese: null
+    Korean: null
+    LanguageLabel: null
+    LastnameLabel: null
+    Macedonian: null
+    Male: null
+    NextButtonText: null
+    PasswordConfirmLabel: null
+    PasswordLabel: null
+    Polish: null
+    Portuguese: null
+    PrivacyConfirm: null
+    PrivacyLinkText: null
+    Romanian: null
+    Russian: null
+    Spanish: null
+    Swedish: null
+    Title: null
+    TosAndPrivacyLabel: null
+    TosConfirm: null
+    TosLinkText: null
+    Turkish: null
+    Ukrainian: null
+    UsernameLabel: null
+  SelectAccount:
+    Description: null
+    DescriptionLinking: null
+    MustBeMemberOfOrg: null
+    OtherUser: null
+    SessionState0: null
+    SessionState1: null
+    Title: null
+    TitleLinking: null
+  SignIn: null
+  UsernameChange:
+    CancelButtonText: null
+    Description: null
+    NextButtonText: null
+    Title: null
+    UsernameLabel: null
+  UsernameChangeDone:
+    Description: null
+    NextButtonText: null
+    Title: null
+  VerifyMFAOTP:
+    CodeLabel: null
+    Description: null
+    NextButtonText: null
+    Title: null
+  VerifyMFAU2F:
+    Description: null
+    ErrorRetry: null
+    NotSupported: null
+    Title: null
+    ValidateTokenButtonText: null
+  VerifyOTP:
+    CodeLabel: null
+    Description: null
+    NextButtonText: null
+    ResendButtonText: null
+    Title: null
+  optional: null
+login_v2:
+  accounts:
+    addAnother: null
+    description: null
+    expired: null
+    noResults: null
+    title: null
+    verified: null
+  authenticator:
+    allSetup: null
+    description: null
+    linkWithIDP: null
+    methods:
+      otpEmail: null
+      otpSms: null
+      passkey: null
+      password: null
+      totp: null
+      u2f: null
+    noMethodsAvailable: null
+    title: null
+  common:
+    back: null
+    title: null
+  device:
+    request:
+      deny: null
+      description: null
+      disclaimer: null
+      submit: null
+      title: null
+    scope:
+      email: null
+      offline_access: null
+      openid: null
+      profile: null
+    usercode:
+      description: null
+      labels:
+        code: null
+      required:
+        code: null
+      submit: null
+      title: null
+  error:
+    couldNotClearSession: null
+    couldNotContinueSession: null
+    failedLoading: null
+    noDeviceRequest: null
+    noUserCode: null
+    sessionExpired: null
+    tryagain: null
+    unknownContext: null
+  idp:
+    accountNotFound:
+      backToLogin: null
+      description: null
+      info: null
+      title: null
+    completeRegister:
+      description: null
+      title: null
+    description: null
+    errors:
+      autoLinkingFailed: null
+      idpNotFound: null
+      linkingFailed: null
+      linkingNotAllowed: null
+      missingIdpInfo: null
+      missingParameters: null
+      orgResolutionFailed: null
+      sessionCreationFailed: null
+      unknownError: null
+      userCreationFailed: null
+    linkingError:
+      description: null
+      title: null
+    loginError:
+      description: null
+      title: null
+    orSignInWith: null
+    processing:
+      message: null
+      noRedirect: null
+      unexpectedError: null
+    registrationFailed:
+      backToLogin: null
+      description: null
+      info: null
+      title: null
+    signInWithApple: null
+    signInWithAzureAD: null
+    signInWithGithub: null
+    signInWithGitlab: null
+    signInWithGoogle: null
+    signInWithZitadel: null
+    title: null
+  invite:
+    description: null
+    info: null
+    notAllowed: null
+    submit: null
+    success:
+      description: null
+      notVerifiedYet: null
+      submit: null
+      title: null
+      verified: null
+    title: null
+  ldap:
+    description: null
+    labels:
+      password: null
+      username: null
+    required:
+      password: null
+      username: null
+    submit: null
+    title: null
+  loginname:
+    description: null
+    errors:
+      couldNotCreateSession: null
+      couldNotFindIdentityProvider: null
+      couldNotGetDomain: null
+      couldNotGetHost: null
+      couldNotGetLoginSettings: null
+      couldNotSearchUsers: null
+      couldNotStartIDPFlow: null
+      initialUserNotSupported: null
+      internalError: null
+      localAuthenticationNotAllowed: null
+      moreThanOneUserFound: null
+      passkeysNotAllowed: null
+      userNotActive: null
+      userNotFound: null
+    labels:
+      loginname: null
+      username: null
+      usernameOrEmail: null
+      usernameOrPhoneNumber: null
+    register: null
+    required:
+      loginName: null
+    submit: null
+    title: null
+  logout:
+    clear: null
+    description: null
+    noResults: null
+    success:
+      description: null
+      title: null
+    title: null
+    verifiedAt: null
+  mfa:
+    set:
+      description: null
+      skip: null
+      title: null
+    verify:
+      description: null
+      noResults: null
+      title: null
+  otp:
+    errors:
+      couldNotRequestChallenge: null
+      couldNotVerifyCode: null
+    set:
+      emailDescription: null
+      labels:
+        code: null
+      required:
+        code: null
+      smsDescription: null
+      submit: null
+      title: null
+      totpDescription: null
+      totpRegisterDescription: null
+    verify:
+      emailDescription: null
+      labels:
+        code: null
+      noCodeReceived: null
+      required:
+        code: null
+      resendCode: null
+      smsDescription: null
+      submit: null
+      title: null
+      totpDescription: null
+  passkey:
+    set:
+      description: null
+      info:
+        description: null
+        link: null
+      skip: null
+      submit: null
+      title: null
+    verify:
+      description: null
+      errors:
+        couldNotDetermineRedirect: null
+        couldNotFindSession: null
+        couldNotRequestChallenge: null
+        couldNotRetrievePasskey: null
+        couldNotUpdateSession: null
+        couldNotVerifyPasskey: null
+        noRedirectProvided: null
+        noResponseReceived: null
+        userNotFound: null
+        verificationCancelled: null
+        verificationFailed: null
+      submit: null
+      title: null
+      usePassword: null
+  password:
+    change:
+      description: null
+      errors:
+        couldNotChangePassword: null
+        couldNotVerifyPassword: null
+        currentPasswordInvalid: null
+        unknownError: null
+      labels:
+        confirmPassword: null
+        currentPassword: null
+        newPassword: null
+      required:
+        confirmPassword: null
+        currentPassword: null
+        newPassword: null
+      submit: null
+      title: null
+    complexity:
+      doesNotMatch: null
+      equals: null
+      hasLowercase: null
+      hasNumber: null
+      hasSymbol: null
+      hasUppercase: null
+      length: null
+      matches: null
+    errors:
+      accountLockedContactAdmin: null
+      codeOrVerificationRequired: null
+      couldNotCreateSessionForUser: null
+      couldNotLoadAuthMethods: null
+      couldNotLoadSession: null
+      couldNotSendResetLink: null
+      couldNotVerifyPassword: null
+      failedPrecondition: null
+      failedToAuthenticate: null
+      failedToAuthenticateNoLimit: null
+      initialUserNotSupported: null
+      noHostFound: null
+      passwordResetNotAllowed: null
+      passwordVerificationMissing: null
+      passwordVerificationTooOld: null
+      sessionNotValid: null
+      userInitialStateNotSupported: null
+      userNotFound: null
+      verificationRequired: null
+    set:
+      codeSent: null
+      description: null
+      errors:
+        couldNotResetPassword: null
+        couldNotSetPassword: null
+        couldNotVerifyPassword: null
+      labels:
+        code: null
+        confirmPassword: null
+        newPassword: null
+      noCodeReceived: null
+      required:
+        code: null
+        confirmPassword: null
+        newPassword: null
+      resend: null
+      submit: null
+      title: null
+    verify:
+      description: null
+      errors:
+        couldNotResetPassword: null
+        couldNotVerifyPassword: null
+      info:
+        passwordResetSent: null
+      labels:
+        password: null
+      required:
+        password: null
+      resetPassword: null
+      submit: null
+      title: null
+  register:
+    agreeTo: null
+    description: null
+    disabled:
+      description: null
+      title: null
+    errors:
+      couldNotCreateSession: null
+      couldNotCreateUser: null
+      couldNotLinkIDP: null
+      couldNotRegisterUser: null
+      userNotFound: null
+    labels:
+      email: null
+      firstname: null
+      lastname: null
+    methods:
+      passkey: null
+      password: null
+    missingdata:
+      description: null
+      title: null
+    noMethodAvailableWarning: null
+    password:
+      description: null
+      labels:
+        confirmPassword: null
+        password: null
+      required:
+        confirmPassword: null
+        password: null
+      submit: null
+      title: null
+    privacyPolicy: null
+    required:
+      email: null
+      firstname: null
+      lastname: null
+    selectMethod: null
+    submit: null
+    termsOfService: null
+    title: null
+  signedin:
+    continue: null
+    description: null
+    error:
+      description: null
+      title: null
+    title: null
+  u2f:
+    set:
+      description: null
+      submit: null
+      title: null
+    verify:
+      description: null
+      title: null
+  verify:
+    errors:
+      contextMissing: null
+      couldNotCreateSession: null
+      couldNotLoadAuthenticators: null
+      couldNotLoadUser: null
+      couldNotResendEmail: null
+      couldNotResendInvite: null
+      couldNotVerify: null
+      couldNotVerifyEmail: null
+      couldNotVerifyInvite: null
+      couldNotVerifyUser: null
+      emailSendFailed: null
+      inviteSendFailed: null
+      noHostFound: null
+      userAlreadyVerified: null
+    setupAuthenticator: null
+    successContinue: null
+    successDescription: null
+    successTitle: null
+    userIdMissing: null
+    verify:
+      codeSent: null
+      description: null
+      labels:
+        code: null
+      noCodeReceived: null
+      required:
+        code: null
+      resendCode: null
+      submit: null
+      title: null
+  zitadel:
+    errors:
+      errorOccured: null
+      multipleUsersFound: null
+      userNotFound: null
+login_v2_default:
+  accounts:
+    addAnother: null
+    description: null
+    expired: null
+    noResults: null
+    title: null
+    verified: null
+  authenticator:
+    allSetup: null
+    description: null
+    linkWithIDP: null
+    methods:
+      otpEmail: null
+      otpSms: null
+      passkey: null
+      password: null
+      totp: null
+      u2f: null
+    noMethodsAvailable: null
+    title: null
+  common:
+    back: null
+    title: null
+  device:
+    request:
+      deny: null
+      description: null
+      disclaimer: null
+      submit: null
+      title: null
+    scope:
+      email: null
+      offline_access: null
+      openid: null
+      profile: null
+    usercode:
+      description: null
+      labels:
+        code: null
+      required:
+        code: null
+      submit: null
+      title: null
+  error:
+    couldNotContinueSession: null
+    failedLoading: null
+    noDeviceRequest: null
+    noUserCode: null
+    sessionExpired: null
+    tryagain: null
+    unknownContext: null
+  idp:
+    accountNotFound:
+      backToLogin: null
+      description: null
+      info: null
+      title: null
+    completeRegister:
+      description: null
+      title: null
+    description: null
+    errors:
+      autoLinkingFailed: null
+      idpNotFound: null
+      linkingFailed: null
+      linkingNotAllowed: null
+      missingIdpInfo: null
+      missingParameters: null
+      orgResolutionFailed: null
+      sessionCreationFailed: null
+      unknownError: null
+      userCreationFailed: null
+    linkingError:
+      description: null
+      title: null
+    loginError:
+      description: null
+      title: null
+    orSignInWith: null
+    processing:
+      message: null
+      noRedirect: null
+      unexpectedError: null
+    registrationFailed:
+      backToLogin: null
+      description: null
+      info: null
+      title: null
+    signInWithApple: null
+    signInWithAzureAD: null
+    signInWithGithub: null
+    signInWithGitlab: null
+    signInWithGoogle: null
+    title: null
+  invite:
+    description: null
+    info: null
+    notAllowed: null
+    submit: null
+    success:
+      description: null
+      notVerifiedYet: null
+      submit: null
+      title: null
+      verified: null
+    title: null
+  ldap:
+    description: null
+    labels:
+      password: null
+      username: null
+    required:
+      password: null
+      username: null
+    submit: null
+    title: null
+  loginname:
+    description: null
+    errors:
+      couldNotCreateSession: null
+      couldNotFindIdentityProvider: null
+      couldNotGetDomain: null
+      couldNotGetHost: null
+      couldNotGetLoginSettings: null
+      couldNotSearchUsers: null
+      couldNotStartIDPFlow: null
+      initialUserNotSupported: null
+      internalError: null
+      localAuthenticationNotAllowed: null
+      moreThanOneUserFound: null
+      passkeysNotAllowed: null
+      userNotActive: null
+      userNotFound: null
+    labels:
+      loginname: null
+      username: null
+      usernameOrEmail: null
+      usernameOrPhoneNumber: null
+    register: null
+    required:
+      loginName: null
+    submit: null
+    title: null
+  logout:
+    clear: null
+    description: null
+    noResults: null
+    success:
+      description: null
+      title: null
+    title: null
+    verifiedAt: null
+  mfa:
+    set:
+      description: null
+      skip: null
+      title: null
+    verify:
+      description: null
+      noResults: null
+      title: null
+  otp:
+    errors:
+      couldNotRequestChallenge: null
+      couldNotVerifyCode: null
+    set:
+      emailDescription: null
+      labels:
+        code: null
+      required:
+        code: null
+      smsDescription: null
+      submit: null
+      title: null
+      totpDescription: null
+      totpRegisterDescription: null
+    verify:
+      emailDescription: null
+      labels:
+        code: null
+      noCodeReceived: null
+      required:
+        code: null
+      resendCode: null
+      smsDescription: null
+      submit: null
+      title: null
+      totpDescription: null
+  passkey:
+    set:
+      description: null
+      info:
+        description: null
+        link: null
+      skip: null
+      submit: null
+      title: null
+    verify:
+      description: null
+      errors:
+        couldNotDetermineRedirect: null
+        couldNotFindSession: null
+        couldNotRequestChallenge: null
+        couldNotRetrievePasskey: null
+        couldNotUpdateSession: null
+        couldNotVerifyPasskey: null
+        noRedirectProvided: null
+        noResponseReceived: null
+        userNotFound: null
+        verificationCancelled: null
+        verificationFailed: null
+      submit: null
+      title: null
+      usePassword: null
+  password:
+    change:
+      description: null
+      errors:
+        couldNotChangePassword: null
+        couldNotVerifyPassword: null
+        currentPasswordInvalid: null
+        unknownError: null
+      labels:
+        confirmPassword: null
+        currentPassword: null
+        newPassword: null
+      required:
+        confirmPassword: null
+        currentPassword: null
+        newPassword: null
+      submit: null
+      title: null
+    complexity:
+      doesNotMatch: null
+      equals: null
+      hasLowercase: null
+      hasNumber: null
+      hasSymbol: null
+      hasUppercase: null
+      length: null
+      matches: null
+    errors:
+      accountLockedContactAdmin: null
+      codeOrVerificationRequired: null
+      couldNotCreateSessionForUser: null
+      couldNotLoadAuthMethods: null
+      couldNotLoadSession: null
+      couldNotSendResetLink: null
+      couldNotVerifyPassword: null
+      failedPrecondition: null
+      failedToAuthenticate: null
+      failedToAuthenticateNoLimit: null
+      initialUserNotSupported: null
+      noHostFound: null
+      passwordResetNotAllowed: null
+      passwordVerificationMissing: null
+      passwordVerificationTooOld: null
+      sessionNotValid: null
+      userInitialStateNotSupported: null
+      userNotFound: null
+      verificationRequired: null
+    set:
+      codeSent: null
+      description: null
+      errors:
+        couldNotResetPassword: null
+        couldNotSetPassword: null
+        couldNotVerifyPassword: null
+      labels:
+        code: null
+        confirmPassword: null
+        newPassword: null
+      noCodeReceived: null
+      required:
+        code: null
+        confirmPassword: null
+        newPassword: null
+      resend: null
+      submit: null
+      title: null
+    verify:
+      description: null
+      errors:
+        couldNotResetPassword: null
+        couldNotVerifyPassword: null
+      info:
+        passwordResetSent: null
+      labels:
+        password: null
+      required:
+        password: null
+      resetPassword: null
+      submit: null
+      title: null
+  register:
+    agreeTo: null
+    description: null
+    disabled:
+      description: null
+      title: null
+    errors:
+      couldNotCreateSession: null
+      couldNotCreateUser: null
+      couldNotLinkIDP: null
+      couldNotRegisterUser: null
+      userNotFound: null
+    labels:
+      email: null
+      firstname: null
+      lastname: null
+    methods:
+      passkey: null
+      password: null
+    missingdata:
+      description: null
+      title: null
+    noMethodAvailableWarning: null
+    password:
+      description: null
+      labels:
+        confirmPassword: null
+        password: null
+      required:
+        confirmPassword: null
+        password: null
+      submit: null
+      title: null
+    privacyPolicy: null
+    required:
+      email: null
+      firstname: null
+      lastname: null
+    selectMethod: null
+    submit: null
+    termsOfService: null
+    title: null
+  signedin:
+    continue: null
+    description: null
+    error:
+      description: null
+      title: null
+    title: null
+  u2f:
+    set:
+      description: null
+      submit: null
+      title: null
+    verify:
+      description: null
+      title: null
+  verify:
+    errors:
+      contextMissing: null
+      couldNotCreateSession: null
+      couldNotLoadAuthenticators: null
+      couldNotLoadUser: null
+      couldNotResendEmail: null
+      couldNotResendInvite: null
+      couldNotVerify: null
+      couldNotVerifyEmail: null
+      couldNotVerifyInvite: null
+      couldNotVerifyUser: null
+      emailSendFailed: null
+      inviteSendFailed: null
+      noHostFound: null
+      userAlreadyVerified: null
+    setupAuthenticator: null
+    successContinue: null
+    successDescription: null
+    successTitle: null
+    userIdMissing: null
+    verify:
+      codeSent: null
+      description: null
+      labels:
+        code: null
+      noCodeReceived: null
+      required:
+        code: null
+      resendCode: null
+      submit: null
+      title: null
+  zitadel:
+    errors:
+      errorOccured: null
+      multipleUsersFound: null
+      userNotFound: null
+notification:
+  DomainClaimed:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  InitCode:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  InviteUser:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  PasswordChange:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  PasswordReset:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  PasswordlessRegistration:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  VerifyEmail:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  VerifyEmailOTP:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  VerifyPhone:
+    ButtonText: null
+    Greeting: null
+    PreHeader: null
+    Subject: null
+    Text: null
+    Title: null
+  VerifySMSOTP:
+    Text: null
