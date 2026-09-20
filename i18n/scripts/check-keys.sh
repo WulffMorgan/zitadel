@@ -3,7 +3,9 @@
 # Reports __MISSING, __EXTRA, __CONFLICT, and unroutable keys (not under a
 # route match and not an alias unified home). Exit 1 if any remain.
 #
-# Usage: ./i18n/scripts/check-keys.sh
+# Usage:
+#   ./i18n/scripts/check-keys.sh
+#   ./i18n/scripts/check-keys.sh --summary
 
 set -euo pipefail
 
@@ -13,6 +15,31 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 source "${SCRIPT_DIR}/catalogs.sh"
 # shellcheck source=lib.sh
 source "${SCRIPT_DIR}/lib.sh"
+
+print_help() {
+  echo "Usage: $0 [--summary]"
+  echo "  --summary  Per-locale counts only (no key lists). Useful for CI logs."
+}
+
+SUMMARY=0
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --summary)
+      SUMMARY=1
+      shift
+      ;;
+    -h | --help)
+      print_help
+      exit 0
+      ;;
+    -*)
+      i18n_die "unknown option: $1 (try --help)"
+      ;;
+    *)
+      i18n_die "unexpected argument: $1 (try --help)"
+      ;;
+  esac
+done
 
 main() {
   i18n_require_tools
@@ -96,34 +123,36 @@ main() {
     done < <(i18n_unroutable_source_keys_file "$loc_json_file")
     local unrout_c="${#unroutable_lines[@]}"
 
-    if [[ "$miss_c" -gt 0 || "$extra_c" -gt 0 || "$conflict_c" -gt 0 || "$unrout_c" -gt 0 ]]; then
-      echo "== ${locale} =="
-      if [[ "$miss_c" -gt 0 ]]; then
-        echo "  missing (${miss_c}):"
-        local m
-        for m in "${miss_lines[@]}"; do
-          echo "    ${m}"
-        done
-      fi
-      if [[ "$extra_c" -gt 0 ]]; then
-        echo "  extra (${extra_c}):"
-        local e
-        for e in "${extra_lines[@]}"; do
-          echo "    ${e}"
-        done
-      fi
-      if [[ "$conflict_c" -gt 0 ]]; then
-        echo "  conflict (${conflict_c}):"
-        local c
-        for c in "${conflict_lines[@]}"; do
-          echo "    ${c}"
-        done
-      fi
-      if [[ "$unrout_c" -gt 0 ]]; then
-        echo "  unroutable (${unrout_c}):"
-        for u in "${unroutable_lines[@]}"; do
-          echo "    ${u}"
-        done
+    if [[ "$SUMMARY" -eq 0 ]]; then
+      if [[ "$miss_c" -gt 0 || "$extra_c" -gt 0 || "$conflict_c" -gt 0 || "$unrout_c" -gt 0 ]]; then
+        echo "== ${locale} =="
+        if [[ "$miss_c" -gt 0 ]]; then
+          echo "  missing (${miss_c}):"
+          local m
+          for m in "${miss_lines[@]}"; do
+            echo "    ${m}"
+          done
+        fi
+        if [[ "$extra_c" -gt 0 ]]; then
+          echo "  extra (${extra_c}):"
+          local e
+          for e in "${extra_lines[@]}"; do
+            echo "    ${e}"
+          done
+        fi
+        if [[ "$conflict_c" -gt 0 ]]; then
+          echo "  conflict (${conflict_c}):"
+          local c
+          for c in "${conflict_lines[@]}"; do
+            echo "    ${c}"
+          done
+        fi
+        if [[ "$unrout_c" -gt 0 ]]; then
+          echo "  unroutable (${unrout_c}):"
+          for u in "${unroutable_lines[@]}"; do
+            echo "    ${u}"
+          done
+        fi
       fi
     fi
 

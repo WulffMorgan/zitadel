@@ -129,14 +129,22 @@ Sorts keys and normalizes indentation in **runtime** catalogs (not a substitute 
 | `update-schema.sh` | Rebuild `schema.yaml` from English (routes + aliases) |
 | `import.sh` | Runtime catalogs → `i18n/locales/*.yaml` |
 | `export.sh` | `i18n/locales/*.yaml` → runtime catalogs |
-| `check-keys.sh` | Report `__MISSING` / `__EXTRA` / `__CONFLICT` / unroutable keys (exits `1` if any) |
+| `check-keys.sh` | Report `__MISSING` / `__EXTRA` / `__CONFLICT` / unroutable keys (exits `1` if any). Use `--summary` for per-locale counts only (CI). |
 | `check-duplicates.sh` | Find duplicate values (alias candidates) |
+
+## CI
+
+The `i18n checks (warn-only)` job in [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) runs on every CI workflow with `continue-on-error`, so incomplete locales do not fail the overall run:
+
+1. `./i18n/scripts/check-keys.sh --summary` — per-locale marker counts
+2. `./i18n/scripts/export.sh` then `git diff` — detects drift between unified locales and runtime catalogs
+
+Treat a red/warn annotation as a signal to investigate; it is not a merge blocker yet.
 
 ## Future work
 
 Possible follow-ups (not required for day-to-day use):
 
-- **CI (warn-only):** soft `check-keys` / export-drift checks that do not fail the overall workflow while locales catch up.
 - **CI (hard gate):** fail PRs when `__MISSING` / `__EXTRA` / `__CONFLICT` / unroutable keys appear — once catalogs are in better shape.
 - **Gitignored runtime catalogs:** generate catalogs in every build from `i18n/locales/` so the unified files are the only committed SSOT (larger ops change: Docker/Nx/local builds must always run export).
 - **Generators for static lists:** derive console/docs/HTML/login language allowlists from `i18n/locales/` (e.g. comment markers in target files) so adding a locale file updates lists automatically.

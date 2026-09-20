@@ -31,6 +31,60 @@ jobs:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       NX_CLOUD_ACCESS_TOKEN_READONLY: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
 
+  # Soft gate while locales catch up: surfaces __MISSING/__EXTRA/drift without
+  # failing the overall workflow. Promote to a hard check later (see i18n/README.md).
+  i18n:
+    name: i18n checks (warn-only)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Install jq and yq
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y jq
+          YQ_VERSION=v4.45.4
+          sudo wget -qO /usr/local/bin/yq \
+            "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"
+          sudo chmod +x /usr/local/bin/yq
+          jq --version
+          yq --version
+      - name: Check i18n keys
+        continue-on-error: true
+        id: check_keys
+        run: |
+          set -euo pipefail
+          ./i18n/scripts/check-keys.sh --summary
+      - name: Check i18n export drift
+        continue-on-error: true
+        id: export_drift
+        run: |
+          set -euo pipefail
+          ./i18n/scripts/export.sh
+          if git diff --quiet --exit-code; then
+            echo "export: no drift"
+          else
+            echo "::warning::i18n export produced a diff; unified locales and runtime catalogs may have drifted"
+            git --no-pager diff --stat
+            exit 1
+          fi
+      - name: Summarize warn-only results
+        if: always()
+        run: |
+          set -euo pipefail
+          keys_ok="${{ steps.check_keys.outcome }}"
+          drift_ok="${{ steps.export_drift.outcome }}"
+          echo "check-keys: ${keys_ok}"
+          echo "export-drift: ${drift_ok}"
+          if [[ "$keys_ok" != "success" || "$drift_ok" != "success" ]]; then
+            echo "::warning::i18n warn-only checks reported issues (see i18n/README.md)"
+            exit 1
+          fi
+
   pack:
     uses: ./.github/workflows/pack.yml
     permissions:
