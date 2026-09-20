@@ -5,13 +5,9 @@
       "password": "Lösenord"
     }
   },
-  "common": {},
   "device": {
     "request": {
       "deny": "Neka"
-    },
-    "usercode": {
-      "labels": {}
     }
   },
   "idp": {
@@ -32,7 +28,6 @@
     "errors": {
       "internalError": "Ett internt fel inträffade"
     },
-    "labels": {},
     "title": "Välkommen!"
   },
   "logout": {
@@ -48,11 +43,6 @@
   "otp": {
     "set": {
       "title": "tvåfaktorinställningar"
-    }
-  },
-  "passkey": {
-    "set": {
-      "info": {}
     }
   },
   "password": {

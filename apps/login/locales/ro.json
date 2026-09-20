@@ -1,5 +1,4 @@
 {
-  "common": {},
   "device": {
     "request": {
       "deny": "Refuză"
@@ -20,15 +19,11 @@
   "invite": {
     "title": "Invitați utilizatorul"
   },
-  "ldap": {
-    "labels": {}
-  },
   "loginname": {
     "description": "Introduceți datele de autentificare.",
     "errors": {
       "internalError": "A apărut o eroare internă"
     },
-    "labels": {},
     "title": "Bine ați revenit!"
   },
   "logout": {
@@ -57,7 +52,6 @@
   },
   "passkey": {
     "set": {
-      "info": {},
       "skip": "Omite"
     }
   },

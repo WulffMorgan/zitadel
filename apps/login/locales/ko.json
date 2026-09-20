@@ -4,7 +4,6 @@
       "password": "비밀번호"
     }
   },
-  "common": {},
   "device": {
     "request": {
       "deny": "거부"
@@ -68,7 +67,6 @@
   },
   "passkey": {
     "set": {
-      "info": {},
       "skip": "건너뛰기"
     }
   },

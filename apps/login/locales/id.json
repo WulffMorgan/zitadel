@@ -5,7 +5,6 @@
       "password": "Kata sandi"
     }
   },
-  "common": {},
   "device": {
     "request": {
       "deny": "Membantah"
@@ -35,7 +34,6 @@
     "errors": {
       "internalError": "Terjadi kesalahan internal"
     },
-    "labels": {},
     "title": "Selamat Datang kembali!"
   },
   "logout": {
@@ -68,7 +66,6 @@
   },
   "passkey": {
     "set": {
-      "info": {},
       "skip": "Melewati"
     }
   },

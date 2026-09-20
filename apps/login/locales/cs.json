@@ -5,7 +5,6 @@
       "password": "Heslo"
     }
   },
-  "common": {},
   "device": {
     "request": {
       "deny": "Zamítnout"
@@ -36,7 +35,6 @@
     "errors": {
       "internalError": "Došlo k interní chybě"
     },
-    "labels": {},
     "title": "Vítejte zpět!"
   },
   "logout": {
@@ -65,7 +63,6 @@
   },
   "passkey": {
     "set": {
-      "info": {},
       "skip": "Přeskočit"
     }
   },

@@ -5,7 +5,6 @@
       "password": "Парола"
     }
   },
-  "common": {},
   "device": {
     "request": {
       "deny": "отричам"
@@ -35,7 +34,6 @@
     "errors": {
       "internalError": "Възникна вътрешна грешка"
     },
-    "labels": {},
     "title": "Добре дошъл обратно!"
   },
   "logout": {
@@ -64,14 +62,10 @@
   },
   "passkey": {
     "set": {
-      "info": {},
       "skip": "пропуснете"
     }
   },
   "password": {
-    "change": {
-      "labels": {}
-    },
     "complexity": {
       "equals": "Потвърждението на паролата съвпада.",
       "hasLowercase": "Трябва да включва малка буква.",

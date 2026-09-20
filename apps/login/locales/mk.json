@@ -4,13 +4,9 @@
       "password": "Лозинка"
     }
   },
-  "common": {},
   "device": {
     "request": {
       "deny": "одбиј"
-    },
-    "usercode": {
-      "labels": {}
     }
   },
   "idp": {
@@ -28,7 +24,6 @@
   },
   "loginname": {
     "description": "Внесете ги вашите податоци за најава.",
-    "labels": {},
     "title": "Добредојдовте назад!"
   },
   "logout": {
@@ -49,7 +44,6 @@
   },
   "passkey": {
     "set": {
-      "info": {},
       "skip": "прескокни"
     }
   },
