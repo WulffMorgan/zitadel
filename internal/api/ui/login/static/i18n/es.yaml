@@ -1,3 +1,10 @@
+DeviceAuth:
+  Action:
+    Button:
+      Deny: Denegar
+  Done:
+    Description: completado
+  Title: Autenticación de dispositivo
 EmailVerification:
   CodeLabel: Código
   Description: Te hemos enviado un email para verificar tu dirección. Por favor introduce el código en el siguiente campo.

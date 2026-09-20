@@ -473,8 +473,254 @@
       }
     }
   },
-  "bg": {},
-  "cs": {},
+  "bg": {
+    "authenticator": {
+      "methods": {
+        "passkey": "Ключ за достъп",
+        "password": "Парола"
+      }
+    },
+    "device": {
+      "request": {
+        "deny": "отричам"
+      },
+      "usercode": {
+        "labels": {
+          "code": "Код"
+        }
+      }
+    },
+    "idp": {
+      "errors": {
+        "idpNotFound": "Доставчикът на самоличност не съществува",
+        "missingParameters": "Липсват задължителни параметри"
+      },
+      "signInWithApple": "Вход с Apple"
+    },
+    "invite": {
+      "title": "Покана за потребител"
+    },
+    "ldap": {
+      "labels": {
+        "password": "Парола"
+      }
+    },
+    "loginname": {
+      "errors": {
+        "internalError": "Възникна вътрешна грешка"
+      },
+      "title": "Добре дошъл обратно!"
+    },
+    "logout": {
+      "success": {
+        "description": "Вие излязохте успешно."
+      }
+    },
+    "mfa": {
+      "set": {
+        "skip": "пропуснете",
+        "title": "2-факторна настройка"
+      }
+    },
+    "otp": {
+      "set": {
+        "labels": {
+          "code": "Код"
+        },
+        "title": "2-факторна настройка"
+      },
+      "verify": {
+        "labels": {
+          "code": "Код"
+        }
+      }
+    },
+    "passkey": {
+      "set": {
+        "skip": "пропуснете"
+      }
+    },
+    "password": {
+      "complexity": {
+        "equals": "Потвърждението на паролата съвпада.",
+        "hasLowercase": "Трябва да включва малка буква.",
+        "hasSymbol": "Трябва да включва символ.",
+        "hasUppercase": "Трябва да включва главна буква."
+      },
+      "set": {
+        "labels": {
+          "code": "Код"
+        },
+        "title": "Задайте парола"
+      },
+      "verify": {
+        "labels": {
+          "password": "Парола"
+        },
+        "title": "Парола"
+      }
+    },
+    "register": {
+      "labels": {
+        "lastname": "Фамилия"
+      },
+      "methods": {
+        "passkey": "Ключ за достъп",
+        "password": "Парола"
+      },
+      "password": {
+        "labels": {
+          "password": "Парола"
+        },
+        "title": "Задайте парола"
+      }
+    },
+    "u2f": {
+      "set": {
+        "title": "2-факторна настройка"
+      }
+    },
+    "verify": {
+      "verify": {
+        "labels": {
+          "code": "Код"
+        }
+      }
+    },
+    "zitadel": {
+      "errors": {
+        "errorOccured": "Нещо се обърка"
+      }
+    }
+  },
+  "cs": {
+    "authenticator": {
+      "methods": {
+        "passkey": "Passkey",
+        "password": "Heslo"
+      }
+    },
+    "device": {
+      "request": {
+        "deny": "Zamítnout"
+      },
+      "usercode": {
+        "labels": {
+          "code": "Kód"
+        }
+      }
+    },
+    "idp": {
+      "errors": {
+        "idpNotFound": "Poskytovatel identity neexistuje",
+        "missingParameters": "Chybějící požadované parametry"
+      },
+      "signInWithApple": "Přihlásit se pomocí Apple"
+    },
+    "invite": {
+      "title": "Pozvat uživatele"
+    },
+    "ldap": {
+      "labels": {
+        "password": "Heslo"
+      }
+    },
+    "loginname": {
+      "description": "Zadejte své přihlašovací údaje.",
+      "errors": {
+        "internalError": "Došlo k interní chybě"
+      },
+      "title": "Vítejte zpět!"
+    },
+    "logout": {
+      "success": {
+        "description": "Byli jste úspěšně odhlášeni."
+      }
+    },
+    "mfa": {
+      "set": {
+        "skip": "Přeskočit",
+        "title": "Nastavení 2-faktorové autentizace"
+      }
+    },
+    "otp": {
+      "set": {
+        "labels": {
+          "code": "Kód"
+        },
+        "title": "Nastavení 2-faktorové autentizace"
+      },
+      "verify": {
+        "labels": {
+          "code": "Kód"
+        }
+      }
+    },
+    "passkey": {
+      "set": {
+        "skip": "Přeskočit"
+      }
+    },
+    "password": {
+      "change": {
+        "labels": {
+          "newPassword": "Nové heslo"
+        },
+        "title": "Změna hesla"
+      },
+      "complexity": {
+        "equals": "Potvrzení hesla odpovídá.",
+        "hasLowercase": "Musí obsahovat malé písmeno.",
+        "hasSymbol": "Musí obsahovat symbol.",
+        "hasUppercase": "Musí obsahovat velké písmeno."
+      },
+      "set": {
+        "labels": {
+          "code": "Kód",
+          "newPassword": "Nové heslo"
+        },
+        "title": "Nastavit heslo"
+      },
+      "verify": {
+        "labels": {
+          "password": "Heslo"
+        },
+        "title": "Heslo"
+      }
+    },
+    "register": {
+      "labels": {
+        "lastname": "Příjmení"
+      },
+      "methods": {
+        "passkey": "Passkey",
+        "password": "Heslo"
+      },
+      "password": {
+        "labels": {
+          "password": "Heslo"
+        },
+        "title": "Nastavit heslo"
+      }
+    },
+    "u2f": {
+      "set": {
+        "title": "Nastavení 2-faktorové autentizace"
+      }
+    },
+    "verify": {
+      "verify": {
+        "labels": {
+          "code": "Kód"
+        }
+      }
+    },
+    "zitadel": {
+      "errors": {
+        "errorOccured": "Něco se pokazilo"
+      }
+    }
+  },
   "de": {
     "accounts": {
       "addAnother": "Ein weiteres Konto hinzufügen",
@@ -2845,7 +3091,141 @@
       }
     }
   },
-  "id": {},
+  "id": {
+    "authenticator": {
+      "methods": {
+        "passkey": "Passkey",
+        "password": "Kata sandi"
+      }
+    },
+    "device": {
+      "request": {
+        "deny": "Membantah"
+      },
+      "usercode": {
+        "labels": {
+          "code": "Kode"
+        }
+      }
+    },
+    "idp": {
+      "errors": {
+        "missingParameters": "Parameter yang diperlukan tidak ada"
+      },
+      "signInWithApple": "Masuk dengan Apple"
+    },
+    "invite": {
+      "title": "Mengundang Pengguna"
+    },
+    "ldap": {
+      "labels": {
+        "password": "Kata sandi"
+      }
+    },
+    "loginname": {
+      "description": "Masukkan data masuk Anda.",
+      "errors": {
+        "internalError": "Terjadi kesalahan internal"
+      },
+      "title": "Selamat Datang kembali!"
+    },
+    "logout": {
+      "success": {
+        "description": "Anda telah berhasil logout.",
+        "title": "Keluar"
+      },
+      "title": "Keluar"
+    },
+    "mfa": {
+      "set": {
+        "skip": "Melewati",
+        "title": "Pengaturan 2 Faktor"
+      }
+    },
+    "otp": {
+      "set": {
+        "labels": {
+          "code": "Kode"
+        },
+        "title": "Pengaturan 2 Faktor"
+      },
+      "verify": {
+        "labels": {
+          "code": "Kode"
+        },
+        "resendCode": "Kirim Ulang Kode",
+        "title": "Verifikasi 2 Faktor"
+      }
+    },
+    "passkey": {
+      "set": {
+        "skip": "Melewati"
+      }
+    },
+    "password": {
+      "change": {
+        "labels": {
+          "newPassword": "Kata Sandi Baru"
+        }
+      },
+      "complexity": {
+        "equals": "Konfirmasi kata sandi cocok.",
+        "hasLowercase": "Harus menyertakan huruf kecil.",
+        "hasSymbol": "Harus menyertakan simbol.",
+        "hasUppercase": "Harus menyertakan huruf besar."
+      },
+      "set": {
+        "labels": {
+          "code": "Kode",
+          "newPassword": "Kata Sandi Baru"
+        },
+        "resend": "Kirim Ulang Kode",
+        "title": "Tetapkan Kata Sandi"
+      },
+      "verify": {
+        "labels": {
+          "password": "Kata sandi"
+        },
+        "title": "Kata sandi"
+      }
+    },
+    "register": {
+      "labels": {
+        "email": "E-mail"
+      },
+      "methods": {
+        "passkey": "Passkey",
+        "password": "Kata sandi"
+      },
+      "password": {
+        "labels": {
+          "password": "Kata sandi"
+        },
+        "title": "Tetapkan Kata Sandi"
+      }
+    },
+    "u2f": {
+      "set": {
+        "title": "Pengaturan 2 Faktor"
+      },
+      "verify": {
+        "title": "Verifikasi 2 Faktor"
+      }
+    },
+    "verify": {
+      "verify": {
+        "labels": {
+          "code": "Kode"
+        },
+        "resendCode": "Kirim Ulang Kode"
+      }
+    },
+    "zitadel": {
+      "errors": {
+        "errorOccured": "Ada yang tidak beres"
+      }
+    }
+  },
   "it": {
     "accounts": {
       "addAnother": "Aggiungi un altro account",
@@ -3794,8 +4174,240 @@
       }
     }
   },
-  "ko": {},
-  "mk": {},
+  "ko": {
+    "authenticator": {
+      "methods": {
+        "password": "비밀번호"
+      }
+    },
+    "device": {
+      "request": {
+        "deny": "거부"
+      },
+      "usercode": {
+        "labels": {
+          "code": "코드"
+        }
+      }
+    },
+    "idp": {
+      "errors": {
+        "idpNotFound": "IDP 제공자가 존재하지 않습니다",
+        "missingParameters": "필수 매개변수가 없습니다"
+      },
+      "signInWithApple": "Apple로 로그인"
+    },
+    "invite": {
+      "title": "사용자 초대"
+    },
+    "ldap": {
+      "labels": {
+        "password": "비밀번호",
+        "username": "사용자 이름"
+      }
+    },
+    "loginname": {
+      "description": "로그인 정보를 입력하세요.",
+      "errors": {
+        "internalError": "내부 오류가 발생했습니다"
+      },
+      "labels": {
+        "loginname": "로그인 이름",
+        "username": "사용자 이름"
+      },
+      "title": "다시 오신 것을 환영합니다!"
+    },
+    "logout": {
+      "success": {
+        "description": "성공적으로 로그아웃되었습니다."
+      }
+    },
+    "mfa": {
+      "set": {
+        "skip": "건너뛰기",
+        "title": "2단계 인증 설정"
+      }
+    },
+    "otp": {
+      "set": {
+        "labels": {
+          "code": "코드"
+        },
+        "title": "2단계 인증 설정"
+      },
+      "verify": {
+        "labels": {
+          "code": "코드"
+        }
+      }
+    },
+    "passkey": {
+      "set": {
+        "skip": "건너뛰기"
+      }
+    },
+    "password": {
+      "change": {
+        "labels": {
+          "confirmPassword": "비밀번호 확인",
+          "newPassword": "새 비밀번호"
+        }
+      },
+      "complexity": {
+        "equals": "비밀번호가 일치합니다.",
+        "hasLowercase": "소문자가 포함되어야 합니다.",
+        "hasNumber": "숫자가 포함되어야 합니다.",
+        "hasSymbol": "기호가 포함되어야 합니다.",
+        "hasUppercase": "대문자가 포함되어야 합니다."
+      },
+      "set": {
+        "labels": {
+          "code": "코드",
+          "confirmPassword": "비밀번호 확인",
+          "newPassword": "새 비밀번호"
+        },
+        "title": "비밀번호 설정"
+      },
+      "verify": {
+        "labels": {
+          "password": "비밀번호"
+        },
+        "title": "비밀번호"
+      }
+    },
+    "register": {
+      "labels": {
+        "email": "이메일",
+        "lastname": "성"
+      },
+      "methods": {
+        "password": "비밀번호"
+      },
+      "password": {
+        "labels": {
+          "confirmPassword": "비밀번호 확인",
+          "password": "비밀번호"
+        },
+        "title": "비밀번호 설정"
+      },
+      "privacyPolicy": "개인정보처리방침"
+    },
+    "u2f": {
+      "set": {
+        "title": "2단계 인증 설정"
+      }
+    },
+    "verify": {
+      "verify": {
+        "labels": {
+          "code": "코드"
+        }
+      }
+    },
+    "zitadel": {
+      "errors": {
+        "errorOccured": "문제가 발생했습니다"
+      }
+    }
+  },
+  "mk": {
+    "authenticator": {
+      "methods": {
+        "password": "Лозинка"
+      }
+    },
+    "device": {
+      "request": {
+        "deny": "одбиј"
+      }
+    },
+    "idp": {
+      "errors": {
+        "missingParameters": "Недостасуваат задолжителни параметри"
+      }
+    },
+    "invite": {
+      "title": "Покана за корисникот"
+    },
+    "ldap": {
+      "labels": {
+        "password": "Лозинка"
+      }
+    },
+    "loginname": {
+      "description": "Внесете ги вашите податоци за најава.",
+      "title": "Добредојдовте назад!"
+    },
+    "logout": {
+      "success": {
+        "description": "Успешно сте одјавени."
+      }
+    },
+    "mfa": {
+      "set": {
+        "skip": "прескокни",
+        "title": "Подесување на 2-факторска автентикација"
+      }
+    },
+    "otp": {
+      "set": {
+        "title": "Подесување на 2-факторска автентикација"
+      }
+    },
+    "passkey": {
+      "set": {
+        "skip": "прескокни"
+      }
+    },
+    "password": {
+      "change": {
+        "labels": {
+          "newPassword": "Нова лозинка"
+        },
+        "title": "Промена на лозинка"
+      },
+      "complexity": {
+        "equals": "Потврдата за лозинката се совпаѓа.",
+        "hasSymbol": "Мора да вклучи симбол."
+      },
+      "set": {
+        "labels": {
+          "newPassword": "Нова лозинка"
+        },
+        "title": "Поставете лозинка"
+      },
+      "verify": {
+        "labels": {
+          "password": "Лозинка"
+        },
+        "title": "Лозинка"
+      }
+    },
+    "register": {
+      "labels": {
+        "lastname": "Презиме"
+      },
+      "methods": {
+        "password": "Лозинка"
+      },
+      "password": {
+        "labels": {
+          "password": "Лозинка"
+        },
+        "title": "Поставете лозинка"
+      }
+    },
+    "u2f": {
+      "set": {
+        "title": "Подесување на 2-факторска автентикација"
+      }
+    },
+    "zitadel": {
+      "errors": {
+        "errorOccured": "Се случи нешто неочекувано"
+      }
+    }
+  },
   "nl": {
     "accounts": {
       "addAnother": "Nog een account toevoegen",
@@ -5218,7 +5830,107 @@
       }
     }
   },
-  "ro": {},
+  "ro": {
+    "device": {
+      "request": {
+        "deny": "Refuză"
+      },
+      "usercode": {
+        "labels": {
+          "code": "Cod"
+        }
+      }
+    },
+    "idp": {
+      "errors": {
+        "idpNotFound": "Furnizorul de identitate nu există",
+        "missingParameters": "Lipsesc parametrii obligatorii"
+      },
+      "signInWithApple": "Conectare cu Apple"
+    },
+    "invite": {
+      "title": "Invitați utilizatorul"
+    },
+    "loginname": {
+      "description": "Introduceți datele de autentificare.",
+      "errors": {
+        "internalError": "A apărut o eroare internă"
+      },
+      "title": "Bine ați revenit!"
+    },
+    "logout": {
+      "success": {
+        "description": "V-ați deconectat cu succes."
+      }
+    },
+    "mfa": {
+      "set": {
+        "skip": "Omite",
+        "title": "Configurare 2-Factori"
+      }
+    },
+    "otp": {
+      "set": {
+        "labels": {
+          "code": "Cod"
+        },
+        "title": "Configurare 2-Factori"
+      },
+      "verify": {
+        "labels": {
+          "code": "Cod"
+        }
+      }
+    },
+    "passkey": {
+      "set": {
+        "skip": "Omite"
+      }
+    },
+    "password": {
+      "change": {
+        "labels": {
+          "newPassword": "Parolă nouă"
+        }
+      },
+      "complexity": {
+        "equals": "Confirmarea parolei se potrivește.",
+        "hasSymbol": "Trebuie să includă un simbol."
+      },
+      "set": {
+        "labels": {
+          "code": "Cod",
+          "newPassword": "Parolă nouă"
+        },
+        "title": "Setează parola"
+      }
+    },
+    "register": {
+      "labels": {
+        "lastname": "Nume de familie"
+      },
+      "password": {
+        "title": "Setează parola"
+      }
+    },
+    "u2f": {
+      "set": {
+        "title": "Configurare 2-Factori"
+      }
+    },
+    "verify": {
+      "verify": {
+        "labels": {
+          "code": "Cod"
+        }
+      }
+    },
+    "zitadel": {
+      "errors": {
+        "errorOccured": "Ceva nu a mers bine"
+      }
+    }
+  },
   "ru": {
     "accounts": {
       "addAnother": "Добавить другой аккаунт",
@@ -5693,7 +6405,103 @@
       }
     }
   },
-  "sv": {},
+  "sv": {
+    "authenticator": {
+      "methods": {
+        "passkey": "Passkey",
+        "password": "Lösenord"
+      }
+    },
+    "device": {
+      "request": {
+        "deny": "Neka"
+      }
+    },
+    "idp": {
+      "errors": {
+        "missingParameters": "Obligatorisk parameter saknas"
+      },
+      "signInWithApple": "Logga in med Apple"
+    },
+    "invite": {
+      "title": "Bjud in användare"
+    },
+    "ldap": {
+      "labels": {
+        "password": "Lösenord"
+      }
+    },
+    "loginname": {
+      "errors": {
+        "internalError": "Ett internt fel inträffade"
+      },
+      "title": "Välkommen!"
+    },
+    "logout": {
+      "success": {
+        "description": "Du har nu loggats ut."
+      }
+    },
+    "mfa": {
+      "set": {
+        "title": "tvåfaktorinställningar"
+      }
+    },
+    "otp": {
+      "set": {
+        "title": "tvåfaktorinställningar"
+      }
+    },
+    "password": {
+      "change": {
+        "labels": {
+          "newPassword": "Nytt lösenord"
+        }
+      },
+      "complexity": {
+        "equals": "Lösenorden stämmer.",
+        "hasSymbol": "Måste innehålla minst ett specialtecken."
+      },
+      "set": {
+        "labels": {
+          "newPassword": "Nytt lösenord"
+        },
+        "title": "Ange lösenord"
+      },
+      "verify": {
+        "labels": {
+          "password": "Lösenord"
+        },
+        "title": "Lösenord"
+      }
+    },
+    "register": {
+      "labels": {
+        "email": "E-post",
+        "lastname": "Efternamn"
+      },
+      "methods": {
+        "passkey": "Passkey",
+        "password": "Lösenord"
+      },
+      "password": {
+        "labels": {
+          "password": "Lösenord"
+        },
+        "title": "Ange lösenord"
+      }
+    },
+    "u2f": {
+      "set": {
+        "title": "tvåfaktorinställningar"
+      }
+    },
+    "zitadel": {
+      "errors": {
+        "errorOccured": "Någonting gick fel"
+      }
+    }
+  },
   "tr": {
     "accounts": {
       "addAnother": "Başka hesap ekle",

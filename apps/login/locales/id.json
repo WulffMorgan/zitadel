@@ -1,1 +1,138 @@
-{}
+{
+  "authenticator": {
+    "methods": {
+      "passkey": "Passkey",
+      "password": "Kata sandi"
+    }
+  },
+  "common": {},
+  "device": {
+    "request": {
+      "deny": "Membantah"
+    },
+    "usercode": {
+      "labels": {
+        "code": "Kode"
+      }
+    }
+  },
+  "idp": {
+    "errors": {
+      "missingParameters": "Parameter yang diperlukan tidak ada"
+    },
+    "signInWithApple": "Masuk dengan Apple"
+  },
+  "invite": {
+    "title": "Mengundang Pengguna"
+  },
+  "ldap": {
+    "labels": {
+      "password": "Kata sandi"
+    }
+  },
+  "loginname": {
+    "description": "Masukkan data masuk Anda.",
+    "errors": {
+      "internalError": "Terjadi kesalahan internal"
+    },
+    "labels": {},
+    "title": "Selamat Datang kembali!"
+  },
+  "logout": {
+    "success": {
+      "description": "Anda telah berhasil logout.",
+      "title": "Keluar"
+    },
+    "title": "Keluar"
+  },
+  "mfa": {
+    "set": {
+      "skip": "Melewati",
+      "title": "Pengaturan 2 Faktor"
+    }
+  },
+  "otp": {
+    "set": {
+      "labels": {
+        "code": "Kode"
+      },
+      "title": "Pengaturan 2 Faktor"
+    },
+    "verify": {
+      "labels": {
+        "code": "Kode"
+      },
+      "resendCode": "Kirim Ulang Kode",
+      "title": "Verifikasi 2 Faktor"
+    }
+  },
+  "passkey": {
+    "set": {
+      "info": {},
+      "skip": "Melewati"
+    }
+  },
+  "password": {
+    "change": {
+      "labels": {
+        "newPassword": "Kata Sandi Baru"
+      }
+    },
+    "complexity": {
+      "equals": "Konfirmasi kata sandi cocok.",
+      "hasLowercase": "Harus menyertakan huruf kecil.",
+      "hasSymbol": "Harus menyertakan simbol.",
+      "hasUppercase": "Harus menyertakan huruf besar."
+    },
+    "set": {
+      "labels": {
+        "code": "Kode",
+        "newPassword": "Kata Sandi Baru"
+      },
+      "resend": "Kirim Ulang Kode",
+      "title": "Tetapkan Kata Sandi"
+    },
+    "verify": {
+      "labels": {
+        "password": "Kata sandi"
+      },
+      "title": "Kata sandi"
+    }
+  },
+  "register": {
+    "labels": {
+      "email": "E-mail"
+    },
+    "methods": {
+      "passkey": "Passkey",
+      "password": "Kata sandi"
+    },
+    "password": {
+      "labels": {
+        "password": "Kata sandi"
+      },
+      "title": "Tetapkan Kata Sandi"
+    }
+  },
+  "u2f": {
+    "set": {
+      "title": "Pengaturan 2 Faktor"
+    },
+    "verify": {
+      "title": "Verifikasi 2 Faktor"
+    }
+  },
+  "verify": {
+    "verify": {
+      "labels": {
+        "code": "Kode"
+      },
+      "resendCode": "Kirim Ulang Kode"
+    }
+  },
+  "zitadel": {
+    "errors": {
+      "errorOccured": "Ada yang tidak beres"
+    }
+  }
+}

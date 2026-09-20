@@ -1077,6 +1077,10 @@
   "IDP": {
     "ACTIVATE": "Активирај",
     "ADD": "Додај IDP",
+    "APPLE": {
+      "KEYID": "ID на клуч",
+      "TEAMID": "Team ID"
+    },
     "AUTHORIZATIONENDPOINT": "Точка на авторизација",
     "AVAILABILITY": "Достапност",
     "AVAILABLE": "достапно",

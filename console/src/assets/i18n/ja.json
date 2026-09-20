@@ -2356,6 +2356,7 @@
   "SETTINGS": {
     "BETA": "ベータ",
     "GROUPS": {
+      "ACTIONS": "アクション",
       "APPEARANCE": "設定",
       "DOMAIN": "ドメイン",
       "GENERAL": "一般",
@@ -2366,6 +2367,7 @@
       "TEXTS": "テキストと言語"
     },
     "LIST": {
+      "ACTIONS": "アクション",
       "AGE": "パスワードの有効期限",
       "BRANDING": "ブランディング",
       "COMPLEXITY": "パスワードの複雑さ",

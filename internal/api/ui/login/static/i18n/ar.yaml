@@ -225,6 +225,7 @@ InitMFAOTP:
   Title: التحقق من المصادقة الثنائية
 InitMFAOTPSMS:
   CodeLabel: الرمز
+  CountryCodeLabel: الدولة
   DescriptionCode: أنشئ عاملك الثاني. أدخل الرمز المستلم للتحقق من رقم هاتفك.
   DescriptionPhone: أنشئ عاملك الثاني. أدخل رقم هاتفك للتحقق منه.
   EditButtonText: تعديل

@@ -441,6 +441,7 @@
       },
       "UPLOAD": "Télécharger le fichier XML"
     },
+    "TITLEFIRST": "Nom de l'application",
     "TOAST": {
       "APIUPDATED": "Application mise à jour",
       "CLIENTSECRETREGENERATED": "secret client généré.",
@@ -454,6 +455,7 @@
     },
     "TOKEN": "Paramètres du jeton",
     "TYPE": "Type d'application",
+    "TYPETITLE": "Type d'application",
     "URLS": "URLs"
   },
   "APP_NAME": "Zitadel",
@@ -1077,6 +1079,10 @@
   "IDP": {
     "ACTIVATE": "Activer",
     "ADD": "Ajouter un fournisseur d'identité",
+    "APPLE": {
+      "KEYID": "ID de la clé",
+      "TEAMID": "Team ID"
+    },
     "AUTHORIZATIONENDPOINT": "Authorization Endpoint",
     "AVAILABILITY": "Disponibilité",
     "AVAILABLE": "disponible",
@@ -1098,6 +1104,9 @@
     "CLIENTSECRET": "Secret du client",
     "CONFIG": "Paramètres",
     "CREATE": {
+      "APPLE": {
+        "TITLE": "Se connecter avec Apple"
+      },
       "AZUREAD": {
         "DESCRIPTION": "Saisissez les informations d'identification de votre fournisseur d'identité Microsoft",
         "TITLE": "Fournisseur Microsoft"

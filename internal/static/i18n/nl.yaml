@@ -787,10 +787,12 @@ EventTypes:
             changed: Twilio SMS-provider token gewijzigd
     smtp:
       config:
+        activated: SMTP-configuratie is geactiveerd
         added: SMTP-configuratie toegevoegd
         changed: SMTP-configuratie gewijzigd
         password:
           changed: SMTP-configuratie geheim gewijzigd
+        removed: SMTP-configuratie verwijderd
   instance:
     added: Instantie toegevoegd
     changed: Instantie gewijzigd
@@ -911,6 +913,7 @@ EventTypes:
           changed: Token van Twilio SMS-configuratie gewijzigd
     smtp:
       config:
+        activated: SMTP-configuratie is geactiveerd
         added: SMTP-configuratie toegevoegd
         changed: SMTP-configuratie gewijzigd
         password:

@@ -1,1 +1,131 @@
-{}
+{
+  "authenticator": {
+    "methods": {
+      "passkey": "Passkey",
+      "password": "Heslo"
+    }
+  },
+  "common": {},
+  "device": {
+    "request": {
+      "deny": "Zamítnout"
+    },
+    "usercode": {
+      "labels": {
+        "code": "Kód"
+      }
+    }
+  },
+  "idp": {
+    "errors": {
+      "idpNotFound": "Poskytovatel identity neexistuje",
+      "missingParameters": "Chybějící požadované parametry"
+    },
+    "signInWithApple": "Přihlásit se pomocí Apple"
+  },
+  "invite": {
+    "title": "Pozvat uživatele"
+  },
+  "ldap": {
+    "labels": {
+      "password": "Heslo"
+    }
+  },
+  "loginname": {
+    "description": "Zadejte své přihlašovací údaje.",
+    "errors": {
+      "internalError": "Došlo k interní chybě"
+    },
+    "labels": {},
+    "title": "Vítejte zpět!"
+  },
+  "logout": {
+    "success": {
+      "description": "Byli jste úspěšně odhlášeni."
+    }
+  },
+  "mfa": {
+    "set": {
+      "skip": "Přeskočit",
+      "title": "Nastavení 2-faktorové autentizace"
+    }
+  },
+  "otp": {
+    "set": {
+      "labels": {
+        "code": "Kód"
+      },
+      "title": "Nastavení 2-faktorové autentizace"
+    },
+    "verify": {
+      "labels": {
+        "code": "Kód"
+      }
+    }
+  },
+  "passkey": {
+    "set": {
+      "info": {},
+      "skip": "Přeskočit"
+    }
+  },
+  "password": {
+    "change": {
+      "labels": {
+        "newPassword": "Nové heslo"
+      },
+      "title": "Změna hesla"
+    },
+    "complexity": {
+      "equals": "Potvrzení hesla odpovídá.",
+      "hasLowercase": "Musí obsahovat malé písmeno.",
+      "hasSymbol": "Musí obsahovat symbol.",
+      "hasUppercase": "Musí obsahovat velké písmeno."
+    },
+    "set": {
+      "labels": {
+        "code": "Kód",
+        "newPassword": "Nové heslo"
+      },
+      "title": "Nastavit heslo"
+    },
+    "verify": {
+      "labels": {
+        "password": "Heslo"
+      },
+      "title": "Heslo"
+    }
+  },
+  "register": {
+    "labels": {
+      "lastname": "Příjmení"
+    },
+    "methods": {
+      "passkey": "Passkey",
+      "password": "Heslo"
+    },
+    "password": {
+      "labels": {
+        "password": "Heslo"
+      },
+      "title": "Nastavit heslo"
+    }
+  },
+  "u2f": {
+    "set": {
+      "title": "Nastavení 2-faktorové autentizace"
+    }
+  },
+  "verify": {
+    "verify": {
+      "labels": {
+        "code": "Kód"
+      }
+    }
+  },
+  "zitadel": {
+    "errors": {
+      "errorOccured": "Něco se pokazilo"
+    }
+  }
+}

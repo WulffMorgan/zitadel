@@ -1,1 +1,126 @@
-{}
+{
+  "authenticator": {
+    "methods": {
+      "passkey": "Ключ за достъп",
+      "password": "Парола"
+    }
+  },
+  "common": {},
+  "device": {
+    "request": {
+      "deny": "отричам"
+    },
+    "usercode": {
+      "labels": {
+        "code": "Код"
+      }
+    }
+  },
+  "idp": {
+    "errors": {
+      "idpNotFound": "Доставчикът на самоличност не съществува",
+      "missingParameters": "Липсват задължителни параметри"
+    },
+    "signInWithApple": "Вход с Apple"
+  },
+  "invite": {
+    "title": "Покана за потребител"
+  },
+  "ldap": {
+    "labels": {
+      "password": "Парола"
+    }
+  },
+  "loginname": {
+    "errors": {
+      "internalError": "Възникна вътрешна грешка"
+    },
+    "labels": {},
+    "title": "Добре дошъл обратно!"
+  },
+  "logout": {
+    "success": {
+      "description": "Вие излязохте успешно."
+    }
+  },
+  "mfa": {
+    "set": {
+      "skip": "пропуснете",
+      "title": "2-факторна настройка"
+    }
+  },
+  "otp": {
+    "set": {
+      "labels": {
+        "code": "Код"
+      },
+      "title": "2-факторна настройка"
+    },
+    "verify": {
+      "labels": {
+        "code": "Код"
+      }
+    }
+  },
+  "passkey": {
+    "set": {
+      "info": {},
+      "skip": "пропуснете"
+    }
+  },
+  "password": {
+    "change": {
+      "labels": {}
+    },
+    "complexity": {
+      "equals": "Потвърждението на паролата съвпада.",
+      "hasLowercase": "Трябва да включва малка буква.",
+      "hasSymbol": "Трябва да включва символ.",
+      "hasUppercase": "Трябва да включва главна буква."
+    },
+    "set": {
+      "labels": {
+        "code": "Код"
+      },
+      "title": "Задайте парола"
+    },
+    "verify": {
+      "labels": {
+        "password": "Парола"
+      },
+      "title": "Парола"
+    }
+  },
+  "register": {
+    "labels": {
+      "lastname": "Фамилия"
+    },
+    "methods": {
+      "passkey": "Ключ за достъп",
+      "password": "Парола"
+    },
+    "password": {
+      "labels": {
+        "password": "Парола"
+      },
+      "title": "Задайте парола"
+    }
+  },
+  "u2f": {
+    "set": {
+      "title": "2-факторна настройка"
+    }
+  },
+  "verify": {
+    "verify": {
+      "labels": {
+        "code": "Код"
+      }
+    }
+  },
+  "zitadel": {
+    "errors": {
+      "errorOccured": "Нещо се обърка"
+    }
+  }
+}

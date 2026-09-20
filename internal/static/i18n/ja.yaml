@@ -631,6 +631,7 @@ Errors:
     Profile:
       Empty: プロファイルが空です
       FirstNameEmpty: 名前が空です
+      IDMissing: プロファイルIDが不足しています
       Invalid: プロファイルデータが無効です
       LastNameEmpty: 姓が空です
       NotChanged: プロファイルが変更されていません

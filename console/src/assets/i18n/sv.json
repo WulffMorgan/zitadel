@@ -1422,6 +1422,7 @@
     "ROLES": "Roller",
     "SETTINGS": "Inställningar",
     "SHOWORGS": "Visa Alla Organisationer",
+    "TARGETS": "Mål",
     "TOS": "Användarvillkor",
     "VIEWS": "Vy"
   },
@@ -2390,6 +2391,7 @@
       "SECURITY": "Säkerhetsinställningar",
       "SMS_PROVIDER": "SMS/Telefonleverantör",
       "SMTP_PROVIDER": "SMTP-leverantör",
+      "TARGETS": "Mål",
       "VERIFIED_DOMAINS": "Organisationsdomän",
       "VIEWS": "Vy",
       "WEB_KEYS": "OIDC Web Keys"

@@ -2343,6 +2343,7 @@
   "SETTINGS": {
     "BETA": "BETA",
     "GROUPS": {
+      "ACTIONS": "Akce",
       "APPEARANCE": "Vzhled",
       "DOMAIN": "Doména",
       "GENERAL": "Obecné informace",
@@ -2353,6 +2354,7 @@
       "TEXTS": "Texty a jazyky"
     },
     "LIST": {
+      "ACTIONS": "Akce",
       "AGE": "Expirace hesla",
       "BRANDING": "Branding",
       "COMPLEXITY": "Složitost hesla",

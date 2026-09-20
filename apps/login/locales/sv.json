@@ -1,1 +1,107 @@
-{}
+{
+  "authenticator": {
+    "methods": {
+      "passkey": "Passkey",
+      "password": "Lösenord"
+    }
+  },
+  "common": {},
+  "device": {
+    "request": {
+      "deny": "Neka"
+    },
+    "usercode": {
+      "labels": {}
+    }
+  },
+  "idp": {
+    "errors": {
+      "missingParameters": "Obligatorisk parameter saknas"
+    },
+    "signInWithApple": "Logga in med Apple"
+  },
+  "invite": {
+    "title": "Bjud in användare"
+  },
+  "ldap": {
+    "labels": {
+      "password": "Lösenord"
+    }
+  },
+  "loginname": {
+    "errors": {
+      "internalError": "Ett internt fel inträffade"
+    },
+    "labels": {},
+    "title": "Välkommen!"
+  },
+  "logout": {
+    "success": {
+      "description": "Du har nu loggats ut."
+    }
+  },
+  "mfa": {
+    "set": {
+      "title": "tvåfaktorinställningar"
+    }
+  },
+  "otp": {
+    "set": {
+      "title": "tvåfaktorinställningar"
+    }
+  },
+  "passkey": {
+    "set": {
+      "info": {}
+    }
+  },
+  "password": {
+    "change": {
+      "labels": {
+        "newPassword": "Nytt lösenord"
+      }
+    },
+    "complexity": {
+      "equals": "Lösenorden stämmer.",
+      "hasSymbol": "Måste innehålla minst ett specialtecken."
+    },
+    "set": {
+      "labels": {
+        "newPassword": "Nytt lösenord"
+      },
+      "title": "Ange lösenord"
+    },
+    "verify": {
+      "labels": {
+        "password": "Lösenord"
+      },
+      "title": "Lösenord"
+    }
+  },
+  "register": {
+    "labels": {
+      "email": "E-post",
+      "lastname": "Efternamn"
+    },
+    "methods": {
+      "passkey": "Passkey",
+      "password": "Lösenord"
+    },
+    "password": {
+      "labels": {
+        "password": "Lösenord"
+      },
+      "title": "Ange lösenord"
+    }
+  },
+  "u2f": {
+    "set": {
+      "title": "tvåfaktorinställningar"
+    }
+  },
+  "zitadel": {
+    "errors": {
+      "errorOccured": "Någonting gick fel"
+    }
+  }
+}

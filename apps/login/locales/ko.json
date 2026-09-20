@@ -1,1 +1,138 @@
-{}
+{
+  "authenticator": {
+    "methods": {
+      "password": "비밀번호"
+    }
+  },
+  "common": {},
+  "device": {
+    "request": {
+      "deny": "거부"
+    },
+    "usercode": {
+      "labels": {
+        "code": "코드"
+      }
+    }
+  },
+  "idp": {
+    "errors": {
+      "idpNotFound": "IDP 제공자가 존재하지 않습니다",
+      "missingParameters": "필수 매개변수가 없습니다"
+    },
+    "signInWithApple": "Apple로 로그인"
+  },
+  "invite": {
+    "title": "사용자 초대"
+  },
+  "ldap": {
+    "labels": {
+      "password": "비밀번호",
+      "username": "사용자 이름"
+    }
+  },
+  "loginname": {
+    "description": "로그인 정보를 입력하세요.",
+    "errors": {
+      "internalError": "내부 오류가 발생했습니다"
+    },
+    "labels": {
+      "loginname": "로그인 이름",
+      "username": "사용자 이름"
+    },
+    "title": "다시 오신 것을 환영합니다!"
+  },
+  "logout": {
+    "success": {
+      "description": "성공적으로 로그아웃되었습니다."
+    }
+  },
+  "mfa": {
+    "set": {
+      "skip": "건너뛰기",
+      "title": "2단계 인증 설정"
+    }
+  },
+  "otp": {
+    "set": {
+      "labels": {
+        "code": "코드"
+      },
+      "title": "2단계 인증 설정"
+    },
+    "verify": {
+      "labels": {
+        "code": "코드"
+      }
+    }
+  },
+  "passkey": {
+    "set": {
+      "info": {},
+      "skip": "건너뛰기"
+    }
+  },
+  "password": {
+    "change": {
+      "labels": {
+        "confirmPassword": "비밀번호 확인",
+        "newPassword": "새 비밀번호"
+      }
+    },
+    "complexity": {
+      "equals": "비밀번호가 일치합니다.",
+      "hasLowercase": "소문자가 포함되어야 합니다.",
+      "hasNumber": "숫자가 포함되어야 합니다.",
+      "hasSymbol": "기호가 포함되어야 합니다.",
+      "hasUppercase": "대문자가 포함되어야 합니다."
+    },
+    "set": {
+      "labels": {
+        "code": "코드",
+        "confirmPassword": "비밀번호 확인",
+        "newPassword": "새 비밀번호"
+      },
+      "title": "비밀번호 설정"
+    },
+    "verify": {
+      "labels": {
+        "password": "비밀번호"
+      },
+      "title": "비밀번호"
+    }
+  },
+  "register": {
+    "labels": {
+      "email": "이메일",
+      "lastname": "성"
+    },
+    "methods": {
+      "password": "비밀번호"
+    },
+    "password": {
+      "labels": {
+        "confirmPassword": "비밀번호 확인",
+        "password": "비밀번호"
+      },
+      "title": "비밀번호 설정"
+    },
+    "privacyPolicy": "개인정보처리방침"
+  },
+  "u2f": {
+    "set": {
+      "title": "2단계 인증 설정"
+    }
+  },
+  "verify": {
+    "verify": {
+      "labels": {
+        "code": "코드"
+      }
+    }
+  },
+  "zitadel": {
+    "errors": {
+      "errorOccured": "문제가 발생했습니다"
+    }
+  }
+}

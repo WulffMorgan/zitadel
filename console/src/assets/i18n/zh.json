@@ -441,6 +441,7 @@
       },
       "UPLOAD": "上传 XML 文件"
     },
+    "TITLEFIRST": "应用程序名称",
     "TOAST": {
       "APIUPDATED": "应用已更新。",
       "CLIENTSECRETREGENERATED": "客户端秘钥已生成。",
@@ -454,6 +455,7 @@
     },
     "TOKEN": "令牌设置",
     "TYPE": "应用类型",
+    "TYPETITLE": "应用类型",
     "URLS": "URLs"
   },
   "APP_NAME": "Zitadel",

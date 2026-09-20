@@ -1077,6 +1077,10 @@
   "IDP": {
     "ACTIVATE": "Attiva",
     "ADD": "Aggiungi fornitore di identità",
+    "APPLE": {
+      "KEYID": "ID chiave",
+      "TEAMID": "Team ID"
+    },
     "AUTHORIZATIONENDPOINT": "Authorization Endpoint",
     "AVAILABILITY": "Disponibilità",
     "AVAILABLE": "disponibile",
@@ -1098,6 +1102,9 @@
     "CLIENTSECRET": "Client Secret",
     "CONFIG": "Configurazione",
     "CREATE": {
+      "APPLE": {
+        "TITLE": "Accedi con Apple"
+      },
       "AZUREAD": {
         "DESCRIPTION": "Inserisci i dati necessari per il tuo Microsoft provider.",
         "TITLE": "Microsoft Provider"

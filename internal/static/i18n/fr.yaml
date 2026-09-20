@@ -767,6 +767,9 @@ EventTypes:
         idpprovider:
           added: Idp Provider ajouté à la politique de connexion par défaut
           removed: Idp Provider supprimé de la politique de connexion par défaut
+    project:
+      iam:
+        set: Zitadel project set
     secret:
       generator:
         added: Générateur de secret ajouté

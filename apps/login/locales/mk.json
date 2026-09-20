@@ -1,1 +1,104 @@
-{}
+{
+  "authenticator": {
+    "methods": {
+      "password": "Лозинка"
+    }
+  },
+  "common": {},
+  "device": {
+    "request": {
+      "deny": "одбиј"
+    },
+    "usercode": {
+      "labels": {}
+    }
+  },
+  "idp": {
+    "errors": {
+      "missingParameters": "Недостасуваат задолжителни параметри"
+    }
+  },
+  "invite": {
+    "title": "Покана за корисникот"
+  },
+  "ldap": {
+    "labels": {
+      "password": "Лозинка"
+    }
+  },
+  "loginname": {
+    "description": "Внесете ги вашите податоци за најава.",
+    "labels": {},
+    "title": "Добредојдовте назад!"
+  },
+  "logout": {
+    "success": {
+      "description": "Успешно сте одјавени."
+    }
+  },
+  "mfa": {
+    "set": {
+      "skip": "прескокни",
+      "title": "Подесување на 2-факторска автентикација"
+    }
+  },
+  "otp": {
+    "set": {
+      "title": "Подесување на 2-факторска автентикација"
+    }
+  },
+  "passkey": {
+    "set": {
+      "info": {},
+      "skip": "прескокни"
+    }
+  },
+  "password": {
+    "change": {
+      "labels": {
+        "newPassword": "Нова лозинка"
+      },
+      "title": "Промена на лозинка"
+    },
+    "complexity": {
+      "equals": "Потврдата за лозинката се совпаѓа.",
+      "hasSymbol": "Мора да вклучи симбол."
+    },
+    "set": {
+      "labels": {
+        "newPassword": "Нова лозинка"
+      },
+      "title": "Поставете лозинка"
+    },
+    "verify": {
+      "labels": {
+        "password": "Лозинка"
+      },
+      "title": "Лозинка"
+    }
+  },
+  "register": {
+    "labels": {
+      "lastname": "Презиме"
+    },
+    "methods": {
+      "password": "Лозинка"
+    },
+    "password": {
+      "labels": {
+        "password": "Лозинка"
+      },
+      "title": "Поставете лозинка"
+    }
+  },
+  "u2f": {
+    "set": {
+      "title": "Подесување на 2-факторска автентикација"
+    }
+  },
+  "zitadel": {
+    "errors": {
+      "errorOccured": "Се случи нешто неочекувано"
+    }
+  }
+}

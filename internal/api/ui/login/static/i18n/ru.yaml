@@ -47,6 +47,9 @@ Errors:
     LoginPolicy:
       RegistrationNotAllowed: Регистрация запрещена
   User:
+    Address:
+      NotChanged: Адрес не изменён
+      NotFound: Адрес не найден
     AlreadyExists: Пользователь уже существует
     Code:
       CryptoCodeNil: Пустой криптокод
@@ -56,6 +59,13 @@ Errors:
       Invalid: Неверный код
       NotFound: Код не найден
     DomainNotAllowedAsUsername: Домен уже зарезервирован и не может быть использован в качестве логина
+    Email:
+      AlreadyVerified: Электронная почта уже подтверждена
+      Empty: Электронная почта пуста
+      IDMissing: Идентификатор электронной почты отсутствует
+      Invalid: Электронная почта недействительна
+      NotChanged: Электронная почта не изменена
+      NotFound: Электронная почта не найдена
     EmailVerify:
       UserIDEmpty: UserID не указан
     ExternalData:
@@ -105,6 +115,12 @@ Errors:
       HasUpper: Пароль должен содержать хотя бы одну заглавную букву
       MinLength: Пароль слишком короткий
       NotFound: Политика паролей не найдена
+    Phone:
+      AlreadyVerified: Телефон уже подтверждён
+      Empty: Телефон пуст
+      Invalid: Телефон недействителен
+      NotChanged: Телефон не менялся
+      NotFound: Телефон не найден
     Profile:
       Address:
         NotChanged: Адрес не изменился
@@ -135,6 +151,7 @@ Errors:
     ProjectRequired: Вход невозможен. Организация пользователя должна иметь доступ к проекту. Обратитесь к администратору.
     SomethingWentWrong: Что-то пошло не так
     UserIDMissing: Не указан UserID
+    Username: {}
     UsernameOrPassword:
       Invalid: Неверный логин или пароль
 ExternalNotFound:

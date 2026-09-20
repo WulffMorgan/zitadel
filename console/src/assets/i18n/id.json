@@ -1423,6 +1423,7 @@
     "ROLES": "Peran",
     "SETTINGS": "Pengaturan",
     "SHOWORGS": "Tampilkan Semua Organisasi",
+    "TARGETS": "Target",
     "TOS": "Ketentuan Layanan",
     "VIEWS": "Tampilan"
   },
@@ -2353,6 +2354,7 @@
   "SETTINGS": {
     "BETA": "BETA",
     "GROUPS": {
+      "ACTIONS": "Tindakan",
       "APPEARANCE": "Penampilan",
       "DOMAIN": "Domain",
       "GENERAL": "Informasi Umum",
@@ -2363,6 +2365,7 @@
       "TEXTS": "Teks dan Bahasa"
     },
     "LIST": {
+      "ACTIONS": "Tindakan",
       "AGE": "Masa berlaku kata sandi sudah habis",
       "BRANDING": "merek",
       "COMPLEXITY": "Kompleksitas kata sandi",
@@ -2385,6 +2388,7 @@
       "SECURITY": "Pengaturan keamanan",
       "SMS_PROVIDER": "Penyedia SMS/Telepon",
       "SMTP_PROVIDER": "Penyedia SMTP",
+      "TARGETS": "Target",
       "VERIFIED_DOMAINS": "Domain Organisasi",
       "VIEWS": "Tampilan",
       "WEB_KEYS": "OIDC Web Keys"

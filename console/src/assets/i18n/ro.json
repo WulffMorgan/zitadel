@@ -2351,6 +2351,7 @@
   "SETTINGS": {
     "BETA": "BETA",
     "GROUPS": {
+      "ACTIONS": "Acțiuni",
       "APPEARANCE": "Aspect",
       "DOMAIN": "Domeniu",
       "GENERAL": "Informații generale",
@@ -2361,6 +2362,7 @@
       "TEXTS": "Texte și limbi"
     },
     "LIST": {
+      "ACTIONS": "Acțiuni",
       "AGE": "Expirarea parolei",
       "BRANDING": "Branding",
       "COMPLEXITY": "Complexitatea parolei",

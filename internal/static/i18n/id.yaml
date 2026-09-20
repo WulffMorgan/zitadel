@@ -1387,6 +1387,23 @@ EventTypes:
     deleted: Skema Pengguna dihapus
     reactivated: Skema Pengguna diaktifkan kembali
     updated: Skema Pengguna diperbarui
+    user:
+      email:
+        code:
+          added: Kode verifikasi alamat email dibuat
+          sent: Kode verifikasi alamat email terkirim
+        updated: Alamat email diubah
+        verification:
+          failed: Verifikasi alamat email gagal
+        verified: Alamat email terverifikasi
+      phone:
+        code:
+          added: Kode nomor telepon dibuat
+          sent: Kode nomor telepon terkirim
+        updated: Nomor telepon berubah
+        verification:
+          failed: Verifikasi nomor telepon gagal
+        verified: Nomor telepon terverifikasi
   web_key:
     activated: Kunci Web diaktifkan
     added: Kunci Web ditambahkan

@@ -1,3 +1,19 @@
+Action:
+  Flow:
+    Type: {}
+AggregateTypes:
+  action: Acțiuni
+  device_auth: Autorizare dispozitiv
+  feature: Funcție
+  instance: Instanță
+  milestone: Pasul
+  user_schema: Schema de utilizator
+Application:
+  OIDC:
+    V1:
+      Native:
+        RedirectUris:
+          MustBeHttpLocalhost: URI-urile de redirecționare trebuie să înceapă cu propriul protocol, http://127.0.0.1, http://[::1] sau http://localhost.
 Errors:
   Assets:
     Bucket:
@@ -18,6 +34,7 @@ Errors:
     Store:
       NotConfigured: Stocarea activelor nu este configurată
       NotInitialized: Stocarea activelor nu este inițializată
+  Flow: {}
   IDMissing: ID lipsă
   IDP:
     AggregateTypes:
@@ -827,6 +844,11 @@ Errors:
     TeamIDMissing: TeamID lipsă
   Instance:
     AlreadyExists: Instanța există deja
+    CustomMessageText:
+      AlreadyExists: Textul mesajului implicit există deja
+      Invalid: Textul mesajului implicit este invalid
+      NotChanged: Textul mesajului implicit nu a fost schimbat
+      NotFound: Textul mesajului implicit nu a fost găsit
     IDMissing: Id lipsă
     IdpInvalid: Configurația IDP este invalidă
     IdpIsNotOIDC: Configurația IDP nu este de tip oidc
@@ -1083,6 +1105,11 @@ Errors:
       RedirectURIInvalid: URI-ul de redirecționare implicit este invalid
     LoginPolicyInvalid: Politica de conectare este invalidă
     LoginPolicyNotExisting: Politica de conectare nu există
+    MailTemplate:
+      AlreadyExists: Șablonul de e-mail implicit există deja
+      Invalid: Șablonul de e-mail implicit este invalid
+      NotChanged: Șablonul de e-mail implicit nu a fost schimbat
+      NotFound: Șablonul de e-mail implicit nu a fost găsit
     Member:
       RolesNotChanged: Rolurile nu au fost schimbate
     MemberAlreadyExisting: Membrul există deja
@@ -1090,7 +1117,22 @@ Errors:
     MemberNotExisting: Membrul nu există
     NotChanged: Instanța nu a fost schimbată
     NotFound: Instanța nu a fost găsită. Asigurați-vă că aveți domeniul corect. Consultați https://zitadel.com/docs/apis/introduction#domains
+    NotificationPolicy:
+      AlreadyExists: Politica de notificare există deja
+      NotChanged: Politica de notificare nu a fost schimbată
+      NotFound: Politica de notificare nu a fost găsită
     OIDCConfigInvalid: Configurația OIDC IDP este invalidă
+    PasswordAgePolicy:
+      AlreadyExists: Politica de vârstă a parolei există deja
+      Empty: Politica de vârstă a parolei este goală
+    PasswordComplexityPolicy:
+      AlreadyExists: Politica de complexitate a parolei există deja
+      Empty: Politica de complexitate a parolei este goală
+    PasswordLockoutPolicy:
+      AlreadyExists: Politica de blocare a parolei există deja
+      Empty: Politica de blocare a parolei este goală
+  Intent:
+    Expired: Codul a expirat
   Internal: A apărut o eroare internă
   Language:
     Duplicate: Există duplicate în liste de limbi
@@ -1105,9 +1147,14 @@ Errors:
       Blocked: Instanța este blocată
     NoneSpecified: Nu au fost specificate limite
     NotFound: Limitele nu au fost găsite
+  Member: {}
   NoChangesFound: Nicio modificare
   Notification:
     NoDomain: Niciun domeniu găsit pentru mesaj
+  OIDCSession:
+    RefreshTokenInvalid: Token-ul de reîmprospătare este invalid
+    Token:
+      Expired: Codul a expirat
   OIDCSettings:
     AlreadyExists: Configurația OIDC există deja
     NotFound: Configurația OIDC nu a fost găsită
@@ -1200,6 +1247,8 @@ Errors:
     UserIDMissing: ID-ul utilizatorului lipsește
     ZitadelOrgNotDeletable: Organizația cu proiectul Zitadel nu trebuie să fie ștearsă
   OriginNotAllowed: Acest "Origin" nu este permis
+  Policy:
+    AlreadyExists: Politica există deja
   Project:
     AlreadyExists: Proiectul există deja în organizație
     App:
@@ -1413,3 +1462,68 @@ Errors:
       NotFound: Token-ul WebAuthN nu a putut fi găsit
       ValidateLoginFailed: Eroare la validarea acreditărilor de autentificare
     WrongType: Nu este permis pentru acest tip de utilizator
+  UserGrant:
+    RoleKeyNotFound: Rolul nu există
+  UserSession:
+    NotFound: Utilizatorul nu a putut fi găsit
+EventTypes:
+  action:
+    removed: Ștergeți acțiunea?
+  iam:
+    default:
+      language:
+        set: Limba implicită a fost salvată
+    smtp:
+      config:
+        activated: Configurația SMTP a fost activată
+  instance:
+    default:
+      language:
+        set: Limba implicită a fost salvată
+    domain:
+      removed: Ștergeți domeniul
+    smtp:
+      config:
+        activated: Configurația SMTP a fost activată
+  org:
+    deactivated: Dezactivați organizația
+    domain:
+      removed: Ștergeți domeniul
+      verification:
+        failed: Verificarea domeniului a eșuat
+    flow:
+      trigger_actions:
+        removed: Ștergeți acțiunea?
+        set: Acțiuni setate
+    reactivated: Reactivați organizația
+    removed: Ștergeți organizația
+  project:
+    application:
+      removed: Ștergeți aplicația
+    deactivated: Dezactivați proiectul
+    removed: Ștergeți proiectul
+  user:
+    deactivated: Dezactivați utilizatorul
+    domain:
+      claimed: Domeniul a fost revendicat
+    grant: {}
+    human:
+      phone:
+        removed: Ștergeți numărul de telefon
+        verified: Numărul de telefon verificat
+    locked: Utilizatorul este blocat
+    machine:
+      key:
+        added: Adăugați cheie
+        removed: Ștergeți cheia
+      secret:
+        removed: Ștergeți cheia
+    password: {}
+    phone:
+      verified: Numărul de telefon verificat
+    removed: Ștergeți utilizatorul
+  user_schema:
+    user:
+      deleted: Ștergeți utilizatorul
+      phone:
+        verified: Numărul de telefon verificat

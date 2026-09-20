@@ -1077,6 +1077,10 @@
   "IDP": {
     "ACTIVATE": "Ativar",
     "ADD": "Adicionar Provedor de Identidade",
+    "APPLE": {
+      "KEYID": "ID da Chave",
+      "TEAMID": "Team ID"
+    },
     "AUTHORIZATIONENDPOINT": "Ponto de Autorização",
     "AVAILABILITY": "Disponibilidade",
     "AVAILABLE": "disponível",
@@ -1098,6 +1102,9 @@
     "CLIENTSECRET": "Segredo do Cliente",
     "CONFIG": "Configuração",
     "CREATE": {
+      "APPLE": {
+        "TITLE": "Entrar com Apple"
+      },
       "AZUREAD": {
         "DESCRIPTION": "Insira as credenciais para o seu Provedor de Identidade da Microsoft",
         "TITLE": "Provedor Microsoft"
@@ -2759,6 +2766,7 @@
       "GENDER": "Gênero",
       "LASTNAME": "Sobrenome",
       "NICKNAME": "Apelido",
+      "PASSWORD": "Senha",
       "PHONE": "Número de Telefone",
       "PHONE_HINT": "Use o símbolo + seguido do código de chamada do país, ou selecione o país na lista suspensa e, em seguida, insira o número de telefone",
       "PHONE_VERIFIED": "Número de telefone verificado",

@@ -70,6 +70,13 @@ Errors:
       Invalid: E-Post är felaktig
       NotChanged: E-Posten oförändrad
       NotFound: E-Post finns inte
+    Email:
+      AlreadyVerified: E-post är redan verifierad
+      Empty: E-post är tom
+      IDMissing: E-post-ID saknas
+      Invalid: E-post är ogiltig
+      NotChanged: E-post ändrades inte
+      NotFound: E-post hittades inte
     EmailVerify:
       UserIDEmpty: UserID är tom
     ExternalData:
@@ -112,6 +119,10 @@ Errors:
     NotFound: Användaren hittades inte
     NotFoundOnOrg: Användaren finns inte i den valda organisationen
     NotMatchingUserID: Användaren och den användare som anges i authrequest stämmer inte överens
+    Password:
+      Empty: Lösenord är tomt
+      Invalid: Lösenord är ogiltigt
+      NotChanged: Nytt lösenord kan inte vara samma som ditt nuvarande lösenord
     PasswordComplexityPolicy:
       HasLower: Lösenordet måste innehålla små bokstäver
       HasNumber: Lösenordet måste innehålla en siffra
@@ -135,6 +146,8 @@ Errors:
     ProjectRequired: Det går inte att logga in just nu. Användarkontots organisation har inte tillgång till tjänsten. Ta kontakt med systemansvarig.
     SomethingWentWrong: Någonting gick fel
     UserIDMissing: UserID är inte angett
+    Username:
+      Empty: Användarnamn är tomt
     UsernameOrPassword:
       Invalid: Användarnamn eller lösenord har felaktigt format
 ExternalNotFound:

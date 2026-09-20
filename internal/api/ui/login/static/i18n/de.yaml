@@ -350,6 +350,7 @@ PasswordChange:
   CancelButtonText: Abbrechen
   Description: Ändere dein Passwort, indem du dein altes und dann dein neues Passwort eingibst.
   ExpiredDescription: Dein Passwort ist abgelaufen und muss geändert werden. Gib dein altes und neues Passwort ein.
+  Footer: Fusszeile
   NewPasswordConfirmLabel: Passwort wiederholen
   NewPasswordLabel: Neues Passwort
   NextButtonText: Weiter

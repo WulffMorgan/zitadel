@@ -1,1 +1,107 @@
-{}
+{
+  "common": {},
+  "device": {
+    "request": {
+      "deny": "Refuză"
+    },
+    "usercode": {
+      "labels": {
+        "code": "Cod"
+      }
+    }
+  },
+  "idp": {
+    "errors": {
+      "idpNotFound": "Furnizorul de identitate nu există",
+      "missingParameters": "Lipsesc parametrii obligatorii"
+    },
+    "signInWithApple": "Conectare cu Apple"
+  },
+  "invite": {
+    "title": "Invitați utilizatorul"
+  },
+  "ldap": {
+    "labels": {}
+  },
+  "loginname": {
+    "description": "Introduceți datele de autentificare.",
+    "errors": {
+      "internalError": "A apărut o eroare internă"
+    },
+    "labels": {},
+    "title": "Bine ați revenit!"
+  },
+  "logout": {
+    "success": {
+      "description": "V-ați deconectat cu succes."
+    }
+  },
+  "mfa": {
+    "set": {
+      "skip": "Omite",
+      "title": "Configurare 2-Factori"
+    }
+  },
+  "otp": {
+    "set": {
+      "labels": {
+        "code": "Cod"
+      },
+      "title": "Configurare 2-Factori"
+    },
+    "verify": {
+      "labels": {
+        "code": "Cod"
+      }
+    }
+  },
+  "passkey": {
+    "set": {
+      "info": {},
+      "skip": "Omite"
+    }
+  },
+  "password": {
+    "change": {
+      "labels": {
+        "newPassword": "Parolă nouă"
+      }
+    },
+    "complexity": {
+      "equals": "Confirmarea parolei se potrivește.",
+      "hasSymbol": "Trebuie să includă un simbol."
+    },
+    "set": {
+      "labels": {
+        "code": "Cod",
+        "newPassword": "Parolă nouă"
+      },
+      "title": "Setează parola"
+    }
+  },
+  "register": {
+    "labels": {
+      "lastname": "Nume de familie"
+    },
+    "password": {
+      "title": "Setează parola"
+    }
+  },
+  "u2f": {
+    "set": {
+      "title": "Configurare 2-Factori"
+    }
+  },
+  "verify": {
+    "verify": {
+      "labels": {
+        "code": "Cod"
+      }
+    }
+  },
+  "zitadel": {
+    "errors": {
+      "errorOccured": "Ceva nu a mers bine"
+    }
+  }
+}
