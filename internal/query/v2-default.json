@@ -473,6 +473,8 @@
       }
     }
   },
+  "bg": {},
+  "cs": {},
   "de": {
     "accounts": {
       "addAnother": "Ein weiteres Konto hinzufügen",
@@ -2843,6 +2845,7 @@
       }
     }
   },
+  "id": {},
   "it": {
     "accounts": {
       "addAnother": "Aggiungi un altro account",
@@ -3791,6 +3794,8 @@
       }
     }
   },
+  "ko": {},
+  "mk": {},
   "nl": {
     "accounts": {
       "addAnother": "Nog een account toevoegen",
@@ -5213,6 +5218,7 @@
       }
     }
   },
+  "ro": {},
   "ru": {
     "accounts": {
       "addAnother": "Добавить другой аккаунт",
@@ -5687,6 +5693,7 @@
       }
     }
   },
+  "sv": {},
   "tr": {
     "accounts": {
       "addAnother": "Başka hesap ekle",
