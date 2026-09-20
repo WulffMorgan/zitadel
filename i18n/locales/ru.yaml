@@ -217,16 +217,16 @@ common:
         NotFound: Политика блокировки пароля по умолчанию не найдена
     Intent:
       Epired__EXTRA: Намерение истекло
-      Expired__MISSING: null
+      Expired__MISSING: Intent has expired
       FailureURLMissing: В запросе отсутствует URL-адрес ошибки
-      IDPInvalid__MISSING: null
+      IDPInvalid__MISSING: IDP invalid for the request
       IDPMissing: В запросе отсутствует идентификатор IDP
       InvalidToken: Маркер намерения недействителен
       MissingSingleMappingAttribute: Не содержит атрибут сопоставления или имеет более одного значения
       NotStarted: Намерение не начато или уже прекращено
       NotSucceeded: Намерение не увенчалось успехом
       OtherUser: Намерение, предназначенное для другого пользователя
-      ResponseInvalid__MISSING: null
+      ResponseInvalid__MISSING: IDP response is invalid
       StateMissing: В запросе отсутствует параметр State
       SuccessURLMissing: В запросе отсутствует URL-адрес успешного выполнения
       TokenCreationFailed: Не удалось создать токен
@@ -289,7 +289,7 @@ common:
       DefaultOrgNotDeletable: Организация по умолчанию не может быть удалена
       Domain:
         AlreadyExists: Домен уже существует
-        EmptyString__MISSING: null
+        EmptyString__MISSING: Invalid non numeric and alphabetical characters were replaced with empty spaces and resulting domain is an empty string
         InvalidCharacter: Только буквенно-цифровые символы, . и - разрешены для домена
       DomainAlreadyVerified: Домен уже подтверждён
       DomainMissing: Домен отсутствует
@@ -297,12 +297,12 @@ common:
       DomainNotOnOrg: Домен не существует в организации
       DomainNotVerified: Домен не подтверждён
       DomainVerificationFailed: Ошибка подтверждения домена
-      DomainVerificationHTTPNoMatch__MISSING: null
-      DomainVerificationHTTPNotFound__MISSING: null
+      DomainVerificationHTTPNoMatch__MISSING: The file containing the challenge has been found in the expected URL but it doesn't contain the right token text. Check its content
+      DomainVerificationHTTPNotFound__MISSING: The file containing the challenge was not found in the expected URL. Check that you've uploaded the file in the right place with read permissions
       DomainVerificationMissing: Подтверждение домена ещё не началось
-      DomainVerificationTXTNoMatch__MISSING: null
-      DomainVerificationTXTNotFound__MISSING: null
-      DomainVerificationTimeout__MISSING: null
+      DomainVerificationTXTNoMatch__MISSING: The _zitadel-challenge TXT record has been found for your domain but it doesn't contain the right token text. Check that you've added the right token to your DNS server or wait till the new record is propagated
+      DomainVerificationTXTNotFound__MISSING: The _zitadel-challenge TXT record was not found for your domain. Check that you've added it to your DNS server or wait till the new record is propagated
+      DomainVerificationTimeout__MISSING: There was a timeout querying the DNS server
       DomainVerificationTypeInvalid: Недопустимый тип подтверждения домена
       Empty: Организация не заполнена
       IDPConfig:
@@ -366,7 +366,7 @@ common:
       UserIDMissing: ID пользователя отсутствует
       ZitadelOrgNotDeletable: Невозможно удалить организацию с проектом Zitadel
     OriginNotAllowed: Данный "Источник" не разрешён
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Политика уже существует
       Label:
@@ -470,7 +470,7 @@ common:
     SMSConfig:
       AlreadyActive: Конфигурация SMS уже активна
       AlreadyDeactivated: Конфигурация SMS уже деактивирована
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: Конфигурация SMS не найдена
     SMTP:
       CouldNotAuth: не удалось добавить аутентификацию smtp, проверьте правильность вашего пользователя и пароля. Если они верны, возможно, ваш провайдер требует метод аутентификации, не поддерживаемый Zitadel
@@ -495,11 +495,11 @@ common:
       NotFound: Генератор ключа не найден
       TypeMissing: Отсутствует тип генератора ключа
     Session:
-      Expired__MISSING: null
-      IDMissing__MISSING: null
+      Expired__MISSING: Session has expired
+      IDMissing__MISSING: Session ID missing
       NotExisting: Сеанс не существует
-      NotFound__MISSING: null
-      PositiveLifetime__MISSING: null
+      NotFound__MISSING: Session not found
+      PositiveLifetime__MISSING: Session lifetime must not be less than 0
       Terminated: Сеанс уже завершен
       Token:
         Invalid: Маркер сеанса недействителен
@@ -520,7 +520,7 @@ common:
       PublicKeyActive: Невозможно удалить активный публичный ключ цели
       PublicKeyExpired: Публичный ключ цели просрочен
     Token:
-      Invalid__MISSING: null
+      Invalid__MISSING: Token is invalid
       NotFound: Токен не найден
     TokenExchange:
       Impersonation:
@@ -583,7 +583,7 @@ common:
           NotExisting: Беспарольный вход не существует
         RecoveryCodes:
           ConfigInvalid: Конфигурация кодов восстановления недействительна
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Предоставлен неверный код восстановления
           MaxCountExceeded: Превышено максимальное количество кодов восстановления
           NotReady: Коды восстановления не готовы к использованию
@@ -650,7 +650,7 @@ common:
       UserIDWrong: Пользователь запроса не равен аутентифицированному пользователю
       Username:
         AlreadyExists: Имя пользователя занято
-        Empty__MISSING: null
+        Empty__MISSING: Username is empty
         Reserved: Имя пользователя уже занято
       UsernameNotChanged: Имя пользователя не изменено
       WebAuthN:
@@ -1118,8 +1118,8 @@ common:
         deactivated: Приложение деактивировано
         oidc:
           key__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: OIDC Application Key added
+            removed__MISSING: OIDC Application Key removed
           secret:
             check:
               failed: Проверки клиентского ключа OIDC не удалась
@@ -1221,8 +1221,8 @@ common:
             sent: Код инициализации отправлен
         invite:
           check__MISSING:
-            failed__MISSING: null
-            succeeded__MISSING: null
+            failed__MISSING: Invitation check failed
+            succeeded__MISSING: Invitation check succeeded
           code:
             added: Сгенерирован код приглашения
             check__EXTRA:
@@ -1679,8 +1679,8 @@ console:
       CURRENT: Текущая конфигурация
       DEVMODE: Режим разработки
       DEVMODEDESC: 'Осторожно: При включённом режиме разработки URI перенаправления не будут проверяться.'
-      DEVMODE_DISABLED__MISSING: null
-      DEVMODE_ENABLED__MISSING: null
+      DEVMODE_DISABLED__MISSING: Disabled
+      DEVMODE_ENABLED__MISSING: Enabled
       FINGERPRINTS: Отпечатки сертификата SHA-256
       FINGERPRINTSDESC: Один отпечаток в строке (64 шестнадцатеричных символа, двоеточия необязательны). При необходимости укажите debug и release.
       FINGERPRINTSPLACEHOLDER: AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99
@@ -1795,21 +1795,21 @@ console:
     SAML:
       ACSURL: URL-адрес конечной точки ACS
       CERTIFICATE: SAML-сертификат
-      CHOOSEMETADATASOURCE__MISSING: null
+      CHOOSEMETADATASOURCE__MISSING: 'Provide your SAML settings using one of the following options:'
       CONFIGSECTION: Конфигурация SAML
       CREATEMETADATA: Создать метаданные
       DOWNLOADCERT: Скачать сертификат SAML
       ENTITYID: Идентификатор объекта
       METADATA: Метаданные
       METADATAFROMFILE: Метаданные из файла
-      METADATAOPT1__MISSING: null
-      METADATAOPT2__MISSING: null
-      METADATAOPT3__MISSING: null
+      METADATAOPT1__MISSING: Option 1. Specify the url where metadata file is located
+      METADATAOPT2__MISSING: Option 2. Upload a file containing your metadata XML
+      METADATAOPT3__MISSING: Option 3. Create a minimal metadata file on the fly providing ENTITYID and ACS URL
       OR__EXTRA: или
       SELECTION:
         DESCRIPTION: SAML-приложения
         TITLE: SAML
-      UPLOAD__MISSING: null
+      UPLOAD__MISSING: Upload XML file
       URL__EXTRA: URL, в котором находится файл метаданных
       XML__EXTRA: Загрузить метаданные XML
     TITLEFIRST: Название приложения
@@ -2249,7 +2249,7 @@ console:
           CHECKBOX: Фильтровать по сумме
           IDLABEL: Идентификатор
           TYPELABEL: Тип агрегата
-        ASC__MISSING: null
+        ASC__MISSING: Ascending
         BTN: Фильтр
         CREATIONDATE:
           CHECKBOX__EXTRA: Фильтровать по дате создания
@@ -2258,7 +2258,7 @@ console:
           LABEL__EXTRA: Дата создания
           RADIO_FROM: От
           RADIO_RANGE: Диапазон
-        DESC__MISSING: null
+        DESC__MISSING: Descending
         OTHER: Другой
         OTHERS: Другие
         RESOURCEOWNER:
@@ -2270,7 +2270,7 @@ console:
           DESC__EXTRA: По убыванию
           LABEL: Последовательность
           SORT__EXTRA: Сортировка
-        SORT__MISSING: null
+        SORT__MISSING: Sort
         TYPE:
           CHECKBOX: Фильтровать по типу
           TYPELABEL: Тип
@@ -2403,8 +2403,8 @@ console:
         DESCRIPTION: Введите необходимые данные для вашего провайдера OIDC.
         TITLE: Поставщик OIDC
       SAML__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your SAML Provider
+        TITLE__MISSING: Sign in with SAML
       STEPPERTITLE: Создать поставщика
       TITLE: Новый поставщик идентификационных данных
       ZITADEL:
@@ -2496,14 +2496,14 @@ console:
     REMOVE_WARN_TITLE: Удалить ВПЛ
     REQUIRED: необходимый
     SAML__MISSING:
-      BINDING__MISSING: null
-      METADATAURL__MISSING: null
-      METADATAXML__MISSING: null
-      NAMEIDFORMAT__MISSING: null
-      SIGNATUREALGORITHM__MISSING: null
-      SIGNEDREQUEST__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      BINDING__MISSING: Binding
+      METADATAURL__MISSING: Metadata URL
+      METADATAXML__MISSING: Metadata Xml
+      NAMEIDFORMAT__MISSING: NameID Format
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
+      SIGNEDREQUEST__MISSING: Signed Request
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Список областей
     SERVERS: Серверы
     SETAVAILABLE: Установить как доступный
@@ -2664,7 +2664,7 @@ console:
     ROLES: Роли
     SETTINGS: Настройки
     SHOWORGS: Показать все организации
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Пользовательское соглашение
     VIEWS: Просмотры
   METADATA:
@@ -2917,7 +2917,7 @@ console:
       EXTERNALLOGINCHECKLIFETIME__EXTRA: Проверка срока действия внешнего входа
       FORCEMFA: Принудительная многофакторная аутентификация для всех пользователей
       FORCEMFALOCALONLY: Принудительная многофакторная аутентификация только для локально аутентифицированных пользователей
-      FORCEMFALOCALONLY_DESC__MISSING: null
+      FORCEMFALOCALONLY_DESC__MISSING: If the option is selected, local authenticated users have to configure a second factor for login.
       FORCEMFA_DESC__EXTRA: Если данный параметр выбран, пользователи должны настроить двухфакторную аутентификацию для входа в систему.
       HASLOWERCASE: Содержит нижний регистр
       HASNUMBER: Содержит цифру
@@ -3125,9 +3125,9 @@ console:
       RELEASEFONT: Выпустить
       THEME: Тема
       THEMEMODE__MISSING:
-        THEME_MODE_AUTO__MISSING: null
-        THEME_MODE_DARK__MISSING: null
-        THEME_MODE_LIGHT__MISSING: null
+        THEME_MODE_AUTO__MISSING: Auto Mode
+        THEME_MODE_DARK__MISSING: Dark Mode only
+        THEME_MODE_LIGHT__MISSING: Light Mode only
       TITLE__EXTRA: Брендинг
       USEOFLOGO: Ваш логотип будет использоваться при входе в систему, а также в электронных письмах, а иконка используется для небольших элементов пользовательского интерфейса, например, в переключателе организации в консоли управления.
       VIEWS:
@@ -3365,11 +3365,11 @@ console:
     BTN_LEARNMORE: Узнать больше
     BTN_START: Создать приложение
     CREATEPROJECTFORAPP: Создать проект {{value}}
-    DESCRIPTION__MISSING: null
+    DESCRIPTION__MISSING: Integrate Zitadel into your application or use one of our samples to get started in minutes.
     DEVMODEWARN: Режим разработки включен по умолчанию. Значения для производства можно обновить позже.
     DIALOG:
       CHANGE:
-        DESCRIPTION__MISSING: null
+        DESCRIPTION__MISSING: Choose one of the available frameworks for quick setup of your application.
         TITLE: Рамки изменений
         ОПИСАНИЕ__EXTRA: Выберите один из доступных фреймворков для быстрой настройки вашего приложения
     DUPLICATEAPPRENAME: Приложение с таким названием уже существует. Пожалуйста, выберите другое имя.
@@ -3486,9 +3486,9 @@ console:
     SECURITY:
       ALLOWEDORIGINS: Разрешённые URL-адреса
       DESCRIPTION__EXTRA: Данный параметр согласно политике защиты содержимого (CSP) позволяет осуществлять кадрирование из набора разрешённых доменов. Обратите внимание, что, включив использование iFrames, вы рискуете разрешить атаки типа кликджекинг.
-      IFRAMEDESCRIPTION__MISSING: null
+      IFRAMEDESCRIPTION__MISSING: This setting sets the CSP to allow framing from a set of allowed domains. Note that by enabling the use of iFrames, you run the risk of allowing clickjacking.
       IFRAMEENABLED: Разрешить iFrame
-      IFRAMETITLE__MISSING: null
+      IFRAMETITLE__MISSING: iFrame
       IMPERSONATIONDESCRIPTION: Этот параметр позволяет в принципе использовать олицетворение. Обратите внимание, что имитатору также необходимо назначить соответствующие роли `*_IMPERSONATOR`.
       IMPERSONATIONENABLED: Разрешить олицетворение
       IMPERSONATIONTITLE: Олицетворение
@@ -3515,7 +3515,7 @@ console:
         SID: ID Безопасности
         TOKEN: Токен
         TOKENSET: Токен успешно установлен.
-        UPDATED__MISSING: null
+        UPDATED__MISSING: Twilio updated successfully.
         VERIFYSERVICESID: Идентификатор службы проверки
         VERIFYSERVICESID_DESCRIPTION: Установка идентификатора службы проверки позволяет использовать службу проверки Twilio вместо службы сообщений для проверки телефонных номеров и OTP SMS.
     SMTP:
@@ -3524,7 +3524,7 @@ console:
       NOCHANGES: Без изменений!
       PASSWORD: Пароль
       PASSWORDSET: Пароль SMTP был успешно установлен.
-      REPLYTOADDRESS__MISSING: null
+      REPLYTOADDRESS__MISSING: Reply-to Address
       REQUIREDWARN: Для того, чтобы отправлять уведомления с вашего домена, вам необходимо ввести свои данные SMTP.
       SAVED: Успешно сохранено!
       SENDERADDRESS: Адрес электронной почты отправителя
@@ -3536,7 +3536,7 @@ console:
   SETTINGS:
     BETA: БЕТА
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Вид
       DOMAIN: Домен
       GENERAL: Общая информация
@@ -3546,7 +3546,7 @@ console:
       STORAGE: хранилище
       TEXTS: Тексты и языки
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Срок действия пароля
       BRANDING: Брендинг
       COMPLEXITY: Сложность пароля
@@ -3567,9 +3567,9 @@ console:
       PRIVACYPOLICY: Политика конфиденциальности
       SECRETS: Отображение ключа
       SECURITY: Настройки безопасности
-      SMS_PROVIDER__MISSING: null
-      SMTP_PROVIDER__MISSING: null
-      TARGETS__MISSING: null
+      SMS_PROVIDER__MISSING: SMS/Phone Provider
+      SMTP_PROVIDER__MISSING: SMTP Provider
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Домен организации
       VIEWS: Отображение
       WEB_KEYS: OIDC Web Keys
@@ -3617,10 +3617,10 @@ console:
         DELETE_DESCRIPTION: Вы собираетесь удалить конфигурацию. Подтвердите это действие, введя имя отправителя.
         DELETE_TITLE: Удалить конфигурацию SMTP
         SENDER: Введите {{ value }}, чтобы удалить эту конфигурацию SMTP.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: SMTP-провайдер не доступен
       TEST: Проверьте своего провайдера
       TITLE: SMTP-провайдер
@@ -3933,7 +3933,7 @@ console:
       PHONE: Номер телефона
       PHONE_HINT: Используйте 00 или символ +, за которым следует код страны вызываемого абонента, или выберите страну из раскрывающегося списка и введите номер телефона.
       PHONE_VERIFIED: Номер телефона подтвержден
-      PREFERREDLOGINNAME__MISSING: null
+      PREFERREDLOGINNAME__MISSING: Preferred login name
       PREFERRED_LANGUAGE: Язык
       SEND_EMAIL: Отправить e-mail
       SEND_SMS: Отправить проверочный SMS
@@ -4092,8 +4092,8 @@ login_v1:
         RegistrationNotAllowed: Регистрация запрещена
     User:
       Address__MISSING:
-        NotChanged__MISSING: null
-        NotFound__MISSING: null
+        NotChanged__MISSING: Address not changed
+        NotFound__MISSING: Address not found
       AlreadyExists: Пользователь уже существует
       Code:
         CryptoCodeNil: Пустой криптокод
@@ -4106,12 +4106,12 @@ login_v1:
       EmailVerify:
         UserIDEmpty: UserID не указан
       Email__MISSING:
-        AlreadyVerified__MISSING: null
-        Empty__MISSING: null
-        IDMissing__MISSING: null
-        Invalid__MISSING: null
-        NotChanged__MISSING: null
-        NotFound__MISSING: null
+        AlreadyVerified__MISSING: Email is already verified
+        Empty__MISSING: Email is empty
+        IDMissing__MISSING: Email ID is missing
+        Invalid__MISSING: Email is invalid
+        NotChanged__MISSING: Email not changed
+        NotFound__MISSING: Email not found
       ExternalData:
         CouldNotRead: Не удалось обработать внешние данные
       ExternalIDP:
@@ -4160,11 +4160,11 @@ login_v1:
         MinLength: Пароль слишком короткий
         NotFound: Политика паролей не найдена
       Phone__MISSING:
-        AlreadyVerified__MISSING: null
-        Empty__MISSING: null
-        Invalid__MISSING: null
-        NotChanged__MISSING: null
-        NotFound__MISSING: null
+        AlreadyVerified__MISSING: Phone already verified
+        Empty__MISSING: Phone is empty
+        Invalid__MISSING: Phone is invalid
+        NotChanged__MISSING: Phone not changed
+        NotFound__MISSING: Phone not found
       Profile:
         Address__EXTRA:
           NotChanged: Адрес не изменился
@@ -4198,9 +4198,9 @@ login_v1:
       UsernameOrPassword:
         Invalid: Неверный логин или пароль
       Username__MISSING:
-        AlreadyExists__MISSING: null
-        Empty__MISSING: null
-        Reserved__MISSING: null
+        AlreadyExists__MISSING: Username already taken
+        Empty__MISSING: Username is empty
+        Reserved__MISSING: Username is already taken
   ExternalNotFound:
     Arabic: العربية
     AutoRegisterButtonText: Зарегистрировать

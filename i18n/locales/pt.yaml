@@ -365,7 +365,7 @@ common:
       UserIDMissing: ID do usuário ausente
       ZitadelOrgNotDeletable: A organização com o projeto Zitadel não pode ser excluída
     OriginNotAllowed: Esta "Origem" não é permitida
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Política já existe
       Label:
@@ -469,7 +469,7 @@ common:
     SMSConfig:
       AlreadyActive: Configuração de SMS já está ativa
       AlreadyDeactivated: Configuração de SMS já está desativada
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: Configuração de SMS não encontrada
     SMTP:
       CouldNotAuth: não foi possível adicionar autenticação smtp, verifique se seu usuário e senha estão corretos, se estiverem corretos, talvez seu provedor exija um método de autenticação não suportado pelo Zitadel
@@ -495,9 +495,9 @@ common:
       TypeMissing: Tipo de gerador de segredos ausente
     Session:
       Expired: A Sessão expirou
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: A sessão não existe
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: O tempo de vida da sessão não deve ser inferior a 0
       Terminated: A sessão já foi encerrada
       Token:
@@ -563,7 +563,7 @@ common:
         AlreadyExists: IDP externo já está em uso
         IDPConfigNotExisting: Provedor de IDP inválido para esta organização
         Invalid: IDP externo inválido
-        LoginFailed__MISSING: null
+        LoginFailed__MISSING: Login at External IDP failed
         MinimumExternalIDPNeeded: Pelo menos um IDP deve ser adicionado
         NotAllowed: IDP externo não permitido
         NotFound: IDP externo não encontrado
@@ -582,7 +582,7 @@ common:
           NotExisting: Autenticação sem senha não existe
         RecoveryCodes:
           ConfigInvalid: Configuração de códigos de recuperação é inválida
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Código de recuperação inválido fornecido
           MaxCountExceeded: Número máximo de códigos de recuperação excedido
           NotReady: Códigos de recuperação não estão prontos para uso
@@ -1116,8 +1116,8 @@ common:
         deactivated: Aplicativo desativado
         oidc:
           key__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: OIDC Application Key added
+            removed__MISSING: OIDC Application Key removed
           secret:
             check:
               failed: Verificação de segredo do cliente OIDC falhou
@@ -1267,7 +1267,7 @@ common:
               verified: Token U2F de autenticação multifator verificado
         password:
           change__MISSING:
-            sent__MISSING: null
+            sent__MISSING: Password change sent
           changed: Senha alterada
           check:
             failed: Verificação de senha falhou
@@ -1276,7 +1276,7 @@ common:
             added: Código de senha gerado
             sent: Código de senha enviado
           hash__MISSING:
-            updated__MISSING: null
+            updated__MISSING: Password hash updated
         passwordless:
           initialization:
             code:
@@ -2314,12 +2314,12 @@ console:
     ACTIVATE: Ativar
     ADD: Adicionar Provedor de Identidade
     APPLE__MISSING:
-      KEYID__MISSING: null
-      KEYMAXSIZEEXCEEDED__MISSING: null
-      PRIVATEKEY__MISSING: null
-      TEAMID__MISSING: null
-      UPDATEPRIVATEKEY__MISSING: null
-      UPLOADPRIVATEKEY__MISSING: null
+      KEYID__MISSING: Key ID
+      KEYMAXSIZEEXCEEDED__MISSING: Maximum size of 5kB exceeded.
+      PRIVATEKEY__MISSING: Private Key
+      TEAMID__MISSING: Team ID
+      UPDATEPRIVATEKEY__MISSING: Update Private Key
+      UPLOADPRIVATEKEY__MISSING: Upload Private Key
     AUTHORIZATIONENDPOINT: Ponto de Autorização
     AVAILABILITY: Disponibilidade
     AVAILABLE: disponível
@@ -2341,8 +2341,8 @@ console:
     CONFIG: Configuração
     CREATE:
       APPLE__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your Apple Provider
+        TITLE__MISSING: Sign in with Apple
       AZUREAD:
         DESCRIPTION: Insira as credenciais para o seu Provedor de Identidade da Microsoft
         TITLE: Provedor Microsoft
@@ -2375,8 +2375,8 @@ console:
         DESCRIPTION: Insira os dados necessários para o seu provedor OIDC.
         TITLE: Provedor OIDC
       SAML__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your SAML Provider
+        TITLE__MISSING: Sign in with SAML
       STEPPERTITLE: Criar Provedor
       TITLE: Adicionar provedor
       ZITADEL:
@@ -2459,18 +2459,18 @@ console:
     PREFERREDLANGUAGEATTRIBUTE: atributo de Idioma Preferido
     PREFERREDUSERNAMEATTRIBUTE: atributo de Nome de Usuário Preferido
     PROFILEATTRIBUTE: atributo de Perfil
-    REMOVE_WARN_DESCRIPTION__MISSING: null
-    REMOVE_WARN_TITLE__MISSING: null
+    REMOVE_WARN_DESCRIPTION__MISSING: You are about to remove an identity provider. This will remove the selection of the available IdP for your users and already registered users won't be able to login again. Are you sure to continue?
+    REMOVE_WARN_TITLE__MISSING: Remove IdP
     REQUIRED: obrigatório
     SAML__MISSING:
-      BINDING__MISSING: null
-      METADATAURL__MISSING: null
-      METADATAXML__MISSING: null
-      NAMEIDFORMAT__MISSING: null
-      SIGNATUREALGORITHM__MISSING: null
-      SIGNEDREQUEST__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      BINDING__MISSING: Binding
+      METADATAURL__MISSING: Metadata URL
+      METADATAXML__MISSING: Metadata Xml
+      NAMEIDFORMAT__MISSING: NameID Format
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
+      SIGNEDREQUEST__MISSING: Signed Request
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Lista de Escopos
     SERVERS: Servidores
     SETAVAILABLE: definir como disponível
@@ -2622,7 +2622,7 @@ console:
     ROLES: Funções
     SETTINGS: Configurações
     SHOWORGS: Mostrar Todas as Organizações
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Termos de Serviço
     VIEWS: Visualizações
   METADATA:
@@ -2864,7 +2864,7 @@ console:
       EXPIREWARNDAYS: Aviso de expiração após dias
       FORCEMFA: Forçar MFA para todos os utilizadores
       FORCEMFALOCALONLY: Forçar MFA apenas para utilizadores autenticados localmente
-      FORCEMFALOCALONLY_DESC__MISSING: null
+      FORCEMFALOCALONLY_DESC__MISSING: If the option is selected, local authenticated users have to configure a second factor for login.
       HASLOWERCASE: tem letra minúscula
       HASNUMBER: tem número
       HASSYMBOL: tem símbolo
@@ -3283,12 +3283,12 @@ console:
     BTN_LEARNMORE: Saiba mais
     BTN_START: Criar aplicação
     CREATEPROJECTFORAPP: Criar projeto {{value}}
-    DESCRIPTION__MISSING: null
+    DESCRIPTION__MISSING: Integrate Zitadel into your application or use one of our samples to get started in minutes.
     DESCRIÇÃO__EXTRA: Integre a Zitadel na sua aplicação ou utilize uma das nossas amostras para começar em minutos.
     DEVMODEWARN: O modo Dev está habilitado por padrão. Você pode atualizar os valores para produção posteriormente.
     DIALOG:
       CHANGE:
-        DESCRIPTION__MISSING: null
+        DESCRIPTION__MISSING: Choose one of the available frameworks for quick setup of your application.
         DESCRIÇÃO__EXTRA: Escolha uma das estruturas disponíveis para uma configuração rápida da sua aplicação.
         TITLE: Alterar Quadro
     DUPLICATEAPPRENAME: Já existe um aplicativo com o mesmo neme. Escolha um nome diferente.
@@ -3341,7 +3341,7 @@ console:
         INHERITED: Herdade
       USERSCHEMA: Esquema de Usuário
       USERSCHEMAS_DESCRIPTION__EXTRA: Esquemas de Usuário permitem gerenciar esquemas de dados do usuário. Se o sinalizador estiver ativado, você poderá usar a nova API e seus recursos.
-      USERSCHEMA_DESCRIPTION__MISSING: null
+      USERSCHEMA_DESCRIPTION__MISSING: User Schemas allow to manage data schemas of user. If the flag is enabled, you'll be able to use the new API and its features.
     LANGUAGES:
       ALLOWED: Idiomas Permitidos
       ALLOWED_SAVED: Idiomas Permitidos salvos
@@ -3444,7 +3444,7 @@ console:
   SETTINGS:
     BETA: BETA
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Aparência
       DOMAIN: Domínio
       GENERAL: Geral
@@ -3454,7 +3454,7 @@ console:
       STORAGE: armazenar
       TEXTS: Textos e Idiomas
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Expiração da senha
       BRANDING: Marca
       COMPLEXITY: Complexidade de Senha
@@ -3477,7 +3477,7 @@ console:
       SECURITY: Configurações de Segurança
       SMS_PROVIDER: Provedor de SMS/Telefone
       SMTP_PROVIDER: Provedor SMTP
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Domínio da Organização
       VIEWS: Visualizações
       WEB_KEYS: OIDC Web Keys
@@ -3522,10 +3522,10 @@ console:
         DELETE_DESCRIPTION: Você está prestes a excluir uma configuração. Confirme esta ação digitando o nome do remetente
         DELETE_TITLE: Excluir configuração SMTP
         SENDER: Digite {{ value }} para excluir esta configuração SMTP.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: Nenhum provedor SMTP disponível
       TEST: Teste seu provedor
       TITLE: Provedor SMTP
@@ -3829,7 +3829,7 @@ console:
       GENDER: Gênero
       LASTNAME: Sobrenome
       NICKNAME: Apelido
-      PASSWORD__MISSING: null
+      PASSWORD__MISSING: Password
       PHONE: Número de Telefone
       PHONE_HINT: Use o símbolo + seguido do código de chamada do país, ou selecione o país na lista suspensa e, em seguida, insira o número de telefone
       PHONE_VERIFIED: Número de telefone verificado
@@ -4305,10 +4305,10 @@ login_v1:
     ValidateTokenButtonText: Fazer login sem senha
   PasswordlessPrompt:
     Description: Você gostaria de configurar o login sem senha? (Métodos de autenticação do seu dispositivo, como FaceID, Windows Hello ou Impressão digital)
-    DescriptionInit__MISSING: null
-    NextButtonText__MISSING: null
-    PasswordlessButtonText__MISSING: null
-    SkipButtonText__MISSING: null
+    DescriptionInit__MISSING: You need to set up passwordless login. Use the link you were given to register your device.
+    NextButtonText__MISSING: Next
+    PasswordlessButtonText__MISSING: Go passwordless
+    SkipButtonText__MISSING: Skip
     Title: Configuração de login sem senha
   PasswordlessRegistration:
     Description: Adicione sua autenticação fornecendo um nome (por exemplo, MeuCelular, MacBook, etc.) e clique no botão 'Registrar login sem senha' abaixo.

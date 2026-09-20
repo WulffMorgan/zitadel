@@ -365,7 +365,7 @@ common:
       UserIDMissing: Відсутній ідентифікатор користувача
       ZitadelOrgNotDeletable: Організація з проектом Zitadel не може бути видалена
     OriginNotAllowed: Цей "Origin" не дозволений
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Політика вже існує
       Label:
@@ -495,9 +495,9 @@ common:
       TypeMissing: Відсутній тип генератора секретів
     Session:
       Expired: Термін сесії закінчився
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: Сесія не існує
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: Час життя сесії не повинен бути менше 0
       Terminated: Сесія вже завершена
       Token:
@@ -570,7 +570,7 @@ common:
       InitCodeNotFound: Код ініціалізації не знайдено
       Invalid: Дані користувача недійсні
       InvalidURLTemplate: Шаблон URL недійсний
-      Locked__MISSING: null
+      Locked__MISSING: User is locked
       MFA:
         OTP:
           AlreadyReady: Багатофакторний OTP (одноразовий пароль) вже налаштований
@@ -581,11 +581,11 @@ common:
         Passwordless:
           NotExisting: Вхід без пароля не існує
         RecoveryCodes__MISSING:
-          ConfigInvalid__MISSING: null
-          Empty__MISSING: null
-          InvalidCode__MISSING: null
-          MaxCountExceeded__MISSING: null
-          NotReady__MISSING: null
+          ConfigInvalid__MISSING: Recovery codes configuration is invalid
+          Empty__MISSING: Recovery code is empty
+          InvalidCode__MISSING: Invalid recovery code provided
+          MaxCountExceeded__MISSING: Maximum number of recovery codes exceeded
+          NotReady__MISSING: Recovery codes are not ready for use
         U2F:
           NotExisting: U2F не існує
       Machine:
@@ -2574,7 +2574,7 @@ console:
     IAM_OWNER_VIEWER: Має дозвіл переглядати весь екземпляр, включаючи всі організації
     IAM_USER_MANAGER: Має дозвіл створювати та керувати користувачами
     ORG_ADMIN_IMPERSONATOR: Має дозвіл виконувати персоніфікацію адміністраторів та кінцевих користувачів з організації
-    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: null
+    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: Has permission to dynamically register OAuth 2.0 clients
     ORG_END_USER_IMPERSONATOR: Має дозвіл виконувати персоніфікацію кінцевих користувачів з організації
     ORG_OWNER: Має дозвіл на всю організацію
     ORG_OWNER_VIEWER: Має дозвіл переглядати всю організацію
@@ -2650,7 +2650,7 @@ console:
       "2": Ключ доступу
       "3": OTP через електронну пошту (OTP Email)
       "4": OTP через SMS (OTP SMS)
-      5__MISSING: null
+      5__MISSING: Recovery Codes
     TOAST:
       ADDED: Успішно додано.
       DELETED: Успішно видалено

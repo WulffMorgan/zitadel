@@ -365,7 +365,7 @@ common:
       UserIDMissing: Gebruiker ID ontbreekt
       ZitadelOrgNotDeletable: Organisatie met Zitadel-project kan niet worden verwijderd
     OriginNotAllowed: Deze "Origin" is niet toegestaan
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Beleid bestaat al
       Label:
@@ -469,7 +469,7 @@ common:
     SMSConfig:
       AlreadyActive: SMS-configuratie al actief
       AlreadyDeactivated: SMS-configuratie al gedeactiveerd
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: SMS-configuratie niet gevonden
     SMTP:
       CouldNotAuth: kon geen smtp-authenticatie toevoegen, controleer of zowel uw gebruiker als uw wachtwoord correct zijn. Als ze correct zijn, vereist uw provider misschien een auth-methode die niet door Zitadel wordt ondersteund
@@ -495,9 +495,9 @@ common:
       TypeMissing: Type geheime generator ontbreekt
     Session:
       Expired: Sessie is verlopen
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: Sessie bestaat niet
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: Sessie levensduur mag niet minder dan 0 zijn
       Terminated: Sessie al beëindigd
       Token:
@@ -582,7 +582,7 @@ common:
           NotExisting: Wachtwoordloos bestaat niet
         RecoveryCodes:
           ConfigInvalid: Configuratie van herstelcodes is ongeldig
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Ongeldige herstelcode opgegeven
           MaxCountExceeded: Maximum aantal herstelcodes overschreden
           NotReady: Herstelcodes zijn niet klaar voor gebruik
@@ -793,13 +793,13 @@ common:
               changed: Twilio SMS-provider token gewijzigd
       smtp:
         config:
-          activated__MISSING: null
+          activated__MISSING: SMTP configuration activated
           added: SMTP-configuratie toegevoegd
           changed: SMTP-configuratie gewijzigd
-          deactivated__MISSING: null
+          deactivated__MISSING: SMTP configuration deactivated
           password:
             changed: SMTP-configuratie geheim gewijzigd
-          removed__MISSING: null
+          removed__MISSING: SMTP configuration removed
     instance:
       added: Instantie toegevoegd
       changed: Instantie gewijzigd
@@ -920,10 +920,10 @@ common:
             changed: Token van Twilio SMS-configuratie gewijzigd
       smtp:
         config:
-          activated__MISSING: null
+          activated__MISSING: SMTP configuration activated
           added: SMTP-configuratie toegevoegd
           changed: SMTP-configuratie gewijzigd
-          deactivated__MISSING: null
+          deactivated__MISSING: SMTP configuration deactivated
           password:
             changed: Wachtwoord van SMTP-configuratie gewijzigd
           removed: SMTP-configuratie verwijderd
@@ -2402,7 +2402,7 @@ console:
     ID: ID van identiteitsprovider
     IDATTRIBUTE: ID Attribuut
     IDPDISPLAYNAMEMAPPING__EXTRA: IDP Weergavenaam Mapping
-    IDPDISPLAYNAMMAPPING__MISSING: null
+    IDPDISPLAYNAMMAPPING__MISSING: IdP Display Name Mapping
     INSTANCEROLESINFO: Toewijzing van instantierollen
     INSTANCEROLESINFO_DESC: Gebruikers die zich via deze provider authenticeren, krijgen de instantielidrollen (IAM_-prefix) die ze hebben in de vermelde organisaties van de externe ZITADEL-instantie. Het organisatie-ID en het primaire domein moeten beide overeenkomen.
     ISIDTOKENMAPPING: Kaart van de ID token
@@ -2463,11 +2463,11 @@ console:
       BINDING: Binding
       METADATAURL: Metadata URL
       METADATAXML: Metadata Xml
-      NAMEIDFORMAT__MISSING: null
+      NAMEIDFORMAT__MISSING: NameID Format
       SIGNATUREALGORITHM: Handtekeningalgoritme
       SIGNEDREQUEST: Ondertekend Verzoek
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Scopes Lijst
     SERVERS: Servers
     SETAVAILABLE: instellen als beschikbaar
@@ -2619,7 +2619,7 @@ console:
     ROLES: Rollen
     SETTINGS: Instellingen
     SHOWORGS: Toon alle organisaties
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Algemene voorwaarden
     VIEWS: Weergaves
   METADATA:
@@ -3435,7 +3435,7 @@ console:
   SETTINGS:
     BETA: BÈTA
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Verschijning
       DOMAIN: Domein
       GENERAL: Algemeen
@@ -3445,7 +3445,7 @@ console:
       STORAGE: opslag
       TEXTS: Teksten en Talen
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Wachtwoord verloopt
       BRANDING: Branding
       COMPLEXITY: Wachtwoord complexiteit
@@ -3468,7 +3468,7 @@ console:
       SECURITY: Beveiligingsinstellingen
       SMS_PROVIDER: SMS/Telefoon Provider
       SMTP_PROVIDER: SMTP Provider
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Organisatie Domein
       VIEWS: Weergaves
       WEB_KEYS: OIDC Web Keys
@@ -3513,10 +3513,10 @@ console:
         DELETE_DESCRIPTION: U staat op het punt een configuratie te verwijderen. Bevestig deze actie door de naam van de afzender te typen
         DELETE_TITLE: SMTP-configuratie verwijderen
         SENDER: Typ {{ value }} om deze SMTP-configuratie te verwijderen.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: Geen SMTP-provider beschikbaar
       TEST: Test uw aanbieder
       TITLE: SMTP-provider
@@ -4098,7 +4098,7 @@ login_v1:
     Chinese: 简体中文
     Czech: Čeština
     Description: We hebben uw gebruikersgegevens van de geselecteerde provider overgenomen. U kunt ze nu wijzigen of aanvullen.
-    Dutch__MISSING: null
+    Dutch__MISSING: Nederlands
     EmailLabel: E-Mail
     English: English
     ExternalLogin: of registreer met een externe gebruiker

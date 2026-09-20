@@ -365,7 +365,7 @@ common:
       UserIDMissing: 缺少用户 ID
       ZitadelOrgNotDeletable: 不得删除与Zitadel项目有关的组织
     OriginNotAllowed: 这个"来源"是不被允许的
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: 策略已存在
       Label:
@@ -495,9 +495,9 @@ common:
       TypeMissing: 缺少秘钥生成器类型
     Session:
       Expired: 会话已过期
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: 会话不存在
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: 会话生存期不得小于 0
       Terminated: 会话已经终止
       Token:
@@ -582,7 +582,7 @@ common:
           NotExisting: 未设置无密码登录
         RecoveryCodes:
           ConfigInvalid: 恢复代码配置无效
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: 提供的恢复代码无效
           MaxCountExceeded: 恢复代码数量已超过最大限制
           NotReady: 恢复代码尚未准备好使用
@@ -1638,7 +1638,7 @@ console:
       BASEURL: 新的登录UI的自定义基本URL
       USEV2: 使用新的登录UI
     NAME: 名称
-    NAMEANDTYPESECTION__MISSING: null
+    NAMEANDTYPESECTION__MISSING: Name and Type
     NAMEDIALOG:
       DESCRIPTION: 为您的应用输入新名称
       NAME: 新名称
@@ -1790,7 +1790,7 @@ console:
       STATE: 状态
       TITLE: 应用
       URLS: URLs
-    PROSWITCH__MISSING: null
+    PROSWITCH__MISSING: I'm a pro. Skip this wizard.
     SAML:
       ACSURL: ACS endpoint URL
       CERTIFICATE: SAML证书
@@ -1808,7 +1808,7 @@ console:
         DESCRIPTION: SAML 应用
         TITLE: SAML
       UPLOAD: 上传 XML 文件
-    TITLEFIRST__MISSING: null
+    TITLEFIRST__MISSING: Name of the application
     TOAST:
       APIUPDATED: 应用已更新。
       CLIENTSECRETREGENERATED: 客户端秘钥已生成。
@@ -1821,7 +1821,7 @@ console:
       UPDATED: 应用已更新。
     TOKEN: 令牌设置
     TYPE: 应用类型
-    TYPETITLE__MISSING: null
+    TYPETITLE__MISSING: Type of application
     URLS: URLs
   APP_NAME: Zitadel
   CHANGES:
@@ -2467,7 +2467,7 @@ console:
       METADATAURL: 元数据 URL
       METADATAXML: 元数据 Xml
       NAMEIDFORMAT: 名字 ID 格式
-      SIGNATUREALGORITHM__MISSING: null
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
       SIGNEDREQUEST: 登录请求
       TRANSIENTMAPPINGATTRIBUTENAME: 自定义映射属性名称
       TRANSIENTMAPPINGATTRIBUTENAME_DESC: 如果返回的 `nameid-format` 是 `transient` ，则映射用户的备用属性名称，参考 `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
@@ -2626,7 +2626,7 @@ console:
     ROLES: 角色
     SETTINGS: 设置
     SHOWORGS: 查看所有组织
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: 服务条款
     VIEWS: 数据表
   METADATA:

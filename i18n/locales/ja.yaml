@@ -365,7 +365,7 @@ common:
       UserIDMissing: ユーザーIDがありません
       ZitadelOrgNotDeletable: Zitadelプロジェクトの組織は削除できません
     OriginNotAllowed: このオリジンは許可されていません
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: ポリシーはすでに存在します
       Label:
@@ -495,9 +495,9 @@ common:
       TypeMissing: シークレット生成タイプがありません
     Session:
       Expired: セッションの有効期限が切れました
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: セッションが存在しない
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: セッションの有効期間は 0 未満であってはなりません
       Terminated: セッションはすでに終了しています
       Token:
@@ -582,7 +582,7 @@ common:
           NotExisting: パスワードレスは存在しません
         RecoveryCodes:
           ConfigInvalid: リカバリーコードの設定が無効です
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: 無効なリカバリーコードが提供されました
           MaxCountExceeded: リカバリーコードの最大数を超過しました
           NotReady: リカバリーコードの使用準備ができていません
@@ -636,7 +636,7 @@ common:
       Profile:
         Empty: プロファイルが空です
         FirstNameEmpty: 名前が空です
-        IDMissing__MISSING: null
+        IDMissing__MISSING: Profile ID is missing
         Invalid__EXTRA: プロファイルデータが無効です
         LastNameEmpty: 姓が空です
         NotChanged: プロファイルが変更されていません
@@ -2618,7 +2618,7 @@ console:
     ROLES: ロール
     SETTINGS: 設定
     SHOWORGS: すべての組織を表示する
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: 利用規約
     VIEWS: ビュー
   METADATA:
@@ -3434,7 +3434,7 @@ console:
   SETTINGS:
     BETA: ベータ
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: 設定
       DOMAIN: ドメイン
       GENERAL: 一般
@@ -3444,7 +3444,7 @@ console:
       STORAGE: ストレージ
       TEXTS: テキストと言語
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: パスワードの有効期限
       BRANDING: ブランディング
       COMPLEXITY: パスワードの複雑さ
@@ -3467,7 +3467,7 @@ console:
       SECURITY: セキュリティ設定
       SMS_PROVIDER: SMS/電話プロバイダー
       SMTP_PROVIDER: SMTPプロバイダー
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: 組織ドメイン
       VIEWS: ビュー
       WEB_KEYS: OIDC Web Keys

@@ -114,7 +114,7 @@ common:
       Failed: فشل التنفيذ
       IncludeNotFound: التضمين غير موجود
       Invalid: التنفيذ غير صالح
-      MissingEncryptionKey__MISSING: null
+      MissingEncryptionKey__MISSING: No encryption key found for target
       NoTargets: لا توجد أهداف محددة
       NotFound: التنفيذ غير موجود
       ResponseIsNotValidJSON: الاستجابة ليست JSON صالحاً
@@ -365,7 +365,7 @@ common:
       UserIDMissing: معرف المستخدم مفقود
       ZitadelOrgNotDeletable: المنظمة التي تحتوي على مشروع ZITADEL لا يجب حذفها
     OriginNotAllowed: هذا الأصل "Origin" غير مسموح به
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: السياسة موجودة بالفعل
       Label:
@@ -495,9 +495,9 @@ common:
       TypeMissing: نوع مولد الأسرار مفقود
     Session:
       Expired: انتهت صلاحية الجلسة
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: الجلسة غير موجودة
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: عمر الجلسة يجب ألا يكون أقل من 0
       Terminated: الجلسة منتهية بالفعل
       Token:
@@ -511,13 +511,13 @@ common:
         AlreadyExists: الخطوة التي بدأت موجودة بالفعل
     Target:
       Invalid: الهدف غير صالح
-      InvalidExpirationDate__MISSING: null
-      InvalidPublicKey__MISSING: null
+      InvalidExpirationDate__MISSING: Key expiration date must be in the future
+      InvalidPublicKey__MISSING: The public key is invalid. Must be a PEM encoded RSA or ECDSA public key in PKCS#8 format
       InvalidURL: الهدف لديه عنوان URL غير صالح
       NoTimeout: الهدف ليس له مهلة
       NotFound: الهدف غير موجود
-      PublicKeyActive__MISSING: null
-      PublicKeyExpired__MISSING: null
+      PublicKeyActive__MISSING: Cannot delete active target public key
+      PublicKeyExpired__MISSING: Target public key is expired
     Token:
       Invalid: الرمز غير صالح
       NotFound: الرمز غير موجود
@@ -582,7 +582,7 @@ common:
           NotExisting: بدون كلمة مرور غير موجود
         RecoveryCodes:
           ConfigInvalid: تكوين رموز الاسترداد غير صالح
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: رمز الاسترداد المقدم غير صالح
           MaxCountExceeded: تم تجاوز الحد الأقصى لرموز الاسترداد
           NotReady: رموز الاسترداد ليست جاهزة للاستخدام
@@ -1561,12 +1561,15 @@ console:
         NAME: الاسم
         NAME_DESCRIPTION: امنح هدفك اسماً واضحاً ووصفياً لتسهيل التعرف عليه لاحقاً
         PAYLOAD_TYPES__MISSING:
-          JSON__MISSING: null
-          JWE__MISSING: null
-          JWT__MISSING: null
-          UNSPECIFIED__MISSING: null
-        PAYLOAD_TYPE_DESCRIPTION__MISSING: null
-        PAYLOAD_TYPE__MISSING: null
+          JSON__MISSING: JSON
+          JWE__MISSING: Encrypted JSON Web Token (JWE)
+          JWT__MISSING: JSON Web Token (JWT)
+          UNSPECIFIED__MISSING: Unspecified
+        PAYLOAD_TYPE_DESCRIPTION__MISSING: |-
+          JSON: Standard JSON payload with an signature header for verification.
+          JWT: Payload is sent as signed JWT. Verification is self-contained using the JWT signature.
+          JWE: The JWT is additionally encrypted to prevent unauthorized access to payload information.
+        PAYLOAD_TYPE__MISSING: Payload Type
         TIMEOUT: المهلة
         TIMEOUT_DESCRIPTION: عيّن الحد الأقصى للوقت الذي يجب أن يستجيب فيه هدفك. إذا استغرق وقتاً أطول، فسنوقف الطلب.
         TITLE: إنشاء هدفك
@@ -1956,8 +1959,8 @@ console:
             DESCRIPTION: إذا تم تفعيل هذا، لن يظهر نموذج تسجيل الدخول رسالة خطأ إذا كان اسم المستخدم غير معروف. هذا يساعد على منع تخمين اسم المستخدم.
             TITLE: تجاهل أسماء المستخدمين غير المعروفة
           LOCAL_AUTHENTICATION_ALLOWED__MISSING:
-            DESCRIPTION__MISSING: null
-            TITLE__MISSING: null
+            DESCRIPTION__MISSING: Allow your users to log in with their username and password or passkey authentication. If this is deactivated, your users can only log in using an external identity provider.
+            TITLE__MISSING: Local authentication allowed
           ORG_REGISTRATION_ALLOWED:
             DESCRIPTION: السماح للمستخدمين المجهولين بإنشاء منظمة.
             TITLE: مسموح بتسجيل المنظمة
@@ -2535,7 +2538,7 @@ console:
     ru: Русский
     sv: Svenska
     tr: Türkçe
-    uk__MISSING: null
+    uk__MISSING: Українська
     zh: 简体中文
   LOGINPOLICY:
     ADDIDP:
@@ -2574,7 +2577,7 @@ console:
     IAM_OWNER_VIEWER: لديه إذن لمراجعة المثيل بالكامل، بما في ذلك جميع المنظمات
     IAM_USER_MANAGER: لديه إذن لإنشاء وإدارة المستخدمين
     ORG_ADMIN_IMPERSONATOR: لديه إذن لانتحال شخصية المشرفين والمستخدمين النهائيين من المنظمة
-    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: null
+    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: Has permission to dynamically register OAuth 2.0 clients
     ORG_END_USER_IMPERSONATOR: لديه إذن لانتحال شخصية المستخدمين النهائيين من المنظمة
     ORG_OWNER: لديه إذن على المنظمة بالكامل
     ORG_OWNER_VIEWER: لديه إذن لمراجعة المنظمة بالكامل
@@ -2949,7 +2952,7 @@ console:
         ru: Русский
         sv: Svenska
         tr: Türkçe
-        uk__MISSING: null
+        uk__MISSING: Українська
         zh: 简体中文
       LANGUAGES_NOT_ALLOWED: 'غير مسموح:'
       NEWERVERSIONEXISTS: يوجد إصدار أحدث
@@ -3360,7 +3363,7 @@ console:
         ru: Русский
         sv: Svenska
         tr: Türkçe
-        uk__MISSING: null
+        uk__MISSING: Українська
         zh: 简体中文
       SETASDEFAULT: تعيين كلغة افتراضية
     SECRETS:
@@ -4085,7 +4088,7 @@ login_v1:
     TosConfirm: أنا أقبل
     TosLinkText: شروط الخدمة
     Turkish: Türkçe
-    Ukrainian__MISSING: null
+    Ukrainian__MISSING: Українська
   ExternalRegistrationUserOverview:
     Arabic: العربية
     BackButtonText: رجوع
@@ -4124,7 +4127,7 @@ login_v1:
     TosConfirm: أنا أقبل
     TosLinkText: شروط الخدمة
     Turkish: Türkçe
-    Ukrainian__MISSING: null
+    Ukrainian__MISSING: Українська
     UsernameLabel: اسم المستخدم
   Footer:
     Help: مساعدة
@@ -4147,7 +4150,7 @@ login_v1:
     Title: التحقق من المصادقة الثنائية
   InitMFAOTPSMS:
     CodeLabel: الرمز
-    CountryCodeLabel__MISSING: null
+    CountryCodeLabel__MISSING: Country
     DescriptionCode: أنشئ عاملك الثاني. أدخل الرمز المستلم للتحقق من رقم هاتفك.
     DescriptionPhone: أنشئ عاملك الثاني. أدخل رقم هاتفك للتحقق منه.
     EditButtonText: تعديل
@@ -4373,7 +4376,7 @@ login_v1:
     TosConfirm: أنا أقبل
     TosLinkText: شروط الخدمة
     Turkish: Türkçe
-    Ukrainian__MISSING: null
+    Ukrainian__MISSING: Українська
     UsernameLabel: اسم المستخدم
   SelectAccount:
     Description: استخدم حسابك

@@ -365,7 +365,7 @@ common:
       UserIDMissing: Brak identyfikatora użytkownika
       ZitadelOrgNotDeletable: Organizacja z projektem Zitadel nie może być usunięta
     OriginNotAllowed: Ten "Origin" nie jest dozwolony
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Polityka już istnieje
       Label:
@@ -452,7 +452,7 @@ common:
         Interval__EXTRA: Interwał limitu jest krótszy niż minuta
         Noop: Nieograniczony limit bez powiadomień nie ma żadnego wpływu
         Percent: Wartość procentowa limitu jest niższa niż 1
-        ResetInterval__MISSING: null
+        ResetInterval__MISSING: Quota reset interval is shorter than a minute
         Unimplemented: Limit nie jest zaimplementowany dla tej jednostki
       NotFound: Nie znaleziono limitu dla tej jednostki
     RemoveFailed: Nie można usunąć
@@ -470,7 +470,7 @@ common:
     SMSConfig:
       AlreadyActive: Konfiguracja SMS już aktywna
       AlreadyDeactivated: Konfiguracja SMS już dezaktywowana
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: Konfiguracja SMS nie znaleziona
     SMTP:
       CouldNotAuth: nie można dodać uwierzytelnienia smtp, sprawdź, czy zarówno użytkownik, jak i hasło są poprawne, jeśli są poprawne, być może Twój dostawca wymaga metody uwierzytelniania nieobsługiwanej przez Zitadel
@@ -496,9 +496,9 @@ common:
       TypeMissing: Typ generatora tajnego brakuje
     Session:
       Expired: Sesja wygasła
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: Sesja nie istnieje
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: Czas życia sesji nie może być krótszy niż 0
       Terminated: Sesja już zakończona
       Token:
@@ -583,7 +583,7 @@ common:
           NotExisting: Bezhasłowe nie istnieje
         RecoveryCodes:
           ConfigInvalid: Konfiguracja kodów odzyskiwania jest nieprawidłowa
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Podano nieprawidłowy kod odzyskiwania
           MaxCountExceeded: Przekroczono maksymalną liczbę kodów odzyskiwania
           NotReady: Kody odzyskiwania nie są gotowe do użycia
@@ -1476,7 +1476,7 @@ console:
     SELECTIONDELETE: Usuń zaznaczone
     SEND: Wyślij
     SET: Ustaw
-    SETUP__MISSING: null
+    SETUP__MISSING: Setup
     SHOW: Pokaż
     STEP: Krok
     TABLE:
@@ -2311,12 +2311,12 @@ console:
     ACTIVATE: Aktywuj
     ADD: Dodaj dostawcę tożsamości
     APPLE__MISSING:
-      KEYID__MISSING: null
-      KEYMAXSIZEEXCEEDED__MISSING: null
-      PRIVATEKEY__MISSING: null
-      TEAMID__MISSING: null
-      UPDATEPRIVATEKEY__MISSING: null
-      UPLOADPRIVATEKEY__MISSING: null
+      KEYID__MISSING: Key ID
+      KEYMAXSIZEEXCEEDED__MISSING: Maximum size of 5kB exceeded.
+      PRIVATEKEY__MISSING: Private Key
+      TEAMID__MISSING: Team ID
+      UPDATEPRIVATEKEY__MISSING: Update Private Key
+      UPLOADPRIVATEKEY__MISSING: Upload Private Key
     AUTHORIZATIONENDPOINT: Authorization Endpoint
     AVAILABILITY: Dostępność
     AVAILABLE: dostępny
@@ -2338,8 +2338,8 @@ console:
     CONFIG: Konfiguracja
     CREATE:
       APPLE__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your Apple Provider
+        TITLE__MISSING: Sign in with Apple
       AZUREAD:
         DESCRIPTION: Wprowadź dane dla swojego dostawcy tożsamości Microsoft
         TITLE: Microsoft Provider
@@ -2372,8 +2372,8 @@ console:
         DESCRIPTION: Wprowadź wymagane dane dla swojego dostawcy OIDC.
         TITLE: OIDC Provider
       SAML__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your SAML Provider
+        TITLE__MISSING: Sign in with SAML
       STEPPERTITLE: Utwórz dostawcę
       TITLE: Dodaj dostawcę
       ZITADEL:
@@ -2460,14 +2460,14 @@ console:
     REMOVE_WARN_TITLE: Usuń dostawcę tożsamości
     REQUIRED: wymagany
     SAML__MISSING:
-      BINDING__MISSING: null
-      METADATAURL__MISSING: null
-      METADATAXML__MISSING: null
-      NAMEIDFORMAT__MISSING: null
-      SIGNATUREALGORITHM__MISSING: null
-      SIGNEDREQUEST__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      BINDING__MISSING: Binding
+      METADATAURL__MISSING: Metadata URL
+      METADATAXML__MISSING: Metadata Xml
+      NAMEIDFORMAT__MISSING: NameID Format
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
+      SIGNEDREQUEST__MISSING: Signed Request
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Lista zakresów
     SERVERS: Servers
     SETAVAILABLE: ustaw jako dostępne
@@ -2623,7 +2623,7 @@ console:
     ROLES: Role
     SETTINGS: Ustawienia
     SHOWORGS: Pokaż wszystkie organizacje
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Warunki korzystania z usług
     VIEWS: Widoki
   METADATA:
@@ -3439,7 +3439,7 @@ console:
   SETTINGS:
     BETA: BETA
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Wygląd
       DOMAIN: Domena
       GENERAL: Informacje ogólne
@@ -3449,7 +3449,7 @@ console:
       STORAGE: składowanie
       TEXTS: Teksty i języki
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Wygaśnięcie hasła
       BRANDING: Marka
       COMPLEXITY: Złożoność hasła
@@ -3472,7 +3472,7 @@ console:
       SECURITY: Ustawienia bezpieczeństwa
       SMS_PROVIDER: Dostawca SMS-ów/telefonów
       SMTP_PROVIDER: Dostawca SMTP
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Domena organizacji
       VIEWS: Widoki
       WEB_KEYS: OIDC Web Keys
@@ -3517,10 +3517,10 @@ console:
         DELETE_DESCRIPTION: Zamierzasz usunąć konfigurację. Potwierdź tę czynność, wpisując nazwę nadawcy
         DELETE_TITLE: Usuń konfigurację SMTP
         SENDER: Wpisz {{ value }}, aby usunąć tę konfigurację SMTP.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: Brak dostępnego dostawcy SMTP
       TEST: Przetestuj swojego dostawcę
       TITLE: Dostawca SMTP

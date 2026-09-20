@@ -365,7 +365,7 @@ common:
       UserIDMissing: User ID fehlt
       ZitadelOrgNotDeletable: Organisation mit Zitadel Projekt kann nicht gelöscht werden
     OriginNotAllowed: Dieser "Origin" ist nicht freigeschaltet
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Policy existiert bereits
       Label:
@@ -469,7 +469,7 @@ common:
     SMSConfig:
       AlreadyActive: SMS Konfiguration ist bereits aktiviert
       AlreadyDeactivated: SMS Konfiguration ist bereits deaktiviert
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: SMS Konfiguration nicht gefunden
     SMTP:
       CouldNotAuth: Die SMTP-Authentifizierung konnte nicht hinzugefügt werden. Überprüfen Sie, ob sowohl Ihr Benutzername als auch Ihr Passwort korrekt sind. Wenn sie korrekt sind, erfordert Ihr Anbieter möglicherweise eine Authentifizierungsmethode, die von Zitadel nicht unterstützt wird
@@ -495,9 +495,9 @@ common:
       TypeMissing: Passwort Generator Typ fehlt
     Session:
       Expired: Session ist abgelaufen
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: Session existiert nicht
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: Session Lebensdauer darf nicht kleiner als 0 sein
       Terminated: Session bereits beendet
       Token:
@@ -582,7 +582,7 @@ common:
           NotExisting: Passwortlos existiert nicht
         RecoveryCodes:
           ConfigInvalid: Wiederherstellungscodes-Konfiguration ist ungültig
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Ungültiger Wiederherstellungscode angegeben
           MaxCountExceeded: Maximale Anzahl von Wiederherstellungscodes überschritten
           NotReady: Wiederherstellungscodes sind nicht bereit für die Verwendung
@@ -2310,12 +2310,12 @@ console:
     ACTIVATE: Aktivieren
     ADD: Identitätsanbieter hinzufügen
     APPLE__MISSING:
-      KEYID__MISSING: null
-      KEYMAXSIZEEXCEEDED__MISSING: null
-      PRIVATEKEY__MISSING: null
-      TEAMID__MISSING: null
-      UPDATEPRIVATEKEY__MISSING: null
-      UPLOADPRIVATEKEY__MISSING: null
+      KEYID__MISSING: Key ID
+      KEYMAXSIZEEXCEEDED__MISSING: Maximum size of 5kB exceeded.
+      PRIVATEKEY__MISSING: Private Key
+      TEAMID__MISSING: Team ID
+      UPDATEPRIVATEKEY__MISSING: Update Private Key
+      UPLOADPRIVATEKEY__MISSING: Upload Private Key
     AUTHORIZATIONENDPOINT: Authorization Endpoint
     AVAILABILITY: Verfügbarkeit
     AVAILABLE: verfügbar
@@ -2337,8 +2337,8 @@ console:
     CONFIG: Konfiguration
     CREATE:
       APPLE__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your Apple Provider
+        TITLE__MISSING: Sign in with Apple
       AZUREAD:
         DESCRIPTION: Geben Sie die erforderlichen Daten für Ihren Microsoft-Identitätsprovider ein.
         TITLE: Microsoft Provider
@@ -2365,14 +2365,14 @@ console:
         DESCRIPTION: Geben Sie die erforderlichen Daten für Ihren LDAP Provider ein.
         TITLE: Active Directory / LDAP
       OAUTH__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the required data for your OAuth provider.
+        TITLE__MISSING: OAuth Provider
       OIDC:
         DESCRIPTION: Geben Sie die erforderlichen Daten für Ihren OIDC-Provider ein.
         TITLE: OIDC Provider
       SAML__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your SAML Provider
+        TITLE__MISSING: Sign in with SAML
       STEPPERTITLE: Provider hinzufügen
       TITLE: Provider hinzufügen
       ZITADEL:
@@ -2429,7 +2429,7 @@ console:
       TITLE: OAuth Konfiguration
     OIDC:
       DESCRIPTION: Geben Sie die Daten OIDC Identitätsanbieter ein.
-      GENERAL__MISSING: null
+      GENERAL__MISSING: General Information
       TITLE: OIDC Einstellungen
     OPTIONAL: optional
     OPTIONS:
@@ -2462,14 +2462,14 @@ console:
     REMOVE_WARN_TITLE: IDP entfernen?
     REQUIRED: erfolderlich
     SAML__MISSING:
-      BINDING__MISSING: null
-      METADATAURL__MISSING: null
-      METADATAXML__MISSING: null
-      NAMEIDFORMAT__MISSING: null
-      SIGNATUREALGORITHM__MISSING: null
-      SIGNEDREQUEST__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      BINDING__MISSING: Binding
+      METADATAURL__MISSING: Metadata URL
+      METADATAXML__MISSING: Metadata Xml
+      NAMEIDFORMAT__MISSING: NameID Format
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
+      SIGNEDREQUEST__MISSING: Signed Request
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Scopes List
     SERVERS: Servers
     SETAVAILABLE: verfügbar setzen
@@ -2625,7 +2625,7 @@ console:
     ROLES: Rollen
     SETTINGS: Einstellungen
     SHOWORGS: Alle Organisationen anzeigen
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: AGB
     VIEWS: Views
   METADATA:
@@ -3298,7 +3298,7 @@ console:
     REVIEWCONFIGURATION_DESCRIPTION: Wir haben eine Grundkonfiguration für {{wert}}-Anwendungen erstellt. Du kannst diese Konfiguration nach der Erstellung an deine Bedürfnisse anpassen.
     SELECT_FRAMEWORK: Framework auswählen
     TITEL__EXTRA: Integriere Zitadel in deine Anwendung
-    TITLE__MISSING: null
+    TITLE__MISSING: Integrate Zitadel into your application
   RESOURCEID: Ressourcen-ID
   ROLES:
     DIALOG:
@@ -3442,7 +3442,7 @@ console:
   SETTINGS:
     BETA: BETA
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Erscheinungsbild
       DOMAIN: Domain
       GENERAL: Allgemein
@@ -3452,7 +3452,7 @@ console:
       STORAGE: Speicher
       TEXTS: Texte und Sprachen
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Passwortgültigkeitsdauer
       BRANDING: Branding
       COMPLEXITY: Passwordkomplexität
@@ -3475,7 +3475,7 @@ console:
       SECURITY: Sicherheitseinstellungen
       SMS_PROVIDER: SMS / Telefon Anbieter
       SMTP_PROVIDER: SMTP-Anbieter
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Organisationsdomäne
       VIEWS: Views
       WEB_KEYS: OIDC Web Keys
@@ -3520,10 +3520,10 @@ console:
         DELETE_DESCRIPTION: Sie sind dabei, eine Konfiguration zu löschen. Bestätigen Sie diese Aktion, indem Sie den Absendernamen eingeben
         DELETE_TITLE: SMTP-Konfiguration löschen
         SENDER: Geben Sie {{ value }} ein, um diese SMTP-Konfiguration zu löschen.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: Kein SMTP-Anbieter verfügbar
       TEST: Teste den Anbieter
       TITLE: SMTP-Anbieter
@@ -4279,7 +4279,7 @@ login_v1:
     CancelButtonText: Abbrechen
     Description: Ändere dein Passwort, indem du dein altes und dann dein neues Passwort eingibst.
     ExpiredDescription: Dein Passwort ist abgelaufen und muss geändert werden. Gib dein altes und neues Passwort ein.
-    Footer__MISSING: null
+    Footer__MISSING: Footer
     NewPasswordConfirmLabel: Passwort wiederholen
     NewPasswordLabel: Neues Passwort
     NextButtonText: Weiter

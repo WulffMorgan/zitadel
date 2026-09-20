@@ -365,7 +365,7 @@ common:
       UserIDMissing: Kullanıcı ID eksik
       ZitadelOrgNotDeletable: Zitadel projesi olan organizasyon silinmemeli
     OriginNotAllowed: Bu "Origin" izin verilmiyor
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Politika zaten mevcut
       Label:
@@ -495,9 +495,9 @@ common:
       TypeMissing: Gizli anahtar üreticisi türü eksik
     Session:
       Expired: Oturumun süresi dolmuş
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: Oturum mevcut değil
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: Oturum ömrü 0'dan az olmamalı
       Terminated: Oturum zaten sonlandırılmış
       Token:
@@ -582,7 +582,7 @@ common:
           NotExisting: Şifresiz giriş mevcut değil
         RecoveryCodes:
           ConfigInvalid: Kurtarma kodları yapılandırması geçersiz
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Geçersiz kurtarma kodu sağlandı
           MaxCountExceeded: Maksimum kurtarma kodu sayısı aşıldı
           NotReady: Kurtarma kodları kullanıma hazır değil
@@ -2617,7 +2617,7 @@ console:
     ROLES: Roller
     SETTINGS: Ayarlar
     SHOWORGS: Tüm Organizasyonları Göster
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Hizmet Şartları
     VIEWS: Görünümler
   METADATA:

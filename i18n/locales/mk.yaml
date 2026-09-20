@@ -365,7 +365,7 @@ common:
       UserIDMissing: Недостасува ID на корисникот
       ZitadelOrgNotDeletable: Организацијата со Zitadel проект не смее да биде избришана
     OriginNotAllowed: Овој "Origin" не е дозволен
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Политиката веќе постои
       Label:
@@ -469,7 +469,7 @@ common:
     SMSConfig:
       AlreadyActive: SMS конфигурацијата е веќе активна
       AlreadyDeactivated: SMS конфигурацијата е веќе деактивирана
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: SMS конфигурацијата не е пронајдена
     SMTP:
       CouldNotAuth: не можев да додадам smtp auth, проверете дали и корисникот и лозинката се точни, дали се точни, можеби вашиот провајдер бара метод за автетика што не е поддржан од Zitadel
@@ -495,9 +495,9 @@ common:
       TypeMissing: Недостасува типот на генераторот на тајни
     Session:
       Expired: Сесијата истече
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: Сесијата не постои
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: Времетраењето на сесијата не смее да биде помало од 0
       Terminated: Сесијата е веќе завршена
       Token:
@@ -547,7 +547,7 @@ common:
         Empty: Кодот е празен
         Expired: Кодот е истечен
         GeneratorAlgNotSupported: Неподдржан алгоритам за генерато
-        Invalid__MISSING: null
+        Invalid__MISSING: Code is invalid
         NotFound: Кодот не е пронајден
       DomainNotAllowedAsUsername: Доменот е веќе резервиран и не може да се користи
       DomainPolicyNil: Политиката на организацијата е празна
@@ -582,7 +582,7 @@ common:
           NotExisting: Најава без лозинка не постои
         RecoveryCodes:
           ConfigInvalid: Конфигурацијата за кодовите за опоравување е невалидна
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Невалиден код за опоравување
           MaxCountExceeded: Максималниот број на кодови за опоравување е надминат
           NotReady: Кодовите за опоравување не се готови за употреба
@@ -1267,7 +1267,7 @@ common:
               verified: Верифициран мултифактор U2F токен
         password:
           change__MISSING:
-            sent__MISSING: null
+            sent__MISSING: Password change sent
           changed: Променета лозинка
           check:
             failed: Проверката на лозинката е неуспешна
@@ -1276,7 +1276,7 @@ common:
             added: Генериран код за лозинка
             sent: Испратен код за лозинка
           hash__MISSING:
-            updated__MISSING: null
+            updated__MISSING: Password hash updated
         passwordless:
           initialization:
             code:
@@ -2314,12 +2314,12 @@ console:
     ACTIVATE: Активирај
     ADD: Додај IDP
     APPLE__MISSING:
-      KEYID__MISSING: null
-      KEYMAXSIZEEXCEEDED__MISSING: null
-      PRIVATEKEY__MISSING: null
-      TEAMID__MISSING: null
-      UPDATEPRIVATEKEY__MISSING: null
-      UPLOADPRIVATEKEY__MISSING: null
+      KEYID__MISSING: Key ID
+      KEYMAXSIZEEXCEEDED__MISSING: Maximum size of 5kB exceeded.
+      PRIVATEKEY__MISSING: Private Key
+      TEAMID__MISSING: Team ID
+      UPDATEPRIVATEKEY__MISSING: Update Private Key
+      UPLOADPRIVATEKEY__MISSING: Upload Private Key
     AUTHORIZATIONENDPOINT: Точка на авторизација
     AVAILABILITY: Достапност
     AVAILABLE: достапно
@@ -2341,8 +2341,8 @@ console:
     CONFIG: Конфигурација
     CREATE:
       APPLE__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your Apple Provider
+        TITLE__MISSING: Sign in with Apple
       AZUREAD:
         DESCRIPTION: Внесете ги податоците за вашиот Microsoft провајдер на идентитети
         TITLE: Microsoft провајдер
@@ -2375,8 +2375,8 @@ console:
         DESCRIPTION: Внесете ги потребните податоци за вашиот OIDC провајдер.
         TITLE: OIDC провајдер
       SAML__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your SAML Provider
+        TITLE__MISSING: Sign in with SAML
       STEPPERTITLE: Креирај провајдер
       TITLE: Додади провајдер
       ZITADEL:
@@ -2459,18 +2459,18 @@ console:
     PREFERREDLANGUAGEATTRIBUTE: Атрибут за посакуван јазик
     PREFERREDUSERNAMEATTRIBUTE: Атрибут за посакувано корисничко име
     PROFILEATTRIBUTE: Атрибут за профил
-    REMOVE_WARN_DESCRIPTION__MISSING: null
-    REMOVE_WARN_TITLE__MISSING: null
+    REMOVE_WARN_DESCRIPTION__MISSING: You are about to remove an identity provider. This will remove the selection of the available IdP for your users and already registered users won't be able to login again. Are you sure to continue?
+    REMOVE_WARN_TITLE__MISSING: Remove IdP
     REQUIRED: задолжително
     SAML__MISSING:
-      BINDING__MISSING: null
-      METADATAURL__MISSING: null
-      METADATAXML__MISSING: null
-      NAMEIDFORMAT__MISSING: null
-      SIGNATUREALGORITHM__MISSING: null
-      SIGNEDREQUEST__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      BINDING__MISSING: Binding
+      METADATAURL__MISSING: Metadata URL
+      METADATAXML__MISSING: Metadata Xml
+      NAMEIDFORMAT__MISSING: NameID Format
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
+      SIGNEDREQUEST__MISSING: Signed Request
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Листа на опсези
     SERVERS: Сервери
     SETAVAILABLE: постави како достапно
@@ -2622,7 +2622,7 @@ console:
     ROLES: Улоги
     SETTINGS: Подесувања
     SHOWORGS: Прикажи ги сите организации
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Услови на користење
     VIEWS: Прегледи
   METADATA:
@@ -3441,7 +3441,7 @@ console:
   SETTINGS:
     BETA: БЕТА
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Изглед
       DOMAIN: Домен
       GENERAL: Општи информации
@@ -3451,7 +3451,7 @@ console:
       STORAGE: складирање
       TEXTS: Текстови и јазици
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Истекување на лозинката
       BRANDING: Брендирање
       COMPLEXITY: Сложеност на лозинката
@@ -3474,7 +3474,7 @@ console:
       SECURITY: Подесувања за безбедност
       SMS_PROVIDER: СМС/Провајдер на телефон
       SMTP_PROVIDER: SMTP провајдер
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Домен на организација
       VIEWS: Прегледи
       WEB_KEYS: OIDC Web Keys
@@ -3519,10 +3519,10 @@ console:
         DELETE_DESCRIPTION: Ќе избришете конфигурација. Потврдете го ова дејство со внесување на името на испраќачот
         DELETE_TITLE: Избришете ја конфигурацијата SMTP
         SENDER: Внесете {{ value }}, за да ја избришете оваа SMTP конфигурација.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: Нема достапен SMTP провајдер
       TEST: Тестирајте го вашиот провајдер
       TITLE: SMTP провајдер
@@ -4426,784 +4426,784 @@ login_v1:
   optional: (опционално)
 login_v2__MISSING:
   accounts__MISSING:
-    addAnother__MISSING: null
-    description__MISSING: null
-    expired__MISSING: null
-    noResults__MISSING: null
-    title__MISSING: null
-    verified__MISSING: null
+    addAnother__MISSING: Add another account
+    description__MISSING: Select the account you want to use.
+    expired__MISSING: expired
+    noResults__MISSING: No accounts found
+    title__MISSING: Accounts
+    verified__MISSING: verified
   authenticator__MISSING:
-    allSetup__MISSING: null
-    description__MISSING: null
-    linkWithIDP__MISSING: null
+    allSetup__MISSING: You have already setup an authenticator!
+    description__MISSING: Select the method you would like to authenticate
+    linkWithIDP__MISSING: or link with an Identity Provider
     methods__MISSING:
-      otpEmail__MISSING: null
-      otpSms__MISSING: null
-      passkey__MISSING: null
-      password__MISSING: null
-      totp__MISSING: null
-      u2f__MISSING: null
-    noMethodsAvailable__MISSING: null
-    title__MISSING: null
+      otpEmail__MISSING: Code via Email
+      otpSms__MISSING: Code via SMS
+      passkey__MISSING: Passkeys
+      password__MISSING: Password
+      totp__MISSING: Authenticator App
+      u2f__MISSING: Universal Second Factor
+    noMethodsAvailable__MISSING: No authentication methods available
+    title__MISSING: Choose authentication method
   common__MISSING:
-    back__MISSING: null
-    title__MISSING: null
+    back__MISSING: Back
+    title__MISSING: Login with Zitadel
   device__MISSING:
     request__MISSING:
-      deny__MISSING: null
-      description__MISSING: null
-      disclaimer__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      deny__MISSING: Deny
+      description__MISSING: '{appName} will have access to:'
+      disclaimer__MISSING: By clicking Allow, you allow {appName} and Zitadel to use your information in accordance with their respective terms of service and privacy policies. You can revoke this access at any time.
+      submit__MISSING: Allow
+      title__MISSING: '{appName} would like to connect'
     scope__MISSING:
-      email__MISSING: null
-      offline_access__MISSING: null
-      openid__MISSING: null
-      profile__MISSING: null
+      email__MISSING: View your email address.
+      offline_access__MISSING: Allow offline access to your account.
+      openid__MISSING: Verify your identity.
+      profile__MISSING: View your full profile information.
     usercode__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter the code displayed on your app or device.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      submit__MISSING: Continue
+      title__MISSING: Device code
   error__MISSING:
-    couldNotClearSession__MISSING: null
-    couldNotContinueSession__MISSING: null
-    failedLoading__MISSING: null
-    noDeviceRequest__MISSING: null
-    noUserCode__MISSING: null
-    sessionExpired__MISSING: null
-    tryagain__MISSING: null
-    unknownContext__MISSING: null
+    couldNotClearSession__MISSING: Could not end the session. Please try again.
+    couldNotContinueSession__MISSING: Could not continue with session - missing user information
+    failedLoading__MISSING: Failed to load data. Please try again.
+    noDeviceRequest__MISSING: No device request found.
+    noUserCode__MISSING: No user code provided!
+    sessionExpired__MISSING: Your current session has expired. Please login again.
+    tryagain__MISSING: Try Again
+    unknownContext__MISSING: Could not get the context of the user. Make sure to enter the username first or provide a loginName as searchParam.
   idp__MISSING:
     accountNotFound__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't find an account associated with your identity provider credentials.
+      info__MISSING: No existing account was found. Please sign in with an existing account or contact your administrator for assistance.
+      title__MISSING: Account Not Found
     completeRegister__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    description__MISSING: null
+      description__MISSING: You need to complete your registration by providing your email address and name.
+      title__MISSING: Complete your data
+    description__MISSING: Select one of the following providers to sign in
     errors__MISSING:
-      autoLinkingFailed__MISSING: null
-      idpNotFound__MISSING: null
-      linkingFailed__MISSING: null
-      linkingNotAllowed__MISSING: null
-      missingIdpInfo__MISSING: null
-      missingParameters__MISSING: null
-      orgResolutionFailed__MISSING: null
-      sessionCreationFailed__MISSING: null
-      unknownError__MISSING: null
-      userCreationFailed__MISSING: null
+      autoLinkingFailed__MISSING: Failed to automatically link account
+      idpNotFound__MISSING: Identity provider not found
+      linkingFailed__MISSING: Failed to link identity provider to account
+      linkingNotAllowed__MISSING: Linking is not allowed for this identity provider
+      missingIdpInfo__MISSING: IDP information missing
+      missingParameters__MISSING: Missing required parameters
+      orgResolutionFailed__MISSING: Could not determine organization for registration
+      sessionCreationFailed__MISSING: Could not create session or determine redirect
+      unknownError__MISSING: An unknown error occurred
+      userCreationFailed__MISSING: Failed to create user account
     linkingError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: An error occurred while trying to link your account.
+      title__MISSING: Account linking failed
     loginError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    orSignInWith__MISSING: null
+      description__MISSING: An error occurred while trying to login.
+      title__MISSING: Login failed
+    orSignInWith__MISSING: or sign in with
     processing__MISSING:
-      message__MISSING: null
-      noRedirect__MISSING: null
-      unexpectedError__MISSING: null
+      message__MISSING: Processing authentication...
+      noRedirect__MISSING: No redirect or error returned from server
+      unexpectedError__MISSING: An unexpected error occurred
     registrationFailed__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
-    signInWithApple__MISSING: null
-    signInWithAzureAD__MISSING: null
-    signInWithGithub__MISSING: null
-    signInWithGitlab__MISSING: null
-    signInWithGoogle__MISSING: null
-    signInWithZitadel__MISSING: null
-    title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't complete the registration process.
+      info__MISSING: Unable to determine the organization for registration. Please contact your administrator for assistance.
+      title__MISSING: Registration Not Available
+    signInWithApple__MISSING: Sign in with Apple
+    signInWithAzureAD__MISSING: Sign in with AzureAD
+    signInWithGithub__MISSING: Sign in with GitHub
+    signInWithGitlab__MISSING: Sign in with GitLab
+    signInWithGoogle__MISSING: Sign in with Google
+    signInWithZitadel__MISSING: Sign in with Zitadel
+    title__MISSING: Sign in with SSO
   invite__MISSING:
-    description__MISSING: null
-    info__MISSING: null
-    notAllowed__MISSING: null
-    submit__MISSING: null
+    description__MISSING: Provide the email address and the name of the user you want to invite.
+    info__MISSING: The user will receive an email with further instructions.
+    notAllowed__MISSING: Your settings do not allow you to invite users.
+    submit__MISSING: Continue
     success__MISSING:
-      description__MISSING: null
-      notVerifiedYet__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      verified__MISSING: null
-    title__MISSING: null
+      description__MISSING: The email has successfully been sent.
+      notVerifiedYet__MISSING: The user has been invited. They will receive an email with further instructions.
+      submit__MISSING: Invite another user
+      title__MISSING: User invited
+      verified__MISSING: The user has been invited and has already verified his email.
+    title__MISSING: Invite User
   ldap__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your LDAP credentials.
     labels__MISSING:
-      password__MISSING: null
-      username__MISSING: null
+      password__MISSING: Password
+      username__MISSING: Username
     required__MISSING:
-      password__MISSING: null
-      username__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      password__MISSING: This field is required
+      username__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: LDAP Login
   loginname__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your login details.
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotFindIdentityProvider__MISSING: null
-      couldNotGetDomain__MISSING: null
-      couldNotGetHost__MISSING: null
-      couldNotGetLoginSettings__MISSING: null
-      couldNotSearchUsers__MISSING: null
-      couldNotStartIDPFlow__MISSING: null
-      initialUserNotSupported__MISSING: null
-      internalError__MISSING: null
-      localAuthenticationNotAllowed__MISSING: null
-      moreThanOneUserFound__MISSING: null
-      passkeysNotAllowed__MISSING: null
-      userNotActive__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session for user
+      couldNotFindIdentityProvider__MISSING: Could not find identity provider.
+      couldNotGetDomain__MISSING: Could not get domain
+      couldNotGetHost__MISSING: Could not get host
+      couldNotGetLoginSettings__MISSING: Could not get login settings
+      couldNotSearchUsers__MISSING: Could not search users
+      couldNotStartIDPFlow__MISSING: Could not start IDP flow
+      initialUserNotSupported__MISSING: Initial User not supported
+      internalError__MISSING: An internal error occurred
+      localAuthenticationNotAllowed__MISSING: Local authentication is not allowed! Contact your administrator for more information.
+      moreThanOneUserFound__MISSING: More than one user found. Provide a unique identifier.
+      passkeysNotAllowed__MISSING: Passkeys not allowed! Contact your administrator for more information.
+      userNotActive__MISSING: User is not active. Contact your administrator for more information.
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      loginname__MISSING: null
-      usernameOrEmail__MISSING: null
-      usernameOrPhoneNumber__MISSING: null
-      username__MISSING: null
-    register__MISSING: null
+      loginname__MISSING: Loginname
+      usernameOrEmail__MISSING: Username or email
+      usernameOrPhoneNumber__MISSING: Username or phone number
+      username__MISSING: Username
+    register__MISSING: Register new user
     required__MISSING:
-      loginName__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      loginName__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: Welcome back!
   logout__MISSING:
-    clear__MISSING: null
-    description__MISSING: null
-    noResults__MISSING: null
+    clear__MISSING: End Session
+    description__MISSING: Click an account to end the session
+    noResults__MISSING: No accounts found
     success__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
-    verifiedAt__MISSING: null
+      description__MISSING: You have successfully logged out.
+      title__MISSING: Logout successful
+    title__MISSING: Logout
+    verifiedAt__MISSING: 'Last active: {time}'
   mfa__MISSING:
     set__MISSING:
-      description__MISSING: null
-      skip__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following second factors.
+      skip__MISSING: Skip
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      noResults__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following factors.
+      noResults__MISSING: No second factors available to setup.
+      title__MISSING: Verify your identity
   otp__MISSING:
     errors__MISSING:
-      couldNotRequestChallenge__MISSING: null
-      couldNotVerifyCode__MISSING: null
+      couldNotRequestChallenge__MISSING: Could not request OTP challenge
+      couldNotVerifyCode__MISSING: Could not verify OTP code
     set__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter your email address to receive a code via email.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
-      totpRegisterDescription__MISSING: null
+        code__MISSING: This field is required
+      smsDescription__MISSING: Enter your phone number to receive a code via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
+      totpDescription__MISSING: Scan the QR code with your authenticator app.
+      totpRegisterDescription__MISSING: Scan the QR Code or navigate to the URL manually.
     verify__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter the code you received via email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      smsDescription__MISSING: Enter the code you received via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Verify 2-Factor
+      totpDescription__MISSING: Enter the code from your authenticator app.
   passkey__MISSING:
     set__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       info__MISSING:
-        description__MISSING: null
-        link__MISSING: null
-      skip__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        description__MISSING: 'A passkey is an authentication method on a device like your fingerprint, Apple FaceID or similar. '
+        link__MISSING: Passkey Authentication
+      skip__MISSING: Skip
+      submit__MISSING: Continue
+      title__MISSING: Setup a passkey
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       errors__MISSING:
-        couldNotDetermineRedirect__MISSING: null
-        couldNotFindSession__MISSING: null
-        couldNotRequestChallenge__MISSING: null
-        couldNotRetrievePasskey__MISSING: null
-        couldNotUpdateSession__MISSING: null
-        couldNotVerifyPasskey__MISSING: null
-        noRedirectProvided__MISSING: null
-        noResponseReceived__MISSING: null
-        userNotFound__MISSING: null
-        verificationCancelled__MISSING: null
-        verificationFailed__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      usePassword__MISSING: null
+        couldNotDetermineRedirect__MISSING: Could not determine redirect URL after passkey verification
+        couldNotFindSession__MISSING: Could not find session
+        couldNotRequestChallenge__MISSING: Could not request passkey challenge
+        couldNotRetrievePasskey__MISSING: An error occurred while retrieving passkey
+        couldNotUpdateSession__MISSING: Could not update session
+        couldNotVerifyPasskey__MISSING: Could not verify passkey
+        noRedirectProvided__MISSING: Passkey verification completed but no redirect was provided
+        noResponseReceived__MISSING: Passkey verification failed - no response received
+        userNotFound__MISSING: User not found in the system
+        verificationCancelled__MISSING: Passkey verification was cancelled
+        verificationFailed__MISSING: An error occurred during passkey verification
+      submit__MISSING: Continue
+      title__MISSING: Authenticate with a passkey
+      usePassword__MISSING: Use password
   password__MISSING:
     change__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotChangePassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
-        currentPasswordInvalid__MISSING: null
-        unknownError__MISSING: null
+        couldNotChangePassword__MISSING: Could not change password
+        couldNotVerifyPassword__MISSING: Could not verify password
+        currentPasswordInvalid__MISSING: Current password is incorrect.
+        unknownError__MISSING: Unknown error
       labels__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        currentPassword__MISSING: Current Password
+        newPassword__MISSING: New Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        confirmPassword__MISSING: This field is required
+        currentPassword__MISSING: You have to provide your current password!
+        newPassword__MISSING: You have to provide a new password!
+      submit__MISSING: Continue
+      title__MISSING: Change Password
     complexity__MISSING:
-      doesNotMatch__MISSING: null
-      equals__MISSING: null
-      hasLowercase__MISSING: null
-      hasNumber__MISSING: null
-      hasSymbol__MISSING: null
-      hasUppercase__MISSING: null
-      length__MISSING: null
-      matches__MISSING: null
+      doesNotMatch__MISSING: Doesn't match
+      equals__MISSING: Password confirmation matched.
+      hasLowercase__MISSING: Must include a lowercase letter.
+      hasNumber__MISSING: Must include a number.
+      hasSymbol__MISSING: Must include a symbol.
+      hasUppercase__MISSING: Must include an uppercase letter.
+      length__MISSING: Must be at least {minLength} characters long.
+      matches__MISSING: Matches
     errors__MISSING:
-      accountLockedContactAdmin__MISSING: null
-      codeOrVerificationRequired__MISSING: null
-      couldNotCreateSessionForUser__MISSING: null
-      couldNotLoadAuthMethods__MISSING: null
-      couldNotLoadSession__MISSING: null
-      couldNotSendResetLink__MISSING: null
-      couldNotVerifyPassword__MISSING: null
-      failedPrecondition__MISSING: null
-      failedToAuthenticateNoLimit__MISSING: null
-      failedToAuthenticate__MISSING: null
-      initialUserNotSupported__MISSING: null
-      noHostFound__MISSING: null
-      passwordResetNotAllowed__MISSING: null
-      passwordVerificationMissing__MISSING: null
-      passwordVerificationTooOld__MISSING: null
-      sessionNotValid__MISSING: null
-      userInitialStateNotSupported__MISSING: null
-      userNotFound__MISSING: null
-      verificationRequired__MISSING: null
+      accountLockedContactAdmin__MISSING: ' Contact your administrator to unlock your account'
+      codeOrVerificationRequired__MISSING: You have to provide a code or have a valid User Verification Check
+      couldNotCreateSessionForUser__MISSING: Could not create session for user
+      couldNotLoadAuthMethods__MISSING: Could not load auth methods
+      couldNotLoadSession__MISSING: Could not load session
+      couldNotSendResetLink__MISSING: Could not send Password Reset Link
+      couldNotVerifyPassword__MISSING: Could not verify password
+      failedPrecondition__MISSING: Failed precondition
+      failedToAuthenticateNoLimit__MISSING: Failed to authenticate.
+      failedToAuthenticate__MISSING: Failed to authenticate. You had {failedAttempts} of {maxPasswordAttempts} password attempts.{lockoutMessage}
+      initialUserNotSupported__MISSING: Initial User not supported
+      noHostFound__MISSING: No host found
+      passwordResetNotAllowed__MISSING: Password reset is not allowed. Contact your administrator for more information.
+      passwordVerificationMissing__MISSING: Password verification is missing.
+      passwordVerificationTooOld__MISSING: Password verification is too old. Please verify your password again.
+      sessionNotValid__MISSING: Session is not valid
+      userInitialStateNotSupported__MISSING: User Initial State is not supported
+      userNotFound__MISSING: User not found in the system
+      verificationRequired__MISSING: User Verification Check has to be done
     set__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has been sent to your email address.
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotSetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotSetPassword__MISSING: Could not set password
+        couldNotVerifyPassword__MISSING: Could not verify password
       labels__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+        confirmPassword__MISSING: Confirm Password
+        newPassword__MISSING: New Password
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      resend__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+        confirmPassword__MISSING: This field is required
+        newPassword__MISSING: You have to provide a password!
+      resend__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Set Password
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter your password.
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotVerifyPassword__MISSING: Could not verify password
       info__MISSING:
-        passwordResetSent__MISSING: null
+        passwordResetSent__MISSING: Password was reset. Please check your email
       labels__MISSING:
-        password__MISSING: null
+        password__MISSING: Password
       required__MISSING:
-        password__MISSING: null
-      resetPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        password__MISSING: This field is required
+      resetPassword__MISSING: Reset Password
+      submit__MISSING: Continue
+      title__MISSING: Password
   register__MISSING:
-    agreeTo__MISSING: null
-    description__MISSING: null
+    agreeTo__MISSING: To register you must agree to the terms and conditions
+    description__MISSING: Create your Zitadel account.
     disabled__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: The registration is disabled. Please contact your administrator.
+      title__MISSING: Registration disabled
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotCreateUser__MISSING: null
-      couldNotLinkIDP__MISSING: null
-      couldNotRegisterUser__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotCreateUser__MISSING: Could not create user
+      couldNotLinkIDP__MISSING: Could not link IDP to user
+      couldNotRegisterUser__MISSING: Could not register user
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
+      email__MISSING: E-mail
+      firstname__MISSING: First name
+      lastname__MISSING: Last name
     methods__MISSING:
-      passkey__MISSING: null
-      password__MISSING: null
+      passkey__MISSING: Passkey
+      password__MISSING: Password
     missingdata__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    noMethodAvailableWarning__MISSING: null
+      description__MISSING: Provide email, first and last name to register.
+      title__MISSING: Missing data
+    noMethodAvailableWarning__MISSING: No authentication method available. Please contact your administrator.
     password__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       labels__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        password__MISSING: Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-    privacyPolicy__MISSING: null
+        confirmPassword__MISSING: This field is required
+        password__MISSING: You have to provide a password!
+      submit__MISSING: Continue
+      title__MISSING: Set Password
+    privacyPolicy__MISSING: Privacy Policy
     required__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
-    selectMethod__MISSING: null
-    submit__MISSING: null
-    termsOfService__MISSING: null
-    title__MISSING: null
+      email__MISSING: This field is required
+      firstname__MISSING: This field is required
+      lastname__MISSING: This field is required
+    selectMethod__MISSING: Select the method you would like to authenticate
+    submit__MISSING: Continue
+    termsOfService__MISSING: Terms of Service
+    title__MISSING: Register
   signedin__MISSING:
-    continue__MISSING: null
-    description__MISSING: null
+    continue__MISSING: Continue
+    description__MISSING: You are signed in.
     error__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
+      description__MISSING: An error occurred while trying to sign in.
+      title__MISSING: Error
+    title__MISSING: Welcome {user}!
   u2f__MISSING:
     set__MISSING:
-      description__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      description__MISSING: Set up a device as a second factor.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: Verify your account with your device.
+      title__MISSING: Verify 2-Factor
   verify__MISSING:
     errors__MISSING:
-      contextMissing__MISSING: null
-      couldNotCreateSession__MISSING: null
-      couldNotLoadAuthenticators__MISSING: null
-      couldNotLoadUser__MISSING: null
-      couldNotResendEmail__MISSING: null
-      couldNotResendInvite__MISSING: null
-      couldNotVerifyEmail__MISSING: null
-      couldNotVerifyInvite__MISSING: null
-      couldNotVerifyUser__MISSING: null
-      couldNotVerify__MISSING: null
-      emailSendFailed__MISSING: null
-      inviteSendFailed__MISSING: null
-      noHostFound__MISSING: null
-      userAlreadyVerified__MISSING: null
-    setupAuthenticator__MISSING: null
-    successContinue__MISSING: null
-    successDescription__MISSING: null
-    successTitle__MISSING: null
-    userIdMissing__MISSING: null
+      contextMissing__MISSING: An error occurred. Please try again.
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotLoadAuthenticators__MISSING: Could not load possible authenticators
+      couldNotLoadUser__MISSING: Could not load user
+      couldNotResendEmail__MISSING: Could not resend email
+      couldNotResendInvite__MISSING: Could not resend invite
+      couldNotVerifyEmail__MISSING: Could not verify email
+      couldNotVerifyInvite__MISSING: Could not verify invite
+      couldNotVerifyUser__MISSING: Could not verify user
+      couldNotVerify__MISSING: Could not verify
+      emailSendFailed__MISSING: Failed to send verification email
+      inviteSendFailed__MISSING: Failed to send invitation email
+      noHostFound__MISSING: No host found
+      userAlreadyVerified__MISSING: User is already verified!
+    setupAuthenticator__MISSING: Setup authenticator
+    successContinue__MISSING: Continue
+    successDescription__MISSING: The user has been verified successfully.
+    successTitle__MISSING: User verified
+    userIdMissing__MISSING: No userId provided!
     verify__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has just been sent to your email address.
+      description__MISSING: Enter the Code provided in the verification email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Verify user
   zitadel__MISSING:
     errors__MISSING:
-      errorOccured__MISSING: null
-      multipleUsersFound__MISSING: null
-      userNotFound__MISSING: null
+      errorOccured__MISSING: An error occurred
+      multipleUsersFound__MISSING: Multiple users found
+      userNotFound__MISSING: User not found in the system
 login_v2_default__MISSING:
   accounts__MISSING:
-    addAnother__MISSING: null
-    description__MISSING: null
-    expired__MISSING: null
-    noResults__MISSING: null
-    title__MISSING: null
-    verified__MISSING: null
+    addAnother__MISSING: Add another account
+    description__MISSING: Select the account you want to use.
+    expired__MISSING: expired
+    noResults__MISSING: No accounts found
+    title__MISSING: Accounts
+    verified__MISSING: verified
   authenticator__MISSING:
-    allSetup__MISSING: null
-    description__MISSING: null
-    linkWithIDP__MISSING: null
+    allSetup__MISSING: You have already setup an authenticator!
+    description__MISSING: Select the method you would like to authenticate
+    linkWithIDP__MISSING: or link with an Identity Provider
     methods__MISSING:
-      otpEmail__MISSING: null
-      otpSms__MISSING: null
-      passkey__MISSING: null
-      password__MISSING: null
-      totp__MISSING: null
-      u2f__MISSING: null
-    noMethodsAvailable__MISSING: null
-    title__MISSING: null
+      otpEmail__MISSING: Code via Email
+      otpSms__MISSING: Code via SMS
+      passkey__MISSING: Passkeys
+      password__MISSING: Password
+      totp__MISSING: Authenticator App
+      u2f__MISSING: Universal Second Factor
+    noMethodsAvailable__MISSING: No authentication methods available
+    title__MISSING: Choose authentication method
   common__MISSING:
-    back__MISSING: null
-    title__MISSING: null
+    back__MISSING: Back
+    title__MISSING: Login with Zitadel
   device__MISSING:
     request__MISSING:
-      deny__MISSING: null
-      description__MISSING: null
-      disclaimer__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      deny__MISSING: Deny
+      description__MISSING: '{appName} will have access to:'
+      disclaimer__MISSING: By clicking Allow, you allow {appName} and Zitadel to use your information in accordance with their respective terms of service and privacy policies. You can revoke this access at any time.
+      submit__MISSING: Allow
+      title__MISSING: '{appName} would like to connect'
     scope__MISSING:
-      email__MISSING: null
-      offline_access__MISSING: null
-      openid__MISSING: null
-      profile__MISSING: null
+      email__MISSING: View your email address.
+      offline_access__MISSING: Allow offline access to your account.
+      openid__MISSING: Verify your identity.
+      profile__MISSING: View your full profile information.
     usercode__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter the code displayed on your app or device.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      submit__MISSING: Continue
+      title__MISSING: Device code
   error__MISSING:
-    couldNotContinueSession__MISSING: null
-    failedLoading__MISSING: null
-    noDeviceRequest__MISSING: null
-    noUserCode__MISSING: null
-    sessionExpired__MISSING: null
-    tryagain__MISSING: null
-    unknownContext__MISSING: null
+    couldNotContinueSession__MISSING: Could not continue with session - missing user information
+    failedLoading__MISSING: Failed to load data. Please try again.
+    noDeviceRequest__MISSING: No device request found.
+    noUserCode__MISSING: No user code provided!
+    sessionExpired__MISSING: Your current session has expired. Please login again.
+    tryagain__MISSING: Try Again
+    unknownContext__MISSING: Could not get the context of the user. Make sure to enter the username first or provide a loginName as searchParam.
   idp__MISSING:
     accountNotFound__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't find an account associated with your identity provider credentials.
+      info__MISSING: No existing account was found. Please sign in with an existing account or contact your administrator for assistance.
+      title__MISSING: Account Not Found
     completeRegister__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    description__MISSING: null
+      description__MISSING: You need to complete your registration by providing your email address and name.
+      title__MISSING: Complete your data
+    description__MISSING: Select one of the following providers to sign in
     errors__MISSING:
-      autoLinkingFailed__MISSING: null
-      idpNotFound__MISSING: null
-      linkingFailed__MISSING: null
-      linkingNotAllowed__MISSING: null
-      missingIdpInfo__MISSING: null
-      missingParameters__MISSING: null
-      orgResolutionFailed__MISSING: null
-      sessionCreationFailed__MISSING: null
-      unknownError__MISSING: null
-      userCreationFailed__MISSING: null
+      autoLinkingFailed__MISSING: Failed to automatically link account
+      idpNotFound__MISSING: Identity provider not found
+      linkingFailed__MISSING: Failed to link identity provider to account
+      linkingNotAllowed__MISSING: Linking is not allowed for this identity provider
+      missingIdpInfo__MISSING: IDP information missing
+      missingParameters__MISSING: Missing required parameters
+      orgResolutionFailed__MISSING: Could not determine organization for registration
+      sessionCreationFailed__MISSING: Could not create session or determine redirect
+      unknownError__MISSING: An unknown error occurred
+      userCreationFailed__MISSING: Failed to create user account
     linkingError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: An error occurred while trying to link your account.
+      title__MISSING: Account linking failed
     loginError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    orSignInWith__MISSING: null
+      description__MISSING: An error occurred while trying to login.
+      title__MISSING: Login failed
+    orSignInWith__MISSING: or sign in with
     processing__MISSING:
-      message__MISSING: null
-      noRedirect__MISSING: null
-      unexpectedError__MISSING: null
+      message__MISSING: Processing authentication...
+      noRedirect__MISSING: No redirect or error returned from server
+      unexpectedError__MISSING: An unexpected error occurred
     registrationFailed__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
-    signInWithApple__MISSING: null
-    signInWithAzureAD__MISSING: null
-    signInWithGithub__MISSING: null
-    signInWithGitlab__MISSING: null
-    signInWithGoogle__MISSING: null
-    title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't complete the registration process.
+      info__MISSING: Unable to determine the organization for registration. Please contact your administrator for assistance.
+      title__MISSING: Registration Not Available
+    signInWithApple__MISSING: Sign in with Apple
+    signInWithAzureAD__MISSING: Sign in with AzureAD
+    signInWithGithub__MISSING: Sign in with GitHub
+    signInWithGitlab__MISSING: Sign in with GitLab
+    signInWithGoogle__MISSING: Sign in with Google
+    title__MISSING: Sign in with SSO
   invite__MISSING:
-    description__MISSING: null
-    info__MISSING: null
-    notAllowed__MISSING: null
-    submit__MISSING: null
+    description__MISSING: Provide the email address and the name of the user you want to invite.
+    info__MISSING: The user will receive an email with further instructions.
+    notAllowed__MISSING: Your settings do not allow you to invite users.
+    submit__MISSING: Continue
     success__MISSING:
-      description__MISSING: null
-      notVerifiedYet__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      verified__MISSING: null
-    title__MISSING: null
+      description__MISSING: The email has successfully been sent.
+      notVerifiedYet__MISSING: The user has been invited. They will receive an email with further instructions.
+      submit__MISSING: Invite another user
+      title__MISSING: User invited
+      verified__MISSING: The user has been invited and has already verified his email.
+    title__MISSING: Invite User
   ldap__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your LDAP credentials.
     labels__MISSING:
-      password__MISSING: null
-      username__MISSING: null
+      password__MISSING: Password
+      username__MISSING: Username
     required__MISSING:
-      password__MISSING: null
-      username__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      password__MISSING: This field is required
+      username__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: LDAP Login
   loginname__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your login details.
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotFindIdentityProvider__MISSING: null
-      couldNotGetDomain__MISSING: null
-      couldNotGetHost__MISSING: null
-      couldNotGetLoginSettings__MISSING: null
-      couldNotSearchUsers__MISSING: null
-      couldNotStartIDPFlow__MISSING: null
-      initialUserNotSupported__MISSING: null
-      internalError__MISSING: null
-      localAuthenticationNotAllowed__MISSING: null
-      moreThanOneUserFound__MISSING: null
-      passkeysNotAllowed__MISSING: null
-      userNotActive__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session for user
+      couldNotFindIdentityProvider__MISSING: Could not find identity provider.
+      couldNotGetDomain__MISSING: Could not get domain
+      couldNotGetHost__MISSING: Could not get host
+      couldNotGetLoginSettings__MISSING: Could not get login settings
+      couldNotSearchUsers__MISSING: Could not search users
+      couldNotStartIDPFlow__MISSING: Could not start IDP flow
+      initialUserNotSupported__MISSING: Initial User not supported
+      internalError__MISSING: An internal error occurred
+      localAuthenticationNotAllowed__MISSING: Local authentication is not allowed! Contact your administrator for more information.
+      moreThanOneUserFound__MISSING: More than one user found. Provide a unique identifier.
+      passkeysNotAllowed__MISSING: Passkeys not allowed! Contact your administrator for more information.
+      userNotActive__MISSING: User is not active. Contact your administrator for more information.
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      loginname__MISSING: null
-      usernameOrEmail__MISSING: null
-      usernameOrPhoneNumber__MISSING: null
-      username__MISSING: null
-    register__MISSING: null
+      loginname__MISSING: Loginname
+      usernameOrEmail__MISSING: Username or email
+      usernameOrPhoneNumber__MISSING: Username or phone number
+      username__MISSING: Username
+    register__MISSING: Register new user
     required__MISSING:
-      loginName__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      loginName__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: Welcome back!
   logout__MISSING:
-    clear__MISSING: null
-    description__MISSING: null
-    noResults__MISSING: null
+    clear__MISSING: End Session
+    description__MISSING: Click an account to end the session
+    noResults__MISSING: No accounts found
     success__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
-    verifiedAt__MISSING: null
+      description__MISSING: You have successfully logged out.
+      title__MISSING: Logout successful
+    title__MISSING: Logout
+    verifiedAt__MISSING: 'Last active: {time}'
   mfa__MISSING:
     set__MISSING:
-      description__MISSING: null
-      skip__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following second factors.
+      skip__MISSING: Skip
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      noResults__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following factors.
+      noResults__MISSING: No second factors available to setup.
+      title__MISSING: Verify your identity
   otp__MISSING:
     errors__MISSING:
-      couldNotRequestChallenge__MISSING: null
-      couldNotVerifyCode__MISSING: null
+      couldNotRequestChallenge__MISSING: Could not request OTP challenge
+      couldNotVerifyCode__MISSING: Could not verify OTP code
     set__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter your email address to receive a code via email.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
-      totpRegisterDescription__MISSING: null
+        code__MISSING: This field is required
+      smsDescription__MISSING: Enter your phone number to receive a code via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
+      totpDescription__MISSING: Scan the QR code with your authenticator app.
+      totpRegisterDescription__MISSING: Scan the QR Code or navigate to the URL manually.
     verify__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter the code you received via email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      smsDescription__MISSING: Enter the code you received via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Verify 2-Factor
+      totpDescription__MISSING: Enter the code from your authenticator app.
   passkey__MISSING:
     set__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       info__MISSING:
-        description__MISSING: null
-        link__MISSING: null
-      skip__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        description__MISSING: 'A passkey is an authentication method on a device like your fingerprint, Apple FaceID or similar. '
+        link__MISSING: Passkey Authentication
+      skip__MISSING: Skip
+      submit__MISSING: Continue
+      title__MISSING: Setup a passkey
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       errors__MISSING:
-        couldNotDetermineRedirect__MISSING: null
-        couldNotFindSession__MISSING: null
-        couldNotRequestChallenge__MISSING: null
-        couldNotRetrievePasskey__MISSING: null
-        couldNotUpdateSession__MISSING: null
-        couldNotVerifyPasskey__MISSING: null
-        noRedirectProvided__MISSING: null
-        noResponseReceived__MISSING: null
-        userNotFound__MISSING: null
-        verificationCancelled__MISSING: null
-        verificationFailed__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      usePassword__MISSING: null
+        couldNotDetermineRedirect__MISSING: Could not determine redirect URL after passkey verification
+        couldNotFindSession__MISSING: Could not find session
+        couldNotRequestChallenge__MISSING: Could not request passkey challenge
+        couldNotRetrievePasskey__MISSING: An error occurred while retrieving passkey
+        couldNotUpdateSession__MISSING: Could not update session
+        couldNotVerifyPasskey__MISSING: Could not verify passkey
+        noRedirectProvided__MISSING: Passkey verification completed but no redirect was provided
+        noResponseReceived__MISSING: Passkey verification failed - no response received
+        userNotFound__MISSING: User not found in the system
+        verificationCancelled__MISSING: Passkey verification was cancelled
+        verificationFailed__MISSING: An error occurred during passkey verification
+      submit__MISSING: Continue
+      title__MISSING: Authenticate with a passkey
+      usePassword__MISSING: Use password
   password__MISSING:
     change__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotChangePassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
-        currentPasswordInvalid__MISSING: null
-        unknownError__MISSING: null
+        couldNotChangePassword__MISSING: Could not change password
+        couldNotVerifyPassword__MISSING: Could not verify password
+        currentPasswordInvalid__MISSING: Current password is incorrect.
+        unknownError__MISSING: Unknown error
       labels__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        currentPassword__MISSING: Current Password
+        newPassword__MISSING: New Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        confirmPassword__MISSING: This field is required
+        currentPassword__MISSING: You have to provide your current password!
+        newPassword__MISSING: You have to provide a new password!
+      submit__MISSING: Continue
+      title__MISSING: Change Password
     complexity__MISSING:
-      doesNotMatch__MISSING: null
-      equals__MISSING: null
-      hasLowercase__MISSING: null
-      hasNumber__MISSING: null
-      hasSymbol__MISSING: null
-      hasUppercase__MISSING: null
-      length__MISSING: null
-      matches__MISSING: null
+      doesNotMatch__MISSING: Doesn't match
+      equals__MISSING: Password confirmation matched.
+      hasLowercase__MISSING: Must include a lowercase letter.
+      hasNumber__MISSING: Must include a number.
+      hasSymbol__MISSING: Must include a symbol.
+      hasUppercase__MISSING: Must include an uppercase letter.
+      length__MISSING: Must be at least {minLength} characters long.
+      matches__MISSING: Matches
     errors__MISSING:
-      accountLockedContactAdmin__MISSING: null
-      codeOrVerificationRequired__MISSING: null
-      couldNotCreateSessionForUser__MISSING: null
-      couldNotLoadAuthMethods__MISSING: null
-      couldNotLoadSession__MISSING: null
-      couldNotSendResetLink__MISSING: null
-      couldNotVerifyPassword__MISSING: null
-      failedPrecondition__MISSING: null
-      failedToAuthenticateNoLimit__MISSING: null
-      failedToAuthenticate__MISSING: null
-      initialUserNotSupported__MISSING: null
-      noHostFound__MISSING: null
-      passwordResetNotAllowed__MISSING: null
-      passwordVerificationMissing__MISSING: null
-      passwordVerificationTooOld__MISSING: null
-      sessionNotValid__MISSING: null
-      userInitialStateNotSupported__MISSING: null
-      userNotFound__MISSING: null
-      verificationRequired__MISSING: null
+      accountLockedContactAdmin__MISSING: ' Contact your administrator to unlock your account'
+      codeOrVerificationRequired__MISSING: You have to provide a code or have a valid User Verification Check
+      couldNotCreateSessionForUser__MISSING: Could not create session for user
+      couldNotLoadAuthMethods__MISSING: Could not load auth methods
+      couldNotLoadSession__MISSING: Could not load session
+      couldNotSendResetLink__MISSING: Could not send Password Reset Link
+      couldNotVerifyPassword__MISSING: Could not verify password
+      failedPrecondition__MISSING: Failed precondition
+      failedToAuthenticateNoLimit__MISSING: Failed to authenticate.
+      failedToAuthenticate__MISSING: Failed to authenticate. You had {failedAttempts} of {maxPasswordAttempts} password attempts.{lockoutMessage}
+      initialUserNotSupported__MISSING: Initial User not supported
+      noHostFound__MISSING: No host found
+      passwordResetNotAllowed__MISSING: Password reset is not allowed. Contact your administrator for more information.
+      passwordVerificationMissing__MISSING: Password verification is missing.
+      passwordVerificationTooOld__MISSING: Password verification is too old. Please verify your password again.
+      sessionNotValid__MISSING: Session is not valid
+      userInitialStateNotSupported__MISSING: User Initial State is not supported
+      userNotFound__MISSING: User not found in the system
+      verificationRequired__MISSING: User Verification Check has to be done
     set__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has been sent to your email address.
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotSetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotSetPassword__MISSING: Could not set password
+        couldNotVerifyPassword__MISSING: Could not verify password
       labels__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+        confirmPassword__MISSING: Confirm Password
+        newPassword__MISSING: New Password
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      resend__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+        confirmPassword__MISSING: This field is required
+        newPassword__MISSING: You have to provide a password!
+      resend__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Set Password
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter your password.
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotVerifyPassword__MISSING: Could not verify password
       info__MISSING:
-        passwordResetSent__MISSING: null
+        passwordResetSent__MISSING: Password was reset. Please check your email
       labels__MISSING:
-        password__MISSING: null
+        password__MISSING: Password
       required__MISSING:
-        password__MISSING: null
-      resetPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        password__MISSING: This field is required
+      resetPassword__MISSING: Reset Password
+      submit__MISSING: Continue
+      title__MISSING: Password
   register__MISSING:
-    agreeTo__MISSING: null
-    description__MISSING: null
+    agreeTo__MISSING: To register you must agree to the terms and conditions
+    description__MISSING: Create your Zitadel account.
     disabled__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: The registration is disabled. Please contact your administrator.
+      title__MISSING: Registration disabled
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotCreateUser__MISSING: null
-      couldNotLinkIDP__MISSING: null
-      couldNotRegisterUser__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotCreateUser__MISSING: Could not create user
+      couldNotLinkIDP__MISSING: Could not link IDP to user
+      couldNotRegisterUser__MISSING: Could not register user
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
+      email__MISSING: E-mail
+      firstname__MISSING: First name
+      lastname__MISSING: Last name
     methods__MISSING:
-      passkey__MISSING: null
-      password__MISSING: null
+      passkey__MISSING: Passkey
+      password__MISSING: Password
     missingdata__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    noMethodAvailableWarning__MISSING: null
+      description__MISSING: Provide email, first and last name to register.
+      title__MISSING: Missing data
+    noMethodAvailableWarning__MISSING: No authentication method available. Please contact your administrator.
     password__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       labels__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        password__MISSING: Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-    privacyPolicy__MISSING: null
+        confirmPassword__MISSING: This field is required
+        password__MISSING: You have to provide a password!
+      submit__MISSING: Continue
+      title__MISSING: Set Password
+    privacyPolicy__MISSING: Privacy Policy
     required__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
-    selectMethod__MISSING: null
-    submit__MISSING: null
-    termsOfService__MISSING: null
-    title__MISSING: null
+      email__MISSING: This field is required
+      firstname__MISSING: This field is required
+      lastname__MISSING: This field is required
+    selectMethod__MISSING: Select the method you would like to authenticate
+    submit__MISSING: Continue
+    termsOfService__MISSING: Terms of Service
+    title__MISSING: Register
   signedin__MISSING:
-    continue__MISSING: null
-    description__MISSING: null
+    continue__MISSING: Continue
+    description__MISSING: You are signed in.
     error__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
+      description__MISSING: An error occurred while trying to sign in.
+      title__MISSING: Error
+    title__MISSING: Welcome {user}!
   u2f__MISSING:
     set__MISSING:
-      description__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      description__MISSING: Set up a device as a second factor.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: Verify your account with your device.
+      title__MISSING: Verify 2-Factor
   verify__MISSING:
     errors__MISSING:
-      contextMissing__MISSING: null
-      couldNotCreateSession__MISSING: null
-      couldNotLoadAuthenticators__MISSING: null
-      couldNotLoadUser__MISSING: null
-      couldNotResendEmail__MISSING: null
-      couldNotResendInvite__MISSING: null
-      couldNotVerifyEmail__MISSING: null
-      couldNotVerifyInvite__MISSING: null
-      couldNotVerifyUser__MISSING: null
-      couldNotVerify__MISSING: null
-      emailSendFailed__MISSING: null
-      inviteSendFailed__MISSING: null
-      noHostFound__MISSING: null
-      userAlreadyVerified__MISSING: null
-    setupAuthenticator__MISSING: null
-    successContinue__MISSING: null
-    successDescription__MISSING: null
-    successTitle__MISSING: null
-    userIdMissing__MISSING: null
+      contextMissing__MISSING: An error occurred. Please try again.
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotLoadAuthenticators__MISSING: Could not load possible authenticators
+      couldNotLoadUser__MISSING: Could not load user
+      couldNotResendEmail__MISSING: Could not resend email
+      couldNotResendInvite__MISSING: Could not resend invite
+      couldNotVerifyEmail__MISSING: Could not verify email
+      couldNotVerifyInvite__MISSING: Could not verify invite
+      couldNotVerifyUser__MISSING: Could not verify user
+      couldNotVerify__MISSING: Could not verify
+      emailSendFailed__MISSING: Failed to send verification email
+      inviteSendFailed__MISSING: Failed to send invitation email
+      noHostFound__MISSING: No host found
+      userAlreadyVerified__MISSING: User is already verified!
+    setupAuthenticator__MISSING: Setup authenticator
+    successContinue__MISSING: Continue
+    successDescription__MISSING: The user has been verified successfully.
+    successTitle__MISSING: User verified
+    userIdMissing__MISSING: No userId provided!
     verify__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has just been sent to your email address.
+      description__MISSING: Enter the Code provided in the verification email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Verify user
   zitadel__MISSING:
     errors__MISSING:
-      errorOccured__MISSING: null
-      multipleUsersFound__MISSING: null
-      userNotFound__MISSING: null
+      errorOccured__MISSING: An error occurred
+      multipleUsersFound__MISSING: Multiple users found
+      userNotFound__MISSING: User not found in the system
 notification:
   DomainClaimed:
     ButtonText: Најави се

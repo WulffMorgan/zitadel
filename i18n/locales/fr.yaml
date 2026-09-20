@@ -365,7 +365,7 @@ common:
       UserIDMissing: ID utilisateur manquant
       ZitadelOrgNotDeletable: L'organisation avec Zitadel project ne doit pas être supprimée
     OriginNotAllowed: Cette "Origine" n'est pas autorisée
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: La politique existe déjà
       Label:
@@ -418,7 +418,7 @@ common:
         AlreadyExists: Le membre du projet existe déjà
         Invalid: Le membre du projet n'est pas valide
         NotExisting: Le membre du projet n'existe pas
-        NotFound__MISSING: null
+        NotFound__MISSING: Project member not found
         Notfound__EXTRA: Membre du projet non trouvé
       MinimumOneRoleNeeded: Au moins un rôle doit être ajouté
       NotActive: Le projet n'est pas actif
@@ -470,7 +470,7 @@ common:
     SMSConfig:
       AlreadyActive: Configuration SMS déjà active
       AlreadyDeactivated: Configuration SMS déjà désactivée
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: Configuration SMS non trouvée
     SMTP:
       CouldNotAuth: Impossible d'ajouter l'authentification SMTP, vérifiez si votre utilisateur et votre mot de passe sont corrects. S'ils sont corrects, votre fournisseur nécessite peut-être une méthode d'authentification non prise en charge par Zitadel.
@@ -496,9 +496,9 @@ common:
       TypeMissing: Type de générateur de secret manquant
     Session:
       Expired: La session a expiré
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: La session n'existe pas
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: La durée de vie de la session ne doit pas être inférieure à 0
       Terminated: La session est déjà terminée
       Token:
@@ -583,7 +583,7 @@ common:
           NotExisting: Paskey n'existe pas
         RecoveryCodes:
           ConfigInvalid: La configuration des codes de récupération est invalide
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Code de récupération invalide fourni
           MaxCountExceeded: Nombre maximum de codes de récupération dépassé
           NotReady: Les codes de récupération ne sont pas prêts à être utilisés
@@ -632,7 +632,7 @@ common:
         Empty: Téléphone est vide
         Invalid: Le téléphone n'est pas valide
         NotChanged: Téléphone n'a pas changé
-        NotFound__MISSING: null
+        NotFound__MISSING: Phone not found
         Notfound__EXTRA: Téléphone non trouvé
         VerifyingRemovalIsNotSupported: La vérification de la suppression n'est pas prise en charge
       Profile:
@@ -777,7 +777,7 @@ common:
             removed: Idp Provider supprimé de la politique de connexion par défaut
       project__MISSING:
         iam__MISSING:
-          set__MISSING: null
+          set__MISSING: Zitadel project set
       secret:
         generator:
           added: Générateur de secret ajouté
@@ -1125,8 +1125,8 @@ common:
             removed: Clé d'application de l'OIDC supprimée
           secret:
             check__MISSING:
-              failed__MISSING: null
-              succeeded__MISSING: null
+              failed__MISSING: OIDC Client Secret check failed
+              succeeded__MISSING: OIDC Client Secret check succeeded
             verified__EXTRA:
               check: Vérification du secret du client OIDC réussie
               failed: La vérification du secret du client OIDC a échoué
@@ -1213,7 +1213,7 @@ common:
           cascade:
             removed: Externer IDP cascade supprimé
           id__MISSING:
-            migrated__MISSING: null
+            migrated__MISSING: External UserID of IDP was migrated
           removed: Externer IDP supprimé
           îd__EXTRA:
             migrated: L'ID utilisateur externe de l'IDP a été migré
@@ -1364,7 +1364,7 @@ common:
             failed: Échec de la vérification de l'OTP multifactorielle
             succeeded: Vérification de l'OTP multifactorielle réussie
           init__MISSING:
-            skipped__MISSING: null
+            skipped__MISSING: Multifactor OTP initialization skipped
           removed: OTP multifactorielle supprimée
           verified: OTP multifactoriel vérifié
       password:
@@ -1395,11 +1395,11 @@ common:
         out: L'utilisateur s'est déconnecté
       token:
         added: Jeton d'accès créé
-        removed__MISSING: null
+        removed__MISSING: Access Token removed
         v2.added: Jeton d'accès créé
       unlocked: Utilisateur déverrouillé
       username:
-        changed__MISSING: null
+        changed__MISSING: Username changed
         released: Nom d'utilisateur libéré
         reserved: Nom d'utilisateur réservé
     user_schema:
@@ -1647,7 +1647,7 @@ console:
       BASEURL: URL de base personnalisée pour la nouvelle interface utilisateur de connexion
       USEV2: Utiliser la nouvelle interface utilisateur de connexion
     NAME: Nom
-    NAMEANDTYPESECTION__MISSING: null
+    NAMEANDTYPESECTION__MISSING: Name and Type
     NAMEDIALOG:
       DESCRIPTION: Entrez le nouveau nom de votre application
       NAME: Nouveau nom
@@ -1799,7 +1799,7 @@ console:
       STATE: Statut
       TITLE: Application
       URLS: URLs
-    PROSWITCH__MISSING: null
+    PROSWITCH__MISSING: I'm a pro. Skip this wizard.
     SAML:
       ACSURL: ACS endpoint URL
       CERTIFICATE: Certificat SAML
@@ -1817,7 +1817,7 @@ console:
         DESCRIPTION: Applications SAML
         TITLE: SAML
       UPLOAD: Télécharger le fichier XML
-    TITLEFIRST__MISSING: null
+    TITLEFIRST__MISSING: Name of the application
     TOAST:
       APIUPDATED: Application mise à jour
       CLIENTSECRETREGENERATED: secret client généré.
@@ -1830,7 +1830,7 @@ console:
       UPDATED: Application mise à jour.
     TOKEN: Paramètres du jeton
     TYPE: Type d'application
-    TYPETITLE__MISSING: null
+    TYPETITLE__MISSING: Type of application
     URLS: URLs
   APP_NAME: Zitadel
   CHANGES:
@@ -2323,12 +2323,12 @@ console:
     ACTIVATE: Activer
     ADD: Ajouter un fournisseur d'identité
     APPLE__MISSING:
-      KEYID__MISSING: null
-      KEYMAXSIZEEXCEEDED__MISSING: null
-      PRIVATEKEY__MISSING: null
-      TEAMID__MISSING: null
-      UPDATEPRIVATEKEY__MISSING: null
-      UPLOADPRIVATEKEY__MISSING: null
+      KEYID__MISSING: Key ID
+      KEYMAXSIZEEXCEEDED__MISSING: Maximum size of 5kB exceeded.
+      PRIVATEKEY__MISSING: Private Key
+      TEAMID__MISSING: Team ID
+      UPDATEPRIVATEKEY__MISSING: Update Private Key
+      UPLOADPRIVATEKEY__MISSING: Upload Private Key
     AUTHORIZATIONENDPOINT: Authorization Endpoint
     AVAILABILITY: Disponibilité
     AVAILABLE: disponible
@@ -2350,8 +2350,8 @@ console:
     CONFIG: Paramètres
     CREATE:
       APPLE__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your Apple Provider
+        TITLE__MISSING: Sign in with Apple
       AZUREAD:
         DESCRIPTION: Saisissez les informations d'identification de votre fournisseur d'identité Microsoft
         TITLE: Fournisseur Microsoft
@@ -2378,8 +2378,8 @@ console:
         DESCRIPTION: Saisissez les informations d'identification de votre fournisseur d'identité LDAP
         TITLE: Active Directory / LDAP
       OAUTH__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the required data for your OAuth provider.
+        TITLE__MISSING: OAuth Provider
       OAuth__EXTRA:
         DESCRIPTION: Entrez les données requises pour votre fournisseur OAuth.
         TITLE: Fournisseur OAuth
@@ -2387,8 +2387,8 @@ console:
         DESCRIPTION: Entrez les données requises pour votre fournisseur OIDC.
         TITLE: Fournisseur OIDC
       SAML__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your SAML Provider
+        TITLE__MISSING: Sign in with SAML
       STEPPERTITLE: Créer un fournisseur
       TITLE: Ajouter un fournisseur
       ZITADEL:
@@ -2475,14 +2475,14 @@ console:
     REMOVE_WARN_TITLE: Supprimer le fournisseur d'identité
     REQUIRED: requis
     SAML__MISSING:
-      BINDING__MISSING: null
-      METADATAURL__MISSING: null
-      METADATAXML__MISSING: null
-      NAMEIDFORMAT__MISSING: null
-      SIGNATUREALGORITHM__MISSING: null
-      SIGNEDREQUEST__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      BINDING__MISSING: Binding
+      METADATAURL__MISSING: Metadata URL
+      METADATAXML__MISSING: Metadata Xml
+      NAMEIDFORMAT__MISSING: NameID Format
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
+      SIGNEDREQUEST__MISSING: Signed Request
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Liste des champs d'application
     SERVERS: Servers
     SETAVAILABLE: définir comme disponible
@@ -2638,7 +2638,7 @@ console:
     ROLES: Rôles
     SETTINGS: Paramètres
     SHOWORGS: Afficher toutes les organisations
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Conditions de service
     VIEWS: Vues
   METADATA:
@@ -3454,7 +3454,7 @@ console:
   SETTINGS:
     BETA: BÊTA
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Apparence
       DOMAIN: Domaine
       GENERAL: Général
@@ -3464,7 +3464,7 @@ console:
       STORAGE: Stockage
       TEXTS: Textes et langues
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Expiration du mot de passe
       BRANDING: Image de marque
       COMPLEXITY: Complexité du mot de passe
@@ -3487,7 +3487,7 @@ console:
       SECURITY: Paramètres de sécurité
       SMS_PROVIDER: SMS/Téléphone Fournisseur
       SMTP_PROVIDER: Fournisseur SMTP
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Domaine de l'organisation
       VIEWS: Vues
       WEB_KEYS: OIDC Web Keys
@@ -3532,10 +3532,10 @@ console:
         DELETE_DESCRIPTION: Vous êtes sur le point de supprimer une configuration. Confirmez cette action en tapant le nom de l'expéditeur
         DELETE_TITLE: Supprimer la configuration SMTP
         SENDER: Tapez {{ value }} pour supprimer cette configuration SMTP.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: Aucun fournisseur SMTP disponible
       TEST: Testez votre fournisseur
       TITLE: Fournisseur SMTP
@@ -4061,7 +4061,7 @@ login_v1:
         Empty: Téléphone est vide
         Invalid: Le téléphone n'est pas valide
         NotChanged: Téléphone n'a pas changé
-        NotFound__MISSING: null
+        NotFound__MISSING: Phone not found
         Notfound__EXTRA: Téléphone non trouvé
       Profile:
         Empty: Profil est vide

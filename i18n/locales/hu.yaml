@@ -365,7 +365,7 @@ common:
       UserIDMissing: A felhasználói azonosító hiányzik
       ZitadelOrgNotDeletable: A Zitadel projekttel rendelkező szervezetet nem szabad törölni
     OriginNotAllowed: Ez az "Eredet" nem engedélyezett
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Policy már létezik
       Label:
@@ -469,7 +469,7 @@ common:
     SMSConfig:
       AlreadyActive: SMS konfiguráció már aktív
       AlreadyDeactivated: Az SMS konfiguráció már inaktiválva van
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: SMS konfiguráció nem található
     SMTP:
       CouldNotAuth: nem sikerült hozzáadni az smtp hitelesítést, ellenőrizd, hogy a felhasználóneved és a jelszavad helyes-e, ha igen, lehet, hogy a szolgáltatód olyan hitelesítési módot kér, amelyet a Zitadel nem támogat
@@ -495,9 +495,9 @@ common:
       TypeMissing: A Secret generator típusa hiányzik
     Session:
       Expired: A munkamenet lejárt
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: A munkamenet nem létezik
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: A munkamenet élettartama nem lehet kevesebb, mint 0
       Terminated: A munkamenet már befejeződött
       Token:
@@ -582,7 +582,7 @@ common:
           NotExisting: Passkey nem létezik
         RecoveryCodes:
           ConfigInvalid: A visszaállítási kódok konfigurációja érvénytelen
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Érvénytelen visszaállítási kód lett megadva
           MaxCountExceeded: A visszaállítási kódok maximális száma túllépve
           NotReady: A visszaállítási kódok nem készek a használatra
@@ -2574,7 +2574,7 @@ console:
     IAM_OWNER_VIEWER: Jogosultsága van az egész példány átnézésére, beleértve minden szervezetet
     IAM_USER_MANAGER: Jogosultsága van felhasználók létrehozására és kezelésére
     ORG_ADMIN_IMPERSONATOR: Engedélye van a szervezet adminisztrátorainak és véghasználóinak megszemélyesítésére
-    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: null
+    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: Has permission to dynamically register OAuth 2.0 clients
     ORG_END_USER_IMPERSONATOR: Engedélye van a szervezet véghasználóinak megszemélyesítésére
     ORG_OWNER: Engedélye van az egész szervezet fölött
     ORG_OWNER_VIEWER: Engedélye van az egész szervezet áttekintésére

@@ -365,7 +365,7 @@ common:
       UserIDMissing: ID utente mancante
       ZitadelOrgNotDeletable: L'organizzazione con il progetto Zitadel non deve essere cancellata
     OriginNotAllowed: Origine non consentita
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy:
       AlreadyExists: Impostazioni già esistenti
       Label:
@@ -469,7 +469,7 @@ common:
     SMSConfig:
       AlreadyActive: Configurazione SMS già attiva
       AlreadyDeactivated: Configurazione SMS già disattivata
-      NotExternalVerification__MISSING: null
+      NotExternalVerification__MISSING: SMS configuration does not support code verification
       NotFound: Configurazione SMS non trovata
     SMTP:
       CouldNotAuth: impossibile aggiungere l'autenticazione smtp, controlla se sia l'utente che la password sono corretti, se sono corretti forse il tuo provider richiede un metodo di autenticazione non supportato da Zitadel
@@ -495,9 +495,9 @@ common:
       TypeMissing: Manca il tipo di generatore segreto
     Session:
       Expired: La sessione è scaduta
-      IDMissing__MISSING: null
+      IDMissing__MISSING: Session ID missing
       NotExisting: La sessione non esiste
-      NotFound__MISSING: null
+      NotFound__MISSING: Session not found
       PositiveLifetime: La durata della sessione non deve essere inferiore a 0
       Terminated: La Sessione già terminata
       Token:
@@ -582,7 +582,7 @@ common:
           NotExisting: Passkey non esistente
         RecoveryCodes:
           ConfigInvalid: La configurazione dei codici di recupero non è valida
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Codice di recupero non valido fornito
           MaxCountExceeded: Numero massimo di codici di recupero superato
           NotReady: I codici di recupero non sono pronti per l'uso
@@ -1090,8 +1090,8 @@ common:
         added: Applicazione aggiunta
         api:
           key__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Application key added
+            removed__MISSING: Application key removed
           secret:
             check:
               failed: Il controllo del segreto API non è riuscito
@@ -1356,7 +1356,7 @@ common:
             failed: Controllo OTP fallito
             succeeded: Controllo OTP riuscito
           init__MISSING:
-            skipped__MISSING: null
+            skipped__MISSING: Multifactor OTP initialization skipped
           removed: OTP rimosso
           verified: OTP verificato
       password:
@@ -1388,7 +1388,7 @@ common:
         out: L'utente è uscito
       token:
         added: Access Token creato
-        removed__MISSING: null
+        removed__MISSING: Access Token removed
         v2.added: Access Token creato
       unlocked: Utente sbloccato
       username:
@@ -1488,7 +1488,7 @@ console:
         CANCEL: Cancella
         DESCRIPTION: Sei sicuro di voler eliminare questa nuova azione? La tua azione andrà persa
         DISCARD: Continua comunque
-    UNSAVEDCHANGES__MISSING: null
+    UNSAVEDCHANGES__MISSING: Unsaved changes
     VERIFY: Verifica
     VIEW: Mostra
   ACTIONSTWO:
@@ -2313,12 +2313,12 @@ console:
     ACTIVATE: Attiva
     ADD: Aggiungi fornitore di identità
     APPLE__MISSING:
-      KEYID__MISSING: null
-      KEYMAXSIZEEXCEEDED__MISSING: null
-      PRIVATEKEY__MISSING: null
-      TEAMID__MISSING: null
-      UPDATEPRIVATEKEY__MISSING: null
-      UPLOADPRIVATEKEY__MISSING: null
+      KEYID__MISSING: Key ID
+      KEYMAXSIZEEXCEEDED__MISSING: Maximum size of 5kB exceeded.
+      PRIVATEKEY__MISSING: Private Key
+      TEAMID__MISSING: Team ID
+      UPDATEPRIVATEKEY__MISSING: Update Private Key
+      UPLOADPRIVATEKEY__MISSING: Upload Private Key
     AUTHORIZATIONENDPOINT: Authorization Endpoint
     AVAILABILITY: Disponibilità
     AVAILABLE: disponibile
@@ -2340,8 +2340,8 @@ console:
     CONFIG: Configurazione
     CREATE:
       APPLE__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your Apple Provider
+        TITLE__MISSING: Sign in with Apple
       AZUREAD:
         DESCRIPTION: Inserisci i dati necessari per il tuo Microsoft provider.
         TITLE: Microsoft Provider
@@ -2368,8 +2368,8 @@ console:
         DESCRIPTION: Inserisci i dati necessari per il tuo provider LDAP.
         TITLE: Active Directory / LDAP
       OAUTH__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the required data for your OAuth provider.
+        TITLE__MISSING: OAuth Provider
       OAuth__EXTRA:
         DESCRIPTION: Inserisci i dati necessari per il tuo provider OAuth.
         TITLE: OAuth Provider
@@ -2377,8 +2377,8 @@ console:
         DESCRIPTION: Inserisci i dati necessari per il tuo provider OIDC.
         TITLE: OIDC Provider
       SAML__MISSING:
-        DESCRIPTION__MISSING: null
-        TITLE__MISSING: null
+        DESCRIPTION__MISSING: Enter the credentials for your SAML Provider
+        TITLE__MISSING: Sign in with SAML
       STEPPERTITLE: Create Provider
       TITLE: Aggiungi provider
       ZITADEL:
@@ -2465,14 +2465,14 @@ console:
     REMOVE_WARN_TITLE: Rimuovi IDP
     REQUIRED: necessario
     SAML__MISSING:
-      BINDING__MISSING: null
-      METADATAURL__MISSING: null
-      METADATAXML__MISSING: null
-      NAMEIDFORMAT__MISSING: null
-      SIGNATUREALGORITHM__MISSING: null
-      SIGNEDREQUEST__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: null
-      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: null
+      BINDING__MISSING: Binding
+      METADATAURL__MISSING: Metadata URL
+      METADATAXML__MISSING: Metadata Xml
+      NAMEIDFORMAT__MISSING: NameID Format
+      SIGNATUREALGORITHM__MISSING: Signature Algorithm
+      SIGNEDREQUEST__MISSING: Signed Request
+      TRANSIENTMAPPINGATTRIBUTENAME_DESC__MISSING: Alternative attribute name to map the user in case the `nameid-format` returned is `transient`, e.g. `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+      TRANSIENTMAPPINGATTRIBUTENAME__MISSING: Custom Mapping Attribute Name
     SCOPESLIST: Scope list
     SERVERS: Servers
     SETAVAILABLE: Imposta come disponibile
@@ -2628,7 +2628,7 @@ console:
     ROLES: Ruoli
     SETTINGS: Impostazioni
     SHOWORGS: Mostra tutte le organizzazioni
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Termini di servizio
     VIEWS: Views
   METADATA:
@@ -3444,7 +3444,7 @@ console:
   SETTINGS:
     BETA: BETA
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Aspetto
       DOMAIN: Dominio
       GENERAL: Generale
@@ -3454,7 +3454,7 @@ console:
       STORAGE: Dati
       TEXTS: Testi e lingue
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Scadenza password
       BRANDING: Branding
       COMPLEXITY: Complessità della password
@@ -3477,7 +3477,7 @@ console:
       SECURITY: Impostazioni di sicurezza
       SMS_PROVIDER: Fornitore di servizi SMS/telefonici
       SMTP_PROVIDER: Fornitore SMTP
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Domini dell'Organizzazione
       VIEWS: Views
       WEB_KEYS: OIDC Web Keys
@@ -3522,10 +3522,10 @@ console:
         DELETE_DESCRIPTION: Stai per eliminare una configurazione. Conferma questa azione digitando il nome del mittente
         DELETE_TITLE: Elimina configurazione SMTP
         SENDER: Digita {{ value }} per eliminare questa configurazione SMTP.
-        TEST_DESCRIPTION__MISSING: null
-        TEST_EMAIL__MISSING: null
-        TEST_RESULT__MISSING: null
-        TEST_TITLE__MISSING: null
+        TEST_DESCRIPTION__MISSING: Specify an email address to test your SMTP settings
+        TEST_EMAIL__MISSING: Email address
+        TEST_RESULT__MISSING: Test result
+        TEST_TITLE__MISSING: Test your SMTP settings
       EMPTY: Nessun provider SMTP disponibile
       TEST: Metti alla prova il tuo fornitore
       TITLE: Fornitore SMTP

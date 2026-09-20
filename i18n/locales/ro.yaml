@@ -2,79 +2,79 @@ common:
   Action__MISSING:
     Flow__MISSING:
       Type__MISSING:
-        CustomiseToken__MISSING: null
-        CustomizeSAMLResponse__MISSING: null
-        ExternalAuthentication__MISSING: null
-        InternalAuthentication__MISSING: null
-        Unspecified__MISSING: null
+        CustomiseToken__MISSING: Complement Token
+        CustomizeSAMLResponse__MISSING: Complement SAMLResponse
+        ExternalAuthentication__MISSING: External Authentication
+        InternalAuthentication__MISSING: Internal Authentication
+        Unspecified__MISSING: Unspecified
     TriggerType__MISSING:
-      PostAuthentication__MISSING: null
-      PostCreation__MISSING: null
-      PreAccessTokenCreation__MISSING: null
-      PreCreation__MISSING: null
-      PreSAMLResponseCreation__MISSING: null
-      PreUserinfoCreation__MISSING: null
-      Unspecified__MISSING: null
+      PostAuthentication__MISSING: Post Authentication
+      PostCreation__MISSING: Post Creation
+      PreAccessTokenCreation__MISSING: Pre access token creation
+      PreCreation__MISSING: Pre Creation
+      PreSAMLResponseCreation__MISSING: Pre SAMLResponse creation
+      PreUserinfoCreation__MISSING: Pre Userinfo creation
+      Unspecified__MISSING: Unspecified
   AggregateTypes__MISSING:
-    action__MISSING: null
-    auth_request__MISSING: null
-    device_auth__MISSING: null
-    execution__MISSING: null
-    feature__MISSING: null
-    idpintent__MISSING: null
-    instance__MISSING: null
-    key_pair__MISSING: null
-    limits__MISSING: null
-    milestone__MISSING: null
-    oidc_session__MISSING: null
-    org__MISSING: null
-    project__MISSING: null
-    quota__MISSING: null
-    restrictions__MISSING: null
-    saml_request__MISSING: null
-    saml_session__MISSING: null
-    session__MISSING: null
-    system__MISSING: null
-    target__MISSING: null
-    user__MISSING: null
-    user_schema__MISSING: null
-    usergrant__MISSING: null
-    web_key__MISSING: null
+    action__MISSING: Action
+    auth_request__MISSING: Auth Request
+    device_auth__MISSING: Device Auth
+    execution__MISSING: Execution
+    feature__MISSING: Feature
+    idpintent__MISSING: IDP Intent
+    instance__MISSING: Instance
+    key_pair__MISSING: Key Pair
+    limits__MISSING: Limits
+    milestone__MISSING: Milestone
+    oidc_session__MISSING: OIDC Session
+    org__MISSING: Organization
+    project__MISSING: Project
+    quota__MISSING: Quota
+    restrictions__MISSING: Restrictions
+    saml_request__MISSING: SAML Request
+    saml_session__MISSING: SAML Session
+    session__MISSING: Session
+    system__MISSING: System
+    target__MISSING: Target
+    user__MISSING: User
+    user_schema__MISSING: User Schema
+    usergrant__MISSING: User grant
+    web_key__MISSING: Web Key
   Application__MISSING:
     OIDC__MISSING:
-      UnsupportedVersion__MISSING: null
+      UnsupportedVersion__MISSING: Your OIDC version is not supported
       V1__MISSING:
         Code__MISSING:
           RedirectUris__MISSING:
-            CustomOnlyForNative__MISSING: null
-            HttpOnlyForWeb__MISSING: null
+            CustomOnlyForNative__MISSING: Grant type "code" only allows custom redirect uris for apptype "native"  (e.g appname:// )
+            HttpOnlyForWeb__MISSING: Grant type "code" only allows http redirect uris for apptype "web".
         GrantType__MISSING:
           Refresh__MISSING:
-            NoAuthCode__MISSING: null
+            NoAuthCode__MISSING: Refresh Token only allowed in combination with Authorization Code.
         Implicit__MISSING:
           RedirectUris__MISSING:
-            CustomNotAllowed__MISSING: null
-            HttpLocalhostOnlyForNative__MISSING: null
-            HttpNotAllowed__MISSING: null
+            CustomNotAllowed__MISSING: Grant type implicit doesn't allow custom redirect uris
+            HttpLocalhostOnlyForNative__MISSING: Http://localhost redirect uri is only allowed for native applications.
+            HttpNotAllowed__MISSING: Grant type implicit doesn't allow http redirect uris
         Native__MISSING:
           AuthMethodType__MISSING:
-            NotNone__MISSING: null
+            NotNone__MISSING: Native applications should have authmethodtype none.
           RedirectUris__MISSING:
-            MustBeHttpLocalhost__MISSING: null
-        NoRedirectUris__MISSING: null
-        NotAllCombinationsAreAllowed__MISSING: null
-        NotCompliant__MISSING: null
+            MustBeHttpLocalhost__MISSING: Redirect URIs must begin with your own protocol, http://127.0.0.1, http://[::1] or http://localhost.
+        NoRedirectUris__MISSING: At least one redirect uri must be registered.
+        NotAllCombinationsAreAllowed__MISSING: Configuration is compliant, but not all possible combinations are allowed.
+        NotCompliant__MISSING: Your configuration is not compliant and differs from OIDC 1.0 standard.
         UserAgent__MISSING:
           AuthMethodType__MISSING:
-            NotNone__MISSING: null
+            NotNone__MISSING: User agent application should have authmethodtype none.
   Errors:
     Action__MISSING:
-      Invalid__MISSING: null
-      MaxAllowed__MISSING: null
-      NotActive__MISSING: null
-      NotEnabled__MISSING: null
-      NotFound__MISSING: null
-      NotInactive__MISSING: null
+      Invalid__MISSING: Action is invalid
+      MaxAllowed__MISSING: No additional active Actions allowed
+      NotActive__MISSING: Action is not active
+      NotEnabled__MISSING: Feature "Action" is not enabled
+      NotFound__MISSING: Action not found
+      NotInactive__MISSING: Action is not inactive
     Assets:
       Bucket:
         AlreadyExists: Bucket-ul există deja
@@ -95,39 +95,39 @@ common:
         NotConfigured: Stocarea activelor nu este configurată
         NotInitialized: Stocarea activelor nu este inițializată
     AuthRequest__MISSING:
-      AlreadyExists__MISSING: null
-      AlreadyHandled__MISSING: null
-      NotExisting__MISSING: null
-      WrongLoginClient__MISSING: null
+      AlreadyExists__MISSING: Auth Request already exists
+      AlreadyHandled__MISSING: Auth Request has already been handled
+      NotExisting__MISSING: Auth Request does not exist
+      WrongLoginClient__MISSING: Auth Request created by other login application
     Changes__MISSING:
-      AuditRetention__MISSING: null
-      NotFound__MISSING: null
+      AuditRetention__MISSING: History is outside of the Audit Log Retention
+      NotFound__MISSING: No history found
     CustomText__MISSING:
-      AlreadyExists__MISSING: null
-      Invalid__MISSING: null
-      NotFound__MISSING: null
+      AlreadyExists__MISSING: Custom text already exists
+      Invalid__MISSING: Custom text invalid
+      NotFound__MISSING: Custom text not found
     DeviceAuth__MISSING:
-      AlreadyHandled__MISSING: null
-      NotFound__MISSING: null
+      AlreadyHandled__MISSING: Device Authorization Request has already been handled
+      NotFound__MISSING: Device Authorization Request does not exist
     Execution__MISSING:
-      ConditionInvalid__MISSING: null
-      Failed__MISSING: null
-      IncludeNotFound__MISSING: null
-      Invalid__MISSING: null
-      MissingEncryptionKey__MISSING: null
-      NoTargets__MISSING: null
-      NotFound__MISSING: null
-      ResponseIsNotValidJSON__MISSING: null
+      ConditionInvalid__MISSING: Execution condition is invalid
+      Failed__MISSING: Execution failed
+      IncludeNotFound__MISSING: Include not found
+      Invalid__MISSING: Execution is invalid
+      MissingEncryptionKey__MISSING: No encryption key found for target
+      NoTargets__MISSING: No targets defined
+      NotFound__MISSING: Execution not found
+      ResponseIsNotValidJSON__MISSING: Response is not valid JSON
     Feature__MISSING:
-      InvalidValue__MISSING: null
-      NotExisting__MISSING: null
-      TypeNotSupported__MISSING: null
+      InvalidValue__MISSING: Invalid value for this feature
+      NotExisting__MISSING: Feature does not exist
+      TypeNotSupported__MISSING: Feature type is not supported
     Flow__MISSING:
-      ActionIDsNotExist__MISSING: null
-      Empty__MISSING: null
-      FlowTypeMissing__MISSING: null
-      NoChanges__MISSING: null
-      WrongTriggerType__MISSING: null
+      ActionIDsNotExist__MISSING: ActionIDs do not exist
+      Empty__MISSING: Flow is already empty
+      FlowTypeMissing__MISSING: FlowType missing
+      NoChanges__MISSING: No Changes
+      WrongTriggerType__MISSING: TriggerType is invalid
     IDMissing: ID lipsă
     IDP:
       AggregateTypes__EXTRA:
@@ -936,21 +936,21 @@ common:
       PrivateKeyMissing: Cheie Privată lipsă
       TeamIDMissing: TeamID lipsă
     IDPConfig__MISSING:
-      AlreadyExists__MISSING: null
-      NotExisting__MISSING: null
+      AlreadyExists__MISSING: IDP Configuration with this name already exists
+      NotExisting__MISSING: Identity Provider Configuration doesn't exist
     Instance:
       AlreadyExists: Instanța există deja
       CustomMessageText__MISSING:
-        AlreadyExists__MISSING: null
-        Invalid__MISSING: null
-        NotChanged__MISSING: null
-        NotFound__MISSING: null
+        AlreadyExists__MISSING: Default Message Text already exists
+        Invalid__MISSING: Default Message Text is invalid
+        NotChanged__MISSING: Default Message Text has not been changed
+        NotFound__MISSING: Default Message Text not found
       DomainPolicy__MISSING:
-        AlreadyExists__MISSING: null
-        Empty__MISSING: null
-        NotChanged__MISSING: null
-        NotExisting__MISSING: null
-        NotFound__MISSING: null
+        AlreadyExists__MISSING: Organization Domain Policy already exists
+        Empty__MISSING: The Organization Domain Policy is empty
+        NotChanged__MISSING: Organization Domain Policy has not been changed
+        NotExisting__MISSING: Organization Domain Policy not existing
+        NotFound__MISSING: Organization Domain Policy not found
       IDMissing: Id lipsă
       IdpInvalid: Configurația IDP este invalidă
       IdpIsNotOIDC: Configurația IDP nu este de tip oidc
@@ -1208,10 +1208,10 @@ common:
       LoginPolicyInvalid: Politica de conectare este invalidă
       LoginPolicyNotExisting: Politica de conectare nu există
       MailTemplate__MISSING:
-        AlreadyExists__MISSING: null
-        Invalid__MISSING: null
-        NotChanged__MISSING: null
-        NotFound__MISSING: null
+        AlreadyExists__MISSING: Default Mail Template already exists
+        Invalid__MISSING: Default Mail Template is invalid
+        NotChanged__MISSING: Default Mail Template has not been changed
+        NotFound__MISSING: Default Mail Template not found
       Member:
         RolesNotChanged: Rolurile nu au fost schimbate
       MemberAlreadyExisting: Membrul există deja
@@ -1220,46 +1220,46 @@ common:
       NotChanged: Instanța nu a fost schimbată
       NotFound: Instanța nu a fost găsită. Asigurați-vă că aveți domeniul corect. Consultați https://zitadel.com/docs/apis/introduction#domains
       NotificationPolicy__MISSING:
-        AlreadyExists__MISSING: null
-        NotChanged__MISSING: null
-        NotFound__MISSING: null
+        AlreadyExists__MISSING: Default Notification Policy already exists
+        NotChanged__MISSING: Default Notification Policy not changed
+        NotFound__MISSING: Default Notification Policy not found
       OIDCConfigInvalid: Configurația OIDC IDP este invalidă
       PasswordAgePolicy__MISSING:
-        AlreadyExists__MISSING: null
-        Empty__MISSING: null
-        NotChanged__MISSING: null
-        NotExisting__MISSING: null
-        NotFound__MISSING: null
+        AlreadyExists__MISSING: Default Password Age Policy already existing
+        Empty__MISSING: Default Password Age Policy empty
+        NotChanged__MISSING: Default Password Age Policy has not been changed
+        NotExisting__MISSING: Default Password Age Policy not existing
+        NotFound__MISSING: Default Password Age Policy not found
       PasswordComplexityPolicy__MISSING:
-        AlreadyExists__MISSING: null
-        Empty__MISSING: null
-        NotChanged__MISSING: null
-        NotExisting__MISSING: null
-        NotFound__MISSING: null
+        AlreadyExists__MISSING: Default Password Complexity Policy already existing
+        Empty__MISSING: Default Password Complexity Policy empty
+        NotChanged__MISSING: Default Password Complexity Policy has not been changed
+        NotExisting__MISSING: Default Password Complexity Policy not existing
+        NotFound__MISSING: Default Password Complexity Policy not found
       PasswordLockoutPolicy__MISSING:
-        AlreadyExists__MISSING: null
-        Empty__MISSING: null
-        NotChanged__MISSING: null
-        NotExisting__MISSING: null
-        NotFound__MISSING: null
+        AlreadyExists__MISSING: Default Password Lockout Policy already existing
+        Empty__MISSING: Default Password Lockout Policy empty
+        NotChanged__MISSING: Default Password Lockout Policy has not been changed
+        NotExisting__MISSING: Default Password Lockout Policy not existing
+        NotFound__MISSING: Default Password Lockout Policy not found
     Intent__MISSING:
-      Expired__MISSING: null
-      FailureURLMissing__MISSING: null
-      IDPInvalid__MISSING: null
-      IDPMissing__MISSING: null
-      InvalidToken__MISSING: null
-      MissingSingleMappingAttribute__MISSING: null
-      NotStarted__MISSING: null
-      NotSucceeded__MISSING: null
-      OtherUser__MISSING: null
-      ResponseInvalid__MISSING: null
-      StateMissing__MISSING: null
-      SuccessURLMissing__MISSING: null
-      TokenCreationFailed__MISSING: null
+      Expired__MISSING: Intent has expired
+      FailureURLMissing__MISSING: Failure URL is missing in the request
+      IDPInvalid__MISSING: IDP invalid for the request
+      IDPMissing__MISSING: IDP ID is missing in the request
+      InvalidToken__MISSING: Intent Token is invalid
+      MissingSingleMappingAttribute__MISSING: IDP response does not contain the mapping attribute or has more than one value
+      NotStarted__MISSING: Intent is not started or was already terminated
+      NotSucceeded__MISSING: Intent has not succeeded
+      OtherUser__MISSING: Intent meant for another user
+      ResponseInvalid__MISSING: IDP response is invalid
+      StateMissing__MISSING: State parameter is missing in the request
+      SuccessURLMissing__MISSING: Success URL is missing in the request
+      TokenCreationFailed__MISSING: Token creation failed
     Internal: A apărut o eroare internă
     Key__MISSING:
-      ExpireBeforeNow__MISSING: null
-      NotFound__MISSING: null
+      ExpireBeforeNow__MISSING: The expiration date is in the past
+      NotFound__MISSING: Key not found
     Language:
       Duplicate: Există duplicate în liste de limbi
       NotAllowed: Limba nu este permisă
@@ -1275,31 +1275,31 @@ common:
       NotFound: Limitele nu au fost găsite
     LogStore__MISSING:
       Access__MISSING:
-        ScanFailed__MISSING: null
-        StorageFailed__MISSING: null
+        ScanFailed__MISSING: Querying usage for authenticated requests failed
+        StorageFailed__MISSING: Storing access log to database failed
       Execution__MISSING:
-        ScanFailed__MISSING: null
-        StorageFailed__MISSING: null
+        ScanFailed__MISSING: Querying usage for action execution seconds failed
+        StorageFailed__MISSING: Storing action execution log to database failed
     Login__MISSING:
       LoginPolicy__MISSING:
         MFA__MISSING:
-          ForceAndNotConfigured__MISSING: null
+          ForceAndNotConfigured__MISSING: Multifactor is configured as required, but no possible providers are configured. Please contact your system administrator.
     Member__MISSING:
-      AlreadyExists__MISSING: null
+      AlreadyExists__MISSING: Member already exists
     Metadata__MISSING:
-      Invalid__MISSING: null
-      KeyNotExisting__MISSING: null
-      NoData__MISSING: null
-      NotFound__MISSING: null
+      Invalid__MISSING: Metadata is invalid
+      KeyNotExisting__MISSING: One or more keys do not exist
+      NoData__MISSING: Metadata list is empty
+      NotFound__MISSING: Metadata not found
     NoChangesFound: Nicio modificare
     Notification:
       NoDomain: Niciun domeniu găsit pentru mesaj
     OIDCSession__MISSING:
-      InvalidClient__MISSING: null
-      RefreshTokenInvalid__MISSING: null
+      InvalidClient__MISSING: Token was not issued for this application
+      RefreshTokenInvalid__MISSING: Refresh Token is invalid
       Token__MISSING:
-        Expired__MISSING: null
-        Invalid__MISSING: null
+        Expired__MISSING: Token is expired
+        Invalid__MISSING: Token is invalid
     OIDCSettings:
       AlreadyExists: Configurația OIDC există deja
       NotFound: Configurația OIDC nu a fost găsită
@@ -1392,19 +1392,19 @@ common:
       UserIDMissing: ID-ul utilizatorului lipsește
       ZitadelOrgNotDeletable: Organizația cu proiectul Zitadel nu trebuie să fie ștearsă
     OriginNotAllowed: Acest "Origin" nu este permis
-    PermissionDenied__MISSING: null
+    PermissionDenied__MISSING: Permission denied
     Policy__MISSING:
-      AlreadyExists__MISSING: null
+      AlreadyExists__MISSING: Policy already exists
       Label__MISSING:
         Invalid__MISSING:
-          BackgroundColorDark__MISSING: null
-          BackgroundColor__MISSING: null
-          FontColorDark__MISSING: null
-          FontColor__MISSING: null
-          PrimaryColorDark__MISSING: null
-          PrimaryColor__MISSING: null
-          WarnColorDark__MISSING: null
-          WarnColor__MISSING: null
+          BackgroundColorDark__MISSING: Background color (dark mode) is no valid Hex color value
+          BackgroundColor__MISSING: Background color is no valid Hex color value
+          FontColorDark__MISSING: Font color (dark mode) is no valid Hex color value
+          FontColor__MISSING: Font color is no valid Hex color value
+          PrimaryColorDark__MISSING: Primary color (dark mode) is no valid Hex color value
+          PrimaryColor__MISSING: Primary color is no valid Hex color value
+          WarnColorDark__MISSING: Warn color (dark mode) is no valid Hex color value
+          WarnColor__MISSING: Warn color is no valid Hex color value
     Project:
       AlreadyExists: Proiectul există deja în organizație
       App:
@@ -1462,37 +1462,37 @@ common:
     ProjectionName:
       Invalid: Nume de proiecție invalid
     Query__MISSING:
-      CloseRows__MISSING: null
-      InvalidRequest__MISSING: null
-      LimitExceeded__MISSING: null
-      SQLStatement__MISSING: null
-      TooManyNestingLevels__MISSING: null
+      CloseRows__MISSING: SQL Statement could not be finished
+      InvalidRequest__MISSING: Request is invalid
+      LimitExceeded__MISSING: Limit exceeded
+      SQLStatement__MISSING: SQL Statement could not be created
+      TooManyNestingLevels__MISSING: Too many query nesting levels (Max 20)
     Quota__MISSING:
       Access__MISSING:
-        Exhausted__MISSING: null
-      AlreadyExists__MISSING: null
+        Exhausted__MISSING: The quota for authenticated requests is exhausted
+      AlreadyExists__MISSING: Quota already exists for this unit
       Execution__MISSING:
-        Exhausted__MISSING: null
+        Exhausted__MISSING: The quota for execution seconds is exhausted
       Invalid__MISSING:
-        Amount__MISSING: null
-        CallURL__MISSING: null
-        Noop__MISSING: null
-        Percent__MISSING: null
-        ResetInterval__MISSING: null
-        Unimplemented__MISSING: null
-      NotFound__MISSING: null
+        Amount__MISSING: Quota amount is lower than 1
+        CallURL__MISSING: Quota call URL is invalid
+        Noop__MISSING: An unlimited quota without notifications has no effect
+        Percent__MISSING: Quota percent is lower than 1
+        ResetInterval__MISSING: Quota reset interval is shorter than a minute
+        Unimplemented__MISSING: Quotas are not implemented for this unit
+      NotFound__MISSING: Quota not found for this unit
     RemoveFailed: Nu a putut fi eliminat
     ResourceOwnerMissing: Organizația Proprietarului Resursei lipsă
     Restrictions:
       DefaultLanguageMustBeAllowed: Limba implicită trebuie să fie permisă
       NoneSpecified: Nu au fost specificate restricții
     SAMLRequest__MISSING:
-      AlreadyExists__MISSING: null
-      AlreadyHandled__MISSING: null
-      NotExisting__MISSING: null
-      WrongLoginClient__MISSING: null
+      AlreadyExists__MISSING: SAMLRequest already exists
+      AlreadyHandled__MISSING: SAMLRequest has already been handled
+      NotExisting__MISSING: SAMLRequest does not exist
+      WrongLoginClient__MISSING: SAMLRequest created by other login application
     SAMLSession__MISSING:
-      InvalidClient__MISSING: null
+      InvalidClient__MISSING: SAMLResponse was not issued for this application
     SMSConfig:
       AlreadyActive: Configurația SMS este deja activă
       AlreadyDeactivated: Configurația SMS este deja dezactivată
@@ -1521,47 +1521,47 @@ common:
       NotFound: Generatorul de secrete nu a fost găsit
       TypeMissing: Tipul generatorului de secrete lipsește
     Session__MISSING:
-      Expired__MISSING: null
-      IDMissing__MISSING: null
-      NotExisting__MISSING: null
-      NotFound__MISSING: null
-      PositiveLifetime__MISSING: null
-      Terminated__MISSING: null
+      Expired__MISSING: Session has expired
+      IDMissing__MISSING: Session ID missing
+      NotExisting__MISSING: Session does not exist
+      NotFound__MISSING: Session not found
+      PositiveLifetime__MISSING: Session lifetime must not be less than 0
+      Terminated__MISSING: Session already terminated
       Token__MISSING:
-        Invalid__MISSING: null
+        Invalid__MISSING: Session Token is invalid
       WebAuthN__MISSING:
-        NoChallenge__MISSING: null
+        NoChallenge__MISSING: Session without WebAuthN challenge
     Step__MISSING:
       Done__MISSING:
-        AlreadyExists__MISSING: null
+        AlreadyExists__MISSING: Step done already exists
       Started__MISSING:
-        AlreadyExists__MISSING: null
+        AlreadyExists__MISSING: Step started already exists
     Target__MISSING:
-      InvalidExpirationDate__MISSING: null
-      InvalidPublicKey__MISSING: null
-      InvalidURL__MISSING: null
-      Invalid__MISSING: null
-      NoTimeout__MISSING: null
-      NotFound__MISSING: null
-      PublicKeyActive__MISSING: null
-      PublicKeyExpired__MISSING: null
+      InvalidExpirationDate__MISSING: Key expiration date must be in the future
+      InvalidPublicKey__MISSING: The public key is invalid. Must be a PEM encoded RSA or ECDSA public key in PKCS#8 format
+      InvalidURL__MISSING: Target has an invalid URL
+      Invalid__MISSING: Target is invalid
+      NoTimeout__MISSING: Target has no timeout
+      NotFound__MISSING: Target not found
+      PublicKeyActive__MISSING: Cannot delete active target public key
+      PublicKeyExpired__MISSING: Target public key is expired
     TokenExchange__MISSING:
       Impersonation__MISSING:
-        PolicyDisabled__MISSING: null
+        PolicyDisabled__MISSING: Impersonation is disabled in the instance security policy
       Token__MISSING:
-        Invalid__MISSING: null
-        Missing__MISSING: null
-        NotForAPI__MISSING: null
-        TypeMissing__MISSING: null
-        TypeNotAllowed__MISSING: null
-        TypeNotSupported__MISSING: null
+        Invalid__MISSING: Token is invalid
+        Missing__MISSING: Token is missing
+        NotForAPI__MISSING: Impersonated tokens not allowed for API
+        TypeMissing__MISSING: Token type is missing
+        TypeNotAllowed__MISSING: Token type is not allowed
+        TypeNotSupported__MISSING: Token type is not supported
     Token__MISSING:
-      Invalid__MISSING: null
-      NotFound__MISSING: null
+      Invalid__MISSING: Token is invalid
+      NotFound__MISSING: Token not found
     TranslationFile__MISSING:
-      MergeError__MISSING: null
-      NotFound__MISSING: null
-      ReadError__MISSING: null
+      MergeError__MISSING: Translation file could not be merged with custom translations
+      NotFound__MISSING: Translation file doesn't exist
+      ReadError__MISSING: Error in reading translation file
     User:
       Address:
         NotChanged: Adresa nu a fost schimbată
@@ -1609,7 +1609,7 @@ common:
           NotExisting: Fără parolă nu există
         RecoveryCodes:
           ConfigInvalid: Configurația codurilor de recuperare este invalidă
-          Empty__MISSING: null
+          Empty__MISSING: Recovery code is empty
           InvalidCode: Codul de recuperare furnizat este invalid
           MaxCountExceeded: Numărul maxim de coduri de recuperare a fost depășit
           NotReady: Codurile de recuperare nu sunt gata pentru utilizare
@@ -1689,767 +1689,767 @@ common:
         ValidateLoginFailed: Eroare la validarea acreditărilor de autentificare
       WrongType: Nu este permis pentru acest tip de utilizator
     UserGrant__MISSING:
-      AlreadyExists__MISSING: null
-      IDMissing__MISSING: null
-      Invalid__MISSING: null
-      NoPermissionForProject__MISSING: null
-      NotChanged__MISSING: null
-      NotFound__MISSING: null
-      RoleKeyNotFound__MISSING: null
+      AlreadyExists__MISSING: User grant already exists
+      IDMissing__MISSING: Id missing
+      Invalid__MISSING: User grant is invalid
+      NoPermissionForProject__MISSING: User has no permissions on this project
+      NotChanged__MISSING: User grant has not been changed
+      NotFound__MISSING: User grant not found
+      RoleKeyNotFound__MISSING: Role not found
     UserSchema__MISSING:
       Authenticator__MISSING:
-        Invalid__MISSING: null
+        Invalid__MISSING: Invalid authenticator type
       Data__MISSING:
-        Invalid__MISSING: null
+        Invalid__MISSING: Data invalid for User Schema
       ID__MISSING:
-        Missing__MISSING: null
-      Invalid__MISSING: null
-      NotActive__MISSING: null
-      NotEnabled__MISSING: null
-      NotExists__MISSING: null
-      NotInactive__MISSING: null
+        Missing__MISSING: User Schema ID missing
+      Invalid__MISSING: User Schema invalid
+      NotActive__MISSING: User Schema not active
+      NotEnabled__MISSING: Feature "User Schema" is not enabled
+      NotExists__MISSING: User Schema does not exist
+      NotInactive__MISSING: User Schema not inactive
       Type__MISSING:
-        AlreadyExists__MISSING: null
-        Missing__MISSING: null
+        AlreadyExists__MISSING: User Schema Type already exists
+        Missing__MISSING: User Schema Type missing
     UserSession__MISSING:
-      NotFound__MISSING: null
+      NotFound__MISSING: UserSession not found
     WebKey__MISSING:
-      ActiveDelete__MISSING: null
-      Config__MISSING: null
-      Duplicate__MISSING: null
-      NoActive__MISSING: null
-      NotFound__MISSING: null
+      ActiveDelete__MISSING: Cannot delete active web key
+      Config__MISSING: Invalid web key config
+      Duplicate__MISSING: Web key ID not unique
+      NoActive__MISSING: No active web key found
+      NotFound__MISSING: Web key not found
   EventTypes__MISSING:
     action__MISSING:
-      added__MISSING: null
-      changed__MISSING: null
-      deactivated__MISSING: null
-      reactivated__MISSING: null
-      removed__MISSING: null
+      added__MISSING: Action added
+      changed__MISSING: Action changed
+      deactivated__MISSING: Action deactivated
+      reactivated__MISSING: Action reactivated
+      removed__MISSING: Action removed
     execution__MISSING:
-      removed__MISSING: null
-      set__MISSING: null
+      removed__MISSING: Execution deleted
+      set__MISSING: Execution set
     iam__MISSING:
       customtext__MISSING:
-        removed__MISSING: null
-        set__MISSING: null
+        removed__MISSING: Text was removed
+        set__MISSING: Text was set
       default__MISSING:
         language__MISSING:
-          set__MISSING: null
+          set__MISSING: Default language set
       global__MISSING:
         org__MISSING:
-          set__MISSING: null
+          set__MISSING: Global org set
       idp__MISSING:
         config__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          deactivated__MISSING: null
-          reactivated__MISSING: null
-          removed__MISSING: null
+          added__MISSING: IDP configuration added
+          changed__MISSING: IDP configuration changed
+          deactivated__MISSING: IDP configuration deactivated
+          reactivated__MISSING: IDP configuration reactivated
+          removed__MISSING: IDP configuration removed
         jwt__MISSING:
           config__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: JWT configuration to identity provider added
+            changed__MISSING: JWT configuration from identity provider removed
         oidc__MISSING:
           config__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: OIDC IDP configuration added
+            changed__MISSING: OIDC IDP configuration changed
         saml__MISSING:
           config__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: SAML IDP configuration added
+            changed__MISSING: SAML IDP configuration changed
       member__MISSING:
-        added__MISSING: null
+        added__MISSING: Zitadel member added
         cascade__MISSING:
-          removed__MISSING: null
-        changed__MISSING: null
-        removed__MISSING: null
+          removed__MISSING: Zitadel member cascade removed
+        changed__MISSING: Zitadel member changed
+        removed__MISSING: Zitadel member removed
       oidc__MISSING:
         settings__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: OIDC configuration added
+          changed__MISSING: OIDC configuration changed
+          removed__MISSING: OIDC configuration removed
       policy__MISSING:
         label__MISSING:
-          activated__MISSING: null
-          added__MISSING: null
+          activated__MISSING: Label Policy activated
+          added__MISSING: Label Policy added
           assets__MISSING:
-            removed__MISSING: null
-          changed__MISSING: null
+            removed__MISSING: Assets removed from Label Policy
+          changed__MISSING: Label Policy changed
           font__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Font added to Label Policy
+            removed__MISSING: Font removed from Label Policy
           icon__MISSING:
-            added__MISSING: null
+            added__MISSING: Icon added to Label Policy
             dark__MISSING:
-              added__MISSING: null
-              removed__MISSING: null
-            removed__MISSING: null
+              added__MISSING: Icon (dark mode) added to Label Policy
+              removed__MISSING: Icon (dark mode) removed from Label Policy
+            removed__MISSING: Icon removed from Label Policy
           logo__MISSING:
-            added__MISSING: null
+            added__MISSING: Logo added to Label Policy
             dark__MISSING:
-              added__MISSING: null
-              removed__MISSING: null
-            removed__MISSING: null
+              added__MISSING: Logo (dark mode) added to Label Policy
+              removed__MISSING: Logo (dark mode) removed from Label Policy
+            removed__MISSING: Logo removed from Label Policy
         login__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Default Login Policy added
+          changed__MISSING: Default Login Policy changed
           idpprovider__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Identity Provider added to Default Login Policy
+            removed__MISSING: Identity Provider removed from Default Login Policy
       project__MISSING:
         iam__MISSING:
-          set__MISSING: null
+          set__MISSING: Zitadel project set
       secret__MISSING:
         generator__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: Secret generator added
+          changed__MISSING: Secret generator changed
+          removed__MISSING: Secret generator removed
       setup__MISSING:
-        done__MISSING: null
-        started__MISSING: null
+        done__MISSING: Zitadel setup done
+        started__MISSING: Zitadel setup started
       sms__MISSING:
         config__MISSING:
           twilio__MISSING:
-            activated__MISSING: null
-            added__MISSING: null
-            changed__MISSING: null
-            deactivated__MISSING: null
-            removed__MISSING: null
+            activated__MISSING: Twilio SMS provider activated
+            added__MISSING: Twilio SMS provider added
+            changed__MISSING: Twilio SMS provider changed
+            deactivated__MISSING: Twilio SMS provider deactivated
+            removed__MISSING: Twilio SMS provider removed
             token__MISSING:
-              changed__MISSING: null
+              changed__MISSING: Twilio SMS provider token changed
       smtp__MISSING:
         config__MISSING:
-          activated__MISSING: null
-          added__MISSING: null
-          changed__MISSING: null
-          deactivated__MISSING: null
+          activated__MISSING: SMTP configuration activated
+          added__MISSING: SMTP configuration added
+          changed__MISSING: SMTP configuration changed
+          deactivated__MISSING: SMTP configuration deactivated
           password__MISSING:
-            changed__MISSING: null
-          removed__MISSING: null
+            changed__MISSING: SMTP configuration secret changed
+          removed__MISSING: SMTP configuration removed
     instance__MISSING:
-      added__MISSING: null
-      changed__MISSING: null
+      added__MISSING: Instance added
+      changed__MISSING: Instance changed
       customtext__MISSING:
-        removed__MISSING: null
-        set__MISSING: null
+        removed__MISSING: Custom text removed
+        set__MISSING: Custom text set
         template__MISSING:
-          removed__MISSING: null
+          removed__MISSING: Template of custom text removed
       default__MISSING:
         language__MISSING:
-          set__MISSING: null
+          set__MISSING: Default language set
         org__MISSING:
-          set__MISSING: null
+          set__MISSING: Default organisation set
       domain__MISSING:
-        added__MISSING: null
+        added__MISSING: Domain added
         primary__MISSING:
-          set__MISSING: null
-        removed__MISSING: null
+          set__MISSING: Primary domain set
+        removed__MISSING: Domain removed
       iam__MISSING:
         console__MISSING:
-          set__MISSING: null
+          set__MISSING: Zitadel Management Console application set
         project__MISSING:
-          set__MISSING: null
+          set__MISSING: Zitadel project set
       mail__MISSING:
         template__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: E-Mail template added
+          changed__MISSING: E-Mail template changed
         text__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: E-Mail text added
+          changed__MISSING: E-Mail text changed
       member__MISSING:
-        added__MISSING: null
+        added__MISSING: Instance member added
         cascade__MISSING:
-          removed__MISSING: null
-        changed__MISSING: null
-        removed__MISSING: null
+          removed__MISSING: Instance member cascade removed
+        changed__MISSING: Instance member changed
+        removed__MISSING: Instance member removed
       notification__MISSING:
         provider__MISSING:
           debug__MISSING:
-            fileadded__MISSING: null
-            filechanged__MISSING: null
-            fileremoved__MISSING: null
-            logadded__MISSING: null
-            logchanged__MISSING: null
-            logremoved__MISSING: null
+            fileadded__MISSING: File debug notification provider added
+            filechanged__MISSING: File debug notification provider changed
+            fileremoved__MISSING: File debug notification provider removed
+            logadded__MISSING: Log debug notification provider added
+            logchanged__MISSING: Log debug notification provider changed
+            logremoved__MISSING: Log debug notification provider removed
       oidc__MISSING:
         settings__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: OIDC settings added
+          changed__MISSING: OIDC settings changed
       policy__MISSING:
         domain__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Domain policy added
+          changed__MISSING: Domain policy changed
         label__MISSING:
-          activated__MISSING: null
-          added__MISSING: null
+          activated__MISSING: Label policy activated
+          added__MISSING: Label policy added
           assets__MISSING:
-            removed__MISSING: null
-          changed__MISSING: null
+            removed__MISSING: Asset from label policy removed
+          changed__MISSING: Label policy changed
           font__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Font added to label policy
+            removed__MISSING: Font removed from label policy
           icon__MISSING:
-            added__MISSING: null
+            added__MISSING: Icon added to label policy
             dark__MISSING:
-              added__MISSING: null
-              removed__MISSING: null
-            removed__MISSING: null
+              added__MISSING: Icon added to dark label policy
+              removed__MISSING: Icon removed from dark label policy
+            removed__MISSING: Icon removed from label policy
           logo__MISSING:
-            added__MISSING: null
+            added__MISSING: Logo added to label policy
             dark__MISSING:
-              added__MISSING: null
-              removed__MISSING: null
-            removed__MISSING: null
+              added__MISSING: Logo added to dark label policy
+              removed__MISSING: Logo removed from dark label policy
+            removed__MISSING: Logo removed from label policy
         lockout__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Lockout policy added
+          changed__MISSING: Lockout policy changed
         login__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Login policy added
+          changed__MISSING: Login policy changed
           idpprovider__MISSING:
-            added__MISSING: null
+            added__MISSING: Identity Provider added to login policy
             cascade__MISSING:
-              removed__MISSING: null
-            removed__MISSING: null
+              removed__MISSING: Identity Provider cascade removed from login policy
+            removed__MISSING: Identity Provider removed from login policy
           multifactor__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Multifactor added to login policy
+            removed__MISSING: Multifactor removed from login policy
           secondfactor__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Second factor added to login policy
+            removed__MISSING: Second factor removed from login policy
         password__MISSING:
           age__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: Password age policy added
+            changed__MISSING: Password age policy changed
           complexity__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: Password complexity policy added
+            changed__MISSING: Password complexity policy removed
         privacy__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Privacy policy added
+          changed__MISSING: Privacy policy changed
         security__MISSING:
-          set__MISSING: null
-      removed__MISSING: null
+          set__MISSING: Security policy set
+      removed__MISSING: Instance removed
       secret__MISSING:
         generator__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: Secret generator added
+          changed__MISSING: Secret generator changed
+          removed__MISSING: Secret generator removed
       sms__MISSING:
         configtwilio__MISSING:
-          activated__MISSING: null
-          added__MISSING: null
-          changed__MISSING: null
-          deactivated__MISSING: null
-          removed__MISSING: null
+          activated__MISSING: Twilio SMS configuration activated
+          added__MISSING: Twilio SMS configuration added
+          changed__MISSING: Twilio SMS configuration changed
+          deactivated__MISSING: Twilio SMS configuration deactivated
+          removed__MISSING: Twilio SMS configuration removed
           token__MISSING:
-            changed__MISSING: null
+            changed__MISSING: Token of Twilio SMS configuration changed
       smtp__MISSING:
         config__MISSING:
-          activated__MISSING: null
-          added__MISSING: null
-          changed__MISSING: null
-          deactivated__MISSING: null
+          activated__MISSING: SMTP configuration activated
+          added__MISSING: SMTP configuration added
+          changed__MISSING: SMTP configuration changed
+          deactivated__MISSING: SMTP configuration deactivated
           password__MISSING:
-            changed__MISSING: null
-          removed__MISSING: null
+            changed__MISSING: Password of SMTP configuration changed
+          removed__MISSING: SMTP configuration removed
     key_pair__MISSING:
-      added__MISSING: null
+      added__MISSING: Key pair added
       certificate__MISSING:
-        added__MISSING: null
+        added__MISSING: Certificate added
     org__MISSING:
-      added__MISSING: null
-      changed__MISSING: null
+      added__MISSING: Organization added
+      changed__MISSING: Organization changed
       customtext__MISSING:
-        removed__MISSING: null
-        set__MISSING: null
+        removed__MISSING: Custom text removed
+        set__MISSING: Custom text set
         template__MISSING:
-          removed__MISSING: null
-      deactivated__MISSING: null
+          removed__MISSING: Custom text template removed
+      deactivated__MISSING: Organization deactivated
       domain__MISSING:
-        added__MISSING: null
+        added__MISSING: Domain added
         primary__MISSING:
-          set__MISSING: null
-        released__MISSING: null
-        removed__MISSING: null
-        reserved__MISSING: null
+          set__MISSING: Organization Domain set
+        released__MISSING: Domain released
+        removed__MISSING: Domain removed
+        reserved__MISSING: Domain reserved
         verification__MISSING:
-          added__MISSING: null
-          failed__MISSING: null
-        verified__MISSING: null
+          added__MISSING: Domain verification added
+          failed__MISSING: Domain verification failed
+        verified__MISSING: Domain verified
       flow__MISSING:
-        cleared__MISSING: null
+        cleared__MISSING: Flow cleared
         trigger_actions__MISSING:
           cascade__MISSING:
-            removed__MISSING: null
-          removed__MISSING: null
-          set__MISSING: null
+            removed__MISSING: Actions cascade removed
+          removed__MISSING: Actions removed
+          set__MISSING: Action set
       iam__MISSING:
         policy__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: System policy added
+          changed__MISSING: System policy changed
+          removed__MISSING: System policy removed
       idp__MISSING:
         config__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          deactivated__MISSING: null
-          reactivated__MISSING: null
-          removed__MISSING: null
+          added__MISSING: IDP configuration added
+          changed__MISSING: IDP configuration changed
+          deactivated__MISSING: IDP configuration deactivated
+          reactivated__MISSING: IDP configuration reactivated
+          removed__MISSING: IDP configuration removed
         jwt__MISSING:
           config__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: JWT IDP configuration added
+            changed__MISSING: JWT IDP configuration changed
         oidc__MISSING:
           config__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: OIDC IDP configuration added
+            changed__MISSING: OIDC IDP configuration changed
         saml__MISSING:
           config__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: SAML IDP configuration added
+            changed__MISSING: SAML IDP configuration changed
       mail__MISSING:
         template__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: E-Mail template added
+          changed__MISSING: E-Mail template changed
+          removed__MISSING: E-Mail template removed
         text__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: E-Mail text added
+          changed__MISSING: E-Mail text changed
+          removed__MISSING: E-Mail text removed
       member__MISSING:
-        added__MISSING: null
+        added__MISSING: Organization member added
         cascade__MISSING:
-          removed__MISSING: null
-        changed__MISSING: null
-        removed__MISSING: null
+          removed__MISSING: Organization member cascade removed
+        changed__MISSING: Organization member changed
+        removed__MISSING: Organization member removed
       metadata__MISSING:
-        removed.all__MISSING: null
-        removed__MISSING: null
-        set__MISSING: null
+        removed.all__MISSING: All metadata removed
+        removed__MISSING: Metadata removed
+        set__MISSING: Metadata set
       name__MISSING:
-        released__MISSING: null
-        reserved__MISSING: null
+        released__MISSING: Organization name released
+        reserved__MISSING: Organization name reserved
       policy__MISSING:
         domain__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: Domain policy added
+          changed__MISSING: Domain policy changed
+          removed__MISSING: Domain policy removed
         label__MISSING:
-          activated__MISSING: null
-          added__MISSING: null
+          activated__MISSING: Label Policy activated
+          added__MISSING: Label Policy added
           assets__MISSING:
-            removed__MISSING: null
-          changed__MISSING: null
+            removed__MISSING: Assets removed from Label Policy
+          changed__MISSING: Label Policy changed
           font__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Font added to Label Policy
+            removed__MISSING: Font removed from Label Policy
           icon__MISSING:
-            added__MISSING: null
+            added__MISSING: Icon added to Label Policy
             dark__MISSING:
-              added__MISSING: null
-              removed__MISSING: null
-            removed__MISSING: null
+              added__MISSING: Icon (dark mode) added to Label Policy
+              removed__MISSING: Icon (dark mode) removed from Label Policy
+            removed__MISSING: Icon removed from Label Policy
           logo__MISSING:
-            added__MISSING: null
+            added__MISSING: Logo added to Label Policy
             dark__MISSING:
-              added__MISSING: null
-              removed__MISSING: null
-            removed__MISSING: null
-          removed__MISSING: null
+              added__MISSING: Logo (dark mode) added to Label Policy
+              removed__MISSING: Logo (dark mode) removed from Label Policy
+            removed__MISSING: Logo removed from Label Policy
+          removed__MISSING: Label Policy removed
         lockout__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: Lockout policy added
+          changed__MISSING: Lockout policy changed
+          removed__MISSING: Lockout policy removed
         login__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Login Policy added
+          changed__MISSING: Login Policy changed
           idpprovider__MISSING:
-            added__MISSING: null
+            added__MISSING: Identity Provider added to Login Policy
             cascade__MISSING:
-              removed__MISSING: null
-            removed__MISSING: null
+              removed__MISSING: Identity Provider cascade removed from Login Policy
+            removed__MISSING: Identity Provider removed from Login Policy
           multifactor__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
-          removed__MISSING: null
+            added__MISSING: Multi-factor added to Login Policy
+            removed__MISSING: Multi-factor removed from Login Policy
+          removed__MISSING: Login Policy removed
           secondfactor__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Second factor added to Login Policy
+            removed__MISSING: Second factor removed from Login Policy
         notification__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
+          added__MISSING: Notification policy added
+          changed__MISSING: Notification policy changed
+          removed__MISSING: Notification policy removed
         password__MISSING:
           age__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Password age policy added
+            changed__MISSING: Password age policy changed
+            removed__MISSING: Password age policy removed
           complexity__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Password complexity policy added
+            changed__MISSING: Password complexity policy changed
+            removed__MISSING: Password complexity policy removed
           lockout__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Password lockout policy added
+            changed__MISSING: Password lockout policy changed
+            removed__MISSING: Password lockout policy removed
         privacy__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
-      reactivated__MISSING: null
-      removed__MISSING: null
+          added__MISSING: Privacy policy and TOS added
+          changed__MISSING: Privacy policy and TOS changed
+          removed__MISSING: Privacy policy and TOS removed
+      reactivated__MISSING: Organization reactivated
+      removed__MISSING: Organization removed
     policy__MISSING:
       password__MISSING:
         age__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Password age policy added
+          changed__MISSING: Password age policy changed
         complexity__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Password complexity policy added
+          changed__MISSING: Password complexity policy changed
         lockout__MISSING:
-          added__MISSING: null
-          changed__MISSING: null
+          added__MISSING: Password lockout policy added
+          changed__MISSING: Password lockout policy changed
     project__MISSING:
-      added__MISSING: null
+      added__MISSING: Project added
       application__MISSING:
-        added__MISSING: null
+        added__MISSING: Application added
         api__MISSING:
           key__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: Application key added
+            removed__MISSING: Application key removed
           secret__MISSING:
             check__MISSING:
-              failed__MISSING: null
-              succeeded__MISSING: null
-        changed__MISSING: null
+              failed__MISSING: API secret check failed
+              succeeded__MISSING: API secret check succeeded
+        changed__MISSING: Application changed
         config__MISSING:
           api__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: API Configuration added
+            changed__MISSING: API Configuration changed
             secret__MISSING:
-              changed__MISSING: null
-              updated__MISSING: null
+              changed__MISSING: API secret changed
+              updated__MISSING: API secret hash updated
           oidc__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
+            added__MISSING: OIDC Configuration added
+            changed__MISSING: OIDC Configuration changed
             secret__MISSING:
-              changed__MISSING: null
-              updated__MISSING: null
+              changed__MISSING: OIDC secret changed
+              updated__MISSING: OIDC secret hash updated
           saml__MISSING:
-            added__MISSING: null
-            changed__MISSING: null
-        deactivated__MISSING: null
+            added__MISSING: SAML Configuration added
+            changed__MISSING: SAML Configuration changed
+        deactivated__MISSING: Application deactivated
         oidc__MISSING:
           key__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
+            added__MISSING: OIDC Application Key added
+            removed__MISSING: OIDC Application Key removed
           secret__MISSING:
             check__MISSING:
-              failed__MISSING: null
-              succeeded__MISSING: null
-        reactivated__MISSING: null
-        removed__MISSING: null
-      changed__MISSING: null
-      deactivated__MISSING: null
+              failed__MISSING: OIDC Client Secret check failed
+              succeeded__MISSING: OIDC Client Secret check succeeded
+        reactivated__MISSING: Application reactivated
+        removed__MISSING: Application removed
+      changed__MISSING: Project changed
+      deactivated__MISSING: Project deactivated
       grant__MISSING:
-        added__MISSING: null
+        added__MISSING: Management access added
         cascade__MISSING:
-          changed__MISSING: null
-        changed__MISSING: null
-        deactivated__MISSING: null
+          changed__MISSING: Management access changed
+        changed__MISSING: Management access changed
+        deactivated__MISSING: Management access deactivated
         member__MISSING:
-          added__MISSING: null
+          added__MISSING: Management access member added
           cascade__MISSING:
-            removed__MISSING: null
-          changed__MISSING: null
-          removed__MISSING: null
-        reactivated__MISSING: null
-        removed__MISSING: null
+            removed__MISSING: Management access cascade removed
+          changed__MISSING: Management access member changed
+          removed__MISSING: Management access member removed
+        reactivated__MISSING: Management access reactivated
+        removed__MISSING: Management access removed
       member__MISSING:
-        added__MISSING: null
+        added__MISSING: Project member added
         cascade__MISSING:
-          removed__MISSING: null
-        changed__MISSING: null
-        removed__MISSING: null
-      reactivated__MISSING: null
-      removed__MISSING: null
+          removed__MISSING: Project member cascade removed
+        changed__MISSING: Project member changed
+        removed__MISSING: Project member removed
+      reactivated__MISSING: Project reactivated
+      removed__MISSING: Project removed
       role__MISSING:
-        added__MISSING: null
-        changed__MISSING: null
-        removed__MISSING: null
+        added__MISSING: Project role added
+        changed__MISSING: Project role changed
+        removed__MISSING: Project role removed
     target__MISSING:
-      added__MISSING: null
-      changed__MISSING: null
-      removed__MISSING: null
+      added__MISSING: Target created
+      changed__MISSING: Target changed
+      removed__MISSING: Target deleted
     user__MISSING:
-      added__MISSING: null
+      added__MISSING: User added
       address__MISSING:
-        changed__MISSING: null
-      deactivated__MISSING: null
+        changed__MISSING: User address changed
+      deactivated__MISSING: User deactivated
       domain__MISSING:
-        claimed.sent__MISSING: null
-        claimed__MISSING: null
+        claimed.sent__MISSING: Domain claimed notification sent
+        claimed__MISSING: Domain claimed
       email__MISSING:
-        changed__MISSING: null
+        changed__MISSING: Email address changed
         code__MISSING:
-          added__MISSING: null
-          sent__MISSING: null
-        released__MISSING: null
-        reserved__MISSING: null
+          added__MISSING: Email address verification code generated
+          sent__MISSING: Email address verification code sent
+        released__MISSING: Email address released
+        reserved__MISSING: Email address reserved
         verification__MISSING:
-          failed__MISSING: null
-        verified__MISSING: null
+          failed__MISSING: Email address verification failed
+        verified__MISSING: Email address verified
       grant__MISSING:
-        added__MISSING: null
+        added__MISSING: Authorization added
         cascade__MISSING:
-          changed__MISSING: null
-          removed__MISSING: null
-        changed__MISSING: null
-        deactivated__MISSING: null
-        reactivated__MISSING: null
-        released__MISSING: null
-        removed__MISSING: null
-        reserved__MISSING: null
+          changed__MISSING: Authorization changed
+          removed__MISSING: Authorization removed
+        changed__MISSING: Authorization changed
+        deactivated__MISSING: Authorization deactivated
+        reactivated__MISSING: Authorization reactivated
+        released__MISSING: Authorization released
+        removed__MISSING: Authorization removed
+        reserved__MISSING: Authorization reserved
       human__MISSING:
-        added__MISSING: null
+        added__MISSING: Person added
         address__MISSING:
-          changed__MISSING: null
+          changed__MISSING: User address changed
         avatar__MISSING:
-          added__MISSING: null
-          removed__MISSING: null
+          added__MISSING: Avatar added
+          removed__MISSING: Avatar removed
         email__MISSING:
-          changed__MISSING: null
+          changed__MISSING: Email address changed
           code__MISSING:
-            added__MISSING: null
-            sent__MISSING: null
+            added__MISSING: Email address verification code generated
+            sent__MISSING: Email address verification code sent
           verification__MISSING:
-            failed__MISSING: null
-          verified__MISSING: null
+            failed__MISSING: Email address verification failed
+          verified__MISSING: Email address verified
         externalidp__MISSING:
-          added__MISSING: null
+          added__MISSING: External IDP added
           cascade__MISSING:
-            removed__MISSING: null
+            removed__MISSING: External IDP cascade removed
           id__MISSING:
-            migrated__MISSING: null
-          removed__MISSING: null
+            migrated__MISSING: External UserID of IDP was migrated
+          removed__MISSING: External IDP removed
         externallogin__MISSING:
           check__MISSING:
-            succeeded__MISSING: null
+            succeeded__MISSING: External login succeeded
         initialization__MISSING:
           check__MISSING:
-            failed__MISSING: null
-            succeeded__MISSING: null
+            failed__MISSING: Initialization check failed
+            succeeded__MISSING: Initialization check succeeded
           code__MISSING:
-            added__MISSING: null
-            sent__MISSING: null
+            added__MISSING: Initialization code generated
+            sent__MISSING: Initialization code sent
         invite__MISSING:
           check__MISSING:
-            failed__MISSING: null
-            succeeded__MISSING: null
+            failed__MISSING: Invitation check failed
+            succeeded__MISSING: Invitation check succeeded
           code__MISSING:
-            added__MISSING: null
-            sent__MISSING: null
+            added__MISSING: Invitation code generated
+            sent__MISSING: Invitation code sent
         mfa__MISSING:
           init__MISSING:
-            skipped__MISSING: null
+            skipped__MISSING: Multifactor initialization skipped
           otp__MISSING:
-            added__MISSING: null
+            added__MISSING: Multifactor OTP added
             check__MISSING:
-              failed__MISSING: null
-              reused__MISSING: null
-              succeeded__MISSING: null
+              failed__MISSING: Multifactor OTP check failed
+              reused__MISSING: Multifactor OTP code reused
+              succeeded__MISSING: Multifactor OTP check succeeded
             email__MISSING:
-              added__MISSING: null
+              added__MISSING: Multifactor OTP Email added
               check__MISSING:
-                failed__MISSING: null
-                succeeded__MISSING: null
+                failed__MISSING: Multifactor OTP Email check failed
+                succeeded__MISSING: Multifactor OTP Email check succeeded
               code__MISSING:
-                added__MISSING: null
-                sent__MISSING: null
-              removed__MISSING: null
-            removed__MISSING: null
+                added__MISSING: Multifactor OTP Email code added
+                sent__MISSING: Multifactor OTP Email code sent
+              removed__MISSING: Multifactor OTP Email removed
+            removed__MISSING: Multifactor OTP removed
             sms__MISSING:
-              added__MISSING: null
+              added__MISSING: Multifactor OTP SMS added
               check__MISSING:
-                failed__MISSING: null
-                succeeded__MISSING: null
+                failed__MISSING: Multifactor OTP SMS check failed
+                succeeded__MISSING: Multifactor OTP SMS check succeeded
               code__MISSING:
-                added__MISSING: null
-                sent__MISSING: null
-              removed__MISSING: null
-            verified__MISSING: null
+                added__MISSING: Multifactor OTP SMS code added
+                sent__MISSING: Multifactor OTP SMS code sent
+              removed__MISSING: Multifactor OTP SMS removed
+            verified__MISSING: Multifactor OTP verified
           u2f__MISSING:
             token__MISSING:
-              added__MISSING: null
+              added__MISSING: Multifactor U2F Token added
               begin__MISSING:
-                login__MISSING: null
+                login__MISSING: Multifactor U2F check started
               check__MISSING:
-                failed__MISSING: null
-                succeeded__MISSING: null
-              removed__MISSING: null
+                failed__MISSING: Multifactor U2F check failed
+                succeeded__MISSING: Multifactor U2F check succeeded
+              removed__MISSING: Multifactor U2F Token removed
               signcount__MISSING:
-                changed__MISSING: null
-              verified__MISSING: null
+                changed__MISSING: Checksum of the Multifactor U2F Token has been changed
+              verified__MISSING: Multifactor U2F Token verified
         password__MISSING:
           change__MISSING:
-            sent__MISSING: null
-          changed__MISSING: null
+            sent__MISSING: Password change sent
+          changed__MISSING: Password changed
           check__MISSING:
-            failed__MISSING: null
-            succeeded__MISSING: null
+            failed__MISSING: Password check failed
+            succeeded__MISSING: Password check succeeded
           code__MISSING:
-            added__MISSING: null
-            sent__MISSING: null
+            added__MISSING: Password code generated
+            sent__MISSING: Password code sent
           hash__MISSING:
-            updated__MISSING: null
+            updated__MISSING: Password hash updated
         passwordless__MISSING:
           initialization__MISSING:
             code__MISSING:
-              added__MISSING: null
+              added__MISSING: Passkey initialization code added
               check__MISSING:
-                failed__MISSING: null
-                succeeded__MISSING: null
-              requested__MISSING: null
-              sent__MISSING: null
+                failed__MISSING: Passkey initialization code check failed
+                succeeded__MISSING: Passkey initialization code successfully checked
+              requested__MISSING: Passkey initialization code requested
+              sent__MISSING: Passkey initialization code sent
           token__MISSING:
-            added__MISSING: null
+            added__MISSING: Token for Passkey Login added
             begin__MISSING:
-              login__MISSING: null
+              login__MISSING: Passkey Login check started
             check__MISSING:
-              failed__MISSING: null
-              succeeded__MISSING: null
-            removed__MISSING: null
+              failed__MISSING: Passkey Login check failed
+              succeeded__MISSING: Passkey Login check succeeded
+            removed__MISSING: Token for Passkey Login removed
             signcount__MISSING:
-              changed__MISSING: null
-            verified__MISSING: null
+              changed__MISSING: Checksum of the Passkey Login Token has been changed
+            verified__MISSING: Token for Passkey Login verified
         phone__MISSING:
-          changed__MISSING: null
+          changed__MISSING: Phone number changed
           code__MISSING:
-            added__MISSING: null
-            sent__MISSING: null
-          removed__MISSING: null
+            added__MISSING: Phone number code generated
+            sent__MISSING: Phone number code sent
+          removed__MISSING: Phone number removed
           verification__MISSING:
-            failed__MISSING: null
-          verified__MISSING: null
+            failed__MISSING: Phone number verification failed
+          verified__MISSING: Phone number verified
         profile__MISSING:
-          changed__MISSING: null
+          changed__MISSING: User profile changed
         refresh__MISSING:
           token__MISSING:
-            added__MISSING: null
-            removed__MISSING: null
-            renewed__MISSING: null
-        selfregistered__MISSING: null
+            added__MISSING: Refresh Token created
+            removed__MISSING: Refresh Token removed
+            renewed__MISSING: Refresh Token renewed
+        selfregistered__MISSING: Person registered themself
         signed__MISSING:
-          out__MISSING: null
+          out__MISSING: User signed out
         username__MISSING:
-          released__MISSING: null
-          reserved__MISSING: null
-      impersonated__MISSING: null
+          released__MISSING: Username released
+          reserved__MISSING: Username reserved
+      impersonated__MISSING: User impersonated
       initialization__MISSING:
         check__MISSING:
-          failed__MISSING: null
-          succeeded__MISSING: null
+          failed__MISSING: Initialization check failed
+          succeeded__MISSING: Initialization check succeeded
         code__MISSING:
-          added__MISSING: null
-          sent__MISSING: null
-      locked__MISSING: null
+          added__MISSING: Initialization code generated
+          sent__MISSING: Initialization code sent
+      locked__MISSING: User locked
       machine__MISSING:
-        added__MISSING: null
-        changed__MISSING: null
+        added__MISSING: Technical user added
+        changed__MISSING: Technical user changed
         key__MISSING:
-          added__MISSING: null
-          removed__MISSING: null
+          added__MISSING: Key added
+          removed__MISSING: Key removed
         secret__MISSING:
           check__MISSING:
-            failed__MISSING: null
-            succeeded__MISSING: null
-          removed__MISSING: null
-          set__MISSING: null
-          updated__MISSING: null
+            failed__MISSING: Secret check failed
+            succeeded__MISSING: Secret check succeeded
+          removed__MISSING: Secret removed
+          set__MISSING: Secret set
+          updated__MISSING: Secret hash updated
       metadata__MISSING:
-        removed.all__MISSING: null
-        removed__MISSING: null
-        set__MISSING: null
+        removed.all__MISSING: All user metadata removed
+        removed__MISSING: User metadata removed
+        set__MISSING: User metadata set
       mfa__MISSING:
         init__MISSING:
-          skipped__MISSING: null
+          skipped__MISSING: Multifactor initialization skipped
         otp__MISSING:
-          added__MISSING: null
+          added__MISSING: Multifactor OTP added
           check__MISSING:
-            failed__MISSING: null
-            succeeded__MISSING: null
+            failed__MISSING: Multifactor OTP check failed
+            succeeded__MISSING: Multifactor OTP check succeeded
           init__MISSING:
-            skipped__MISSING: null
-          removed__MISSING: null
-          verified__MISSING: null
+            skipped__MISSING: Multifactor OTP initialization skipped
+          removed__MISSING: Multifactor OTP removed
+          verified__MISSING: Multifactor OTP verified
       password__MISSING:
-        changed__MISSING: null
+        changed__MISSING: Password changed
         check__MISSING:
-          failed__MISSING: null
-          succeeded__MISSING: null
+          failed__MISSING: Password check failed
+          succeeded__MISSING: Password check succeeded
         code__MISSING:
-          added__MISSING: null
-          sent__MISSING: null
+          added__MISSING: Password code generated
+          sent__MISSING: Password code sent
       pat__MISSING:
-        added__MISSING: null
-        removed__MISSING: null
+        added__MISSING: Personal Access Token added
+        removed__MISSING: Personal Access Token removed
       phone__MISSING:
-        changed__MISSING: null
+        changed__MISSING: Phone number changed
         code__MISSING:
-          added__MISSING: null
-          sent__MISSING: null
+          added__MISSING: Phone number code generated
+          sent__MISSING: Phone number code sent
         verification__MISSING:
-          failed__MISSING: null
-        verified__MISSING: null
+          failed__MISSING: Phone number verification failed
+        verified__MISSING: Phone number verified
       profile__MISSING:
-        changed__MISSING: null
-      reactivated__MISSING: null
-      removed__MISSING: null
-      selfregistered__MISSING: null
+        changed__MISSING: User profile changed
+      reactivated__MISSING: User reactivated
+      removed__MISSING: User removed
+      selfregistered__MISSING: User registered themself
       signed__MISSING:
-        out__MISSING: null
+        out__MISSING: User signed out
       token__MISSING:
-        added__MISSING: null
-        removed__MISSING: null
-        v2.added__MISSING: null
-      unlocked__MISSING: null
+        added__MISSING: Access Token created
+        removed__MISSING: Access Token removed
+        v2.added__MISSING: Access Token created
+      unlocked__MISSING: User unlocked
       username__MISSING:
-        changed__MISSING: null
-        released__MISSING: null
-        reserved__MISSING: null
+        changed__MISSING: Username changed
+        released__MISSING: Username released
+        reserved__MISSING: Username reserved
     user_schema__MISSING:
-      created__MISSING: null
-      deactivated__MISSING: null
-      deleted__MISSING: null
-      reactivated__MISSING: null
-      updated__MISSING: null
+      created__MISSING: User Schema created
+      deactivated__MISSING: User Schema deactivated
+      deleted__MISSING: User Schema deleted
+      reactivated__MISSING: User Schema reactivated
+      updated__MISSING: User Schema updated
       user__MISSING:
-        created__MISSING: null
-        deleted__MISSING: null
+        created__MISSING: User created
+        deleted__MISSING: User deleted
         email__MISSING:
           code__MISSING:
-            added__MISSING: null
-            sent__MISSING: null
-          updated__MISSING: null
+            added__MISSING: Email address verification code generated
+            sent__MISSING: Email address verification code sent
+          updated__MISSING: Email address changed
           verification__MISSING:
-            failed__MISSING: null
-          verified__MISSING: null
+            failed__MISSING: Email address verification failed
+          verified__MISSING: Email address verified
         phone__MISSING:
           code__MISSING:
-            added__MISSING: null
-            sent__MISSING: null
-          updated__MISSING: null
+            added__MISSING: Phone number verification code generated
+            sent__MISSING: Phone number verification code sent
+          updated__MISSING: Phone number changed
           verification__MISSING:
-            failed__MISSING: null
-          verified__MISSING: null
-        updated__MISSING: null
+            failed__MISSING: Phone number verification failed
+          verified__MISSING: Phone number verified
+        updated__MISSING: User updated
     web_key__MISSING:
-      activated__MISSING: null
-      added__MISSING: null
-      deactivated__MISSING: null
-      removed__MISSING: null
+      activated__MISSING: Web Key activated
+      added__MISSING: Web Key added
+      deactivated__MISSING: Web Key deactivated
+      removed__MISSING: Web Key removed
 console:
   ACTIONS:
     ACTIONS: Acțiuni
@@ -3517,8 +3517,8 @@ console:
     TYPE: Tip
     UPDATEBINDPASSWORD: actualizați parola de conectare
     UPDATECLIENTSECRET: actualizați secretul clientului
-    USEPKCE_DESC__MISSING: null
-    USEPKCE__MISSING: null
+    USEPKCE_DESC__MISSING: Determines whether the code_challenge and code_challenge_method params are included in the auth request
+    USEPKCE__MISSING: Use PKCE
     USERBASE: Baza de utilizatori
     USERENDPOINT: Punct final utilizator
     USERFILTERS: Filtre de utilizatori
@@ -3601,16 +3601,16 @@ console:
     IAM_OWNER_VIEWER: Are permisiunea de a revizui întreaga instanță, inclusiv toate organizațiile
     IAM_USER_MANAGER: Are permisiunea de a crea și gestiona utilizatori
     ORG_ADMIN_IMPERSONATOR: Are permisiunea de a impersona administratorul și utilizatorii finali din organizație
-    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: null
+    ORG_DYNAMIC_CLIENT_REGISTRAR__MISSING: Has permission to dynamically register OAuth 2.0 clients
     ORG_END_USER_IMPERSONATOR: Are permisiunea de a impersona utilizatorii finali din organizație
     ORG_OWNER: Are permisiunea asupra întregii organizații
     ORG_OWNER_VIEWER: Are permisiunea de a revizui întreaga organizație
     ORG_PROJECT_CREATOR: Are permisiunea de a-și crea propriile proiecte și setările de bază
     ORG_PROJECT_PERMISSION_EDITOR: Are permisiunea de a gestiona granturile proiectelor
-    ORG_SETTINGS_MANAGER__MISSING: null
+    ORG_SETTINGS_MANAGER__MISSING: Has permission to manage organization settings
     ORG_USER_MANAGER: Are permisiunea de a crea și gestiona utilizatorii organizației
     ORG_USER_PERMISSION_EDITOR: Are permisiunea de a gestiona atribuirea rolurilor
-    ORG_USER_SELF_MANAGER__MISSING: null
+    ORG_USER_SELF_MANAGER__MISSING: Has permission to manage their own user
     PROJECT_GRANT_OWNER: Are permisiunea de a gestiona grantul proiectului
     PROJECT_GRANT_OWNER_VIEWER: Are permisiunea de a revizui grantul proiectului
     PROJECT_OWNER: Are permisiunea asupra întregului proiect
@@ -3644,7 +3644,7 @@ console:
     ROLES: Roluri
     SETTINGS: Setări
     SHOWORGS: Afișați toate organizațiile
-    TARGETS__MISSING: null
+    TARGETS__MISSING: Targets
     TOS: Termeni și condiții
     VIEWS: Vizualizări
   METADATA:
@@ -4460,7 +4460,7 @@ console:
   SETTINGS:
     BETA: BETA
     GROUPS:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       APPEARANCE: Aspect
       DOMAIN: Domeniu
       GENERAL: Informații generale
@@ -4470,7 +4470,7 @@ console:
       STORAGE: Stocare
       TEXTS: Texte și limbi
     LIST:
-      ACTIONS__MISSING: null
+      ACTIONS__MISSING: Actions
       AGE: Expirarea parolei
       BRANDING: Branding
       COMPLEXITY: Complexitatea parolei
@@ -4493,7 +4493,7 @@ console:
       SECURITY: Setări de securitate
       SMS_PROVIDER: Furnizor SMS/Telefon
       SMTP_PROVIDER: Furnizor SMTP
-      TARGETS__MISSING: null
+      TARGETS__MISSING: Targets
       VERIFIED_DOMAINS: Domeniu organizație
       VIEWS: Vizualizări
       WEB_KEYS: OIDC Web Keys
@@ -5445,784 +5445,784 @@ login_v1:
   optional: (opțional)
 login_v2__MISSING:
   accounts__MISSING:
-    addAnother__MISSING: null
-    description__MISSING: null
-    expired__MISSING: null
-    noResults__MISSING: null
-    title__MISSING: null
-    verified__MISSING: null
+    addAnother__MISSING: Add another account
+    description__MISSING: Select the account you want to use.
+    expired__MISSING: expired
+    noResults__MISSING: No accounts found
+    title__MISSING: Accounts
+    verified__MISSING: verified
   authenticator__MISSING:
-    allSetup__MISSING: null
-    description__MISSING: null
-    linkWithIDP__MISSING: null
+    allSetup__MISSING: You have already setup an authenticator!
+    description__MISSING: Select the method you would like to authenticate
+    linkWithIDP__MISSING: or link with an Identity Provider
     methods__MISSING:
-      otpEmail__MISSING: null
-      otpSms__MISSING: null
-      passkey__MISSING: null
-      password__MISSING: null
-      totp__MISSING: null
-      u2f__MISSING: null
-    noMethodsAvailable__MISSING: null
-    title__MISSING: null
+      otpEmail__MISSING: Code via Email
+      otpSms__MISSING: Code via SMS
+      passkey__MISSING: Passkeys
+      password__MISSING: Password
+      totp__MISSING: Authenticator App
+      u2f__MISSING: Universal Second Factor
+    noMethodsAvailable__MISSING: No authentication methods available
+    title__MISSING: Choose authentication method
   common__MISSING:
-    back__MISSING: null
-    title__MISSING: null
+    back__MISSING: Back
+    title__MISSING: Login with Zitadel
   device__MISSING:
     request__MISSING:
-      deny__MISSING: null
-      description__MISSING: null
-      disclaimer__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      deny__MISSING: Deny
+      description__MISSING: '{appName} will have access to:'
+      disclaimer__MISSING: By clicking Allow, you allow {appName} and Zitadel to use your information in accordance with their respective terms of service and privacy policies. You can revoke this access at any time.
+      submit__MISSING: Allow
+      title__MISSING: '{appName} would like to connect'
     scope__MISSING:
-      email__MISSING: null
-      offline_access__MISSING: null
-      openid__MISSING: null
-      profile__MISSING: null
+      email__MISSING: View your email address.
+      offline_access__MISSING: Allow offline access to your account.
+      openid__MISSING: Verify your identity.
+      profile__MISSING: View your full profile information.
     usercode__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter the code displayed on your app or device.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      submit__MISSING: Continue
+      title__MISSING: Device code
   error__MISSING:
-    couldNotClearSession__MISSING: null
-    couldNotContinueSession__MISSING: null
-    failedLoading__MISSING: null
-    noDeviceRequest__MISSING: null
-    noUserCode__MISSING: null
-    sessionExpired__MISSING: null
-    tryagain__MISSING: null
-    unknownContext__MISSING: null
+    couldNotClearSession__MISSING: Could not end the session. Please try again.
+    couldNotContinueSession__MISSING: Could not continue with session - missing user information
+    failedLoading__MISSING: Failed to load data. Please try again.
+    noDeviceRequest__MISSING: No device request found.
+    noUserCode__MISSING: No user code provided!
+    sessionExpired__MISSING: Your current session has expired. Please login again.
+    tryagain__MISSING: Try Again
+    unknownContext__MISSING: Could not get the context of the user. Make sure to enter the username first or provide a loginName as searchParam.
   idp__MISSING:
     accountNotFound__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't find an account associated with your identity provider credentials.
+      info__MISSING: No existing account was found. Please sign in with an existing account or contact your administrator for assistance.
+      title__MISSING: Account Not Found
     completeRegister__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    description__MISSING: null
+      description__MISSING: You need to complete your registration by providing your email address and name.
+      title__MISSING: Complete your data
+    description__MISSING: Select one of the following providers to sign in
     errors__MISSING:
-      autoLinkingFailed__MISSING: null
-      idpNotFound__MISSING: null
-      linkingFailed__MISSING: null
-      linkingNotAllowed__MISSING: null
-      missingIdpInfo__MISSING: null
-      missingParameters__MISSING: null
-      orgResolutionFailed__MISSING: null
-      sessionCreationFailed__MISSING: null
-      unknownError__MISSING: null
-      userCreationFailed__MISSING: null
+      autoLinkingFailed__MISSING: Failed to automatically link account
+      idpNotFound__MISSING: Identity provider not found
+      linkingFailed__MISSING: Failed to link identity provider to account
+      linkingNotAllowed__MISSING: Linking is not allowed for this identity provider
+      missingIdpInfo__MISSING: IDP information missing
+      missingParameters__MISSING: Missing required parameters
+      orgResolutionFailed__MISSING: Could not determine organization for registration
+      sessionCreationFailed__MISSING: Could not create session or determine redirect
+      unknownError__MISSING: An unknown error occurred
+      userCreationFailed__MISSING: Failed to create user account
     linkingError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: An error occurred while trying to link your account.
+      title__MISSING: Account linking failed
     loginError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    orSignInWith__MISSING: null
+      description__MISSING: An error occurred while trying to login.
+      title__MISSING: Login failed
+    orSignInWith__MISSING: or sign in with
     processing__MISSING:
-      message__MISSING: null
-      noRedirect__MISSING: null
-      unexpectedError__MISSING: null
+      message__MISSING: Processing authentication...
+      noRedirect__MISSING: No redirect or error returned from server
+      unexpectedError__MISSING: An unexpected error occurred
     registrationFailed__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
-    signInWithApple__MISSING: null
-    signInWithAzureAD__MISSING: null
-    signInWithGithub__MISSING: null
-    signInWithGitlab__MISSING: null
-    signInWithGoogle__MISSING: null
-    signInWithZitadel__MISSING: null
-    title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't complete the registration process.
+      info__MISSING: Unable to determine the organization for registration. Please contact your administrator for assistance.
+      title__MISSING: Registration Not Available
+    signInWithApple__MISSING: Sign in with Apple
+    signInWithAzureAD__MISSING: Sign in with AzureAD
+    signInWithGithub__MISSING: Sign in with GitHub
+    signInWithGitlab__MISSING: Sign in with GitLab
+    signInWithGoogle__MISSING: Sign in with Google
+    signInWithZitadel__MISSING: Sign in with Zitadel
+    title__MISSING: Sign in with SSO
   invite__MISSING:
-    description__MISSING: null
-    info__MISSING: null
-    notAllowed__MISSING: null
-    submit__MISSING: null
+    description__MISSING: Provide the email address and the name of the user you want to invite.
+    info__MISSING: The user will receive an email with further instructions.
+    notAllowed__MISSING: Your settings do not allow you to invite users.
+    submit__MISSING: Continue
     success__MISSING:
-      description__MISSING: null
-      notVerifiedYet__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      verified__MISSING: null
-    title__MISSING: null
+      description__MISSING: The email has successfully been sent.
+      notVerifiedYet__MISSING: The user has been invited. They will receive an email with further instructions.
+      submit__MISSING: Invite another user
+      title__MISSING: User invited
+      verified__MISSING: The user has been invited and has already verified his email.
+    title__MISSING: Invite User
   ldap__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your LDAP credentials.
     labels__MISSING:
-      password__MISSING: null
-      username__MISSING: null
+      password__MISSING: Password
+      username__MISSING: Username
     required__MISSING:
-      password__MISSING: null
-      username__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      password__MISSING: This field is required
+      username__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: LDAP Login
   loginname__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your login details.
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotFindIdentityProvider__MISSING: null
-      couldNotGetDomain__MISSING: null
-      couldNotGetHost__MISSING: null
-      couldNotGetLoginSettings__MISSING: null
-      couldNotSearchUsers__MISSING: null
-      couldNotStartIDPFlow__MISSING: null
-      initialUserNotSupported__MISSING: null
-      internalError__MISSING: null
-      localAuthenticationNotAllowed__MISSING: null
-      moreThanOneUserFound__MISSING: null
-      passkeysNotAllowed__MISSING: null
-      userNotActive__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session for user
+      couldNotFindIdentityProvider__MISSING: Could not find identity provider.
+      couldNotGetDomain__MISSING: Could not get domain
+      couldNotGetHost__MISSING: Could not get host
+      couldNotGetLoginSettings__MISSING: Could not get login settings
+      couldNotSearchUsers__MISSING: Could not search users
+      couldNotStartIDPFlow__MISSING: Could not start IDP flow
+      initialUserNotSupported__MISSING: Initial User not supported
+      internalError__MISSING: An internal error occurred
+      localAuthenticationNotAllowed__MISSING: Local authentication is not allowed! Contact your administrator for more information.
+      moreThanOneUserFound__MISSING: More than one user found. Provide a unique identifier.
+      passkeysNotAllowed__MISSING: Passkeys not allowed! Contact your administrator for more information.
+      userNotActive__MISSING: User is not active. Contact your administrator for more information.
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      loginname__MISSING: null
-      usernameOrEmail__MISSING: null
-      usernameOrPhoneNumber__MISSING: null
-      username__MISSING: null
-    register__MISSING: null
+      loginname__MISSING: Loginname
+      usernameOrEmail__MISSING: Username or email
+      usernameOrPhoneNumber__MISSING: Username or phone number
+      username__MISSING: Username
+    register__MISSING: Register new user
     required__MISSING:
-      loginName__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      loginName__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: Welcome back!
   logout__MISSING:
-    clear__MISSING: null
-    description__MISSING: null
-    noResults__MISSING: null
+    clear__MISSING: End Session
+    description__MISSING: Click an account to end the session
+    noResults__MISSING: No accounts found
     success__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
-    verifiedAt__MISSING: null
+      description__MISSING: You have successfully logged out.
+      title__MISSING: Logout successful
+    title__MISSING: Logout
+    verifiedAt__MISSING: 'Last active: {time}'
   mfa__MISSING:
     set__MISSING:
-      description__MISSING: null
-      skip__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following second factors.
+      skip__MISSING: Skip
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      noResults__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following factors.
+      noResults__MISSING: No second factors available to setup.
+      title__MISSING: Verify your identity
   otp__MISSING:
     errors__MISSING:
-      couldNotRequestChallenge__MISSING: null
-      couldNotVerifyCode__MISSING: null
+      couldNotRequestChallenge__MISSING: Could not request OTP challenge
+      couldNotVerifyCode__MISSING: Could not verify OTP code
     set__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter your email address to receive a code via email.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
-      totpRegisterDescription__MISSING: null
+        code__MISSING: This field is required
+      smsDescription__MISSING: Enter your phone number to receive a code via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
+      totpDescription__MISSING: Scan the QR code with your authenticator app.
+      totpRegisterDescription__MISSING: Scan the QR Code or navigate to the URL manually.
     verify__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter the code you received via email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      smsDescription__MISSING: Enter the code you received via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Verify 2-Factor
+      totpDescription__MISSING: Enter the code from your authenticator app.
   passkey__MISSING:
     set__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       info__MISSING:
-        description__MISSING: null
-        link__MISSING: null
-      skip__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        description__MISSING: 'A passkey is an authentication method on a device like your fingerprint, Apple FaceID or similar. '
+        link__MISSING: Passkey Authentication
+      skip__MISSING: Skip
+      submit__MISSING: Continue
+      title__MISSING: Setup a passkey
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       errors__MISSING:
-        couldNotDetermineRedirect__MISSING: null
-        couldNotFindSession__MISSING: null
-        couldNotRequestChallenge__MISSING: null
-        couldNotRetrievePasskey__MISSING: null
-        couldNotUpdateSession__MISSING: null
-        couldNotVerifyPasskey__MISSING: null
-        noRedirectProvided__MISSING: null
-        noResponseReceived__MISSING: null
-        userNotFound__MISSING: null
-        verificationCancelled__MISSING: null
-        verificationFailed__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      usePassword__MISSING: null
+        couldNotDetermineRedirect__MISSING: Could not determine redirect URL after passkey verification
+        couldNotFindSession__MISSING: Could not find session
+        couldNotRequestChallenge__MISSING: Could not request passkey challenge
+        couldNotRetrievePasskey__MISSING: An error occurred while retrieving passkey
+        couldNotUpdateSession__MISSING: Could not update session
+        couldNotVerifyPasskey__MISSING: Could not verify passkey
+        noRedirectProvided__MISSING: Passkey verification completed but no redirect was provided
+        noResponseReceived__MISSING: Passkey verification failed - no response received
+        userNotFound__MISSING: User not found in the system
+        verificationCancelled__MISSING: Passkey verification was cancelled
+        verificationFailed__MISSING: An error occurred during passkey verification
+      submit__MISSING: Continue
+      title__MISSING: Authenticate with a passkey
+      usePassword__MISSING: Use password
   password__MISSING:
     change__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotChangePassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
-        currentPasswordInvalid__MISSING: null
-        unknownError__MISSING: null
+        couldNotChangePassword__MISSING: Could not change password
+        couldNotVerifyPassword__MISSING: Could not verify password
+        currentPasswordInvalid__MISSING: Current password is incorrect.
+        unknownError__MISSING: Unknown error
       labels__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        currentPassword__MISSING: Current Password
+        newPassword__MISSING: New Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        confirmPassword__MISSING: This field is required
+        currentPassword__MISSING: You have to provide your current password!
+        newPassword__MISSING: You have to provide a new password!
+      submit__MISSING: Continue
+      title__MISSING: Change Password
     complexity__MISSING:
-      doesNotMatch__MISSING: null
-      equals__MISSING: null
-      hasLowercase__MISSING: null
-      hasNumber__MISSING: null
-      hasSymbol__MISSING: null
-      hasUppercase__MISSING: null
-      length__MISSING: null
-      matches__MISSING: null
+      doesNotMatch__MISSING: Doesn't match
+      equals__MISSING: Password confirmation matched.
+      hasLowercase__MISSING: Must include a lowercase letter.
+      hasNumber__MISSING: Must include a number.
+      hasSymbol__MISSING: Must include a symbol.
+      hasUppercase__MISSING: Must include an uppercase letter.
+      length__MISSING: Must be at least {minLength} characters long.
+      matches__MISSING: Matches
     errors__MISSING:
-      accountLockedContactAdmin__MISSING: null
-      codeOrVerificationRequired__MISSING: null
-      couldNotCreateSessionForUser__MISSING: null
-      couldNotLoadAuthMethods__MISSING: null
-      couldNotLoadSession__MISSING: null
-      couldNotSendResetLink__MISSING: null
-      couldNotVerifyPassword__MISSING: null
-      failedPrecondition__MISSING: null
-      failedToAuthenticateNoLimit__MISSING: null
-      failedToAuthenticate__MISSING: null
-      initialUserNotSupported__MISSING: null
-      noHostFound__MISSING: null
-      passwordResetNotAllowed__MISSING: null
-      passwordVerificationMissing__MISSING: null
-      passwordVerificationTooOld__MISSING: null
-      sessionNotValid__MISSING: null
-      userInitialStateNotSupported__MISSING: null
-      userNotFound__MISSING: null
-      verificationRequired__MISSING: null
+      accountLockedContactAdmin__MISSING: ' Contact your administrator to unlock your account'
+      codeOrVerificationRequired__MISSING: You have to provide a code or have a valid User Verification Check
+      couldNotCreateSessionForUser__MISSING: Could not create session for user
+      couldNotLoadAuthMethods__MISSING: Could not load auth methods
+      couldNotLoadSession__MISSING: Could not load session
+      couldNotSendResetLink__MISSING: Could not send Password Reset Link
+      couldNotVerifyPassword__MISSING: Could not verify password
+      failedPrecondition__MISSING: Failed precondition
+      failedToAuthenticateNoLimit__MISSING: Failed to authenticate.
+      failedToAuthenticate__MISSING: Failed to authenticate. You had {failedAttempts} of {maxPasswordAttempts} password attempts.{lockoutMessage}
+      initialUserNotSupported__MISSING: Initial User not supported
+      noHostFound__MISSING: No host found
+      passwordResetNotAllowed__MISSING: Password reset is not allowed. Contact your administrator for more information.
+      passwordVerificationMissing__MISSING: Password verification is missing.
+      passwordVerificationTooOld__MISSING: Password verification is too old. Please verify your password again.
+      sessionNotValid__MISSING: Session is not valid
+      userInitialStateNotSupported__MISSING: User Initial State is not supported
+      userNotFound__MISSING: User not found in the system
+      verificationRequired__MISSING: User Verification Check has to be done
     set__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has been sent to your email address.
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotSetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotSetPassword__MISSING: Could not set password
+        couldNotVerifyPassword__MISSING: Could not verify password
       labels__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+        confirmPassword__MISSING: Confirm Password
+        newPassword__MISSING: New Password
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      resend__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+        confirmPassword__MISSING: This field is required
+        newPassword__MISSING: You have to provide a password!
+      resend__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Set Password
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter your password.
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotVerifyPassword__MISSING: Could not verify password
       info__MISSING:
-        passwordResetSent__MISSING: null
+        passwordResetSent__MISSING: Password was reset. Please check your email
       labels__MISSING:
-        password__MISSING: null
+        password__MISSING: Password
       required__MISSING:
-        password__MISSING: null
-      resetPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        password__MISSING: This field is required
+      resetPassword__MISSING: Reset Password
+      submit__MISSING: Continue
+      title__MISSING: Password
   register__MISSING:
-    agreeTo__MISSING: null
-    description__MISSING: null
+    agreeTo__MISSING: To register you must agree to the terms and conditions
+    description__MISSING: Create your Zitadel account.
     disabled__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: The registration is disabled. Please contact your administrator.
+      title__MISSING: Registration disabled
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotCreateUser__MISSING: null
-      couldNotLinkIDP__MISSING: null
-      couldNotRegisterUser__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotCreateUser__MISSING: Could not create user
+      couldNotLinkIDP__MISSING: Could not link IDP to user
+      couldNotRegisterUser__MISSING: Could not register user
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
+      email__MISSING: E-mail
+      firstname__MISSING: First name
+      lastname__MISSING: Last name
     methods__MISSING:
-      passkey__MISSING: null
-      password__MISSING: null
+      passkey__MISSING: Passkey
+      password__MISSING: Password
     missingdata__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    noMethodAvailableWarning__MISSING: null
+      description__MISSING: Provide email, first and last name to register.
+      title__MISSING: Missing data
+    noMethodAvailableWarning__MISSING: No authentication method available. Please contact your administrator.
     password__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       labels__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        password__MISSING: Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-    privacyPolicy__MISSING: null
+        confirmPassword__MISSING: This field is required
+        password__MISSING: You have to provide a password!
+      submit__MISSING: Continue
+      title__MISSING: Set Password
+    privacyPolicy__MISSING: Privacy Policy
     required__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
-    selectMethod__MISSING: null
-    submit__MISSING: null
-    termsOfService__MISSING: null
-    title__MISSING: null
+      email__MISSING: This field is required
+      firstname__MISSING: This field is required
+      lastname__MISSING: This field is required
+    selectMethod__MISSING: Select the method you would like to authenticate
+    submit__MISSING: Continue
+    termsOfService__MISSING: Terms of Service
+    title__MISSING: Register
   signedin__MISSING:
-    continue__MISSING: null
-    description__MISSING: null
+    continue__MISSING: Continue
+    description__MISSING: You are signed in.
     error__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
+      description__MISSING: An error occurred while trying to sign in.
+      title__MISSING: Error
+    title__MISSING: Welcome {user}!
   u2f__MISSING:
     set__MISSING:
-      description__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      description__MISSING: Set up a device as a second factor.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: Verify your account with your device.
+      title__MISSING: Verify 2-Factor
   verify__MISSING:
     errors__MISSING:
-      contextMissing__MISSING: null
-      couldNotCreateSession__MISSING: null
-      couldNotLoadAuthenticators__MISSING: null
-      couldNotLoadUser__MISSING: null
-      couldNotResendEmail__MISSING: null
-      couldNotResendInvite__MISSING: null
-      couldNotVerifyEmail__MISSING: null
-      couldNotVerifyInvite__MISSING: null
-      couldNotVerifyUser__MISSING: null
-      couldNotVerify__MISSING: null
-      emailSendFailed__MISSING: null
-      inviteSendFailed__MISSING: null
-      noHostFound__MISSING: null
-      userAlreadyVerified__MISSING: null
-    setupAuthenticator__MISSING: null
-    successContinue__MISSING: null
-    successDescription__MISSING: null
-    successTitle__MISSING: null
-    userIdMissing__MISSING: null
+      contextMissing__MISSING: An error occurred. Please try again.
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotLoadAuthenticators__MISSING: Could not load possible authenticators
+      couldNotLoadUser__MISSING: Could not load user
+      couldNotResendEmail__MISSING: Could not resend email
+      couldNotResendInvite__MISSING: Could not resend invite
+      couldNotVerifyEmail__MISSING: Could not verify email
+      couldNotVerifyInvite__MISSING: Could not verify invite
+      couldNotVerifyUser__MISSING: Could not verify user
+      couldNotVerify__MISSING: Could not verify
+      emailSendFailed__MISSING: Failed to send verification email
+      inviteSendFailed__MISSING: Failed to send invitation email
+      noHostFound__MISSING: No host found
+      userAlreadyVerified__MISSING: User is already verified!
+    setupAuthenticator__MISSING: Setup authenticator
+    successContinue__MISSING: Continue
+    successDescription__MISSING: The user has been verified successfully.
+    successTitle__MISSING: User verified
+    userIdMissing__MISSING: No userId provided!
     verify__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has just been sent to your email address.
+      description__MISSING: Enter the Code provided in the verification email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Verify user
   zitadel__MISSING:
     errors__MISSING:
-      errorOccured__MISSING: null
-      multipleUsersFound__MISSING: null
-      userNotFound__MISSING: null
+      errorOccured__MISSING: An error occurred
+      multipleUsersFound__MISSING: Multiple users found
+      userNotFound__MISSING: User not found in the system
 login_v2_default__MISSING:
   accounts__MISSING:
-    addAnother__MISSING: null
-    description__MISSING: null
-    expired__MISSING: null
-    noResults__MISSING: null
-    title__MISSING: null
-    verified__MISSING: null
+    addAnother__MISSING: Add another account
+    description__MISSING: Select the account you want to use.
+    expired__MISSING: expired
+    noResults__MISSING: No accounts found
+    title__MISSING: Accounts
+    verified__MISSING: verified
   authenticator__MISSING:
-    allSetup__MISSING: null
-    description__MISSING: null
-    linkWithIDP__MISSING: null
+    allSetup__MISSING: You have already setup an authenticator!
+    description__MISSING: Select the method you would like to authenticate
+    linkWithIDP__MISSING: or link with an Identity Provider
     methods__MISSING:
-      otpEmail__MISSING: null
-      otpSms__MISSING: null
-      passkey__MISSING: null
-      password__MISSING: null
-      totp__MISSING: null
-      u2f__MISSING: null
-    noMethodsAvailable__MISSING: null
-    title__MISSING: null
+      otpEmail__MISSING: Code via Email
+      otpSms__MISSING: Code via SMS
+      passkey__MISSING: Passkeys
+      password__MISSING: Password
+      totp__MISSING: Authenticator App
+      u2f__MISSING: Universal Second Factor
+    noMethodsAvailable__MISSING: No authentication methods available
+    title__MISSING: Choose authentication method
   common__MISSING:
-    back__MISSING: null
-    title__MISSING: null
+    back__MISSING: Back
+    title__MISSING: Login with Zitadel
   device__MISSING:
     request__MISSING:
-      deny__MISSING: null
-      description__MISSING: null
-      disclaimer__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      deny__MISSING: Deny
+      description__MISSING: '{appName} will have access to:'
+      disclaimer__MISSING: By clicking Allow, you allow {appName} and Zitadel to use your information in accordance with their respective terms of service and privacy policies. You can revoke this access at any time.
+      submit__MISSING: Allow
+      title__MISSING: '{appName} would like to connect'
     scope__MISSING:
-      email__MISSING: null
-      offline_access__MISSING: null
-      openid__MISSING: null
-      profile__MISSING: null
+      email__MISSING: View your email address.
+      offline_access__MISSING: Allow offline access to your account.
+      openid__MISSING: Verify your identity.
+      profile__MISSING: View your full profile information.
     usercode__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter the code displayed on your app or device.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      submit__MISSING: Continue
+      title__MISSING: Device code
   error__MISSING:
-    couldNotContinueSession__MISSING: null
-    failedLoading__MISSING: null
-    noDeviceRequest__MISSING: null
-    noUserCode__MISSING: null
-    sessionExpired__MISSING: null
-    tryagain__MISSING: null
-    unknownContext__MISSING: null
+    couldNotContinueSession__MISSING: Could not continue with session - missing user information
+    failedLoading__MISSING: Failed to load data. Please try again.
+    noDeviceRequest__MISSING: No device request found.
+    noUserCode__MISSING: No user code provided!
+    sessionExpired__MISSING: Your current session has expired. Please login again.
+    tryagain__MISSING: Try Again
+    unknownContext__MISSING: Could not get the context of the user. Make sure to enter the username first or provide a loginName as searchParam.
   idp__MISSING:
     accountNotFound__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't find an account associated with your identity provider credentials.
+      info__MISSING: No existing account was found. Please sign in with an existing account or contact your administrator for assistance.
+      title__MISSING: Account Not Found
     completeRegister__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    description__MISSING: null
+      description__MISSING: You need to complete your registration by providing your email address and name.
+      title__MISSING: Complete your data
+    description__MISSING: Select one of the following providers to sign in
     errors__MISSING:
-      autoLinkingFailed__MISSING: null
-      idpNotFound__MISSING: null
-      linkingFailed__MISSING: null
-      linkingNotAllowed__MISSING: null
-      missingIdpInfo__MISSING: null
-      missingParameters__MISSING: null
-      orgResolutionFailed__MISSING: null
-      sessionCreationFailed__MISSING: null
-      unknownError__MISSING: null
-      userCreationFailed__MISSING: null
+      autoLinkingFailed__MISSING: Failed to automatically link account
+      idpNotFound__MISSING: Identity provider not found
+      linkingFailed__MISSING: Failed to link identity provider to account
+      linkingNotAllowed__MISSING: Linking is not allowed for this identity provider
+      missingIdpInfo__MISSING: IDP information missing
+      missingParameters__MISSING: Missing required parameters
+      orgResolutionFailed__MISSING: Could not determine organization for registration
+      sessionCreationFailed__MISSING: Could not create session or determine redirect
+      unknownError__MISSING: An unknown error occurred
+      userCreationFailed__MISSING: Failed to create user account
     linkingError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: An error occurred while trying to link your account.
+      title__MISSING: Account linking failed
     loginError__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    orSignInWith__MISSING: null
+      description__MISSING: An error occurred while trying to login.
+      title__MISSING: Login failed
+    orSignInWith__MISSING: or sign in with
     processing__MISSING:
-      message__MISSING: null
-      noRedirect__MISSING: null
-      unexpectedError__MISSING: null
+      message__MISSING: Processing authentication...
+      noRedirect__MISSING: No redirect or error returned from server
+      unexpectedError__MISSING: An unexpected error occurred
     registrationFailed__MISSING:
-      backToLogin__MISSING: null
-      description__MISSING: null
-      info__MISSING: null
-      title__MISSING: null
-    signInWithApple__MISSING: null
-    signInWithAzureAD__MISSING: null
-    signInWithGithub__MISSING: null
-    signInWithGitlab__MISSING: null
-    signInWithGoogle__MISSING: null
-    title__MISSING: null
+      backToLogin__MISSING: Back to Login
+      description__MISSING: We couldn't complete the registration process.
+      info__MISSING: Unable to determine the organization for registration. Please contact your administrator for assistance.
+      title__MISSING: Registration Not Available
+    signInWithApple__MISSING: Sign in with Apple
+    signInWithAzureAD__MISSING: Sign in with AzureAD
+    signInWithGithub__MISSING: Sign in with GitHub
+    signInWithGitlab__MISSING: Sign in with GitLab
+    signInWithGoogle__MISSING: Sign in with Google
+    title__MISSING: Sign in with SSO
   invite__MISSING:
-    description__MISSING: null
-    info__MISSING: null
-    notAllowed__MISSING: null
-    submit__MISSING: null
+    description__MISSING: Provide the email address and the name of the user you want to invite.
+    info__MISSING: The user will receive an email with further instructions.
+    notAllowed__MISSING: Your settings do not allow you to invite users.
+    submit__MISSING: Continue
     success__MISSING:
-      description__MISSING: null
-      notVerifiedYet__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      verified__MISSING: null
-    title__MISSING: null
+      description__MISSING: The email has successfully been sent.
+      notVerifiedYet__MISSING: The user has been invited. They will receive an email with further instructions.
+      submit__MISSING: Invite another user
+      title__MISSING: User invited
+      verified__MISSING: The user has been invited and has already verified his email.
+    title__MISSING: Invite User
   ldap__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your LDAP credentials.
     labels__MISSING:
-      password__MISSING: null
-      username__MISSING: null
+      password__MISSING: Password
+      username__MISSING: Username
     required__MISSING:
-      password__MISSING: null
-      username__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      password__MISSING: This field is required
+      username__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: LDAP Login
   loginname__MISSING:
-    description__MISSING: null
+    description__MISSING: Enter your login details.
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotFindIdentityProvider__MISSING: null
-      couldNotGetDomain__MISSING: null
-      couldNotGetHost__MISSING: null
-      couldNotGetLoginSettings__MISSING: null
-      couldNotSearchUsers__MISSING: null
-      couldNotStartIDPFlow__MISSING: null
-      initialUserNotSupported__MISSING: null
-      internalError__MISSING: null
-      localAuthenticationNotAllowed__MISSING: null
-      moreThanOneUserFound__MISSING: null
-      passkeysNotAllowed__MISSING: null
-      userNotActive__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session for user
+      couldNotFindIdentityProvider__MISSING: Could not find identity provider.
+      couldNotGetDomain__MISSING: Could not get domain
+      couldNotGetHost__MISSING: Could not get host
+      couldNotGetLoginSettings__MISSING: Could not get login settings
+      couldNotSearchUsers__MISSING: Could not search users
+      couldNotStartIDPFlow__MISSING: Could not start IDP flow
+      initialUserNotSupported__MISSING: Initial User not supported
+      internalError__MISSING: An internal error occurred
+      localAuthenticationNotAllowed__MISSING: Local authentication is not allowed! Contact your administrator for more information.
+      moreThanOneUserFound__MISSING: More than one user found. Provide a unique identifier.
+      passkeysNotAllowed__MISSING: Passkeys not allowed! Contact your administrator for more information.
+      userNotActive__MISSING: User is not active. Contact your administrator for more information.
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      loginname__MISSING: null
-      usernameOrEmail__MISSING: null
-      usernameOrPhoneNumber__MISSING: null
-      username__MISSING: null
-    register__MISSING: null
+      loginname__MISSING: Loginname
+      usernameOrEmail__MISSING: Username or email
+      usernameOrPhoneNumber__MISSING: Username or phone number
+      username__MISSING: Username
+    register__MISSING: Register new user
     required__MISSING:
-      loginName__MISSING: null
-    submit__MISSING: null
-    title__MISSING: null
+      loginName__MISSING: This field is required
+    submit__MISSING: Continue
+    title__MISSING: Welcome back!
   logout__MISSING:
-    clear__MISSING: null
-    description__MISSING: null
-    noResults__MISSING: null
+    clear__MISSING: End Session
+    description__MISSING: Click an account to end the session
+    noResults__MISSING: No accounts found
     success__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
-    verifiedAt__MISSING: null
+      description__MISSING: You have successfully logged out.
+      title__MISSING: Logout successful
+    title__MISSING: Logout
+    verifiedAt__MISSING: 'Last active: {time}'
   mfa__MISSING:
     set__MISSING:
-      description__MISSING: null
-      skip__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following second factors.
+      skip__MISSING: Skip
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      noResults__MISSING: null
-      title__MISSING: null
+      description__MISSING: Choose one of the following factors.
+      noResults__MISSING: No second factors available to setup.
+      title__MISSING: Verify your identity
   otp__MISSING:
     errors__MISSING:
-      couldNotRequestChallenge__MISSING: null
-      couldNotVerifyCode__MISSING: null
+      couldNotRequestChallenge__MISSING: Could not request OTP challenge
+      couldNotVerifyCode__MISSING: Could not verify OTP code
     set__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter your email address to receive a code via email.
       labels__MISSING:
-        code__MISSING: null
+        code__MISSING: Code
       required__MISSING:
-        code__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
-      totpRegisterDescription__MISSING: null
+        code__MISSING: This field is required
+      smsDescription__MISSING: Enter your phone number to receive a code via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
+      totpDescription__MISSING: Scan the QR code with your authenticator app.
+      totpRegisterDescription__MISSING: Scan the QR Code or navigate to the URL manually.
     verify__MISSING:
-      emailDescription__MISSING: null
+      emailDescription__MISSING: Enter the code you received via email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      smsDescription__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      totpDescription__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      smsDescription__MISSING: Enter the code you received via SMS.
+      submit__MISSING: Continue
+      title__MISSING: Verify 2-Factor
+      totpDescription__MISSING: Enter the code from your authenticator app.
   passkey__MISSING:
     set__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       info__MISSING:
-        description__MISSING: null
-        link__MISSING: null
-      skip__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        description__MISSING: 'A passkey is an authentication method on a device like your fingerprint, Apple FaceID or similar. '
+        link__MISSING: Passkey Authentication
+      skip__MISSING: Skip
+      submit__MISSING: Continue
+      title__MISSING: Setup a passkey
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Your device will ask for your fingerprint, face, or screen lock
       errors__MISSING:
-        couldNotDetermineRedirect__MISSING: null
-        couldNotFindSession__MISSING: null
-        couldNotRequestChallenge__MISSING: null
-        couldNotRetrievePasskey__MISSING: null
-        couldNotUpdateSession__MISSING: null
-        couldNotVerifyPasskey__MISSING: null
-        noRedirectProvided__MISSING: null
-        noResponseReceived__MISSING: null
-        userNotFound__MISSING: null
-        verificationCancelled__MISSING: null
-        verificationFailed__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-      usePassword__MISSING: null
+        couldNotDetermineRedirect__MISSING: Could not determine redirect URL after passkey verification
+        couldNotFindSession__MISSING: Could not find session
+        couldNotRequestChallenge__MISSING: Could not request passkey challenge
+        couldNotRetrievePasskey__MISSING: An error occurred while retrieving passkey
+        couldNotUpdateSession__MISSING: Could not update session
+        couldNotVerifyPasskey__MISSING: Could not verify passkey
+        noRedirectProvided__MISSING: Passkey verification completed but no redirect was provided
+        noResponseReceived__MISSING: Passkey verification failed - no response received
+        userNotFound__MISSING: User not found in the system
+        verificationCancelled__MISSING: Passkey verification was cancelled
+        verificationFailed__MISSING: An error occurred during passkey verification
+      submit__MISSING: Continue
+      title__MISSING: Authenticate with a passkey
+      usePassword__MISSING: Use password
   password__MISSING:
     change__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotChangePassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
-        currentPasswordInvalid__MISSING: null
-        unknownError__MISSING: null
+        couldNotChangePassword__MISSING: Could not change password
+        couldNotVerifyPassword__MISSING: Could not verify password
+        currentPasswordInvalid__MISSING: Current password is incorrect.
+        unknownError__MISSING: Unknown error
       labels__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        currentPassword__MISSING: Current Password
+        newPassword__MISSING: New Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        currentPassword__MISSING: null
-        newPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        confirmPassword__MISSING: This field is required
+        currentPassword__MISSING: You have to provide your current password!
+        newPassword__MISSING: You have to provide a new password!
+      submit__MISSING: Continue
+      title__MISSING: Change Password
     complexity__MISSING:
-      doesNotMatch__MISSING: null
-      equals__MISSING: null
-      hasLowercase__MISSING: null
-      hasNumber__MISSING: null
-      hasSymbol__MISSING: null
-      hasUppercase__MISSING: null
-      length__MISSING: null
-      matches__MISSING: null
+      doesNotMatch__MISSING: Doesn't match
+      equals__MISSING: Password confirmation matched.
+      hasLowercase__MISSING: Must include a lowercase letter.
+      hasNumber__MISSING: Must include a number.
+      hasSymbol__MISSING: Must include a symbol.
+      hasUppercase__MISSING: Must include an uppercase letter.
+      length__MISSING: Must be at least {minLength} characters long.
+      matches__MISSING: Matches
     errors__MISSING:
-      accountLockedContactAdmin__MISSING: null
-      codeOrVerificationRequired__MISSING: null
-      couldNotCreateSessionForUser__MISSING: null
-      couldNotLoadAuthMethods__MISSING: null
-      couldNotLoadSession__MISSING: null
-      couldNotSendResetLink__MISSING: null
-      couldNotVerifyPassword__MISSING: null
-      failedPrecondition__MISSING: null
-      failedToAuthenticateNoLimit__MISSING: null
-      failedToAuthenticate__MISSING: null
-      initialUserNotSupported__MISSING: null
-      noHostFound__MISSING: null
-      passwordResetNotAllowed__MISSING: null
-      passwordVerificationMissing__MISSING: null
-      passwordVerificationTooOld__MISSING: null
-      sessionNotValid__MISSING: null
-      userInitialStateNotSupported__MISSING: null
-      userNotFound__MISSING: null
-      verificationRequired__MISSING: null
+      accountLockedContactAdmin__MISSING: ' Contact your administrator to unlock your account'
+      codeOrVerificationRequired__MISSING: You have to provide a code or have a valid User Verification Check
+      couldNotCreateSessionForUser__MISSING: Could not create session for user
+      couldNotLoadAuthMethods__MISSING: Could not load auth methods
+      couldNotLoadSession__MISSING: Could not load session
+      couldNotSendResetLink__MISSING: Could not send Password Reset Link
+      couldNotVerifyPassword__MISSING: Could not verify password
+      failedPrecondition__MISSING: Failed precondition
+      failedToAuthenticateNoLimit__MISSING: Failed to authenticate.
+      failedToAuthenticate__MISSING: Failed to authenticate. You had {failedAttempts} of {maxPasswordAttempts} password attempts.{lockoutMessage}
+      initialUserNotSupported__MISSING: Initial User not supported
+      noHostFound__MISSING: No host found
+      passwordResetNotAllowed__MISSING: Password reset is not allowed. Contact your administrator for more information.
+      passwordVerificationMissing__MISSING: Password verification is missing.
+      passwordVerificationTooOld__MISSING: Password verification is too old. Please verify your password again.
+      sessionNotValid__MISSING: Session is not valid
+      userInitialStateNotSupported__MISSING: User Initial State is not supported
+      userNotFound__MISSING: User not found in the system
+      verificationRequired__MISSING: User Verification Check has to be done
     set__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has been sent to your email address.
+      description__MISSING: Set the password for your account
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotSetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotSetPassword__MISSING: Could not set password
+        couldNotVerifyPassword__MISSING: Could not verify password
       labels__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+        confirmPassword__MISSING: Confirm Password
+        newPassword__MISSING: New Password
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-        confirmPassword__MISSING: null
-        newPassword__MISSING: null
-      resend__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+        confirmPassword__MISSING: This field is required
+        newPassword__MISSING: You have to provide a password!
+      resend__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Set Password
     verify__MISSING:
-      description__MISSING: null
+      description__MISSING: Enter your password.
       errors__MISSING:
-        couldNotResetPassword__MISSING: null
-        couldNotVerifyPassword__MISSING: null
+        couldNotResetPassword__MISSING: Could not reset password
+        couldNotVerifyPassword__MISSING: Could not verify password
       info__MISSING:
-        passwordResetSent__MISSING: null
+        passwordResetSent__MISSING: Password was reset. Please check your email
       labels__MISSING:
-        password__MISSING: null
+        password__MISSING: Password
       required__MISSING:
-        password__MISSING: null
-      resetPassword__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        password__MISSING: This field is required
+      resetPassword__MISSING: Reset Password
+      submit__MISSING: Continue
+      title__MISSING: Password
   register__MISSING:
-    agreeTo__MISSING: null
-    description__MISSING: null
+    agreeTo__MISSING: To register you must agree to the terms and conditions
+    description__MISSING: Create your Zitadel account.
     disabled__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: The registration is disabled. Please contact your administrator.
+      title__MISSING: Registration disabled
     errors__MISSING:
-      couldNotCreateSession__MISSING: null
-      couldNotCreateUser__MISSING: null
-      couldNotLinkIDP__MISSING: null
-      couldNotRegisterUser__MISSING: null
-      userNotFound__MISSING: null
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotCreateUser__MISSING: Could not create user
+      couldNotLinkIDP__MISSING: Could not link IDP to user
+      couldNotRegisterUser__MISSING: Could not register user
+      userNotFound__MISSING: User not found in the system
     labels__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
+      email__MISSING: E-mail
+      firstname__MISSING: First name
+      lastname__MISSING: Last name
     methods__MISSING:
-      passkey__MISSING: null
-      password__MISSING: null
+      passkey__MISSING: Passkey
+      password__MISSING: Password
     missingdata__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    noMethodAvailableWarning__MISSING: null
+      description__MISSING: Provide email, first and last name to register.
+      title__MISSING: Missing data
+    noMethodAvailableWarning__MISSING: No authentication method available. Please contact your administrator.
     password__MISSING:
-      description__MISSING: null
+      description__MISSING: Set the password for your account
       labels__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
+        confirmPassword__MISSING: Confirm Password
+        password__MISSING: Password
       required__MISSING:
-        confirmPassword__MISSING: null
-        password__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
-    privacyPolicy__MISSING: null
+        confirmPassword__MISSING: This field is required
+        password__MISSING: You have to provide a password!
+      submit__MISSING: Continue
+      title__MISSING: Set Password
+    privacyPolicy__MISSING: Privacy Policy
     required__MISSING:
-      email__MISSING: null
-      firstname__MISSING: null
-      lastname__MISSING: null
-    selectMethod__MISSING: null
-    submit__MISSING: null
-    termsOfService__MISSING: null
-    title__MISSING: null
+      email__MISSING: This field is required
+      firstname__MISSING: This field is required
+      lastname__MISSING: This field is required
+    selectMethod__MISSING: Select the method you would like to authenticate
+    submit__MISSING: Continue
+    termsOfService__MISSING: Terms of Service
+    title__MISSING: Register
   signedin__MISSING:
-    continue__MISSING: null
-    description__MISSING: null
+    continue__MISSING: Continue
+    description__MISSING: You are signed in.
     error__MISSING:
-      description__MISSING: null
-      title__MISSING: null
-    title__MISSING: null
+      description__MISSING: An error occurred while trying to sign in.
+      title__MISSING: Error
+    title__MISSING: Welcome {user}!
   u2f__MISSING:
     set__MISSING:
-      description__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+      description__MISSING: Set up a device as a second factor.
+      submit__MISSING: Continue
+      title__MISSING: Set up 2-Factor
     verify__MISSING:
-      description__MISSING: null
-      title__MISSING: null
+      description__MISSING: Verify your account with your device.
+      title__MISSING: Verify 2-Factor
   verify__MISSING:
     errors__MISSING:
-      contextMissing__MISSING: null
-      couldNotCreateSession__MISSING: null
-      couldNotLoadAuthenticators__MISSING: null
-      couldNotLoadUser__MISSING: null
-      couldNotResendEmail__MISSING: null
-      couldNotResendInvite__MISSING: null
-      couldNotVerifyEmail__MISSING: null
-      couldNotVerifyInvite__MISSING: null
-      couldNotVerifyUser__MISSING: null
-      couldNotVerify__MISSING: null
-      emailSendFailed__MISSING: null
-      inviteSendFailed__MISSING: null
-      noHostFound__MISSING: null
-      userAlreadyVerified__MISSING: null
-    setupAuthenticator__MISSING: null
-    successContinue__MISSING: null
-    successDescription__MISSING: null
-    successTitle__MISSING: null
-    userIdMissing__MISSING: null
+      contextMissing__MISSING: An error occurred. Please try again.
+      couldNotCreateSession__MISSING: Could not create session
+      couldNotLoadAuthenticators__MISSING: Could not load possible authenticators
+      couldNotLoadUser__MISSING: Could not load user
+      couldNotResendEmail__MISSING: Could not resend email
+      couldNotResendInvite__MISSING: Could not resend invite
+      couldNotVerifyEmail__MISSING: Could not verify email
+      couldNotVerifyInvite__MISSING: Could not verify invite
+      couldNotVerifyUser__MISSING: Could not verify user
+      couldNotVerify__MISSING: Could not verify
+      emailSendFailed__MISSING: Failed to send verification email
+      inviteSendFailed__MISSING: Failed to send invitation email
+      noHostFound__MISSING: No host found
+      userAlreadyVerified__MISSING: User is already verified!
+    setupAuthenticator__MISSING: Setup authenticator
+    successContinue__MISSING: Continue
+    successDescription__MISSING: The user has been verified successfully.
+    successTitle__MISSING: User verified
+    userIdMissing__MISSING: No userId provided!
     verify__MISSING:
-      codeSent__MISSING: null
-      description__MISSING: null
+      codeSent__MISSING: A new code has just been sent to your email address.
+      description__MISSING: Enter the Code provided in the verification email.
       labels__MISSING:
-        code__MISSING: null
-      noCodeReceived__MISSING: null
+        code__MISSING: Code
+      noCodeReceived__MISSING: Didn't receive a code?
       required__MISSING:
-        code__MISSING: null
-      resendCode__MISSING: null
-      submit__MISSING: null
-      title__MISSING: null
+        code__MISSING: This field is required
+      resendCode__MISSING: Resend code
+      submit__MISSING: Continue
+      title__MISSING: Verify user
   zitadel__MISSING:
     errors__MISSING:
-      errorOccured__MISSING: null
-      multipleUsersFound__MISSING: null
-      userNotFound__MISSING: null
+      errorOccured__MISSING: An error occurred
+      multipleUsersFound__MISSING: Multiple users found
+      userNotFound__MISSING: User not found in the system
 notification:
   DomainClaimed:
     ButtonText: Autentificare
