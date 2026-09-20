@@ -1,526 +1,498 @@
-Login:
-  Title: Добре дошъл обратно!
-  Description: Въведете вашите данни за вход.
-  TitleLinking: Влезте за потребителско свързване
-  DescriptionLinking: >-
-    Въведете вашите данни за вход, за да свържете вашия външен потребител с
-    потребител на Zitadel.
-  LoginNameLabel: Потребителско име
-  UsernamePlaceHolder: потребителско име
-  LoginnamePlaceHolder: потребителско име@домейн
-  ExternalUserDescription: Влезте с външен потребител.
-  MustBeMemberOfOrg: 'Потребителят трябва да е член на {{.OrgName}} организация.'
-  RegisterButtonText: регистрирам
-  NextButtonText: следващия
-LDAP:
-  Title: Влизам
-  Description: Въведете вашите данни за вход.
-  LoginNameLabel: Потребителско име
-  PasswordLabel: Парола
-  NextButtonText: следващия
-SelectAccount:
-  Title: Изберете акаунт
-  Description: Използвайте вашия Zitadel-акаунт
-  TitleLinking: Изберете акаунт за свързване на потребител
-  DescriptionLinking: 'Изберете своя акаунт, който да свържете с вашия външен потребител.'
-  OtherUser: Друг потребител
-  SessionState0: активен
-  SessionState1: Не сте в профила си
-  MustBeMemberOfOrg: 'Потребителят трябва да е член на {{.OrgName}} организация.'
-  
-Password:
-  Title: Парола
-  Description: Въведете данните си за вход.
-  PasswordLabel: Парола
-  MinLength: Трябва да е поне
-  MinLengthp2: символа дълга.
-  MaxLength: Трябва да е по-малко от 70 символа.
-  HasUppercase: Трябва да включва главна буква.
-  HasLowercase: Трябва да включва малка буква.
-  HasNumber: Трябва да включва число.
-  HasSymbol: Трябва да включва символ.
-  Confirmation: Потвърждението на паролата съвпада.
-  ResetLinkText: Нулиране на паролата
-  BackButtonText: Назад
-  NextButtonText: Напред
-UsernameChange:
-  Title: Промяна на потребителското име
-  Description: Задайте новото си потребителско име
-  UsernameLabel: Потребителско име
-  CancelButtonText: анулиране
-  NextButtonText: следващия
-UsernameChangeDone:
-  Title: Потребителското име е променено
-  Description: Вашето потребителско име бе променено успешно.
-  NextButtonText: следващия
-InitPassword:
-  Title: Задайте парола
-  Description: >-
-    Получихте код, който трябва да въведете във формата по-долу, за да зададете
-    новата си парола.
-  CodeLabel: Код
-  NewPasswordLabel: нова парола
-  NewPasswordConfirmLabel: потвърди парола
-  ResendButtonText: код за препращане
-  NextButtonText: следващия
-InitPasswordDone:
-  Title: Зададена парола
-  Description: Паролата е зададена успешно
-  NextButtonText: следващия
-  CancelButtonText: анулиране
-InitUser:
-  Title: Активиране на потребител
-  Description: Потвърдете имейла си с кода по-долу и задайте парола.
-  CodeLabel: Код
-  NewPasswordLabel: нова парола
-  NewPasswordConfirm: потвърди парола
-  NextButtonText: следващия
-  ResendButtonText: код за препращане
-InitUserDone:
-  Title: Потребителят е активиран
-  Description: Имейлът е потвърден и паролата е успешно зададена
-  NextButtonText: следващия
-  CancelButtonText: анулиране
-InviteUser:
-  Title: Активиране на потребителя
-  Description: Проверете своя имейл с кода по-долу и задайте паролата си.
-  CodeLabel: Код
-  NewPasswordLabel: Нова парола
-  NewPasswordConfirm: Потвърди парола
-  NextButtonText: Напред
-  ResendButtonText: Изпрати отново код
-InitMFAPrompt:
-  Title: 2-факторна настройка
-  Description: >-
-    Двуфакторното удостоверяване ви дава допълнителна сигурност за вашия
-    потребителски акаунт.
-  Provider0: 'Приложение за удостоверяване (напр. Google/Microsoft Authenticator, Authy)'
-  Provider1: 'Зависи от устройството (напр. FaceID, Windows Hello, пръстов отпечатък)'
-  Provider3: OTP SMS
-  Provider4: OTP имейл
-  NextButtonText: следващия
-  SkipButtonText: пропуснете
-InitMFAOTP:
-  Title: 2-факторна проверка
-  Description: 'Създайте своя 2-фактор. '
-  OTPDescription: >-
-    Сканирайте кода с вашето приложение за удостоверяване (напр.
-    Google/Microsoft Authenticator, Authy) или копирайте тайната и поставете
-    генерирания код по-долу.
-  SecretLabel: Тайна
-  CodeLabel: Код
-  NextButtonText: следващия
-  CancelButtonText: анулиране
-InitMFAOTPSMS:
-  Title: 2-факторна проверка
-  DescriptionPhone: Създайте своя 2-фактор. Въведете телефонния си номер, за да го потвърдите.
-  DescriptionCode: Създайте своя 2-фактор. Въведете получения код, за да потвърдите своя телефонен номер.
-  CountryCodeLabel: Държава
-  PhoneLabel: Тайна
-  CodeLabel: Код
-  EditButtonText: редактиране
-  ResendButtonText: код за препращане
-  NextButtonText: следващия
-InitMFAU2F:
-  Title: Добавете ключ за сигурност
-  Description: >-
-    Ключът за сигурност е метод за потвърждение, който може да бъде вграден във
-    вашия телефон, да използва Bluetooth или да се включи директно в USB порта
-    на вашия компютър.
-  TokenNameLabel: Име на защитния ключ/устройство
-  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
-  RegisterTokenButtonText: Добавете ключ за сигурност
-  ErrorRetry: >-
-    Опитайте отново, създайте ново предизвикателство или изберете различен
-    метод.
-InitMFADone:
-  Title: Ключът за сигурност е проверен
-  Description: 'Страхотно! '
-  NextButtonText: следващия
-  CancelButtonText: анулиране
-MFAProvider:
-  Provider0: 'Приложение за удостоверяване (напр. Google/Microsoft Authenticator, Authy)'
-  Provider1: 'Зависи от устройството (напр. FaceID, Windows Hello, пръстов отпечатък)'
-  Provider3: OTP SMS
-  Provider4: OTP имейл
-  ChooseOther: или изберете друга опция
-VerifyMFAOTP:
-  Title: Проверете 2-фактора
-  Description: Проверете вашия втори фактор
-  CodeLabel: Код
-  NextButtonText: следващия
-VerifyOTP:
-  Title: Проверете 2-фактора
-  Description: Проверете вашия втори фактор
-  CodeLabel: Код
-  ResendButtonText: код за препращане
-  NextButtonText: следващия
-VerifyMFAU2F:
-  Title: 2-факторна проверка
-  Description: >-
-    Потвърдете своя 2-фактор с регистрираното устройство (напр. FaceID, Windows
-    Hello, пръстов отпечатък)
-  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
-  ErrorRetry: 'Опитайте отново, създайте нова заявка или изберете друг метод.'
-  ValidateTokenButtonText: Проверете 2-фактора
-Passwordless:
-  Title: Вход без парола
-  Description: >-
-    Влезте с методи за удостоверяване, предоставени от вашето устройство, като
-    FaceID, Windows Hello или пръстов отпечатък.
-  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
-  ErrorRetry: >-
-    Опитайте отново, създайте ново предизвикателство или изберете различен
-    метод.
-  LoginWithPwButtonText: Влезте с парола
-  ValidateTokenButtonText: Влезте без парола
-PasswordlessPrompt:
-  Title: Настройка без парола
-  Description: 'Искате ли да настроите влизане без парола? '
-  DescriptionInit: 'Трябва да настроите влизане без парола. '
-  PasswordlessButtonText: Преминете без парола
-  NextButtonText: следващия
-  SkipButtonText: пропуснете
-PasswordlessRegistration:
-  Title: Настройка без парола
-  Description: >-
-    Добавете вашето удостоверяване, като предоставите име (напр. MyMobilePhone,
-    MacBook и т.н.) и след това щракнете върху бутона „Регистриране без парола“
-    по-долу.
-  TokenNameLabel: Име на устройството
-  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
-  RegisterTokenButtonText: Регистрирайте се без парола
-  ErrorRetry: >-
-    Опитайте отново, създайте ново предизвикателство или изберете различен
-    метод.
-PasswordlessRegistrationDone:
-  Title: Настройка без парола
-  Description: Успешно добавено устройство за без парола.
-  DescriptionClose: Сега можете да затворите този прозорец.
-  NextButtonText: следващия
-  CancelButtonText: анулиране
-PasswordChange:
-  Title: Промяна на паролата
-  Description: 'Променете паролата си. '
-  ExpiredDescription: Паролата ви е изтекла и трябва да бъде променена. Въведете старата и новата си парола.
-  OldPasswordLabel: Стара парола
-  NewPasswordLabel: нова парола
-  NewPasswordConfirmLabel: Потвърждение на парола
-  CancelButtonText: анулиране
-  NextButtonText: следващия
-  Footer: Долен колонтитул
-PasswordChangeDone:
-  Title: Промяна на паролата
-  Description: Вашата парола бе променена успешно.
-  NextButtonText: следващия
-PasswordResetDone:
-  Title: Връзката за повторно задаване на парола е изпратена
-  Description: 'Проверете имейла си, за да нулирате паролата си.'
-  NextButtonText: следващия
-EmailVerification:
-  Title: Потвърждение на имейла
-  Description: 'Изпратихме ви имейл, за да потвърдим адреса ви. '
-  CodeLabel: Код
-  NextButtonText: следващия
-  ResendButtonText: код за препращане
-EmailVerificationDone:
-  Title: Потвърждение на имейла
-  Description: Вашият имейл адрес е потвърден успешно.
-  NextButtonText: следващия
-  CancelButtonText: анулиране
-  LoginButtonText: Влизам
-RegisterOption:
-  Title: Опции за регистрация
-  Description: Изберете как искате да се регистрирате
-  RegisterUsernamePasswordButtonText: С парола за потребителско име
-  ExternalLoginDescription: или се регистрирайте при външен потребител
-  LoginButtonText: Влизам
-RegistrationUser:
-  Title: Регистрация
-  Description: 'Въведете своите потребителски данни. '
-  DescriptionOrgRegister: Въведете своите потребителски данни.
-  EmailLabel: Електронна поща
-  UsernameLabel: Потребителско име
-  FirstnameLabel: Първо име
-  LastnameLabel: Фамилия
-  LanguageLabel: език
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
-  GenderLabel: Пол
-  Female: Женски пол
-  Male: Мъжки
-  Diverse: разнообразен / X
-  PasswordLabel: Парола
-  PasswordConfirmLabel: Потвърждение на парола
-  TosAndPrivacyLabel: Правила и условия
-  TosConfirm: Приемам
-  TosLinkText: TOS
-  PrivacyConfirm: Приемам
-  PrivacyLinkText: политика за поверителност
-  ExternalLogin: или се регистрирайте при външен потребител
-  BackButtonText: Влизам
-  NextButtonText: следващия
-ExternalRegistrationUserOverview:
-  Title: Регистрация на външен потребител
-  Description: 'Взехме вашите потребителски данни от избрания доставчик. '
-  EmailLabel: Електронна поща
-  UsernameLabel: Потребителско име
-  FirstnameLabel: Първо име
-  LastnameLabel: Фамилия
-  NicknameLabel: Псевдоним
-  PhoneLabel: Телефонен номер
-  LanguageLabel: език
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
-  TosAndPrivacyLabel: Правила и условия
-  TosConfirm: Приемам
-  TosLinkText: TOS
-  PrivacyConfirm: Приемам
-  PrivacyLinkText: политика за поверителност
-  ExternalLogin: или се регистрирайте при външен потребител
-  BackButtonText: обратно
-  NextButtonText: спаси
-RegistrationOrg:
-  Title: Регистрация на организация
-  Description: Въведете името на вашата организация и потребителските данни.
-  OrgNameLabel: Наименование на организацията
-  EmailLabel: Електронна поща
-  UsernameLabel: Потребителско име
-  FirstnameLabel: Първо име
-  LastnameLabel: Фамилия
-  PasswordLabel: Парола
-  PasswordConfirmLabel: Потвърждение на парола
-  TosAndPrivacyLabel: Правила и условия
-  TosConfirm: Приемам
-  TosLinkText: TOS
-  PrivacyConfirm: Приемам
-  PrivacyLinkText: политика за поверителност
-  SaveButtonText: Създайте организация
-LoginSuccess:
-  Title: Успешен вход
-  AutoRedirectDescription: 'Ще бъдете насочени обратно към вашето приложение автоматично. '
-  RedirectedDescription: Сега можете да затворите този прозорец.
-  NextButtonText: следващия
-LogoutDone:
-  Title: Излязъл
-  Description: Вие излязохте успешно.
-  LoginButtonText: Влизам
-LinkingUserPrompt:
-  Title: Намерен съществуващ потребител
-  Description: „Искате ли да свържете съществуващия си акаунт:“
-  LinkButtonText: Връзка
-  OtherButtonText: Други възможности
-LinkingUsersDone:
-  Title: Свързване с потребители
-  Description: Свързването с потребители е готово.
-  CancelButtonText: анулиране
-  NextButtonText: следващия
-ExternalNotFound:
-  Title: Външен потребител не е намерен
-  Description: 'Външен потребител не е намерен. '
-  LinkButtonText: Връзка
-  AutoRegisterButtonText: регистрирам
-  TosAndPrivacyLabel: Правила и условия
-  TosConfirm: Приемам
-  TosLinkText: TOS
-  PrivacyConfirm: Приемам
-  PrivacyLinkText: политика за поверителност
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
 DeviceAuth:
-  Title: Упълномощаване на устройството
-  UserCode:
-    Label: Потребителски код
-    Description: 'Въведете потребителския код, представен на устройството.'
-    ButtonNext: следващия
   Action:
-    Description: Дайте достъп до устройството.
-    GrantDevice: сте на път да предоставите устройство
     AccessToScopes: достъп до следните обхвати
     Button:
       Allow: позволява
       Deny: отричам
+    Description: Дайте достъп до устройството.
+    GrantDevice: сте на път да предоставите устройство
   Done:
-    Description: Свършен.
     Approved: 'Упълномощаването на устройството е одобрено. '
     Denied: 'Упълномощаването на устройството е отказано. '
-Footer:
-  PoweredBy: Задвижвани от
-  Tos: TOS
-  PrivacyPolicy: Политика за поверителност
-  Help: Помогне
-  SupportEmail: Поддръжка на имейл
-SignIn: Влезте с {{.Provider}}
+    Description: Свършен.
+  Title: Упълномощаване на устройството
+  UserCode:
+    ButtonNext: следващия
+    Description: Въведете потребителския код, представен на устройството.
+    Label: Потребителски код
+EmailVerification:
+  CodeLabel: Код
+  Description: 'Изпратихме ви имейл, за да потвърдим адреса ви. '
+  NextButtonText: следващия
+  ResendButtonText: код за препращане
+  Title: Потвърждение на имейла
+EmailVerificationDone:
+  CancelButtonText: анулиране
+  Description: Вашият имейл адрес е потвърден успешно.
+  LoginButtonText: Влизам
+  NextButtonText: следващия
+  Title: Потвърждение на имейла
 Errors:
-  Internal: Възникна вътрешна грешка
   AuthRequest:
+    MissingParameters: Липсват задължителни параметри
     NotFound: Не може да се намери authrequest
+    RequestTypeNotSupported: Типът заявка не се поддържа
+    TokenNotFound: Токенът не е намерен
     UserAgentNotCorresponding: Потребителският агент не отговаря
     UserAgentNotFound: ID на потребителски агент не е намерен
-    TokenNotFound: Токенът не е намерен
-    RequestTypeNotSupported: Типът заявка не се поддържа
-    MissingParameters: Липсват задължителни параметри
+  DeviceAuth:
+    NotExisting: Потребителският код не съществува
+  IAM:
+    LockoutPolicy:
+      NotExisting: Политиката за блокиране не съществува
+  IdentityProvider:
+    InvalidConfig: Конфигурацията на доставчика на самоличност е невалидна
+  Internal: Възникна вътрешна грешка
+  Org:
+    LoginPolicy:
+      RegistrationNotAllowed: Регистрацията не е разрешена
   User:
-    NotFound: Потребителят не може да бъде намерен
+    Address:
+      NotChanged: Адресът не е променен
+      NotFound: Адресът не е намерен
     AlreadyExists: Вече съществува потребител
-    Inactive: Потребителят е неактивен
-    NotFoundOnOrg: Потребителят не може да бъде намерен в избраната организация
-    NotAllowedOrg: Потребителят не е член на необходимата организация
-    NotMatchingUserID: Потребителят и потребителят в заявката за удостоверяване не съвпадат
-    UserIDMissing: UserID е празен
-    Invalid: Невалидни потребителски данни
+    Code:
+      CryptoCodeNil: Крипто кодът е нула
+      Empty: Кодът е празен
+      Expired: Кодът е изтекъл
+      GeneratorAlgNotSupported: Неподдържан генераторен алгоритъм
+      Invalid: Кодът е невалиден
+      NotFound: Не може да се намери код
     DomainNotAllowedAsUsername: Домейнът вече е резервиран и не може да се използва
-    NotAllowedToLink: Потребителят няма право да се свързва с външен доставчик на данни за вход
-    Profile:
-      NotFound: Профилът не е намерен
-      NotChanged: Профилът не е променен
-      Empty: Профилът е празен
-      FirstNameEmpty: Името в профила е празно
-      LastNameEmpty: Фамилията в профила е празна
-      IDMissing: Липсва ID на потребителския профил
     Email:
-      NotFound: Имейлът не е намерен
-      Invalid: Имейлът е невалиден
       AlreadyVerified: Имейлът вече е потвърден
-      NotChanged: Имейлът не е променен
       Empty: Имейлът е празен
       IDMissing: Имейл ID липсва
-    Phone:
-      NotFound: Телефонът не е намерен
-      Invalid: Телефонът е невалиден
-      AlreadyVerified: Телефонът вече е потвърден
-      Empty: Телефонът е празен
-      NotChanged: Телефонът не е сменен
-    Address:
-      NotFound: Адресът не е намерен
-      NotChanged: Адресът не е променен
-    Username:
-      AlreadyExists: Потребителско име вече е заето
-      Reserved: Потребителско име вече е заето
-      Empty: Потребителското име е празно
-    Password:
-      ConfirmationWrong: Потвърждението на паролата е грешно
-      Empty: Паролата е празна
-      Invalid: Паролата е невалидна
-      InvalidAndLocked: >-
-        Паролата е невалидна и потребителят е заключен, свържете се с вашия
-        администратор.
-      NotChanged: Новата парола не може да съвпада с текущата парола
-    UsernameOrPassword:
-      Invalid: Потребителското име или паролата са невалидни
-    PasswordComplexityPolicy:
-      NotFound: Политиката за парола не е намерена
-      MinLength: Паролата е твърде кратка
-      HasLower: Паролата трябва да съдържа малка буква
-      HasUpper: Паролата трябва да съдържа горна буква
-      HasNumber: Паролата трябва да съдържа число
-      HasSymbol: Паролата трябва да съдържа символ
-    Code:
-      Expired: Кодът е изтекъл
-      Invalid: Кодът е невалиден
-      Empty: Кодът е празен
-      CryptoCodeNil: Крипто кодът е нула
-      NotFound: Не може да се намери код
-      GeneratorAlgNotSupported: Неподдържан генераторен алгоритъм
+      Invalid: Имейлът е невалиден
+      NotChanged: Имейлът не е променен
+      NotFound: Имейлът не е намерен
     EmailVerify:
       UserIDEmpty: UserID е празен
     ExternalData:
       CouldNotRead: Външните данни не могат да бъдат прочетени правилно
-    MFA:
-      NoProviders: Няма налични многофакторни доставчици
-      OTP:
-        AlreadyReady: Многофакторният OTP (OneTimePassword) вече е настроен
-        NotExisting: Многофакторният OTP (OneTimePassword) не съществува
-        InvalidCode: Невалиден код
-        Reused: Този код вече е използван. Моля, изчакайте нов код
-        NotReady: Многофакторният OTP (OneTimePassword) не е готов
-    Locked: Потребителят е заключен
-    SomethingWentWrong: Нещо се обърка
-    NotActive: Потребителят не е активен
     ExternalIDP:
-      IDPTypeNotImplemented: Типът IDP не е внедрен
-      NotAllowed: Външен доставчик на вход не е разрешен
-      IDPConfigIDEmpty: Идентификационният номер на доставчика е празен
-      ExternalUserIDEmpty: ID на външен потребител е празен
-      UserDisplayNameEmpty: Екранното име на потребителя е празно
-      NoExternalUserData: Не са получени външни потребителски данни
       CreationNotAllowed: Създаването на нов потребител не е разрешено на този доставчик
+      ExternalUserIDEmpty: ID на външен потребител е празен
+      IDPConfigIDEmpty: Идентификационният номер на доставчика е празен
+      IDPTypeNotImplemented: Типът IDP не е внедрен
       LinkingNotAllowed: Свързването на потребител не е разрешено на този доставчик
-      NoOptionAllowed: Нито създаване, нито свързване е разрешено за този доставчик. Моля, свържете се с администратора.
       LoginFailedSwitchLocal: |
         Вход в външен доставчик на идентификация е неуспешен. Връщане към локален вход.
 
         Подробности за грешката: {{.Details}}
+      NoExternalUserData: Не са получени външни потребителски данни
+      NoOptionAllowed: Нито създаване, нито свързване е разрешено за този доставчик. Моля, свържете се с администратора.
+      NotAllowed: Външен доставчик на вход не е разрешен
+      UserDisplayNameEmpty: Екранното име на потребителя е празно
     GrantRequired: 'Влизането не е възможно. '
+    Inactive: Потребителят е неактивен
+    Invalid: Невалидни потребителски данни
+    Locked: Потребителят е заключен
+    MFA:
+      NoProviders: Няма налични многофакторни доставчици
+      OTP:
+        AlreadyReady: Многофакторният OTP (OneTimePassword) вече е настроен
+        InvalidCode: Невалиден код
+        NotExisting: Многофакторният OTP (OneTimePassword) не съществува
+        NotReady: Многофакторният OTP (OneTimePassword) не е готов
+        Reused: Този код вече е използван. Моля, изчакайте нов код
+    NotActive: Потребителят не е активен
+    NotAllowedOrg: Потребителят не е член на необходимата организация
+    NotAllowedToLink: Потребителят няма право да се свързва с външен доставчик на данни за вход
+    NotFound: Потребителят не може да бъде намерен
+    NotFoundOnOrg: Потребителят не може да бъде намерен в избраната организация
+    NotMatchingUserID: Потребителят и потребителят в заявката за удостоверяване не съвпадат
+    Password:
+      ConfirmationWrong: Потвърждението на паролата е грешно
+      Empty: Паролата е празна
+      Invalid: Паролата е невалидна
+      InvalidAndLocked: Паролата е невалидна и потребителят е заключен, свържете се с вашия администратор.
+      NotChanged: Новата парола не може да съвпада с текущата парола
+    PasswordComplexityPolicy:
+      HasLower: Паролата трябва да съдържа малка буква
+      HasNumber: Паролата трябва да съдържа число
+      HasSymbol: Паролата трябва да съдържа символ
+      HasUpper: Паролата трябва да съдържа горна буква
+      MinLength: Паролата е твърде кратка
+      NotFound: Политиката за парола не е намерена
+    Phone:
+      AlreadyVerified: Телефонът вече е потвърден
+      Empty: Телефонът е празен
+      Invalid: Телефонът е невалиден
+      NotChanged: Телефонът не е сменен
+      NotFound: Телефонът не е намерен
+    Profile:
+      Empty: Профилът е празен
+      FirstNameEmpty: Името в профила е празно
+      IDMissing: Липсва ID на потребителския профил
+      LastNameEmpty: Фамилията в профила е празна
+      NotChanged: Профилът не е променен
+      NotFound: Профилът не е намерен
     ProjectRequired: 'Влизането не е възможно. '
-  IdentityProvider:
-    InvalidConfig: Конфигурацията на доставчика на самоличност е невалидна
-  IAM:
-    LockoutPolicy:
-      NotExisting: Политиката за блокиране не съществува
-  Org:
-    LoginPolicy:
-      RegistrationNotAllowed: Регистрацията не е разрешена
-  DeviceAuth:
-    NotExisting: Потребителският код не съществува
+    SomethingWentWrong: Нещо се обърка
+    UserIDMissing: UserID е празен
+    Username:
+      AlreadyExists: Потребителско име вече е заето
+      Empty: Потребителското име е празно
+      Reserved: Потребителско име вече е заето
+    UsernameOrPassword:
+      Invalid: Потребителското име или паролата са невалидни
+ExternalNotFound:
+  Arabic: العربية
+  AutoRegisterButtonText: регистрирам
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: 'Външен потребител не е намерен. '
+  Dutch: Nederlands
+  English: English
+  French: Français
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LinkButtonText: Връзка
+  Macedonian: Македонски
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: Приемам
+  PrivacyLinkText: политика за поверителност
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: Външен потребител не е намерен
+  TosAndPrivacyLabel: Правила и условия
+  TosConfirm: Приемам
+  TosLinkText: TOS
+  Turkish: Türkçe
+  Ukrainian: Українська
+ExternalRegistrationUserOverview:
+  Arabic: العربية
+  BackButtonText: обратно
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: 'Взехме вашите потребителски данни от избрания доставчик. '
+  Dutch: Nederlands
+  EmailLabel: Електронна поща
+  English: English
+  ExternalLogin: или се регистрирайте при външен потребител
+  FirstnameLabel: Първо име
+  French: Français
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LanguageLabel: език
+  LastnameLabel: Фамилия
+  Macedonian: Македонски
+  NextButtonText: спаси
+  NicknameLabel: Псевдоним
+  PhoneLabel: Телефонен номер
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: Приемам
+  PrivacyLinkText: политика за поверителност
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: Регистрация на външен потребител
+  TosAndPrivacyLabel: Правила и условия
+  TosConfirm: Приемам
+  TosLinkText: TOS
+  Turkish: Türkçe
+  Ukrainian: Українська
+  UsernameLabel: Потребителско име
+Footer:
+  Help: Помогне
+  PoweredBy: Задвижвани от
+  PrivacyPolicy: Политика за поверителност
+  SupportEmail: Поддръжка на имейл
+  Tos: TOS
+InitMFADone:
+  CancelButtonText: анулиране
+  Description: 'Страхотно! '
+  NextButtonText: следващия
+  Title: Ключът за сигурност е проверен
+InitMFAOTP:
+  CancelButtonText: анулиране
+  CodeLabel: Код
+  Description: 'Създайте своя 2-фактор. '
+  NextButtonText: следващия
+  OTPDescription: Сканирайте кода с вашето приложение за удостоверяване (напр. Google/Microsoft Authenticator, Authy) или копирайте тайната и поставете генерирания код по-долу.
+  SecretLabel: Тайна
+  Title: 2-факторна проверка
+InitMFAOTPSMS:
+  CodeLabel: Код
+  CountryCodeLabel: Държава
+  DescriptionCode: Създайте своя 2-фактор. Въведете получения код, за да потвърдите своя телефонен номер.
+  DescriptionPhone: Създайте своя 2-фактор. Въведете телефонния си номер, за да го потвърдите.
+  EditButtonText: редактиране
+  NextButtonText: следващия
+  PhoneLabel: Тайна
+  ResendButtonText: код за препращане
+  Title: 2-факторна проверка
+InitMFAPrompt:
+  Description: Двуфакторното удостоверяване ви дава допълнителна сигурност за вашия потребителски акаунт.
+  NextButtonText: следващия
+  Provider0: Приложение за удостоверяване (напр. Google/Microsoft Authenticator, Authy)
+  Provider1: Зависи от устройството (напр. FaceID, Windows Hello, пръстов отпечатък)
+  Provider3: OTP SMS
+  Provider4: OTP имейл
+  SkipButtonText: пропуснете
+  Title: 2-факторна настройка
+InitMFAU2F:
+  Description: Ключът за сигурност е метод за потвърждение, който може да бъде вграден във вашия телефон, да използва Bluetooth или да се включи директно в USB порта на вашия компютър.
+  ErrorRetry: Опитайте отново, създайте ново предизвикателство или изберете различен метод.
+  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
+  RegisterTokenButtonText: Добавете ключ за сигурност
+  Title: Добавете ключ за сигурност
+  TokenNameLabel: Име на защитния ключ/устройство
+InitPassword:
+  CodeLabel: Код
+  Description: Получихте код, който трябва да въведете във формата по-долу, за да зададете новата си парола.
+  NewPasswordConfirmLabel: потвърди парола
+  NewPasswordLabel: нова парола
+  NextButtonText: следващия
+  ResendButtonText: код за препращане
+  Title: Задайте парола
+InitPasswordDone:
+  CancelButtonText: анулиране
+  Description: Паролата е зададена успешно
+  NextButtonText: следващия
+  Title: Зададена парола
+InitUser:
+  CodeLabel: Код
+  Description: Потвърдете имейла си с кода по-долу и задайте парола.
+  NewPasswordConfirm: потвърди парола
+  NewPasswordLabel: нова парола
+  NextButtonText: следващия
+  ResendButtonText: код за препращане
+  Title: Активиране на потребител
+InitUserDone:
+  CancelButtonText: анулиране
+  Description: Имейлът е потвърден и паролата е успешно зададена
+  NextButtonText: следващия
+  Title: Потребителят е активиран
+InviteUser:
+  CodeLabel: Код
+  Description: Проверете своя имейл с кода по-долу и задайте паролата си.
+  NewPasswordConfirm: Потвърди парола
+  NewPasswordLabel: Нова парола
+  NextButtonText: Напред
+  ResendButtonText: Изпрати отново код
+  Title: Активиране на потребителя
+LDAP:
+  Description: Въведете вашите данни за вход.
+  LoginNameLabel: Потребителско име
+  NextButtonText: следващия
+  PasswordLabel: Парола
+  Title: Влизам
+LinkingUserPrompt:
+  Description: „Искате ли да свържете съществуващия си акаунт:“
+  LinkButtonText: Връзка
+  OtherButtonText: Други възможности
+  Title: Намерен съществуващ потребител
+LinkingUsersDone:
+  CancelButtonText: анулиране
+  Description: Свързването с потребители е готово.
+  NextButtonText: следващия
+  Title: Свързване с потребители
+Login:
+  Description: Въведете вашите данни за вход.
+  DescriptionLinking: Въведете вашите данни за вход, за да свържете вашия външен потребител с потребител на Zitadel.
+  ExternalUserDescription: Влезте с външен потребител.
+  LoginNameLabel: Потребителско име
+  LoginnamePlaceHolder: потребителско име@домейн
+  MustBeMemberOfOrg: Потребителят трябва да е член на {{.OrgName}} организация.
+  NextButtonText: следващия
+  RegisterButtonText: регистрирам
+  Title: Добре дошъл обратно!
+  TitleLinking: Влезте за потребителско свързване
+  UsernamePlaceHolder: потребителско име
+LoginSuccess:
+  AutoRedirectDescription: 'Ще бъдете насочени обратно към вашето приложение автоматично. '
+  NextButtonText: следващия
+  RedirectedDescription: Сега можете да затворите този прозорец.
+  Title: Успешен вход
+LogoutDone:
+  Description: Вие излязохте успешно.
+  LoginButtonText: Влизам
+  Title: Излязъл
+MFAProvider:
+  ChooseOther: или изберете друга опция
+  Provider0: Приложение за удостоверяване (напр. Google/Microsoft Authenticator, Authy)
+  Provider1: Зависи от устройството (напр. FaceID, Windows Hello, пръстов отпечатък)
+  Provider3: OTP SMS
+  Provider4: OTP имейл
+Password:
+  BackButtonText: Назад
+  Confirmation: Потвърждението на паролата съвпада.
+  Description: Въведете данните си за вход.
+  HasLowercase: Трябва да включва малка буква.
+  HasNumber: Трябва да включва число.
+  HasSymbol: Трябва да включва символ.
+  HasUppercase: Трябва да включва главна буква.
+  MaxLength: Трябва да е по-малко от 70 символа.
+  MinLength: Трябва да е поне
+  MinLengthp2: символа дълга.
+  NextButtonText: Напред
+  PasswordLabel: Парола
+  ResetLinkText: Нулиране на паролата
+  Title: Парола
+PasswordChange:
+  CancelButtonText: анулиране
+  Description: 'Променете паролата си. '
+  ExpiredDescription: Паролата ви е изтекла и трябва да бъде променена. Въведете старата и новата си парола.
+  Footer: Долен колонтитул
+  NewPasswordConfirmLabel: Потвърждение на парола
+  NewPasswordLabel: нова парола
+  NextButtonText: следващия
+  OldPasswordLabel: Стара парола
+  Title: Промяна на паролата
+PasswordChangeDone:
+  Description: Вашата парола бе променена успешно.
+  NextButtonText: следващия
+  Title: Промяна на паролата
+PasswordResetDone:
+  Description: Проверете имейла си, за да нулирате паролата си.
+  NextButtonText: следващия
+  Title: Връзката за повторно задаване на парола е изпратена
+Passwordless:
+  Description: Влезте с методи за удостоверяване, предоставени от вашето устройство, като FaceID, Windows Hello или пръстов отпечатък.
+  ErrorRetry: Опитайте отново, създайте ново предизвикателство или изберете различен метод.
+  LoginWithPwButtonText: Влезте с парола
+  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
+  Title: Вход без парола
+  ValidateTokenButtonText: Влезте без парола
+PasswordlessPrompt:
+  Description: 'Искате ли да настроите влизане без парола? '
+  DescriptionInit: 'Трябва да настроите влизане без парола. '
+  NextButtonText: следващия
+  PasswordlessButtonText: Преминете без парола
+  SkipButtonText: пропуснете
+  Title: Настройка без парола
+PasswordlessRegistration:
+  Description: Добавете вашето удостоверяване, като предоставите име (напр. MyMobilePhone, MacBook и т.н.) и след това щракнете върху бутона „Регистриране без парола“ по-долу.
+  ErrorRetry: Опитайте отново, създайте ново предизвикателство или изберете различен метод.
+  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
+  RegisterTokenButtonText: Регистрирайте се без парола
+  Title: Настройка без парола
+  TokenNameLabel: Име на устройството
+PasswordlessRegistrationDone:
+  CancelButtonText: анулиране
+  Description: Успешно добавено устройство за без парола.
+  DescriptionClose: Сега можете да затворите този прозорец.
+  NextButtonText: следващия
+  Title: Настройка без парола
+RegisterOption:
+  Description: Изберете как искате да се регистрирате
+  ExternalLoginDescription: или се регистрирайте при външен потребител
+  LoginButtonText: Влизам
+  RegisterUsernamePasswordButtonText: С парола за потребителско име
+  Title: Опции за регистрация
+RegistrationOrg:
+  Description: Въведете името на вашата организация и потребителските данни.
+  EmailLabel: Електронна поща
+  FirstnameLabel: Първо име
+  LastnameLabel: Фамилия
+  OrgNameLabel: Наименование на организацията
+  PasswordConfirmLabel: Потвърждение на парола
+  PasswordLabel: Парола
+  PrivacyConfirm: Приемам
+  PrivacyLinkText: политика за поверителност
+  SaveButtonText: Създайте организация
+  Title: Регистрация на организация
+  TosAndPrivacyLabel: Правила и условия
+  TosConfirm: Приемам
+  TosLinkText: TOS
+  UsernameLabel: Потребителско име
+RegistrationUser:
+  Arabic: العربية
+  BackButtonText: Влизам
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: 'Въведете своите потребителски данни. '
+  DescriptionOrgRegister: Въведете своите потребителски данни.
+  Diverse: разнообразен / X
+  Dutch: Nederlands
+  EmailLabel: Електронна поща
+  English: English
+  ExternalLogin: или се регистрирайте при външен потребител
+  Female: Женски пол
+  FirstnameLabel: Първо име
+  French: Français
+  GenderLabel: Пол
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LanguageLabel: език
+  LastnameLabel: Фамилия
+  Macedonian: Македонски
+  Male: Мъжки
+  NextButtonText: следващия
+  PasswordConfirmLabel: Потвърждение на парола
+  PasswordLabel: Парола
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: Приемам
+  PrivacyLinkText: политика за поверителност
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: Регистрация
+  TosAndPrivacyLabel: Правила и условия
+  TosConfirm: Приемам
+  TosLinkText: TOS
+  Turkish: Türkçe
+  Ukrainian: Українська
+  UsernameLabel: Потребителско име
+SelectAccount:
+  Description: Използвайте вашия Zitadel-акаунт
+  DescriptionLinking: Изберете своя акаунт, който да свържете с вашия външен потребител.
+  MustBeMemberOfOrg: Потребителят трябва да е член на {{.OrgName}} организация.
+  OtherUser: Друг потребител
+  SessionState0: активен
+  SessionState1: Не сте в профила си
+  Title: Изберете акаунт
+  TitleLinking: Изберете акаунт за свързване на потребител
+SignIn: Влезте с {{.Provider}}
+UsernameChange:
+  CancelButtonText: анулиране
+  Description: Задайте новото си потребителско име
+  NextButtonText: следващия
+  Title: Промяна на потребителското име
+  UsernameLabel: Потребителско име
+UsernameChangeDone:
+  Description: Вашето потребителско име бе променено успешно.
+  NextButtonText: следващия
+  Title: Потребителското име е променено
+VerifyMFAOTP:
+  CodeLabel: Код
+  Description: Проверете вашия втори фактор
+  NextButtonText: следващия
+  Title: Проверете 2-фактора
+VerifyMFAU2F:
+  Description: Потвърдете своя 2-фактор с регистрираното устройство (напр. FaceID, Windows Hello, пръстов отпечатък)
+  ErrorRetry: Опитайте отново, създайте нова заявка или изберете друг метод.
+  NotSupported: 'WebAuthN не се поддържа от вашия браузър. '
+  Title: 2-факторна проверка
+  ValidateTokenButtonText: Проверете 2-фактора
+VerifyOTP:
+  CodeLabel: Код
+  Description: Проверете вашия втори фактор
+  NextButtonText: следващия
+  ResendButtonText: код за препращане
+  Title: Проверете 2-фактора
 optional: (по избор)

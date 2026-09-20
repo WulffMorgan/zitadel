@@ -1,540 +1,498 @@
-Login:
-  Title: Witaj z powrotem!
-  Description: Wprowadź swoje dane logowania.
-  TitleLinking: Logowanie do połączenia z użytkownikiem
-  DescriptionLinking: Wprowadź swoje dane logowania, aby połączyć swojego zewnętrznego użytkownika z użytkownikiem Zitadel.
-  LoginNameLabel: Nazwa użytkownika
-  UsernamePlaceHolder: nazwa użytkownika
-  LoginnamePlaceHolder: nazwa użytkownika@domena
-  ExternalUserDescription: Zaloguj się za pomocą zewnętrznego użytkownika.
-  MustBeMemberOfOrg: Użytkownik musi być członkiem organizacji {{.OrgName}}.
-  RegisterButtonText: zarejestruj
-  NextButtonText: dalej
-
-LDAP:
-  Title: Rejestracja
-  Description: Wprowadź swoje dane logowania.
-  LoginNameLabel: Nazwa użytkownika
-  PasswordLabel: Hasło
-  NextButtonText: dalej
-
-SelectAccount:
-  Title: Wybierz konto
-  Description: Użyj swojego konta Zitadel
-  TitleLinking: Wybierz konto do połączenia z użytkownikiem
-  DescriptionLinking: Wybierz swoje konto, aby połączyć je z twoim zewnętrznym użytkownikiem.
-  OtherUser: Inny użytkownik
-  SessionState0: aktywne
-  SessionState1: Wylogowano
-  MustBeMemberOfOrg: Użytkownik musi być członkiem organizacji {{.OrgName}}.
-
-Password:
-  Title: Hasło
-  Description: Wprowadź swoje dane logowania.
-  PasswordLabel: Hasło
-  MinLength: Musi zawierać co najmniej
-  MinLengthp2: znaków.
-  MaxLength: Musi zawierać mniej niż 70 znaków.
-  HasUppercase: Musi zawierać dużą literę.
-  HasLowercase: Musi zawierać małą literę.
-  HasNumber: Musi zawierać numer.
-  HasSymbol: Musi zawierać symbol.
-  Confirmation: Potwierdzenie hasła pasuje.
-  ResetLinkText: Zresetuj hasło
-  BackButtonText: Wstecz
-  NextButtonText: Dalej
-
-UsernameChange:
-  Title: Zmiana nazwy użytkownika
-  Description: Ustaw swoją nową nazwę użytkownika
-  UsernameLabel: Nazwa użytkownika
-  CancelButtonText: anuluj
-  NextButtonText: dalej
-
-UsernameChangeDone:
-  Title: Nazwa użytkownika zmieniona
-  Description: Twoja nazwa użytkownika została pomyślnie zmieniona.
-  NextButtonText: dalej
-
-InitPassword:
-  Title: Ustaw hasło
-  Description: Otrzymałeś kod, który musisz wprowadzić w formularzu poniżej, aby ustawić swoje nowe hasło.
-  CodeLabel: Kod
-  NewPasswordLabel: Nowe hasło
-  NewPasswordConfirmLabel: Potwierdź hasło
-  ResendButtonText: wyślij kod ponownie
-  NextButtonText: dalej
-
-InitPasswordDone:
-  Title: Hasło ustawione
-  Description: Hasło zostało pomyślnie ustawione
-  NextButtonText: dalej
-  CancelButtonText: anuluj
-
-InitUser:
-  Title: Aktywuj użytkownika
-  Description: Zweryfikuj swój adres e-mail z poniższym kodem i ustaw swoje hasło.
-  CodeLabel: Kod
-  NewPasswordLabel: Nowe hasło
-  NewPasswordConfirm: Potwierdź hasło
-  NextButtonText: dalej
-  ResendButtonText: wyślij kod ponownie
-
-InitUserDone:
-  Title: Użytkownik aktywowany
-  Description: Adres e-mail zweryfikowany i hasło pomyślnie ustawione
-  NextButtonText: dalej
-  CancelButtonText: anuluj
-
-InviteUser:
-  Title: Aktywuj użytkownika
-  Description: Zweryfikuj swój adres e-mail za pomocą poniższego kodu i ustaw swoje hasło.
-  CodeLabel: Kod
-  NewPasswordLabel: Nowe hasło
-  NewPasswordConfirm: Potwierdź hasło
-  NextButtonText: Dalej
-  ResendButtonText: Wyślij ponownie kod
-
-InitMFAPrompt:
-  Title: Konfiguracja 2-etapowego uwierzytelniania
-  Description: 2-etapowe uwierzytelnianie daje Ci dodatkową ochronę dla Twojego konta użytkownika. Dzięki temu masz pewność, że tylko Ty masz dostęp do swojego konta.
-  Provider0: Aplikacja uwierzytelniająca (np. Google/Microsoft Authenticator, Authy)
-  Provider1: Zależny od urządzenia (np. FaceID, Windows Hello, Odcisk palca)
-  Provider3: OTP SMS
-  Provider4: OTP e-mail
-  NextButtonText: dalej
-  SkipButtonText: pomiń
-
-InitMFAOTP:
-  Title: Weryfikacja 2-etapowa
-  Description: Utwórz swoje 2-etapowe uwierzytelnianie. Pobierz aplikację uwierzytelniającą, jeśli nie masz jej już zainstalowanej.
-  OTPDescription: Zeskanuj kod za pomocą aplikacji uwierzytelniającej (np. Google/Microsoft Authenticator, Authy) lub skopiuj sekret i wprowadź wygenerowany kod poniżej.
-  SecretLabel: Sekret
-  CodeLabel: Kod
-  NextButtonText: dalej
-  CancelButtonText: anuluj
-
-InitMFAOTPSMS:
-  Title: Weryfikacja 2-etapowa
-  DescriptionPhone: Utwórz uwierzytelnianie dwuskładnikowe. Wprowadź swój numer telefonu, aby go zweryfikować.
-  DescriptionCode: Utwórz uwierzytelnianie dwuskładnikowe. Wprowadź otrzymany kod, aby zweryfikować swój numer telefonu.
-  CountryCodeLabel: Kraj
-  PhoneLabel: Numer telefonu
-  CodeLabel: Kod
-  EditButtonText: edytować
-  ResendButtonText: wyślij kod ponownie
-  NextButtonText: dalej
-
-InitMFAU2F:
-  Title: Dodaj klucz zabezpieczeń
-  Description: Klucz zabezpieczeń to metoda weryfikacji, która może być zintegrowana z twoim telefonem, używająca Bluetooth lub podłączana bezpośrednio do portu USB komputera.
-  TokenNameLabel: Nazwa klucza zabezpieczeń/urządzenia
-  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że jest ona zaktualizowana lub użyj innej (np. Chrome, Safari, Firefox)
-  RegisterTokenButtonText: Dodaj klucz zabezpieczeń
-  ErrorRetry: Spróbuj ponownie, utwórz nowe wyzwanie lub wybierz inną metodę.
-
-InitMFADone:
-  Title: Klucz zabezpieczeń zweryfikowany
-  Description: Świetnie! Pomyślnie skonfigurowałeś swoje 2-etapowe uwierzytelnianie i zwiększyłeś bezpieczeństwo swojego konta. Czynnik musi być wprowadzony przy każdym logowaniu.
-  NextButtonText: dalej
-  CancelButtonText: anuluj
-
-MFAProvider:
-  Provider0: Aplikacja uwierzytelniająca (np. Google/Microsoft Authenticator, Authy)
-  Provider1: Zależny od urządzenia (np. FaceID, Windows Hello, Odcisk palca)
-  Provider3: OTP SMS
-  Provider4: OTP e-mail
-  ChooseOther: lub wybierz inną opcję
-
-VerifyMFAOTP:
-  Title: Zweryfikuj 2-etapowe uwierzytelnianie
-  Description: Zweryfikuj swój drugi czynnik
-  CodeLabel: Kod
-  NextButtonText: dalej
-
-VerifyOTP:
-  Title: Zweryfikuj 2-etapowe uwierzytelnianie
-  Description: Zweryfikuj swój drugi czynnik
-  CodeLabel: Kod
-  ResendButtonText: wyślij kod ponownie
-  NextButtonText: dalej
-
-VerifyMFAU2F:
-  Title: Weryfikacja 2-etapowego uwierzytelniania
-  Description: Zweryfikuj swoje 2-etapowe uwierzytelnianie za pomocą zarejestrowanego urządzenia (np. FaceID, Windows Hello, odcisk palca)
-  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że korzystasz z najnowszej wersji lub zmień przeglądarkę na obsługującą tę funkcję (Chrome, Safari, Firefox)
-  ErrorRetry: Spróbuj ponownie, utwórz nowe żądanie lub wybierz inną metodę.
-  ValidateTokenButtonText: Zweryfikuj 2-etapowe uwierzytelnianie
-
-Passwordless:
-  Title: Logowanie bez hasła
-  Description: Zaloguj się za pomocą metod uwierzytelniania dostarczonych przez twoje urządzenie, takich jak FaceID, Windows Hello lub odcisk palca.
-  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że jest ona zaktualizowana lub użyj innej (np. Chrome, Safari, Firefox)
-  ErrorRetry: Spróbuj ponownie, utwórz nowe wyzwanie lub wybierz inną metodę.
-  LoginWithPwButtonText: Zaloguj się za pomocą hasła
-  ValidateTokenButtonText: Zaloguj się bez hasła
-
-PasswordlessPrompt:
-  Title: Konfiguracja logowania bez hasła
-  Description: Czy chcesz skonfigurować logowanie bez hasła? (Metody uwierzytelniania twojego urządzenia, takie jak FaceID, Windows Hello lub odcisk palca)
-  DescriptionInit: Musisz skonfigurować logowanie bez hasła. Użyj linku, który otrzymałeś, aby zarejestrować swoje urządzenie.
-  PasswordlessButtonText: Przejdź do logowania bez hasła
-  NextButtonText: dalej
-  SkipButtonText: pomiń
-
-PasswordlessRegistration:
-  Title: Konfiguracja logowania bez hasła
-  Description: Dodaj swoją metodę uwierzytelniania, podając nazwę (np. Mój telefon komórkowy, MacBook itp.) i klikając przycisk "Zarejestruj logowanie bez hasła" poniżej.
-  TokenNameLabel: Nazwa urządzenia
-  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że jest ona zaktualizowana lub użyj innej (np. Chrome, Safari, Firefox)
-  RegisterTokenButtonText: Zarejestruj logowanie bez hasła
-  ErrorRetry: Spróbuj ponownie, utwórz nowe wyzwanie lub wybierz inną metodę.
-
-PasswordlessRegistrationDone:
-  Title: Konfiguracja logowania bez hasła
-  Description: Urządzenie do logowania bez hasła zostało pomyślnie dodane.
-  DescriptionClose: Teraz możesz zamknąć to okno.
-  NextButtonText: dalej
-  CancelButtonText: anuluj
-
-PasswordChange:
-  Title: Zmiana hasła
-  Description: Zmień swoje hasło. Wprowadź swoje stare i nowe hasło.
-  ExpiredDescription: Twoje hasło wygasło i musi zostać zmienione. Wprowadź swoje stare i nowe hasło.
-  OldPasswordLabel: Stare hasło
-  NewPasswordLabel: Nowe hasło
-  NewPasswordConfirmLabel: Potwierdzenie hasła
-  CancelButtonText: anuluj
-  NextButtonText: dalej
-  Footer: Stopka
-
-PasswordChangeDone:
-  Title: Zmiana hasła
-  Description: Twoje hasło zostało pomyślnie zmienione.
-  NextButtonText: dalej
-
-PasswordResetDone:
-  Title: Link do resetowania hasła wysłany
-  Description: Sprawdź swoją pocztę, aby zresetować swoje hasło.
-  NextButtonText: dalej
-
-EmailVerification:
-  Title: Weryfikacja e-mail
-  Description: Wysłaliśmy Ci e-mail, aby zweryfikować swój adres. Proszę wprowadzić kod w formularzu poniżej.
-  CodeLabel: Kod
-  NextButtonText: dalej
-  ResendButtonText: wyślij ponownie kod
-
-EmailVerificationDone:
-  Title: Weryfikacja e-mail
-  Description: Twój adres e-mail został pomyślnie zweryfikowany.
-  NextButtonText: dalej
-  CancelButtonText: anuluj
-  LoginButtonText: zaloguj się
-
-RegisterOption:
-  Title: Opcje rejestracji
-  Description: Wybierz sposób, w jaki chcesz się zarejestrować
-  RegisterUsernamePasswordButtonText: Z nazwą użytkownika i hasłem
-  ExternalLoginDescription: lub zarejestruj się przy użyciu zewnętrznego użytkownika
-  LoginButtonText: zaloguj się
-
-RegistrationUser:
-  Title: Rejestracja
-  Description: Wprowadź swoje dane użytkownika. Twój adres e-mail będzie używany jako nazwa użytkownika.
-  DescriptionOrgRegister: Wprowadź swoje dane użytkownika.
-  EmailLabel: E-Mail
-  UsernameLabel: Nazwa użytkownika
-  FirstnameLabel: Imię
-  LastnameLabel: Nazwisko
-  LanguageLabel: Język
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
-  GenderLabel: Płeć
-  Female: Kobieta
-  Male: Mężczyzna
-  Diverse: Różne / X
-  PasswordLabel: Hasło
-  PasswordConfirmLabel: Potwierdzenie hasła
-  TosAndPrivacyLabel: Warunki i polityka prywatności
-  TosConfirm: Akceptuję
-  TosLinkText: Warunki korzystania
-  PrivacyConfirm: Akceptuję
-  PrivacyLinkText: politykę prywatności
-  ExternalLogin: lub zarejestruj się za pomocą zewnętrznego użytkownika
-  BackButtonText: zaloguj się
-  NextButtonText: dalej
-
-ExternalRegistrationUserOverview:
-  Title: Rejestracja zewnętrznego użytkownika
-  Description: Pobraliśmy Twoje dane użytkownika z wybranego dostawcy. Teraz możesz je zmienić lub uzupełnić.
-  EmailLabel: E-Mail
-  UsernameLabel: Nazwa użytkownika
-  FirstnameLabel: Imię
-  LastnameLabel: Nazwisko
-  NicknameLabel: Pseudonim
-  PhoneLabel: Numer telefonu
-  LanguageLabel: Język
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
-  TosAndPrivacyLabel: Warunki i zasady
-  TosConfirm: Akceptuję
-  TosLinkText: Warunki korzystania
-  PrivacyConfirm: Akceptuję
-  PrivacyLinkText: politykę prywatności
-  ExternalLogin: lub zarejestruj się przez zewnętrznego dostawcę
-  BackButtonText: wróć
-  NextButtonText: zapisz
-
-RegistrationOrg:
-  Title: Rejestracja organizacji
-  Description: Wprowadź nazwę swojej organizacji i dane użytkownika.
-  OrgNameLabel: Nazwa organizacji
-  EmailLabel: E-Mail
-  UsernameLabel: Nazwa użytkownika
-  FirstnameLabel: Imię
-  LastnameLabel: Nazwisko
-  PasswordLabel: Hasło
-  PasswordConfirmLabel: Potwierdzenie hasła
-  TosAndPrivacyLabel: Warunki i polityka prywatności
-  TosConfirm: Akceptuję
-  TosLinkText: Warunki korzystania z usługi
-  PrivacyConfirm: Akceptuję
-  PrivacyLinkText: Politykę prywatności
-  SaveButtonText: Utwórz organizację
-
-LoginSuccess:
-  Title: Zalogowano pomyślnie
-  AutoRedirectDescription: Zostaniesz automatycznie przekierowany do swojej aplikacji. Jeśli nie, kliknij przycisk poniżej. Możesz teraz zamknąć to okno.
-  RedirectedDescription: Możesz teraz zamknąć to okno.
-  NextButtonText: Dalej
-
-LogoutDone:
-  Title: Wylogowano
-  Description: Wylogowano pomyślnie.
-  LoginButtonText: Zaloguj się
-
-LinkingUserPrompt:
-  Title: Znaleziono istniejącego użytkownika
-  Description: "Czy chcesz połączyć swoje istniejące konto:"
-  LinkButtonText: Połączyć
-  OtherButtonText: Inne opcje
-
-LinkingUsersDone:
-  Title: Łączenie użytkowników
-  Description: Łączenie użytkowników zakończone pomyślnie.
-  CancelButtonText: Anuluj
-  NextButtonText: Dalej
-
-ExternalNotFound:
-  Title: Nie znaleziono zewnętrznego użytkownika
-  Description: Nie znaleziono zewnętrznego użytkownika. Czy chcesz połączyć swojego użytkownika lub automatycznie zarejestrować nowego.
-  LinkButtonText: Połącz
-  AutoRegisterButtonText: Zarejestruj
-  TosAndPrivacyLabel: Warunki i zasady
-  TosConfirm: Akceptuję
-  TosLinkText: TOS
-  PrivacyConfirm: Akceptuję
-  PrivacyLinkText: politykę prywatności
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
-
 DeviceAuth:
-  Title: Autoryzacja urządzenia
-  UserCode:
-    Label: Kod użytkownika
-    Description: Wprowadź kod użytkownika prezentowany na urządzeniu.
-    ButtonNext: Następny
   Action:
-    Description: Przyznaj dostęp do urządzenia.
-    GrantDevice: zamierzasz przyznać urządzenie
     AccessToScopes: dostęp do następujących zakresów
     Button:
       Allow: umożliwić
       Deny: zaprzeczyć
+    Description: Przyznaj dostęp do urządzenia.
+    GrantDevice: zamierzasz przyznać urządzenie
   Done:
-    Description: Zrobione.
     Approved: Zatwierdzono autoryzację urządzenia. Możesz teraz wrócić do urządzenia.
     Denied: Odmowa autoryzacji urządzenia. Możesz teraz wrócić do urządzenia.
-
-Footer:
-  PoweredBy: Obsługiwane przez
-  Tos: TOS
-  PrivacyPolicy: Polityka prywatności
-  Help: Pomoc
-  SupportEmail: E-mail wsparcia
-
-SignIn: Zaloguj się, używając konta {{.Provider}}
-
+    Description: Zrobione.
+  Title: Autoryzacja urządzenia
+  UserCode:
+    ButtonNext: Następny
+    Description: Wprowadź kod użytkownika prezentowany na urządzeniu.
+    Label: Kod użytkownika
+EmailVerification:
+  CodeLabel: Kod
+  Description: Wysłaliśmy Ci e-mail, aby zweryfikować swój adres. Proszę wprowadzić kod w formularzu poniżej.
+  NextButtonText: dalej
+  ResendButtonText: wyślij ponownie kod
+  Title: Weryfikacja e-mail
+EmailVerificationDone:
+  CancelButtonText: anuluj
+  Description: Twój adres e-mail został pomyślnie zweryfikowany.
+  LoginButtonText: zaloguj się
+  NextButtonText: dalej
+  Title: Weryfikacja e-mail
 Errors:
-  Internal: Wewnętrzny błąd
   AuthRequest:
+    MissingParameters: Brakujące wymagane parametry
     NotFound: Nie znaleziono żądania uwierzytelnienia
+    RequestTypeNotSupported: Typ żądania nie jest obsługiwany
+    TokenNotFound: Token nie znaleziono
     UserAgentNotCorresponding: Agent użytkownika nie odpowiada
     UserAgentNotFound: ID agenta użytkownika nie znaleziono
-    TokenNotFound: Token nie znaleziono
-    RequestTypeNotSupported: Typ żądania nie jest obsługiwany
-    MissingParameters: Brakujące wymagane parametry
+  DeviceAuth:
+    NotExisting: Kod użytkownika nie istnieje
+  IAM:
+    LockoutPolicy:
+      NotExisting: Nie istnieje polityka blokady
+  IdentityProvider:
+    InvalidConfig: Konfiguracja dostawcy identyfikacji jest nieprawidłowa
+  Internal: Wewnętrzny błąd
+  Org:
+    LoginPolicy:
+      RegistrationNotAllowed: Rejestracja nie jest dozwolona
   User:
-    NotFound: Nie znaleziono użytkownika
+    Address:
+      NotChanged: Adres nie zmieniony
+      NotFound: Adres nie znaleziony
     AlreadyExists: Użytkownik już istnieje
-    Inactive: Użytkownik jest nieaktywny
-    NotFoundOnOrg: Nie znaleziono użytkownika w wybranej organizacji
-    NotAllowedOrg: Użytkownik nie jest członkiem wymaganej organizacji
-    NotMatchingUserID: Użytkownik i użytkownik w żądaniu uwierzytelnienia nie pasują do siebie
-    UserIDMissing: ID użytkownika jest puste
-    Invalid: Nieprawidłowe dane użytkownika
+    Code:
+      CryptoCodeNil: Kod kryptograficzny jest pusty
+      Empty: Kod jest pusty
+      Expired: Kod jest przedawniony
+      GeneratorAlgNotSupported: Nieobsługiwany algorytm generatora.
+      Invalid: Kod jest niepoprawny
+      NotFound: Nie można znaleźć kodu
     DomainNotAllowedAsUsername: Domena jest już zarezerwowana i nie może być użyta
-    NotAllowedToLink: Użytkownik nie jest upoważniony do łączenia z zewnętrznym dostawcą logowania
-    Profile:
-      NotFound: Profil nie znaleziony
-      NotChanged: Profil nie zmieniony
-      Empty: Profil jest pusty
-      FirstNameEmpty: Imię w profilu jest puste
-      LastNameEmpty: Nazwisko w profilu jest puste
-      IDMissing: Profil ID brakuje
     Email:
-      NotFound: Adres e-mail nie znaleziony
-      Invalid: Adres e-mail jest nieprawidłowy
       AlreadyVerified: Adres e-mail jest już zweryfikowany
-      NotChanged: Adres e-mail nie zmieniony
       Empty: Adres e-mail jest pusty
       IDMissing: Adres e-mail ID brakuje
-    Phone:
-      NotFound: Numer telefonu nie znaleziony
-      Invalid: Numer telefonu jest nieprawidłowy
-      AlreadyVerified: Numer telefonu już zweryfikowany
-      Empty: Numer telefonu jest pusty
-      NotChanged: Numer telefonu nie zmieniony
-    Address:
-      NotFound: Adres nie znaleziony
-      NotChanged: Adres nie zmieniony
-    Username:
-      AlreadyExists: Nazwa użytkownika jest już zajęta
-      Reserved: Nazwa użytkownika jest już zajęta
-      Empty: Nazwa użytkownika jest pusty
+      Invalid: Adres e-mail jest nieprawidłowy
+      NotChanged: Adres e-mail nie zmieniony
+      NotFound: Adres e-mail nie znaleziony
+    EmailVerify:
+      UserIDEmpty: ID użytkownika jest puste
+    ExternalData:
+      CouldNotRead: Nie można odczytać danych zewnętrznych
+    ExternalIDP:
+      CreationNotAllowed: Tworzenie nowego użytkownika nie jest dozwolone w tym Providencie
+      ExternalUserIDEmpty: Identyfikator użytkownika zewnętrznego jest pusty
+      IDPConfigIDEmpty: Identyfikator dostawcy identyfikacji jest pusty
+      IDPTypeNotImplemented: Typ IDP nie jest zaimplementowany
+      LinkingNotAllowed: Linkowanie użytkownika nie jest dozwolone na tym Providencie
+      LoginFailedSwitchLocal: |
+        Logowanie w zewnętrznym dostawcy tożsamości nie powiodło się. Powrót do logowania lokalnego.
+
+        Szczegóły błędu: {{.Details}}
+      NoExternalUserData: Nie otrzymano danych użytkownika zewnętrznego
+      NoOptionAllowed: Ani tworzenie, ani łączenie nie jest dozwolone dla tego dostawcy. Skontaktuj się z administratorem.
+      NotAllowed: Dostawca logowania zewnętrznego nie jest dozwolony
+      UserDisplayNameEmpty: Nazwa wyświetlana użytkownika jest pusta
+    GrantRequired: Logowanie nie jest możliwe. Użytkownik musi posiadać przynajmniej jedno uprawnienie w aplikacji. Skontaktuj się z administratorem.
+    Inactive: Użytkownik jest nieaktywny
+    Invalid: Nieprawidłowe dane użytkownika
+    Locked: Użytkownik jest zablokowany
+    MFA:
+      NoProviders: Brak dostępnych dostawców uwierzytelniania wieloskładnikowego
+      OTP:
+        AlreadyReady: Wieloskładnikowe OTP (jednorazowe hasło) jest już skonfigurowane
+        InvalidCode: Nieprawidłowy kod
+        NotExisting: Wieloskładnikowe OTP (jednorazowe hasło) nie istnieje
+        NotReady: Wieloskładnikowe OTP (jednorazowe hasło) nie jest gotowe
+        Reused: Ten kod został już użyty. Poczekaj na nowy kod
+    NotActive: Użytkownik nie jest aktywny
+    NotAllowedOrg: Użytkownik nie jest członkiem wymaganej organizacji
+    NotAllowedToLink: Użytkownik nie jest upoważniony do łączenia z zewnętrznym dostawcą logowania
+    NotFound: Nie znaleziono użytkownika
+    NotFoundOnOrg: Nie znaleziono użytkownika w wybranej organizacji
+    NotMatchingUserID: Użytkownik i użytkownik w żądaniu uwierzytelnienia nie pasują do siebie
     Password:
       ConfirmationWrong: Potwierdzenie hasła jest niepoprawne
       Empty: Hasło jest puste
       Invalid: Hasło jest niepoprawne
       InvalidAndLocked: Hasło jest niepoprawne i użytkownik jest zablokowany, skontaktuj się z administratorem.
       NotChanged: Nowe hasło nie może być takie samo jak Twoje obecne hasło
-    UsernameOrPassword:
-      Invalid: Nazwa użytkownika lub hasło jest niepoprawne
     PasswordComplexityPolicy:
-      NotFound: Nie znaleziono polityki złożoności hasła
-      MinLength: Hasło jest zbyt krótkie
       HasLower: Hasło musi zawierać małe litery
-      HasUpper: Hasło musi zawierać duże litery
       HasNumber: Hasło musi zawierać liczby
       HasSymbol: Hasło musi zawierać symbol
-    Code:
-      Expired: Kod jest przedawniony
-      Invalid: Kod jest niepoprawny
-      Empty: Kod jest pusty
-      CryptoCodeNil: Kod kryptograficzny jest pusty
-      NotFound: Nie można znaleźć kodu
-      GeneratorAlgNotSupported: Nieobsługiwany algorytm generatora.
-    EmailVerify:
-      UserIDEmpty: ID użytkownika jest puste
-    ExternalData:
-      CouldNotRead: Nie można odczytać danych zewnętrznych
-    MFA:
-      NoProviders: Brak dostępnych dostawców uwierzytelniania wieloskładnikowego
-      OTP:
-        AlreadyReady: Wieloskładnikowe OTP (jednorazowe hasło) jest już skonfigurowane
-        NotExisting: Wieloskładnikowe OTP (jednorazowe hasło) nie istnieje
-        InvalidCode: Nieprawidłowy kod
-        Reused: Ten kod został już użyty. Poczekaj na nowy kod
-        NotReady: Wieloskładnikowe OTP (jednorazowe hasło) nie jest gotowe
-    Locked: Użytkownik jest zablokowany
-    SomethingWentWrong: Coś poszło nie tak
-    NotActive: Użytkownik nie jest aktywny
-    ExternalIDP:
-      IDPTypeNotImplemented: Typ IDP nie jest zaimplementowany
-      NotAllowed: Dostawca logowania zewnętrznego nie jest dozwolony
-      IDPConfigIDEmpty: Identyfikator dostawcy identyfikacji jest pusty
-      ExternalUserIDEmpty: Identyfikator użytkownika zewnętrznego jest pusty
-      UserDisplayNameEmpty: Nazwa wyświetlana użytkownika jest pusta
-      NoExternalUserData: Nie otrzymano danych użytkownika zewnętrznego
-      CreationNotAllowed: Tworzenie nowego użytkownika nie jest dozwolone w tym Providencie
-      LinkingNotAllowed: Linkowanie użytkownika nie jest dozwolone na tym Providencie
-      NoOptionAllowed: Ani tworzenie, ani łączenie nie jest dozwolone dla tego dostawcy. Skontaktuj się z administratorem.
-      LoginFailedSwitchLocal: |
-        Logowanie w zewnętrznym dostawcy tożsamości nie powiodło się. Powrót do logowania lokalnego.
-
-        Szczegóły błędu: {{.Details}}
-    GrantRequired: Logowanie nie jest możliwe. Użytkownik musi posiadać przynajmniej jedno uprawnienie w aplikacji. Skontaktuj się z administratorem.
+      HasUpper: Hasło musi zawierać duże litery
+      MinLength: Hasło jest zbyt krótkie
+      NotFound: Nie znaleziono polityki złożoności hasła
+    Phone:
+      AlreadyVerified: Numer telefonu już zweryfikowany
+      Empty: Numer telefonu jest pusty
+      Invalid: Numer telefonu jest nieprawidłowy
+      NotChanged: Numer telefonu nie zmieniony
+      NotFound: Numer telefonu nie znaleziony
+    Profile:
+      Empty: Profil jest pusty
+      FirstNameEmpty: Imię w profilu jest puste
+      IDMissing: Profil ID brakuje
+      LastNameEmpty: Nazwisko w profilu jest puste
+      NotChanged: Profil nie zmieniony
+      NotFound: Profil nie znaleziony
     ProjectRequired: Logowanie nie jest możliwe. Organizacja użytkownika musi zostać udzielona projektowi. Skontaktuj się z administratorem.
-  IdentityProvider:
-    InvalidConfig: Konfiguracja dostawcy identyfikacji jest nieprawidłowa
-  IAM:
-    LockoutPolicy:
-      NotExisting: Nie istnieje polityka blokady
-  Org:
-    LoginPolicy:
-      RegistrationNotAllowed: Rejestracja nie jest dozwolona
-  DeviceAuth:
-    NotExisting: Kod użytkownika nie istnieje
-
+    SomethingWentWrong: Coś poszło nie tak
+    UserIDMissing: ID użytkownika jest puste
+    Username:
+      AlreadyExists: Nazwa użytkownika jest już zajęta
+      Empty: Nazwa użytkownika jest pusty
+      Reserved: Nazwa użytkownika jest już zajęta
+    UsernameOrPassword:
+      Invalid: Nazwa użytkownika lub hasło jest niepoprawne
+ExternalNotFound:
+  Arabic: العربية
+  AutoRegisterButtonText: Zarejestruj
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: Nie znaleziono zewnętrznego użytkownika. Czy chcesz połączyć swojego użytkownika lub automatycznie zarejestrować nowego.
+  Dutch: Nederlands
+  English: English
+  French: Français
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LinkButtonText: Połącz
+  Macedonian: Македонски
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: Akceptuję
+  PrivacyLinkText: politykę prywatności
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: Nie znaleziono zewnętrznego użytkownika
+  TosAndPrivacyLabel: Warunki i zasady
+  TosConfirm: Akceptuję
+  TosLinkText: TOS
+  Turkish: Türkçe
+  Ukrainian: Українська
+ExternalRegistrationUserOverview:
+  Arabic: العربية
+  BackButtonText: wróć
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: Pobraliśmy Twoje dane użytkownika z wybranego dostawcy. Teraz możesz je zmienić lub uzupełnić.
+  Dutch: Nederlands
+  EmailLabel: E-Mail
+  English: English
+  ExternalLogin: lub zarejestruj się przez zewnętrznego dostawcę
+  FirstnameLabel: Imię
+  French: Français
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LanguageLabel: Język
+  LastnameLabel: Nazwisko
+  Macedonian: Македонски
+  NextButtonText: zapisz
+  NicknameLabel: Pseudonim
+  PhoneLabel: Numer telefonu
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: Akceptuję
+  PrivacyLinkText: politykę prywatności
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: Rejestracja zewnętrznego użytkownika
+  TosAndPrivacyLabel: Warunki i zasady
+  TosConfirm: Akceptuję
+  TosLinkText: Warunki korzystania
+  Turkish: Türkçe
+  Ukrainian: Українська
+  UsernameLabel: Nazwa użytkownika
+Footer:
+  Help: Pomoc
+  PoweredBy: Obsługiwane przez
+  PrivacyPolicy: Polityka prywatności
+  SupportEmail: E-mail wsparcia
+  Tos: TOS
+InitMFADone:
+  CancelButtonText: anuluj
+  Description: Świetnie! Pomyślnie skonfigurowałeś swoje 2-etapowe uwierzytelnianie i zwiększyłeś bezpieczeństwo swojego konta. Czynnik musi być wprowadzony przy każdym logowaniu.
+  NextButtonText: dalej
+  Title: Klucz zabezpieczeń zweryfikowany
+InitMFAOTP:
+  CancelButtonText: anuluj
+  CodeLabel: Kod
+  Description: Utwórz swoje 2-etapowe uwierzytelnianie. Pobierz aplikację uwierzytelniającą, jeśli nie masz jej już zainstalowanej.
+  NextButtonText: dalej
+  OTPDescription: Zeskanuj kod za pomocą aplikacji uwierzytelniającej (np. Google/Microsoft Authenticator, Authy) lub skopiuj sekret i wprowadź wygenerowany kod poniżej.
+  SecretLabel: Sekret
+  Title: Weryfikacja 2-etapowa
+InitMFAOTPSMS:
+  CodeLabel: Kod
+  CountryCodeLabel: Kraj
+  DescriptionCode: Utwórz uwierzytelnianie dwuskładnikowe. Wprowadź otrzymany kod, aby zweryfikować swój numer telefonu.
+  DescriptionPhone: Utwórz uwierzytelnianie dwuskładnikowe. Wprowadź swój numer telefonu, aby go zweryfikować.
+  EditButtonText: edytować
+  NextButtonText: dalej
+  PhoneLabel: Numer telefonu
+  ResendButtonText: wyślij kod ponownie
+  Title: Weryfikacja 2-etapowa
+InitMFAPrompt:
+  Description: 2-etapowe uwierzytelnianie daje Ci dodatkową ochronę dla Twojego konta użytkownika. Dzięki temu masz pewność, że tylko Ty masz dostęp do swojego konta.
+  NextButtonText: dalej
+  Provider0: Aplikacja uwierzytelniająca (np. Google/Microsoft Authenticator, Authy)
+  Provider1: Zależny od urządzenia (np. FaceID, Windows Hello, Odcisk palca)
+  Provider3: OTP SMS
+  Provider4: OTP e-mail
+  SkipButtonText: pomiń
+  Title: Konfiguracja 2-etapowego uwierzytelniania
+InitMFAU2F:
+  Description: Klucz zabezpieczeń to metoda weryfikacji, która może być zintegrowana z twoim telefonem, używająca Bluetooth lub podłączana bezpośrednio do portu USB komputera.
+  ErrorRetry: Spróbuj ponownie, utwórz nowe wyzwanie lub wybierz inną metodę.
+  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że jest ona zaktualizowana lub użyj innej (np. Chrome, Safari, Firefox)
+  RegisterTokenButtonText: Dodaj klucz zabezpieczeń
+  Title: Dodaj klucz zabezpieczeń
+  TokenNameLabel: Nazwa klucza zabezpieczeń/urządzenia
+InitPassword:
+  CodeLabel: Kod
+  Description: Otrzymałeś kod, który musisz wprowadzić w formularzu poniżej, aby ustawić swoje nowe hasło.
+  NewPasswordConfirmLabel: Potwierdź hasło
+  NewPasswordLabel: Nowe hasło
+  NextButtonText: dalej
+  ResendButtonText: wyślij kod ponownie
+  Title: Ustaw hasło
+InitPasswordDone:
+  CancelButtonText: anuluj
+  Description: Hasło zostało pomyślnie ustawione
+  NextButtonText: dalej
+  Title: Hasło ustawione
+InitUser:
+  CodeLabel: Kod
+  Description: Zweryfikuj swój adres e-mail z poniższym kodem i ustaw swoje hasło.
+  NewPasswordConfirm: Potwierdź hasło
+  NewPasswordLabel: Nowe hasło
+  NextButtonText: dalej
+  ResendButtonText: wyślij kod ponownie
+  Title: Aktywuj użytkownika
+InitUserDone:
+  CancelButtonText: anuluj
+  Description: Adres e-mail zweryfikowany i hasło pomyślnie ustawione
+  NextButtonText: dalej
+  Title: Użytkownik aktywowany
+InviteUser:
+  CodeLabel: Kod
+  Description: Zweryfikuj swój adres e-mail za pomocą poniższego kodu i ustaw swoje hasło.
+  NewPasswordConfirm: Potwierdź hasło
+  NewPasswordLabel: Nowe hasło
+  NextButtonText: Dalej
+  ResendButtonText: Wyślij ponownie kod
+  Title: Aktywuj użytkownika
+LDAP:
+  Description: Wprowadź swoje dane logowania.
+  LoginNameLabel: Nazwa użytkownika
+  NextButtonText: dalej
+  PasswordLabel: Hasło
+  Title: Rejestracja
+LinkingUserPrompt:
+  Description: 'Czy chcesz połączyć swoje istniejące konto:'
+  LinkButtonText: Połączyć
+  OtherButtonText: Inne opcje
+  Title: Znaleziono istniejącego użytkownika
+LinkingUsersDone:
+  CancelButtonText: Anuluj
+  Description: Łączenie użytkowników zakończone pomyślnie.
+  NextButtonText: Dalej
+  Title: Łączenie użytkowników
+Login:
+  Description: Wprowadź swoje dane logowania.
+  DescriptionLinking: Wprowadź swoje dane logowania, aby połączyć swojego zewnętrznego użytkownika z użytkownikiem Zitadel.
+  ExternalUserDescription: Zaloguj się za pomocą zewnętrznego użytkownika.
+  LoginNameLabel: Nazwa użytkownika
+  LoginnamePlaceHolder: nazwa użytkownika@domena
+  MustBeMemberOfOrg: Użytkownik musi być członkiem organizacji {{.OrgName}}.
+  NextButtonText: dalej
+  RegisterButtonText: zarejestruj
+  Title: Witaj z powrotem!
+  TitleLinking: Logowanie do połączenia z użytkownikiem
+  UsernamePlaceHolder: nazwa użytkownika
+LoginSuccess:
+  AutoRedirectDescription: Zostaniesz automatycznie przekierowany do swojej aplikacji. Jeśli nie, kliknij przycisk poniżej. Możesz teraz zamknąć to okno.
+  NextButtonText: Dalej
+  RedirectedDescription: Możesz teraz zamknąć to okno.
+  Title: Zalogowano pomyślnie
+LogoutDone:
+  Description: Wylogowano pomyślnie.
+  LoginButtonText: Zaloguj się
+  Title: Wylogowano
+MFAProvider:
+  ChooseOther: lub wybierz inną opcję
+  Provider0: Aplikacja uwierzytelniająca (np. Google/Microsoft Authenticator, Authy)
+  Provider1: Zależny od urządzenia (np. FaceID, Windows Hello, Odcisk palca)
+  Provider3: OTP SMS
+  Provider4: OTP e-mail
+Password:
+  BackButtonText: Wstecz
+  Confirmation: Potwierdzenie hasła pasuje.
+  Description: Wprowadź swoje dane logowania.
+  HasLowercase: Musi zawierać małą literę.
+  HasNumber: Musi zawierać numer.
+  HasSymbol: Musi zawierać symbol.
+  HasUppercase: Musi zawierać dużą literę.
+  MaxLength: Musi zawierać mniej niż 70 znaków.
+  MinLength: Musi zawierać co najmniej
+  MinLengthp2: znaków.
+  NextButtonText: Dalej
+  PasswordLabel: Hasło
+  ResetLinkText: Zresetuj hasło
+  Title: Hasło
+PasswordChange:
+  CancelButtonText: anuluj
+  Description: Zmień swoje hasło. Wprowadź swoje stare i nowe hasło.
+  ExpiredDescription: Twoje hasło wygasło i musi zostać zmienione. Wprowadź swoje stare i nowe hasło.
+  Footer: Stopka
+  NewPasswordConfirmLabel: Potwierdzenie hasła
+  NewPasswordLabel: Nowe hasło
+  NextButtonText: dalej
+  OldPasswordLabel: Stare hasło
+  Title: Zmiana hasła
+PasswordChangeDone:
+  Description: Twoje hasło zostało pomyślnie zmienione.
+  NextButtonText: dalej
+  Title: Zmiana hasła
+PasswordResetDone:
+  Description: Sprawdź swoją pocztę, aby zresetować swoje hasło.
+  NextButtonText: dalej
+  Title: Link do resetowania hasła wysłany
+Passwordless:
+  Description: Zaloguj się za pomocą metod uwierzytelniania dostarczonych przez twoje urządzenie, takich jak FaceID, Windows Hello lub odcisk palca.
+  ErrorRetry: Spróbuj ponownie, utwórz nowe wyzwanie lub wybierz inną metodę.
+  LoginWithPwButtonText: Zaloguj się za pomocą hasła
+  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że jest ona zaktualizowana lub użyj innej (np. Chrome, Safari, Firefox)
+  Title: Logowanie bez hasła
+  ValidateTokenButtonText: Zaloguj się bez hasła
+PasswordlessPrompt:
+  Description: Czy chcesz skonfigurować logowanie bez hasła? (Metody uwierzytelniania twojego urządzenia, takie jak FaceID, Windows Hello lub odcisk palca)
+  DescriptionInit: Musisz skonfigurować logowanie bez hasła. Użyj linku, który otrzymałeś, aby zarejestrować swoje urządzenie.
+  NextButtonText: dalej
+  PasswordlessButtonText: Przejdź do logowania bez hasła
+  SkipButtonText: pomiń
+  Title: Konfiguracja logowania bez hasła
+PasswordlessRegistration:
+  Description: Dodaj swoją metodę uwierzytelniania, podając nazwę (np. Mój telefon komórkowy, MacBook itp.) i klikając przycisk "Zarejestruj logowanie bez hasła" poniżej.
+  ErrorRetry: Spróbuj ponownie, utwórz nowe wyzwanie lub wybierz inną metodę.
+  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że jest ona zaktualizowana lub użyj innej (np. Chrome, Safari, Firefox)
+  RegisterTokenButtonText: Zarejestruj logowanie bez hasła
+  Title: Konfiguracja logowania bez hasła
+  TokenNameLabel: Nazwa urządzenia
+PasswordlessRegistrationDone:
+  CancelButtonText: anuluj
+  Description: Urządzenie do logowania bez hasła zostało pomyślnie dodane.
+  DescriptionClose: Teraz możesz zamknąć to okno.
+  NextButtonText: dalej
+  Title: Konfiguracja logowania bez hasła
+RegisterOption:
+  Description: Wybierz sposób, w jaki chcesz się zarejestrować
+  ExternalLoginDescription: lub zarejestruj się przy użyciu zewnętrznego użytkownika
+  LoginButtonText: zaloguj się
+  RegisterUsernamePasswordButtonText: Z nazwą użytkownika i hasłem
+  Title: Opcje rejestracji
+RegistrationOrg:
+  Description: Wprowadź nazwę swojej organizacji i dane użytkownika.
+  EmailLabel: E-Mail
+  FirstnameLabel: Imię
+  LastnameLabel: Nazwisko
+  OrgNameLabel: Nazwa organizacji
+  PasswordConfirmLabel: Potwierdzenie hasła
+  PasswordLabel: Hasło
+  PrivacyConfirm: Akceptuję
+  PrivacyLinkText: Politykę prywatności
+  SaveButtonText: Utwórz organizację
+  Title: Rejestracja organizacji
+  TosAndPrivacyLabel: Warunki i polityka prywatności
+  TosConfirm: Akceptuję
+  TosLinkText: Warunki korzystania z usługi
+  UsernameLabel: Nazwa użytkownika
+RegistrationUser:
+  Arabic: العربية
+  BackButtonText: zaloguj się
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: Wprowadź swoje dane użytkownika. Twój adres e-mail będzie używany jako nazwa użytkownika.
+  DescriptionOrgRegister: Wprowadź swoje dane użytkownika.
+  Diverse: Różne / X
+  Dutch: Nederlands
+  EmailLabel: E-Mail
+  English: English
+  ExternalLogin: lub zarejestruj się za pomocą zewnętrznego użytkownika
+  Female: Kobieta
+  FirstnameLabel: Imię
+  French: Français
+  GenderLabel: Płeć
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LanguageLabel: Język
+  LastnameLabel: Nazwisko
+  Macedonian: Македонски
+  Male: Mężczyzna
+  NextButtonText: dalej
+  PasswordConfirmLabel: Potwierdzenie hasła
+  PasswordLabel: Hasło
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: Akceptuję
+  PrivacyLinkText: politykę prywatności
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: Rejestracja
+  TosAndPrivacyLabel: Warunki i polityka prywatności
+  TosConfirm: Akceptuję
+  TosLinkText: Warunki korzystania
+  Turkish: Türkçe
+  Ukrainian: Українська
+  UsernameLabel: Nazwa użytkownika
+SelectAccount:
+  Description: Użyj swojego konta Zitadel
+  DescriptionLinking: Wybierz swoje konto, aby połączyć je z twoim zewnętrznym użytkownikiem.
+  MustBeMemberOfOrg: Użytkownik musi być członkiem organizacji {{.OrgName}}.
+  OtherUser: Inny użytkownik
+  SessionState0: aktywne
+  SessionState1: Wylogowano
+  Title: Wybierz konto
+  TitleLinking: Wybierz konto do połączenia z użytkownikiem
+SignIn: Zaloguj się, używając konta {{.Provider}}
+UsernameChange:
+  CancelButtonText: anuluj
+  Description: Ustaw swoją nową nazwę użytkownika
+  NextButtonText: dalej
+  Title: Zmiana nazwy użytkownika
+  UsernameLabel: Nazwa użytkownika
+UsernameChangeDone:
+  Description: Twoja nazwa użytkownika została pomyślnie zmieniona.
+  NextButtonText: dalej
+  Title: Nazwa użytkownika zmieniona
+VerifyMFAOTP:
+  CodeLabel: Kod
+  Description: Zweryfikuj swój drugi czynnik
+  NextButtonText: dalej
+  Title: Zweryfikuj 2-etapowe uwierzytelnianie
+VerifyMFAU2F:
+  Description: Zweryfikuj swoje 2-etapowe uwierzytelnianie za pomocą zarejestrowanego urządzenia (np. FaceID, Windows Hello, odcisk palca)
+  ErrorRetry: Spróbuj ponownie, utwórz nowe żądanie lub wybierz inną metodę.
+  NotSupported: WebAuthN nie jest obsługiwany przez twoją przeglądarkę. Upewnij się, że korzystasz z najnowszej wersji lub zmień przeglądarkę na obsługującą tę funkcję (Chrome, Safari, Firefox)
+  Title: Weryfikacja 2-etapowego uwierzytelniania
+  ValidateTokenButtonText: Zweryfikuj 2-etapowe uwierzytelnianie
+VerifyOTP:
+  CodeLabel: Kod
+  Description: Zweryfikuj swój drugi czynnik
+  NextButtonText: dalej
+  ResendButtonText: wyślij kod ponownie
+  Title: Zweryfikuj 2-etapowe uwierzytelnianie
 optional: (opcjonalny)

@@ -1,67 +1,67 @@
+DomainClaimed:
+  ButtonText: Přihlásit se
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Změna emailu / uživatelského jména
+  Subject: Doména byla přiřazena
+  Text: Doména {{.Domain}} byla přiřazena organizaci. Váš současný uživatel {{.Username}} není součástí této organizace. Proto budete muset změnit svůj email při přihlášení. Pro toto přihlášení jsme vytvořili dočasné uživatelské jméno ({{.TempUsername}}).
+  Title: Doména byla přiřazena
 InitCode:
-  Title: "Inicializace uživatele"
-  PreHeader: "Inicializace uživatele"
-  Subject: "Inicializace uživatele"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Tento uživatel byl vytvořen. Pro přihlášení použijte uživatelské jméno {{.PreferredLoginName}}. Prosím klikněte na tlačítko níže k dokončení procesu inicializace. (Kód {{.Code}}) Pokud jste o tento email nepožádali, prosím ignorujte ho."
-  ButtonText: "Dokončit inicializaci"
+  ButtonText: Dokončit inicializaci
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Inicializace uživatele
+  Subject: Inicializace uživatele
+  Text: Tento uživatel byl vytvořen. Pro přihlášení použijte uživatelské jméno {{.PreferredLoginName}}. Prosím klikněte na tlačítko níže k dokončení procesu inicializace. (Kód {{.Code}}) Pokud jste o tento email nepožádali, prosím ignorujte ho.
+  Title: Inicializace uživatele
+InviteUser:
+  ButtonText: Přijmout pozvání
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Pozvánka do {{.ApplicationName}}
+  Subject: Pozvánka do {{.ApplicationName}}
+  Text: Váš uživatel byl pozván do {{.ApplicationName}}. Klikněte prosím na tlačítko níže, abyste dokončili proces pozvání. Pokud jste o tento e-mail nepožádali, prosím, ignorujte ho.
+  Title: Pozvánka do {{.ApplicationName}}
+PasswordChange:
+  ButtonText: Přihlásit se
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Změna hesla
+  Subject: Heslo uživatele bylo změněno
+  Text: Heslo vašeho uživatele bylo změněno. Pokud tato změna nebyla provedena Vámi pak doporučujeme okamžitě resetovat/změnit vaše heslo.
+  Title: Heslo uživatele bylo změněno
 PasswordReset:
-  Title: "Reset hesla"
-  PreHeader: "Reset hesla"
-  Subject: "Reset hesla"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Přijali jsme žádost o reset hesla. Pro reset hesla prosím použijte tlačítko níže. (Kód {{.Code}}) Pokud jste o tento email nepožádali, prosím ignorujte ho."
-  ButtonText: "Reset hesla"
+  ButtonText: Reset hesla
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Reset hesla
+  Subject: Reset hesla
+  Text: Přijali jsme žádost o reset hesla. Pro reset hesla prosím použijte tlačítko níže. (Kód {{.Code}}) Pokud jste o tento email nepožádali, prosím ignorujte ho.
+  Title: Reset hesla
+PasswordlessRegistration:
+  ButtonText: Přidat přihlášení bez hesla
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Přidat přihlášení bez hesla
+  Subject: Přidat přihlášení bez hesla
+  Text: Přijali jsme žádost o přidání tokenu pro přihlášení bez hesla. Pro přidání vašeho tokenu nebo zařízení pro přihlášení bez hesla prosím použijte tlačítko níže.
+  Title: Přidat přihlášení bez hesla
 VerifyEmail:
-  Title: "Ověření emailu"
-  PreHeader: "Ověření emailu"
-  Subject: "Ověření emailu"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Byl přidán nový email. Pro ověření vašeho emailu prosím použijte tlačítko níže. (Kód {{.Code}}) Pokud jste nepřidávali nový email, prosím ignorujte tento email."
-  ButtonText: "Ověřit email"
-VerifyPhone:
-  Title: "Ověření telefonu"
-  PreHeader: "Ověření telefonu"
-  Subject: "Ověření telefonu"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Bylo přidáno nové telefonní číslo. Prosím použijte následující kód k jeho ověření {{.Code}}"
-  ButtonText: "Ověřit telefon"
+  ButtonText: Ověřit email
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Ověření emailu
+  Subject: Ověření emailu
+  Text: Byl přidán nový email. Pro ověření vašeho emailu prosím použijte tlačítko níže. (Kód {{.Code}}) Pokud jste nepřidávali nový email, prosím ignorujte tento email.
+  Title: Ověření emailu
 VerifyEmailOTP:
-  Title: "Ověření OTP"
-  PreHeader: "Ověření OTP"
-  Subject: "Ověření OTP"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Prosím použijte OTP {{.OTP}} k ověření během následujících pěti minut nebo klikněte na tlačítko \"Ověřit\"."
-  ButtonText: "Ověřit"
+  ButtonText: Ověřit
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Ověření OTP
+  Subject: Ověření OTP
+  Text: Prosím použijte OTP {{.OTP}} k ověření během následujících pěti minut nebo klikněte na tlačítko "Ověřit".
+  Title: Ověření OTP
+VerifyPhone:
+  ButtonText: Ověřit telefon
+  Greeting: Dobrý den, {{.DisplayName}},
+  PreHeader: Ověření telefonu
+  Subject: Ověření telefonu
+  Text: Bylo přidáno nové telefonní číslo. Prosím použijte následující kód k jeho ověření {{.Code}}
+  Title: Ověření telefonu
 VerifySMSOTP:
   Text: |-
     {{.OTP}} je vaše OTP pro {{ .Domain }}. Použijte jej během následujících {{.Expiry}}.
     @{{.Domain}} #{{.OTP}}
-DomainClaimed:
-  Title: "Doména byla přiřazena"
-  PreHeader: "Změna emailu / uživatelského jména"
-  Subject: "Doména byla přiřazena"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Doména {{.Domain}} byla přiřazena organizaci. Váš současný uživatel {{.Username}} není součástí této organizace. Proto budete muset změnit svůj email při přihlášení. Pro toto přihlášení jsme vytvořili dočasné uživatelské jméno ({{.TempUsername}})."
-  ButtonText: "Přihlásit se"
-PasswordlessRegistration:
-  Title: "Přidat přihlášení bez hesla"
-  PreHeader: "Přidat přihlášení bez hesla"
-  Subject: "Přidat přihlášení bez hesla"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Přijali jsme žádost o přidání tokenu pro přihlášení bez hesla. Pro přidání vašeho tokenu nebo zařízení pro přihlášení bez hesla prosím použijte tlačítko níže."
-  ButtonText: "Přidat přihlášení bez hesla"
-PasswordChange:
-  Title: "Heslo uživatele bylo změněno"
-  PreHeader: "Změna hesla"
-  Subject: "Heslo uživatele bylo změněno"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Heslo vašeho uživatele bylo změněno. Pokud tato změna nebyla provedena Vámi pak doporučujeme okamžitě resetovat/změnit vaše heslo."
-  ButtonText: "Přihlásit se"
-InviteUser:
-  Title: "Pozvánka do {{.ApplicationName}}"
-  PreHeader: "Pozvánka do {{.ApplicationName}}"
-  Subject: "Pozvánka do {{.ApplicationName}}"
-  Greeting: "Dobrý den, {{.DisplayName}},"
-  Text: "Váš uživatel byl pozván do {{.ApplicationName}}. Klikněte prosím na tlačítko níže, abyste dokončili proces pozvání. Pokud jste o tento e-mail nepožádali, prosím, ignorujte ho."
-  ButtonText: "Přijmout pozvání"

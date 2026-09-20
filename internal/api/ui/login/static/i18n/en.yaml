@@ -1,539 +1,495 @@
-Login:
-  Title: Welcome Back!
-  Description: Enter your login details.
-  TitleLinking: Login for user linking
-  DescriptionLinking: Enter your login details to link your external user.
-  LoginNameLabel: Login Name
-  UsernamePlaceHolder: username
-  LoginnamePlaceHolder: username@domain
-  ExternalUserDescription: Login with an external user.
-  MustBeMemberOfOrg: The user must be a member of the {{.OrgName}} organization.
-  RegisterButtonText: Register
-  NextButtonText: Next
-
-LDAP:
-  Title: Login
-  Description: Enter your login details.
-  LoginNameLabel: Login Name
-  PasswordLabel: Password
-  NextButtonText: Next
-
-SelectAccount:
-  Title: Select Account
-  Description: Use your account
-  TitleLinking: Select account for user linking
-  DescriptionLinking: Select your account to link with your external user.
-  OtherUser: Other User
-  SessionState0: active
-  SessionState1: Signed out
-  MustBeMemberOfOrg: The user must be a member of the {{.OrgName}} organization.
-
-Password:
-  Title: Password
-  Description: Enter your login details.
-  PasswordLabel: Password
-  MinLength: Must be at least
-  MinLengthp2: characters long.
-  MaxLength: Must be less than 70 characters long.
-  HasUppercase: Must include an uppercase letter.
-  HasLowercase: Must include a lowercase letter.
-  HasNumber: Must include a number.
-  HasSymbol: Must include a symbol.
-  Confirmation: Password confirmation matched.
-  ResetLinkText: Reset Password
-  BackButtonText: Back
-  NextButtonText: Next
-
-UsernameChange:
-  Title: Change Username
-  Description: Set your new username
-  UsernameLabel: Username
-  CancelButtonText: Cancel
-  NextButtonText: Next
-
-UsernameChangeDone:
-  Title: Username Changed
-  Description: Your username was changed successfully.
-  NextButtonText: Next
-
-InitPassword:
-  Title: Set Password
-  Description: You have received a code, which you have to enter in the form below, to set your new password.
-  CodeLabel: Code
-  NewPasswordLabel: New Password
-  NewPasswordConfirmLabel: Confirm Password
-  ResendButtonText: Resend Code
-  NextButtonText: Next
-
-InitPasswordDone:
-  Title: Password Set
-  Description: Password successfully set
-  NextButtonText: Next
-  CancelButtonText: Cancel
-
-InitUser:
-  Title: Activate User
-  Description: Verify your e-mail with the code below and set your password.
-  CodeLabel: Code
-  NewPasswordLabel: New Password
-  NewPasswordConfirm: Confirm Password
-  NextButtonText: Next
-  ResendButtonText: Resend Code
-
-InitUserDone:
-  Title: User Activated
-  Description: Email verified and Password successfully set
-  NextButtonText: Next
-  CancelButtonText: Cancel
-
-InviteUser:
-  Title: Activate User
-  Description: Verify your e-mail with the code below and set your password.
-  CodeLabel: Code
-  NewPasswordLabel: New Password
-  NewPasswordConfirm: Confirm Password
-  NextButtonText: Next
-  ResendButtonText: Resend Code
-
-InitMFAPrompt:
-  Title: 2-Factor Setup
-  Description: 2-factor authentication gives you an additional security for your user account. This ensures that only you have access to your account.
-  Provider0: Authenticator App (e.g Google/Microsoft Authenticator, Authy)
-  Provider1: Device dependent (e.g FaceID, Windows Hello, Fingerprint)
-  Provider3: OTP SMS
-  Provider4: OTP Email
-  NextButtonText: Next
-  SkipButtonText: Skip
-
-InitMFAOTP:
-  Title: 2-Factor Verification
-  Description: Create your 2-factor. Download an authenticator app if you do not already have one.
-  OTPDescription: Scan the code with your authenticator app (e.g Google/Microsoft Authenticator, Authy) or copy the secret and insert the generated code below.
-  SecretLabel: Secret
-  CodeLabel: Code
-  NextButtonText: Next
-  CancelButtonText: Cancel
-
-InitMFAOTPSMS:
-  Title: 2-Factor Verification
-  DescriptionPhone: Create your 2-factor. Enter your phone number to verify it.
-  DescriptionCode: Create your 2-factor. Enter the received code to verify your phone number.
-  CountryCodeLabel: Country
-  PhoneLabel: Phone
-  CodeLabel: Code
-  EditButtonText: Edit
-  ResendButtonText: Resend Code
-  NextButtonText: Next
-
-InitMFAU2F:
-  Title: Add Security Key
-  Description: A security key is a verification method that can be built into your phone, use Bluetooth, or plug directly into your computer's USB port.
-  TokenNameLabel: Name of the security key / device
-  NotSupported: WebAuthN is not supported by your browser. Please ensure it is up to date or use a different one (e.g. Chrome, Safari, Firefox)
-  RegisterTokenButtonText: Add security key
-  ErrorRetry: Retry, create a new challenge or choose a different method.
-
-InitMFADone:
-  Title: 2-factor Verified
-  Description: Awesome! You just successfully set up your 2-factor and made your account way more secure. The Factor has to be entered on each login.
-  NextButtonText: Next
-  CancelButtonText: Cancel
-
-MFAProvider:
-  Provider0: Authenticator App (e.g Google/Microsoft Authenticator, Authy)
-  Provider1: Device dependent (e.g FaceID, Windows Hello, Fingerprint)
-  Provider3: OTP SMS
-  Provider4: OTP Email
-  ChooseOther: or choose another option
-
-VerifyMFAOTP:
-  Title: Verify 2-Factor
-  Description: Verify your second factor
-  CodeLabel: Code
-  NextButtonText: Next
-
-VerifyOTP:
-  Title: Verify 2-Factor
-  Description: Verify your second factor
-  CodeLabel: Code
-  ResendButtonText: Resend Code
-  NextButtonText: Next
-
-VerifyMFAU2F:
-  Title: 2-Factor Verification
-  Description: Verify your 2-Factor with the registered device (e.g FaceID, Windows Hello, Fingerprint)
-  NotSupported: WebAuthN is not supported by your browser. Make sure you are using the newest version or change your browser to a supported one (Chrome, Safari, Firefox)
-  ErrorRetry: Retry, create a new request or choose a other method.
-  ValidateTokenButtonText: Verify 2-Factor
-
-Passwordless:
-  Title: Login Passwordless
-  Description: Login with authentication methods provided by your device like FaceID, Windows Hello or Fingerprint.
-  NotSupported: WebAuthN is not supported by your browser. Please ensure it is up to date or use a different one (e.g. Chrome, Safari, Firefox)
-  ErrorRetry: Retry, create a new challenge or choose a different method.
-  LoginWithPwButtonText: Login with password
-  ValidateTokenButtonText: Login with passwordless
-
-PasswordlessPrompt:
-  Title: Passwordless Setup
-  Description: Would you like to setup passwordless login? (Authentication methods of your device like FaceID, Windows Hello or Fingerprint)
-  DescriptionInit: You need to set up passwordless login. Use the link you were given to register your device.
-  PasswordlessButtonText: Go passwordless
-  NextButtonText: Next
-  SkipButtonText: Skip
-
-PasswordlessRegistration:
-  Title: Passwordless Setup
-  Description: Add your authentication by providing a name (e.g MyMobilePhone, MacBook, etc) and then clicking on the 'Register passwordless' button below.
-  TokenNameLabel: Name of the device
-  NotSupported: WebAuthN is not supported by your browser. Please ensure it is up to date or use a different one (e.g. Chrome, Safari, Firefox)
-  RegisterTokenButtonText: Register passwordless
-  ErrorRetry: Retry, create a new challenge or choose a different method.
-
-PasswordlessRegistrationDone:
-  Title: Passwordless Set Up
-  Description: Device for passwordless successfully added.
-  DescriptionClose: You may now close this window.
-  NextButtonText: Next
-  CancelButtonText: Cancel
-
-PasswordChange:
-  Title: Change Password
-  Description: Change your password. Enter your old and new password.
-  ExpiredDescription: You password has expired and has to be changed. Enter your old and new password.
-  OldPasswordLabel: Old Password
-  NewPasswordLabel: New Password
-  NewPasswordConfirmLabel: Password confirmation
-  CancelButtonText: Cancel
-  NextButtonText: Next
-  Footer: Footer
-
-PasswordChangeDone:
-  Title: Change Password
-  Description: Your password was changed successfully.
-  NextButtonText: Next
-
-PasswordResetDone:
-  Title: Password Reset Link Sent
-  Description: Check your email to reset your password.
-  NextButtonText: Next
-
-EmailVerification:
-  Title: E-Mail Verification
-  Description: We have sent you an email to verify your address. Please enter the code in the form below.
-  CodeLabel: Code
-  NextButtonText: Next
-  ResendButtonText: Resend Code
-
-EmailVerificationDone:
-  Title: E-Mail Verification
-  Description: Your email address has been successfully verified.
-  NextButtonText: Next
-  CancelButtonText: Cancel
-  LoginButtonText: Login
-
-RegisterOption:
-  Title: Registration Options
-  Description: Choose how you'd like to register
-  RegisterUsernamePasswordButtonText: With username and password
-  ExternalLoginDescription: or register with an external user
-  LoginButtonText: Login
-
-RegistrationUser:
-  Title: Registration
-  Description: Enter your Userdata. Your email address will be used as your login name.
-  DescriptionOrgRegister: Enter your Userdata.
-  EmailLabel: E-Mail
-  UsernameLabel: Username
-  FirstnameLabel: First name
-  LastnameLabel: Last name
-  LanguageLabel: Language
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
-  GenderLabel: Gender
-  Female: Female
-  Male: Male
-  Diverse: diverse / X
-  PasswordLabel: Password
-  PasswordConfirmLabel: Password confirmation
-  TosAndPrivacyLabel: Terms and conditions
-  TosConfirm: I accept the
-  TosLinkText: TOS
-  PrivacyConfirm: I accept the
-  PrivacyLinkText: privacy policy
-  ExternalLogin: or register with an external user
-  BackButtonText: Login
-  NextButtonText: Next
-
-ExternalRegistrationUserOverview:
-  Title: External User Registration
-  Description: We have taken your user details from the selected provider. You may now change or complete them.
-  EmailLabel: E-Mail
-  UsernameLabel: Username
-  FirstnameLabel: First name
-  LastnameLabel: Last name
-  NicknameLabel: Nickname
-  PhoneLabel: Phone number
-  LanguageLabel: Language
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
-  TosAndPrivacyLabel: Terms and conditions
-  TosConfirm: I accept the
-  TosLinkText: TOS
-  PrivacyConfirm: I accept the
-  PrivacyLinkText: privacy policy
-  ExternalLogin: or register with an external user
-  BackButtonText: Nack
-  NextButtonText: Save
-
-RegistrationOrg:
-  Title: Organization Registration
-  Description: Enter your organization name and userdata.
-  OrgNameLabel: Organization name
-  EmailLabel: E-Mail
-  UsernameLabel: Username
-  FirstnameLabel: First name
-  LastnameLabel: Last name
-  PasswordLabel: Password
-  PasswordConfirmLabel: Password confirmation
-  TosAndPrivacyLabel: Terms and conditions
-  TosConfirm: I accept the
-  TosLinkText: TOS
-  PrivacyConfirm: I accept the
-  PrivacyLinkText: privacy policy
-  SaveButtonText: Create organization
-
-LoginSuccess:
-  Title: Login Successful
-  AutoRedirectDescription: You will be directed back to your application automatically. If not, click on the button below. You may close the window afterwards.
-  RedirectedDescription: You may now close this window.
-  NextButtonText: Next
-
-LogoutDone:
-  Title: Logged Out
-  Description: You have logged out successfully.
-  LoginButtonText: Login
-
-LinkingUserPrompt:
-  Title: Existing User Found
-  Description: "Do you want to link your existing account:"
-  LinkButtonText: Link
-  OtherButtonText: Other options
-
-LinkingUsersDone:
-  Title: Linking User
-  Description: User linked.
-  CancelButtonText: Cancel
-  NextButtonText: Next
-
-ExternalNotFound:
-  Title: External User Not Found
-  Description: External user not found. Do you want to link your user or auto-register a new one?
-  LinkButtonText: Link
-  AutoRegisterButtonText: Register
-  TosAndPrivacyLabel: Terms and conditions
-  TosConfirm: I accept the
-  TosLinkText: TOS
-  PrivacyConfirm: I accept the
-  PrivacyLinkText: privacy policy
-  German: Deutsch
-  English: English
-  Italian: Italiano
-  French: Français
-  Chinese: 简体中文
-  Polish: Polski
-  Japanese: 日本語
-  Spanish: Español
-  Bulgarian: Български
-  Portuguese: Português
-  Macedonian: Македонски
-  Czech: Čeština
-  Russian: Русский
-  Dutch: Nederlands
-  Swedish: Svenska
-  Indonesian: Bahasa Indonesia
-  Hungarian: Magyar
-  Korean: 한국어
-  Romanian: Română
-  Turkish: Türkçe
-  Ukrainian: Українська
-  Arabic: العربية
 DeviceAuth:
-  Title: Device Authorization
-  UserCode:
-    Label: User Code
-    Description: Enter the user code presented on the device.
-    ButtonNext: Next
   Action:
-    Description: Grant device access.
-    GrantDevice: you are about to grant device
     AccessToScopes: access to the following scopes
     Button:
       Allow: Allow
       Deny: Deny
+    Description: Grant device access.
+    GrantDevice: you are about to grant device
   Done:
-    Description: Done.
     Approved: Device authorization approved. You may now return to the device.
     Denied: Device authorization denied. You may now return to the device.
-
-Footer:
-  PoweredBy: Powered By
-  Tos: TOS
-  PrivacyPolicy: Privacy policy
-  Help: Help
-  SupportEmail: Support E-mail
-
-SignIn: Sign in with {{.Provider}}
-
+    Description: Done.
+  Title: Device Authorization
+  UserCode:
+    ButtonNext: Next
+    Description: Enter the user code presented on the device.
+    Label: User Code
+EmailVerification:
+  CodeLabel: Code
+  Description: We have sent you an email to verify your address. Please enter the code in the form below.
+  NextButtonText: Next
+  ResendButtonText: Resend Code
+  Title: E-Mail Verification
+EmailVerificationDone:
+  CancelButtonText: Cancel
+  Description: Your email address has been successfully verified.
+  LoginButtonText: Login
+  NextButtonText: Next
+  Title: E-Mail Verification
 Errors:
-  Internal: An internal error occurred
   AuthRequest:
+    MissingParameters: Required parameters missing
     NotFound: Could not find authrequest
+    RequestTypeNotSupported: Request type is not supported
+    TokenNotFound: Token not found
     UserAgentNotCorresponding: User Agent does not correspond
     UserAgentNotFound: User Agent ID not found
-    TokenNotFound: Token not found
-    RequestTypeNotSupported: Request type is not supported
-    MissingParameters: Required parameters missing
+  DeviceAuth:
+    NotExisting: User Code doesn't exist
+  IAM:
+    LockoutPolicy:
+      NotExisting: Lockout Policy not existing
+  IdentityProvider:
+    InvalidConfig: Identity Provider configuration is invalid
+  Internal: An internal error occurred
+  Org:
+    LoginPolicy:
+      RegistrationNotAllowed: Registration is not allowed
   User:
-    NotFound: User could not be found
+    Address:
+      NotChanged: Address not changed
+      NotFound: Address not found
     AlreadyExists: User already exists
-    Inactive: User is inactive
-    NotFoundOnOrg: User could not be found on chosen organization
-    NotAllowedOrg: User is no member of the required organization
-    NotMatchingUserID: User and user in authrequest don't match
-    UserIDMissing: UserID is empty
-    Invalid: Invalid userdata
+    Code:
+      CryptoCodeNil: Crypto code is nil
+      Empty: Code is empty
+      Expired: Code is expired
+      GeneratorAlgNotSupported: Unsupported generator algorithm
+      Invalid: Code is invalid
+      NotFound: Could not find code
     DomainNotAllowedAsUsername: Domain is already reserved and cannot be used
-    NotAllowedToLink: User is not allowed to link with external login provider
-    Profile:
-      NotFound: Profile not found
-      NotChanged: Profile not changed
-      Empty: Profile is empty
-      FirstNameEmpty: First name in profile is empty
-      LastNameEmpty: Last name in profile is empty
-      IDMissing: Profile ID is missing
     Email:
-      NotFound: Email not found
-      Invalid: Email is invalid
       AlreadyVerified: Email is already verified
-      NotChanged: Email not changed
       Empty: Email is empty
       IDMissing: Email ID is missing
-    Phone:
-      NotFound: Phone not found
-      Invalid: Phone is invalid
-      AlreadyVerified: Phone already verified
-      Empty: Phone is empty
-      NotChanged: Phone not changed
-    Address:
-      NotFound: Address not found
-      NotChanged: Address not changed
-    Username:
-      AlreadyExists: Username already taken
-      Reserved: Username is already taken
-      Empty: Username is empty
+      Invalid: Email is invalid
+      NotChanged: Email not changed
+      NotFound: Email not found
+    EmailVerify:
+      UserIDEmpty: UserID is empty
+    ExternalData:
+      CouldNotRead: External data could not be read correctly
+    ExternalIDP:
+      CreationNotAllowed: Creation of a new user is not allowed on this provider
+      ExternalUserIDEmpty: External User ID is empty
+      IDPConfigIDEmpty: Identity Provider ID is empty
+      IDPTypeNotImplemented: IDP Type is not implemented
+      LinkingNotAllowed: Linking of a user is not allowed on this provider
+      LoginFailedSwitchLocal: "Login at External IDP failed. Falling back to local login.\n        \nError details: {{.Details}}\n"
+      NoExternalUserData: No external User Data received
+      NoOptionAllowed: Neither creation of linking is allowed on this provider. Please contact your administrator.
+      NotAllowed: External Login Provider not allowed
+      UserDisplayNameEmpty: User Display Name is empty
+    GrantRequired: Login not possible. The user is required to have at least one grant on the application. Please contact your administrator.
+    Inactive: User is inactive
+    Invalid: Invalid userdata
+    Locked: User is locked
+    MFA:
+      NoProviders: No available multifactor providers
+      OTP:
+        AlreadyReady: Multifactor OTP (OneTimePassword) is already setup
+        InvalidCode: Invalid code
+        NotExisting: Multifactor OTP (OneTimePassword) doesn't exist
+        NotReady: Multifactor OTP (OneTimePassword) isn't ready
+        Reused: This code was already used. Please wait for a new code
+    NotActive: User is not active
+    NotAllowedOrg: User is no member of the required organization
+    NotAllowedToLink: User is not allowed to link with external login provider
+    NotFound: User could not be found
+    NotFoundOnOrg: User could not be found on chosen organization
+    NotMatchingUserID: User and user in authrequest don't match
     Password:
       ConfirmationWrong: Password confirmation is wrong
       Empty: Password is empty
       Invalid: Password is invalid
       InvalidAndLocked: Password is invalid and user is locked, contact your administrator.
       NotChanged: New password cannot be the same as your current password
-    UsernameOrPassword:
-      Invalid: Username or Password is invalid
     PasswordComplexityPolicy:
-      NotFound: Password policy not found
-      MinLength: Password is too short
       HasLower: Password must contain lower letter
-      HasUpper: Password must contain upper letter
       HasNumber: Password must contain number
       HasSymbol: Password must contain symbol
-    Code:
-      Expired: Code is expired
-      Invalid: Code is invalid
-      Empty: Code is empty
-      CryptoCodeNil: Crypto code is nil
-      NotFound: Could not find code
-      GeneratorAlgNotSupported: Unsupported generator algorithm
-    EmailVerify:
-      UserIDEmpty: UserID is empty
-    ExternalData:
-      CouldNotRead: External data could not be read correctly
-    MFA:
-      NoProviders: No available multifactor providers
-      OTP:
-        AlreadyReady: Multifactor OTP (OneTimePassword) is already setup
-        NotExisting: Multifactor OTP (OneTimePassword) doesn't exist
-        InvalidCode: Invalid code
-        Reused: This code was already used. Please wait for a new code
-        NotReady: Multifactor OTP (OneTimePassword) isn't ready
-    Locked: User is locked
-    SomethingWentWrong: Something went wrong
-    NotActive: User is not active
-    ExternalIDP:
-      IDPTypeNotImplemented: IDP Type is not implemented
-      NotAllowed: External Login Provider not allowed
-      IDPConfigIDEmpty: Identity Provider ID is empty
-      ExternalUserIDEmpty: External User ID is empty
-      UserDisplayNameEmpty: User Display Name is empty
-      NoExternalUserData: No external User Data received
-      CreationNotAllowed: Creation of a new user is not allowed on this provider
-      LinkingNotAllowed: Linking of a user is not allowed on this provider
-      NoOptionAllowed: Neither creation of linking is allowed on this provider. Please contact your administrator.
-      LoginFailedSwitchLocal: |
-        Login at External IDP failed. Falling back to local login.
-                
-        Error details: {{.Details}}
-    GrantRequired: Login not possible. The user is required to have at least one grant on the application. Please contact your administrator.
+      HasUpper: Password must contain upper letter
+      MinLength: Password is too short
+      NotFound: Password policy not found
+    Phone:
+      AlreadyVerified: Phone already verified
+      Empty: Phone is empty
+      Invalid: Phone is invalid
+      NotChanged: Phone not changed
+      NotFound: Phone not found
+    Profile:
+      Empty: Profile is empty
+      FirstNameEmpty: First name in profile is empty
+      IDMissing: Profile ID is missing
+      LastNameEmpty: Last name in profile is empty
+      NotChanged: Profile not changed
+      NotFound: Profile not found
     ProjectRequired: Login not possible. The organization of the user must be granted to the project. Please contact your administrator.
-  IdentityProvider:
-    InvalidConfig: Identity Provider configuration is invalid
-  IAM:
-    LockoutPolicy:
-      NotExisting: Lockout Policy not existing
-  Org:
-    LoginPolicy:
-      RegistrationNotAllowed: Registration is not allowed
-  DeviceAuth:
-    NotExisting: User Code doesn't exist
-
+    SomethingWentWrong: Something went wrong
+    UserIDMissing: UserID is empty
+    Username:
+      AlreadyExists: Username already taken
+      Empty: Username is empty
+      Reserved: Username is already taken
+    UsernameOrPassword:
+      Invalid: Username or Password is invalid
+ExternalNotFound:
+  Arabic: العربية
+  AutoRegisterButtonText: Register
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: External user not found. Do you want to link your user or auto-register a new one?
+  Dutch: Nederlands
+  English: English
+  French: Français
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LinkButtonText: Link
+  Macedonian: Македонски
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: I accept the
+  PrivacyLinkText: privacy policy
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: External User Not Found
+  TosAndPrivacyLabel: Terms and conditions
+  TosConfirm: I accept the
+  TosLinkText: TOS
+  Turkish: Türkçe
+  Ukrainian: Українська
+ExternalRegistrationUserOverview:
+  Arabic: العربية
+  BackButtonText: Nack
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: We have taken your user details from the selected provider. You may now change or complete them.
+  Dutch: Nederlands
+  EmailLabel: E-Mail
+  English: English
+  ExternalLogin: or register with an external user
+  FirstnameLabel: First name
+  French: Français
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LanguageLabel: Language
+  LastnameLabel: Last name
+  Macedonian: Македонски
+  NextButtonText: Save
+  NicknameLabel: Nickname
+  PhoneLabel: Phone number
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: I accept the
+  PrivacyLinkText: privacy policy
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: External User Registration
+  TosAndPrivacyLabel: Terms and conditions
+  TosConfirm: I accept the
+  TosLinkText: TOS
+  Turkish: Türkçe
+  Ukrainian: Українська
+  UsernameLabel: Username
+Footer:
+  Help: Help
+  PoweredBy: Powered By
+  PrivacyPolicy: Privacy policy
+  SupportEmail: Support E-mail
+  Tos: TOS
+InitMFADone:
+  CancelButtonText: Cancel
+  Description: Awesome! You just successfully set up your 2-factor and made your account way more secure. The Factor has to be entered on each login.
+  NextButtonText: Next
+  Title: 2-factor Verified
+InitMFAOTP:
+  CancelButtonText: Cancel
+  CodeLabel: Code
+  Description: Create your 2-factor. Download an authenticator app if you do not already have one.
+  NextButtonText: Next
+  OTPDescription: Scan the code with your authenticator app (e.g Google/Microsoft Authenticator, Authy) or copy the secret and insert the generated code below.
+  SecretLabel: Secret
+  Title: 2-Factor Verification
+InitMFAOTPSMS:
+  CodeLabel: Code
+  CountryCodeLabel: Country
+  DescriptionCode: Create your 2-factor. Enter the received code to verify your phone number.
+  DescriptionPhone: Create your 2-factor. Enter your phone number to verify it.
+  EditButtonText: Edit
+  NextButtonText: Next
+  PhoneLabel: Phone
+  ResendButtonText: Resend Code
+  Title: 2-Factor Verification
+InitMFAPrompt:
+  Description: 2-factor authentication gives you an additional security for your user account. This ensures that only you have access to your account.
+  NextButtonText: Next
+  Provider0: Authenticator App (e.g Google/Microsoft Authenticator, Authy)
+  Provider1: Device dependent (e.g FaceID, Windows Hello, Fingerprint)
+  Provider3: OTP SMS
+  Provider4: OTP Email
+  SkipButtonText: Skip
+  Title: 2-Factor Setup
+InitMFAU2F:
+  Description: A security key is a verification method that can be built into your phone, use Bluetooth, or plug directly into your computer's USB port.
+  ErrorRetry: Retry, create a new challenge or choose a different method.
+  NotSupported: WebAuthN is not supported by your browser. Please ensure it is up to date or use a different one (e.g. Chrome, Safari, Firefox)
+  RegisterTokenButtonText: Add security key
+  Title: Add Security Key
+  TokenNameLabel: Name of the security key / device
+InitPassword:
+  CodeLabel: Code
+  Description: You have received a code, which you have to enter in the form below, to set your new password.
+  NewPasswordConfirmLabel: Confirm Password
+  NewPasswordLabel: New Password
+  NextButtonText: Next
+  ResendButtonText: Resend Code
+  Title: Set Password
+InitPasswordDone:
+  CancelButtonText: Cancel
+  Description: Password successfully set
+  NextButtonText: Next
+  Title: Password Set
+InitUser:
+  CodeLabel: Code
+  Description: Verify your e-mail with the code below and set your password.
+  NewPasswordConfirm: Confirm Password
+  NewPasswordLabel: New Password
+  NextButtonText: Next
+  ResendButtonText: Resend Code
+  Title: Activate User
+InitUserDone:
+  CancelButtonText: Cancel
+  Description: Email verified and Password successfully set
+  NextButtonText: Next
+  Title: User Activated
+InviteUser:
+  CodeLabel: Code
+  Description: Verify your e-mail with the code below and set your password.
+  NewPasswordConfirm: Confirm Password
+  NewPasswordLabel: New Password
+  NextButtonText: Next
+  ResendButtonText: Resend Code
+  Title: Activate User
+LDAP:
+  Description: Enter your login details.
+  LoginNameLabel: Login Name
+  NextButtonText: Next
+  PasswordLabel: Password
+  Title: Login
+LinkingUserPrompt:
+  Description: 'Do you want to link your existing account:'
+  LinkButtonText: Link
+  OtherButtonText: Other options
+  Title: Existing User Found
+LinkingUsersDone:
+  CancelButtonText: Cancel
+  Description: User linked.
+  NextButtonText: Next
+  Title: Linking User
+Login:
+  Description: Enter your login details.
+  DescriptionLinking: Enter your login details to link your external user.
+  ExternalUserDescription: Login with an external user.
+  LoginNameLabel: Login Name
+  LoginnamePlaceHolder: username@domain
+  MustBeMemberOfOrg: The user must be a member of the {{.OrgName}} organization.
+  NextButtonText: Next
+  RegisterButtonText: Register
+  Title: Welcome Back!
+  TitleLinking: Login for user linking
+  UsernamePlaceHolder: username
+LoginSuccess:
+  AutoRedirectDescription: You will be directed back to your application automatically. If not, click on the button below. You may close the window afterwards.
+  NextButtonText: Next
+  RedirectedDescription: You may now close this window.
+  Title: Login Successful
+LogoutDone:
+  Description: You have logged out successfully.
+  LoginButtonText: Login
+  Title: Logged Out
+MFAProvider:
+  ChooseOther: or choose another option
+  Provider0: Authenticator App (e.g Google/Microsoft Authenticator, Authy)
+  Provider1: Device dependent (e.g FaceID, Windows Hello, Fingerprint)
+  Provider3: OTP SMS
+  Provider4: OTP Email
+Password:
+  BackButtonText: Back
+  Confirmation: Password confirmation matched.
+  Description: Enter your login details.
+  HasLowercase: Must include a lowercase letter.
+  HasNumber: Must include a number.
+  HasSymbol: Must include a symbol.
+  HasUppercase: Must include an uppercase letter.
+  MaxLength: Must be less than 70 characters long.
+  MinLength: Must be at least
+  MinLengthp2: characters long.
+  NextButtonText: Next
+  PasswordLabel: Password
+  ResetLinkText: Reset Password
+  Title: Password
+PasswordChange:
+  CancelButtonText: Cancel
+  Description: Change your password. Enter your old and new password.
+  ExpiredDescription: You password has expired and has to be changed. Enter your old and new password.
+  Footer: Footer
+  NewPasswordConfirmLabel: Password confirmation
+  NewPasswordLabel: New Password
+  NextButtonText: Next
+  OldPasswordLabel: Old Password
+  Title: Change Password
+PasswordChangeDone:
+  Description: Your password was changed successfully.
+  NextButtonText: Next
+  Title: Change Password
+PasswordResetDone:
+  Description: Check your email to reset your password.
+  NextButtonText: Next
+  Title: Password Reset Link Sent
+Passwordless:
+  Description: Login with authentication methods provided by your device like FaceID, Windows Hello or Fingerprint.
+  ErrorRetry: Retry, create a new challenge or choose a different method.
+  LoginWithPwButtonText: Login with password
+  NotSupported: WebAuthN is not supported by your browser. Please ensure it is up to date or use a different one (e.g. Chrome, Safari, Firefox)
+  Title: Login Passwordless
+  ValidateTokenButtonText: Login with passwordless
+PasswordlessPrompt:
+  Description: Would you like to setup passwordless login? (Authentication methods of your device like FaceID, Windows Hello or Fingerprint)
+  DescriptionInit: You need to set up passwordless login. Use the link you were given to register your device.
+  NextButtonText: Next
+  PasswordlessButtonText: Go passwordless
+  SkipButtonText: Skip
+  Title: Passwordless Setup
+PasswordlessRegistration:
+  Description: Add your authentication by providing a name (e.g MyMobilePhone, MacBook, etc) and then clicking on the 'Register passwordless' button below.
+  ErrorRetry: Retry, create a new challenge or choose a different method.
+  NotSupported: WebAuthN is not supported by your browser. Please ensure it is up to date or use a different one (e.g. Chrome, Safari, Firefox)
+  RegisterTokenButtonText: Register passwordless
+  Title: Passwordless Setup
+  TokenNameLabel: Name of the device
+PasswordlessRegistrationDone:
+  CancelButtonText: Cancel
+  Description: Device for passwordless successfully added.
+  DescriptionClose: You may now close this window.
+  NextButtonText: Next
+  Title: Passwordless Set Up
+RegisterOption:
+  Description: Choose how you'd like to register
+  ExternalLoginDescription: or register with an external user
+  LoginButtonText: Login
+  RegisterUsernamePasswordButtonText: With username and password
+  Title: Registration Options
+RegistrationOrg:
+  Description: Enter your organization name and userdata.
+  EmailLabel: E-Mail
+  FirstnameLabel: First name
+  LastnameLabel: Last name
+  OrgNameLabel: Organization name
+  PasswordConfirmLabel: Password confirmation
+  PasswordLabel: Password
+  PrivacyConfirm: I accept the
+  PrivacyLinkText: privacy policy
+  SaveButtonText: Create organization
+  Title: Organization Registration
+  TosAndPrivacyLabel: Terms and conditions
+  TosConfirm: I accept the
+  TosLinkText: TOS
+  UsernameLabel: Username
+RegistrationUser:
+  Arabic: العربية
+  BackButtonText: Login
+  Bulgarian: Български
+  Chinese: 简体中文
+  Czech: Čeština
+  Description: Enter your Userdata. Your email address will be used as your login name.
+  DescriptionOrgRegister: Enter your Userdata.
+  Diverse: diverse / X
+  Dutch: Nederlands
+  EmailLabel: E-Mail
+  English: English
+  ExternalLogin: or register with an external user
+  Female: Female
+  FirstnameLabel: First name
+  French: Français
+  GenderLabel: Gender
+  German: Deutsch
+  Hungarian: Magyar
+  Indonesian: Bahasa Indonesia
+  Italian: Italiano
+  Japanese: 日本語
+  Korean: 한국어
+  LanguageLabel: Language
+  LastnameLabel: Last name
+  Macedonian: Македонски
+  Male: Male
+  NextButtonText: Next
+  PasswordConfirmLabel: Password confirmation
+  PasswordLabel: Password
+  Polish: Polski
+  Portuguese: Português
+  PrivacyConfirm: I accept the
+  PrivacyLinkText: privacy policy
+  Romanian: Română
+  Russian: Русский
+  Spanish: Español
+  Swedish: Svenska
+  Title: Registration
+  TosAndPrivacyLabel: Terms and conditions
+  TosConfirm: I accept the
+  TosLinkText: TOS
+  Turkish: Türkçe
+  Ukrainian: Українська
+  UsernameLabel: Username
+SelectAccount:
+  Description: Use your account
+  DescriptionLinking: Select your account to link with your external user.
+  MustBeMemberOfOrg: The user must be a member of the {{.OrgName}} organization.
+  OtherUser: Other User
+  SessionState0: active
+  SessionState1: Signed out
+  Title: Select Account
+  TitleLinking: Select account for user linking
+SignIn: Sign in with {{.Provider}}
+UsernameChange:
+  CancelButtonText: Cancel
+  Description: Set your new username
+  NextButtonText: Next
+  Title: Change Username
+  UsernameLabel: Username
+UsernameChangeDone:
+  Description: Your username was changed successfully.
+  NextButtonText: Next
+  Title: Username Changed
+VerifyMFAOTP:
+  CodeLabel: Code
+  Description: Verify your second factor
+  NextButtonText: Next
+  Title: Verify 2-Factor
+VerifyMFAU2F:
+  Description: Verify your 2-Factor with the registered device (e.g FaceID, Windows Hello, Fingerprint)
+  ErrorRetry: Retry, create a new request or choose a other method.
+  NotSupported: WebAuthN is not supported by your browser. Make sure you are using the newest version or change your browser to a supported one (Chrome, Safari, Firefox)
+  Title: 2-Factor Verification
+  ValidateTokenButtonText: Verify 2-Factor
+VerifyOTP:
+  CodeLabel: Code
+  Description: Verify your second factor
+  NextButtonText: Next
+  ResendButtonText: Resend Code
+  Title: Verify 2-Factor
 optional: (optional)

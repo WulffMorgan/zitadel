@@ -1,67 +1,67 @@
+DomainClaimed:
+  ButtonText: Accedi
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Cambiare email / nome utente
+  Subject: Il dominio è stato rivendicato
+  Text: Il dominio {{.Domain}} è stato rivendicato da un'organizzazione. Il tuo attuale utente {{.Username}} non fa parte di questa organizzazione. Perciò dovrai cambiare la tua email quando farai il login. Abbiamo creato un nome utente temporaneo ({{.TempUsername}}) per questo login.
+  Title: Zitadel - Il dominio è stato rivendicato
 InitCode:
-  Title: "Zitadel - Inizializzare l'utente"
-  PreHeader: "Inizializzare l'utente"
-  Subject: "Inizializzare l'utente"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "Questo utente è stato creato in Zitadel. Usa il nome utente {{.PreferredLoginName}} per accedere. Per favore, clicca il pulsante per finire il processo di inizializzazione. (Codice {{.Code}}) Se non hai richiesto questa mail, per favore ignorala."
-  ButtonText: "Termina"
+  ButtonText: Termina
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Inizializzare l'utente
+  Subject: Inizializzare l'utente
+  Text: Questo utente è stato creato in Zitadel. Usa il nome utente {{.PreferredLoginName}} per accedere. Per favore, clicca il pulsante per finire il processo di inizializzazione. (Codice {{.Code}}) Se non hai richiesto questa mail, per favore ignorala.
+  Title: Zitadel - Inizializzare l'utente
+InviteUser:
+  ButtonText: Accetta invito
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Invito a {{.ApplicationName}}
+  Subject: Invito a {{.ApplicationName}}
+  Text: Il tuo utente è stato invitato a {{.ApplicationName}}. Clicca sul pulsante qui sotto per completare il processo di invito. Se non hai richiesto questa email, ignorala.
+  Title: Invito a {{.ApplicationName}}
+PasswordChange:
+  ButtonText: Login
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Modifica della password
+  Subject: La password dell'utente è stata modificata
+  Text: La password del vostro utente è cambiata; se questa modifica non è stata fatta da voi, vi consigliamo di reimpostare immediatamente la vostra password.
+  Title: Zitadel - La password dell'utente è stata modificata
 PasswordReset:
-  Title: "Zitadel - Ripristina la password"
-  PreHeader: "Ripristina la password"
-  Subject: "Ripristina la password"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "Abbiamo ricevuto una richiesta di reimpostazione della password. Per favore clicca il pulsante per resettare la tua password. (Codice {{.Code}}) Se non hai richiesto questa mail, ignorala."
-  ButtonText: "Ripristina"
+  ButtonText: Ripristina
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Ripristina la password
+  Subject: Ripristina la password
+  Text: Abbiamo ricevuto una richiesta di reimpostazione della password. Per favore clicca il pulsante per resettare la tua password. (Codice {{.Code}}) Se non hai richiesto questa mail, ignorala.
+  Title: Zitadel - Ripristina la password
+PasswordlessRegistration:
+  ButtonText: Attiva passkey
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Aggiungi l'autenticazione con passkey
+  Subject: Aggiungi l'autenticazione con passkey
+  Text: Abbiamo ricevuto una richiesta per aggiungere l'autenticazione con passkey. Usa il pulsante qui sotto per aggiungere il tuo token o dispositivo per il login senza password.
+  Title: Zitadel - Aggiungere autenticazione con passkey
 VerifyEmail:
-  Title: "Zitadel - Verifica l'e-mail"
-  PreHeader: "Verifica l'e-mail"
-  Subject: "Verifica l'e-mail"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "È stata aggiunta una nuova email. Per favore fai clic sul pulsante per verificare la tua mail. (Codice {{.Code}}) Se non hai aggiunto una nuova email, ignora questa email."
-  ButtonText: "Verifica"
-VerifyPhone:
-  Title: "Zitadel - Verifica il telefono"
-  PreHeader: "Verifica il telefono"
-  Subject: "Verifica il telefono"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "È stato aggiunto un nuovo numero di telefono. Usa il seguente codice per verificarlo {{.Code}}"
-  ButtonText: "Verifica"
+  ButtonText: Verifica
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Verifica l'e-mail
+  Subject: Verifica l'e-mail
+  Text: È stata aggiunta una nuova email. Per favore fai clic sul pulsante per verificare la tua mail. (Codice {{.Code}}) Se non hai aggiunto una nuova email, ignora questa email.
+  Title: Zitadel - Verifica l'e-mail
 VerifyEmailOTP:
-  Title: "Zitadel - Verifica l'OTP"
-  PreHeader: "Verifica l'OTP"
-  Subject: "Verifica l'OTP"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "Per favore, utilizza il pulsante 'Autentica' o copia l'OTP {{.OTP}} e incollala nella schermata di autenticazione per autenticarti a Zitadel entro i prossimi cinque minuti."
-  ButtonText: "Autentica"
+  ButtonText: Autentica
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Verifica l'OTP
+  Subject: Verifica l'OTP
+  Text: Per favore, utilizza il pulsante 'Autentica' o copia l'OTP {{.OTP}} e incollala nella schermata di autenticazione per autenticarti a Zitadel entro i prossimi cinque minuti.
+  Title: Zitadel - Verifica l'OTP
+VerifyPhone:
+  ButtonText: Verifica
+  Greeting: Ciao {{.DisplayName}},
+  PreHeader: Verifica il telefono
+  Subject: Verifica il telefono
+  Text: È stato aggiunto un nuovo numero di telefono. Usa il seguente codice per verificarlo {{.Code}}
+  Title: Zitadel - Verifica il telefono
 VerifySMSOTP:
   Text: |-
     {{.OTP}} è la tua OTP per {{ .Domain }}. Usala entro i prossimi {{.Expiry}}.
     @{{.Domain}} #{{.OTP}}
-DomainClaimed:
-  Title: "Zitadel - Il dominio è stato rivendicato"
-  PreHeader: "Cambiare email / nome utente"
-  Subject: "Il dominio è stato rivendicato"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "Il dominio {{.Domain}} è stato rivendicato da un'organizzazione. Il tuo attuale utente {{.Username}} non fa parte di questa organizzazione. Perciò dovrai cambiare la tua email quando farai il login. Abbiamo creato un nome utente temporaneo ({{.TempUsername}}) per questo login."
-  ButtonText: "Accedi"
-PasswordlessRegistration:
-  Title: "Zitadel - Aggiungere autenticazione con passkey"
-  PreHeader: "Aggiungi l'autenticazione con passkey"
-  Subject: "Aggiungi l'autenticazione con passkey"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "Abbiamo ricevuto una richiesta per aggiungere l'autenticazione con passkey. Usa il pulsante qui sotto per aggiungere il tuo token o dispositivo per il login senza password."
-  ButtonText: "Attiva passkey"
-PasswordChange:
-  Title: "Zitadel - La password dell'utente è stata modificata"
-  PreHeader: "Modifica della password"
-  Subject: "La password dell'utente è stata modificata"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "La password del vostro utente è cambiata; se questa modifica non è stata fatta da voi, vi consigliamo di reimpostare immediatamente la vostra password."
-  ButtonText: "Login"
-InviteUser:
-  Title: "Invito a {{.ApplicationName}}"
-  PreHeader: "Invito a {{.ApplicationName}}"
-  Subject: "Invito a {{.ApplicationName}}"
-  Greeting: "Ciao {{.DisplayName}},"
-  Text: "Il tuo utente è stato invitato a {{.ApplicationName}}. Clicca sul pulsante qui sotto per completare il processo di invito. Se non hai richiesto questa email, ignorala."
-  ButtonText: "Accetta invito"

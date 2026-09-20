@@ -1,67 +1,67 @@
+DomainClaimed:
+  ButtonText: Zaloguj się
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Zmiana adresu e-mail / nazwy użytkownika
+  Subject: Domena została zarejestrowana
+  Text: Domena {{.Domain}} została zarejestrowana przez organizację. Twój obecny użytkownik {{.Username}} nie jest członkiem tej organizacji. Dlatego będziesz musiał zmienić swój adres e-mail podczas logowania. Stworzyliśmy tymczasową nazwę użytkownika ({{.TempUsername}}) dla tego logowania.
+  Title: Zitadel - Domena została zarejestrowana
 InitCode:
-  Title: "Zitadel - Inicjalizacja użytkownika"
-  PreHeader: "Inicjalizacja użytkownika"
-  Subject: "Inicjalizacja użytkownika"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Ten użytkownik został utworzony w Zitadel. Aby się zalogować, użyj nazwy użytkownika {{.PreferredLoginName}}. Kliknij poniższy przycisk, aby zakończyć proces inicjalizacji. (Kod {{.Code}}) Jeśli nie wystąpiła prośba o ten e-mail, proszę go zignorować."
-  ButtonText: "Zakończ inicjalizację"
+  ButtonText: Zakończ inicjalizację
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Inicjalizacja użytkownika
+  Subject: Inicjalizacja użytkownika
+  Text: Ten użytkownik został utworzony w Zitadel. Aby się zalogować, użyj nazwy użytkownika {{.PreferredLoginName}}. Kliknij poniższy przycisk, aby zakończyć proces inicjalizacji. (Kod {{.Code}}) Jeśli nie wystąpiła prośba o ten e-mail, proszę go zignorować.
+  Title: Zitadel - Inicjalizacja użytkownika
+InviteUser:
+  ButtonText: Akceptuj zaproszenie
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Zaproszenie do {{.ApplicationName}}
+  Subject: Zaproszenie do {{.ApplicationName}}
+  Text: Twój użytkownik został zaproszony do {{.ApplicationName}}. Kliknij poniższy przycisk, aby zakończyć proces zaproszenia. Jeśli nie zażądałeś tego e-maila, zignoruj go.
+  Title: Zaproszenie do {{.ApplicationName}}
+PasswordChange:
+  ButtonText: Zaloguj się
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Zmiana hasła
+  Subject: Hasło użytkownika zostało zmienione
+  Text: Hasło Twojego użytkownika zostało zmienione, jeśli ta zmiana nie została dokonana przez Ciebie, zalecamy natychmiastowe zresetowanie hasła.
+  Title: Zitadel - Hasło użytkownika zostało zmienione
 PasswordReset:
-  Title: "Zitadel - Resetowanie hasła"
-  PreHeader: "Resetowanie hasła"
-  Subject: "Resetowanie hasła"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Otrzymaliśmy prośbę o resetowanie hasła. Kliknij poniższy przycisk, aby zresetować swoje hasło. (Kod {{.Code}}) Jeśli nie wystąpiła prośba o ten e-mail, proszę go zignorować."
-  ButtonText: "Zresetuj hasło"
+  ButtonText: Zresetuj hasło
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Resetowanie hasła
+  Subject: Resetowanie hasła
+  Text: Otrzymaliśmy prośbę o resetowanie hasła. Kliknij poniższy przycisk, aby zresetować swoje hasło. (Kod {{.Code}}) Jeśli nie wystąpiła prośba o ten e-mail, proszę go zignorować.
+  Title: Zitadel - Resetowanie hasła
+PasswordlessRegistration:
+  ButtonText: Dodaj logowanie bez hasła
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Dodaj logowanie bez hasła
+  Subject: Dodaj logowanie bez hasła
+  Text: Otrzymaliśmy prośbę o dodanie tokenu do logowania bez hasła. Użyj poniższego przycisku, aby dodać swój token lub urządzenie do logowania bez hasła.
+  Title: Zitadel - Dodaj logowanie bez hasła
 VerifyEmail:
-  Title: "Zitadel - Weryfikacja adresu e-mail"
-  PreHeader: "Weryfikacja adresu e-mail"
-  Subject: "Weryfikacja adresu e-mail"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Został dodany nowy adres e-mail. Użyj poniższego przycisku, aby zweryfikować swój adres e-mail. (Kod {{.Code}}) Jeśli nie dodałeś nowego adresu e-mail, proszę zignoruj ten e-mail."
-  ButtonText: "Zweryfikuj adres e-mail"
-VerifyPhone:
-  Title: "Zitadel - Weryfikacja numeru telefonu"
-  PreHeader: "Weryfikacja numeru telefonu"
-  Subject: "Weryfikacja numeru telefonu"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Został dodany nowy numer telefonu. Użyj następującego kodu, aby go zweryfikować {{.Code}}"
-  ButtonText: "Zweryfikuj numer telefonu"
+  ButtonText: Zweryfikuj adres e-mail
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Weryfikacja adresu e-mail
+  Subject: Weryfikacja adresu e-mail
+  Text: Został dodany nowy adres e-mail. Użyj poniższego przycisku, aby zweryfikować swój adres e-mail. (Kod {{.Code}}) Jeśli nie dodałeś nowego adresu e-mail, proszę zignoruj ten e-mail.
+  Title: Zitadel - Weryfikacja adresu e-mail
 VerifyEmailOTP:
-  Title: "Zitadel - Zatwierdź OTP"
-  PreHeader: "Zatwierdź OTP"
-  Subject: "Zatwierdź OTP"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Proszę, użyj przycisku 'Uwierzytelnij' lub skopiuj OTP {{.OTP}} i wklej go na ekran uwierzytelniania, aby uwierzytelnić się w Zitadel w ciągu najbliższych pięciu minut."
-  ButtonText: "Uwierzytelnij"
+  ButtonText: Uwierzytelnij
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Zatwierdź OTP
+  Subject: Zatwierdź OTP
+  Text: Proszę, użyj przycisku 'Uwierzytelnij' lub skopiuj OTP {{.OTP}} i wklej go na ekran uwierzytelniania, aby uwierzytelnić się w Zitadel w ciągu najbliższych pięciu minut.
+  Title: Zitadel - Zatwierdź OTP
+VerifyPhone:
+  ButtonText: Zweryfikuj numer telefonu
+  Greeting: Witaj {{.DisplayName}},
+  PreHeader: Weryfikacja numeru telefonu
+  Subject: Weryfikacja numeru telefonu
+  Text: Został dodany nowy numer telefonu. Użyj następującego kodu, aby go zweryfikować {{.Code}}
+  Title: Zitadel - Weryfikacja numeru telefonu
 VerifySMSOTP:
   Text: |-
     {{.OTP}} to Twoje OTP do domeny {{ .Domain }}. Użyj go w ciągu najbliższych {{.Expiry}}.
     @{{.Domain}} #{{.OTP}}
-DomainClaimed:
-  Title: "Zitadel - Domena została zarejestrowana"
-  PreHeader: "Zmiana adresu e-mail / nazwy użytkownika"
-  Subject: "Domena została zarejestrowana"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Domena {{.Domain}} została zarejestrowana przez organizację. Twój obecny użytkownik {{.Username}} nie jest członkiem tej organizacji. Dlatego będziesz musiał zmienić swój adres e-mail podczas logowania. Stworzyliśmy tymczasową nazwę użytkownika ({{.TempUsername}}) dla tego logowania."
-  ButtonText: "Zaloguj się"
-PasswordlessRegistration:
-  Title: "Zitadel - Dodaj logowanie bez hasła"
-  PreHeader: "Dodaj logowanie bez hasła"
-  Subject: "Dodaj logowanie bez hasła"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Otrzymaliśmy prośbę o dodanie tokenu do logowania bez hasła. Użyj poniższego przycisku, aby dodać swój token lub urządzenie do logowania bez hasła."
-  ButtonText: "Dodaj logowanie bez hasła"
-PasswordChange:
-  Title: "Zitadel - Hasło użytkownika zostało zmienione"
-  PreHeader: "Zmiana hasła"
-  Subject: "Hasło użytkownika zostało zmienione"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Hasło Twojego użytkownika zostało zmienione, jeśli ta zmiana nie została dokonana przez Ciebie, zalecamy natychmiastowe zresetowanie hasła."
-  ButtonText: "Zaloguj się"
-InviteUser:
-  Title: "Zaproszenie do {{.ApplicationName}}"
-  PreHeader: "Zaproszenie do {{.ApplicationName}}"
-  Subject: "Zaproszenie do {{.ApplicationName}}"
-  Greeting: "Witaj {{.DisplayName}},"
-  Text: "Twój użytkownik został zaproszony do {{.ApplicationName}}. Kliknij poniższy przycisk, aby zakończyć proces zaproszenia. Jeśli nie zażądałeś tego e-maila, zignoruj go."
-  ButtonText: "Akceptuj zaproszenie"

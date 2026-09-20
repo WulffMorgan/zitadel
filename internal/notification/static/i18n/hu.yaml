@@ -1,67 +1,67 @@
+DomainClaimed:
+  ButtonText: Bejelentkezés
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: E-mail / felhasználónév megváltoztatása
+  Subject: A domaint már igényelték
+  Text: A {{.Domain}} domaint egy szervezet igényelte. A jelenlegi felhasználód, {{.Username}}, nem része ennek a szervezetnek. Ezért meg kell változtatnod az e-mailed, amikor bejelentkezel. Létrehoztunk egy ideiglenes felhasználónevet ({{.TempUsername}}) ehhez a bejelentkezéshez.
+  Title: A domaint már igényelték
 InitCode:
-  Title: "Felhasználó Inicializálása"
-  PreHeader: "Felhasználó Inicializálása"
-  Subject: "Felhasználó Inicializálása"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "Ez a felhasználó létre lett hozva. Használd a {{.PreferredLoginName}} felhasználónevet a bejelentkezéshez. Kérlek, kattints az alábbi gombra az inicializálási folyamat befejezéséhez. (Kód: {{.Code}}) Ha nem te kérted ezt az e-mailt, kérlek, hagyd figyelmen kívül."
-  ButtonText: "Inicializálás befejezése"
+  ButtonText: Inicializálás befejezése
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: Felhasználó Inicializálása
+  Subject: Felhasználó Inicializálása
+  Text: 'Ez a felhasználó létre lett hozva. Használd a {{.PreferredLoginName}} felhasználónevet a bejelentkezéshez. Kérlek, kattints az alábbi gombra az inicializálási folyamat befejezéséhez. (Kód: {{.Code}}) Ha nem te kérted ezt az e-mailt, kérlek, hagyd figyelmen kívül.'
+  Title: Felhasználó Inicializálása
+InviteUser:
+  ButtonText: Meghívás elfogadása
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: Meghívás a(z) {{.ApplicationName}} szolgáltatásba
+  Subject: Meghívás a(z) {{.ApplicationName}} szolgáltatásba
+  Text: Felhasználódat meghívták a(z) {{.ApplicationName}} szolgáltatásba. Kérlek, kattints az alábbi gombra a meghívás folyamatának befejezéséhez. Ha nem kérted ezt az e-mailt, kérlek hagyd figyelmen kívül.
+  Title: Meghívás a(z) {{.ApplicationName}}-ra
+PasswordChange:
+  ButtonText: Bejelentkezés
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: Jelszó megváltoztatása
+  Subject: A felhasználó jelszava megváltozott
+  Text: A felhasználó jelszava megváltozott. Ha ezt a változtatást nem te végezted, javasoljuk, hogy azonnal állítsd vissza a jelszavad.
+  Title: A felhasználó jelszava megváltozott
 PasswordReset:
-  Title: "Jelszó visszaállítása"
-  PreHeader: "Jelszó visszaállítása"
-  Subject: "Jelszó visszaállítása"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "Jelszó-visszaállítási kérelmet kaptunk. Kérjük, használd az alábbi gombot a jelszavad visszaállításához. (Kód: {{.Code}}) Ha nem kérted ezt az e-mailt, kérjük, hagyd figyelmen kívül."
-  ButtonText: "Jelszó visszaállítása"
+  ButtonText: Jelszó visszaállítása
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: Jelszó visszaállítása
+  Subject: Jelszó visszaállítása
+  Text: 'Jelszó-visszaállítási kérelmet kaptunk. Kérjük, használd az alábbi gombot a jelszavad visszaállításához. (Kód: {{.Code}}) Ha nem kérted ezt az e-mailt, kérjük, hagyd figyelmen kívül.'
+  Title: Jelszó visszaállítása
+PasswordlessRegistration:
+  ButtonText: Jelszó Nélküli Bejelentkezés Hozzáadása
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: Jelszó nélküli bejelentkezés hozzáadása
+  Subject: Jelszó nélküli bejelentkezés hozzáadása
+  Text: Kaptunk egy kérést a jelszó nélküli bejelentkezéshez szükséges token hozzáadására. Kérlek, használd az alábbi gombot a token vagy eszköz hozzáadásához a jelszó nélküli bejelentkezéshez.
+  Title: Jelszó nélküli bejelentkezés hozzáadása
 VerifyEmail:
-  Title: "E-mail megerősítése"
-  PreHeader: "E-mail megerősítése"
-  Subject: "E-mail megerősítése"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "Egy új e-mail hozzá lett adva. Kérjük, használd az alábbi gombot az e-mail címed megerősítéséhez. (Kód: {{.Code}}) Ha nem adtál hozzá új e-mail címet, kérjük, hagyd figyelmen kívül ezt az e-mailt."
-  ButtonText: "E-mail megerősítése"
-VerifyPhone:
-  Title: "Telefon megerősítése"
-  PreHeader: "Telefon megerősítése"
-  Subject: "Telefonszám ellenőrzése"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "Új telefonszám került hozzáadásra. Kérlek, használd a következő kódot az ellenőrzéshez: {{.Code}}"
-  ButtonText: "Telefonszám ellenőrzése"
+  ButtonText: E-mail megerősítése
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: E-mail megerősítése
+  Subject: E-mail megerősítése
+  Text: 'Egy új e-mail hozzá lett adva. Kérjük, használd az alábbi gombot az e-mail címed megerősítéséhez. (Kód: {{.Code}}) Ha nem adtál hozzá új e-mail címet, kérjük, hagyd figyelmen kívül ezt az e-mailt.'
+  Title: E-mail megerősítése
 VerifyEmailOTP:
-  Title: "OTP ellenőrzése"
-  PreHeader: "OTP ellenőrzése"
-  Subject: "OTP ellenőrzése"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "Kérlek, használd az OTP-t {{.OTP}} azonosításhoz az elkövetkező öt percben, vagy kattints az 'Azonosítás' gombra."
-  ButtonText: "Azonosítás"
+  ButtonText: Azonosítás
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: OTP ellenőrzése
+  Subject: OTP ellenőrzése
+  Text: Kérlek, használd az OTP-t {{.OTP}} azonosításhoz az elkövetkező öt percben, vagy kattints az 'Azonosítás' gombra.
+  Title: OTP ellenőrzése
+VerifyPhone:
+  ButtonText: Telefonszám ellenőrzése
+  Greeting: Kedves {{.DisplayName}},
+  PreHeader: Telefon megerősítése
+  Subject: Telefonszám ellenőrzése
+  Text: 'Új telefonszám került hozzáadásra. Kérlek, használd a következő kódot az ellenőrzéshez: {{.Code}}'
+  Title: Telefon megerősítése
 VerifySMSOTP:
   Text: |-
     {{.OTP}} OTP azonosítód a(z) {{ .Domain }} oldalhoz. Eddig lesz érvényes: {{.Expiry}}.
     {{.Domain}} #{{.OTP}}
-DomainClaimed:
-  Title: "A domaint már igényelték"
-  PreHeader: "E-mail / felhasználónév megváltoztatása"
-  Subject: "A domaint már igényelték"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "A {{.Domain}} domaint egy szervezet igényelte. A jelenlegi felhasználód, {{.Username}}, nem része ennek a szervezetnek. Ezért meg kell változtatnod az e-mailed, amikor bejelentkezel. Létrehoztunk egy ideiglenes felhasználónevet ({{.TempUsername}}) ehhez a bejelentkezéshez."
-  ButtonText: "Bejelentkezés"
-PasswordlessRegistration:
-  Title: "Jelszó nélküli bejelentkezés hozzáadása"
-  PreHeader: "Jelszó nélküli bejelentkezés hozzáadása"
-  Subject: "Jelszó nélküli bejelentkezés hozzáadása"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "Kaptunk egy kérést a jelszó nélküli bejelentkezéshez szükséges token hozzáadására. Kérlek, használd az alábbi gombot a token vagy eszköz hozzáadásához a jelszó nélküli bejelentkezéshez."
-  ButtonText: "Jelszó Nélküli Bejelentkezés Hozzáadása"
-PasswordChange:
-  Title: "A felhasználó jelszava megváltozott"
-  PreHeader: "Jelszó megváltoztatása"
-  Subject: "A felhasználó jelszava megváltozott"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "A felhasználó jelszava megváltozott. Ha ezt a változtatást nem te végezted, javasoljuk, hogy azonnal állítsd vissza a jelszavad."
-  ButtonText: "Bejelentkezés"
-InviteUser:
-  Title: "Meghívás a(z) {{.ApplicationName}}-ra"
-  PreHeader: "Meghívás a(z) {{.ApplicationName}} szolgáltatásba"
-  Subject: "Meghívás a(z) {{.ApplicationName}} szolgáltatásba"
-  Greeting: "Kedves {{.DisplayName}},"
-  Text: "Felhasználódat meghívták a(z) {{.ApplicationName}} szolgáltatásba. Kérlek, kattints az alábbi gombra a meghívás folyamatának befejezéséhez. Ha nem kérted ezt az e-mailt, kérlek hagyd figyelmen kívül."
-  ButtonText: "Meghívás elfogadása"
