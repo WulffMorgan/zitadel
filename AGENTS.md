@@ -123,3 +123,4 @@ PR titles are validated by the Semantic PR app. Format:
 ## Documentation
 - **Human Guide**: See `CONTRIBUTING.md` for setup and contribution details.
 - **API Design**: See `API_DESIGN.md` for API specific guidelines.
+- **i18n / translations**: See `i18n/README.md` for the unified locale pipeline (edit `i18n/locales/`, then `export.sh`). Also `CONTRIBUTING.md` § Contribute Translations.

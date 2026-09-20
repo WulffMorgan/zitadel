@@ -124,14 +124,14 @@ Go through the following checklist before you submit the final pull request:
 
 The code consists of the following parts:
 
-| name               | description                                        | language                                                                                                  | where to find                                       | Development Guide                                   |
-| ------------------ | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
-| API implementation | Service that serves the grpc(-web) and RESTful API | [go](https://go.dev)                                                                                      | [API implementation](./internal/api/grpc)           | [Contribute to API](#contribute-to-api)             |
-| API definitions    | Specifications of the API                          | [Protobuf](https://developers.google.com/protocol-buffers)                                                | [./proto/zitadel](./proto/zitadel)                  | [Contribute to API](#contribute-to-api)             |
-| Management Console | Frontend the user interacts with after log in      | [Angular](https://angular.io), [Typescript](https://www.typescriptlang.org)                               | [./console](./console)                              | [Contribute to Frontend](#contribute-frontend-code) |
-| Login              | Modern authentication UI built with Next.js        | [Next.js](https://nextjs.org), [React](https://reactjs.org), [TypeScript](https://www.typescriptlang.org) | [./apps/login](./apps/login)                        | [Contribute to Frontend](#contribute-frontend-code) |
-| Docs               | Project documentation made with Fumadocs           | [Fumadocs](https://fumadocs.dev/)                                                                         | [./apps/docs](./apps/docs)                          | [Contribute to Frontend](#contribute-frontend-code) |
-| translations       | Internationalization files for default languages   | YAML                                                                                                      | [./console](./console) and [./internal](./internal) | [Contribute Translations](#contribute-translations) |
+| name               | description                                        | language                                                                                                  | where to find                                                    | Development Guide                                   |
+| ------------------ | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------- |
+| API implementation | Service that serves the grpc(-web) and RESTful API | [go](https://go.dev)                                                                                      | [API implementation](./internal/api/grpc)                        | [Contribute to API](#contribute-to-api)             |
+| API definitions    | Specifications of the API                          | [Protobuf](https://developers.google.com/protocol-buffers)                                                | [./proto/zitadel](./proto/zitadel)                               | [Contribute to API](#contribute-to-api)             |
+| Management Console | Frontend the user interacts with after log in      | [Angular](https://angular.io), [Typescript](https://www.typescriptlang.org)                               | [./console](./console)                                           | [Contribute to Frontend](#contribute-frontend-code) |
+| Login              | Modern authentication UI built with Next.js        | [Next.js](https://nextjs.org), [React](https://reactjs.org), [TypeScript](https://www.typescriptlang.org) | [./apps/login](./apps/login)                                     | [Contribute to Frontend](#contribute-frontend-code) |
+| Docs               | Project documentation made with Fumadocs           | [Fumadocs](https://fumadocs.dev/)                                                                         | [./apps/docs](./apps/docs)                                       | [Contribute to Frontend](#contribute-frontend-code) |
+| translations       | Internationalization files for default languages   | YAML                                                                                                      | [./i18n](./i18n) (unified) → console / login / internal catalogs | [Contribute Translations](#contribute-translations) |
 
 Please follow the guides to validate and test the code before you contribute.
 
@@ -611,34 +611,39 @@ Please refer to the [Docs README](./apps/docs/README.md) for detailed instructio
 
 ## Contribute Translations
 
-Zitadel loads translations from four files:
+The preferred way to edit or add default translations is the **unified i18n pipeline** under [`./i18n`](./i18n). Full workflow, markers (`__MISSING` / `__EXTRA`), import/export, and how to add a language are documented in [`i18n/README.md`](./i18n/README.md).
+
+In short:
+
+1. Edit `i18n/locales/<locale>.yaml` (ISO 639-1 code as the file name).
+2. Run `./i18n/scripts/export.sh` so runtime catalogs stay in sync.
+3. Commit both the unified file and the generated runtime catalogs.
+
+Language names in UI lists should stay as **endonyms** (e.g. German → `Deutsch`, Portuguese → `Português`).
+
+### Runtime catalogs (what products load)
+
+Export writes into these trees (do not let them drift from `i18n/locales/`):
 
 - [Console texts](./console/src/assets/i18n)
-- [Login interface](./internal/api/ui/login/static/i18n)
+- [Login interface (v1)](./internal/api/ui/login/static/i18n)
 - [Email notification](./internal/notification/static/i18n)
 - [Common texts](./internal/static/i18n) for success or error toasts
+- [Login v2 locale files](./apps/login/locales)
+- [System default translations (login v2)](./internal/query/v2-default.json)
 
-You may edit the texts in these files or create a new file for additional language support. Make sure you set the locale (ISO 639-1 code) as the name of the new language file.
-Please make sure that the languages within the files remain in their own language, e.g. German must always be `Deutsch.
-If you have added support for a new language, please also ensure that it is added in the list of languages in all the other language files.
+**Important:** `v2-default.json` contains system default translations served by the API. If a language is missing there, the API falls back to the instance default language (typically English), which overrides locale-specific login v2 translations. Export should update both `apps/login/locales/<locale>.json` and `internal/query/v2-default.json`.
 
-You also have to add some changes to the following files:
+### Static language registration
 
-- [Register Local File](./console/src/app/app.module.ts) - Import and register the Angular locale, register `i18n-iso-countries` locale
-- [Exclude from Angular prebundle](./console/angular.json) - Add `i18n-iso-countries/langs/<locale>.json` to `prebundle.exclude`
-- [Add Supported Language](./console/src/app/utils/language.ts)
-- [Customized Text Docs](./apps/docs/docs/guides/manage/customize/texts.md)
-- [Add language option](./internal/api/ui/login/static/templates/external_not_found_option.html)
+Until generators exist, adding a language also requires updating:
 
-### Login v2 (Next.js)
-
-The new Login UI (Next.js) has its own translation files that are maintained separately:
-
-- [Login v2 locale files](./apps/login/locales) - Add a new `<locale>.json` file with translations
-- [Register language in LANGS](./apps/login/src/lib/i18n.ts) - Add the language to the `LANGS` array with native name and code
-- [System default translations](./internal/query/v2-default.json) - Add translations to the backend default translations file (required for Login v2 to work correctly)
-
-**Important**: The `v2-default.json` file contains system default translations served by the API. If a language is not present in this file, the API will fall back to the instance's default language (typically English), which will override the locale-specific translations. This is why adding translations to both `apps/login/locales/<locale>.json` AND `internal/query/v2-default.json` is required for Login v2.
+- [Register Angular locale](./console/src/app/app.module.ts) — import/register the Angular locale and `i18n-iso-countries` locale
+- [Exclude from Angular prebundle](./console/angular.json) — add `i18n-iso-countries/langs/<locale>.json` to `prebundle.exclude`
+- [Supported languages (console)](./console/src/app/utils/language.ts)
+- [Login v2 `LANGS`](./apps/login/src/lib/i18n.ts) — native name and code (login v2 may intentionally support a subset)
+- [Login v1 language option](./internal/api/ui/login/static/templates/external_not_found_option.html)
+- [Customized texts docs](./apps/docs/content/guides/manage/customize/texts.mdx) — public language list
 
 ## **Did you find a security flaw?**
 
